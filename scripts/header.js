@@ -5,18 +5,20 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <header id="mainHeader" class="flex-center-center">
-    <nav class="flex-center-spaceevenly desktop-nav">
-        <a href="/about" class="nav-link" id="About">About</a>
-        <a href="/photography" class="nav-link" id="Photography">Photography</a>
-        <img src="assets/reanna-chambers.svg" class="logo"/>
-        <a href="/coloring" class="nav-link" id="Coloring">Coloring</a>
-        <a href="/production" class="nav-link" id="Production">Production</a>
-    </nav>
+    <header id="mainHeader" class="flex-center-center flex-column">
+      <nav class="flex-center-spaceevenly">
+          <a href="/about" class="nav-link hover engraved" id="About">About</a>
+          <a href="/photography" class="nav-link hover engraved" id="Photography">Photography</a>
+          <h1 class="logo desktop-logo hover engraved" onclick="window.open('/', '_self')"/>Reanna Chambers </h1>
+          <a href="/coloring" class="nav-link hover engraved" id="Coloring">Coloring</a>
+          <a href="/production" class="nav-link hover engraved" id="Production">Production</a>
+      </nav>
+      <h1 class="logo mobile-logo hover engraved" onclick="window.open('/', '_self')"/>Reanna Chambers </h1>
+      <div class="goodluckbuck-header flex-center-center">
+          <img src="assets/goodluckbuck.svg" class="logo-icon hover" alt="GoodLuckBuck logo" onclick="window.open('https://www.goodluckbuck.co/')"/>
+      </div>
     </header>
-    <div class="goodluckbuck-header flex-center-center">
-        <img src="assets/goodluckbuck.svg" class="logo-icon"/>
-    </div>
+    
 `;
   }
 }
@@ -25,7 +27,7 @@ customElements.define('header-component', Header);
 
 //Determine the active page
 $(document).ready(function () {
-  var customName = $("#mainHeader").data("nav");
+  var customName = $("#navigation").data("nav");
+  console.log(customName)
   $('#' + customName).addClass('active-link')
-  $('#' + customName + "Mobile").addClass('active-link')
 });

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="paper-bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of the page">
+    <meta name="keywords" content="comma separated">
+    <meta name="author" content="Design Elixir Studio | Megan Byers">
+    <title>Reanna Chambers | About</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/laa5csh.css">
+    <script src="scripts/index.js"></script>
+</head>
+
+<body class="flex-center-start flex-column" id="AboutContainer">
+    
+
+        <main class="flex-center-center flex-column">
+            <section class="about-hero">
+                <header-component data-nav="About" id="navigation"></header-component>
+                <div class="about-hero-link flex-end-start">
+                    <h1>About Reanna</h1>
+                </div>
+            </section>
+            <section class="about-content flex-start-start">
+                <div class="about-content-text">
+                    <p>This could be your bio. This could be your bio.This could be your bio.This could be your bio.This could be your bio.This could be your bio. This could be your bio.This could be your bio.This could be your bio.This could be your bio.This could be your bio.This could be your bio.</p>
+                    <div class="flex-start-spacebetween about-content-images" >
+                        <img src="assets/about-additional.JPG" alt="additional photo of Reanna"/>
+                        <img src="assets/about-additional.JPG" alt="additional photo of Reanna" />
+                    </div>
+                </div>
+                <div class="about-content-socials">
+                    <div class="flex-center-start social-link">
+                        <img src="assets/ig.svg" alt="Instagram icon" class="social-icon hover">
+                        <a href="https://www.instagram.com/goodluckbuck.co/" target="_blank">@goodluckbuck.co</a>
+                    </div>
+                    <div class="flex-center-start social-link">
+                        <img src="assets/linkedin.svg" alt="Linked In icon" class="social-icon hover">
+                        <a href="https://www.linkedin.com/" target="_blank" >/reanna-chambers</a>
+                    </div>
+                    <div class="flex-center-start social-link">
+                        <img src="assets/email.svg" alt="Email icon" class="social-icon hover">
+                        <a href="mailto:reanna@reannachambers.com" target="_blank">reanna@reannachambers.com</a>
+                    </div>
+                    
+                </div>
+
+            </section>
+        </main>
+
+        <footer-component></footer-component>
+</body>
+<script>
+    $(document).ready(function () {
+
+                var newHeight = $('.about-hero').height() - $('#navigation').height();
+
+                console.log(newHeight)
+                
+                $(':root').css('--about-hero-link-height', newHeight + 'px');
+            
+
+            
+        });
+</script>
+</html>
