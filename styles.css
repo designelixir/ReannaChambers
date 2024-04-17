@@ -1,0 +1,41 @@
+* {box-sizing: border-box;}
+html {max-width: 100vw; overflow-x: hidden; border: 3px solid teal;}
+body {width: 100%; border: 3px solid orange; margin: 0px;}
+
+.flex-center-center {display: flex; align-items: center; justify-content: center; flex:1}
+.flex-center-end {display: flex; align-items: center; justify-content: flex-end; flex:1}
+.flex-center-start {display: flex; align-items: center; justify-content: flex-start; flex:1}
+.flex-center-spacebetween {display: flex; align-items: center; justify-content: space-between; flex:1}
+.flex-center-spaceevenly {display: flex; align-items: center; justify-content: space-evenly; flex:1}
+
+.flex-start-center {display: flex; align-items: flex-start; justify-content: center; flex:1}
+.flex-start-start {display: flex; align-items: flex-start; justify-content: flex-start; flex:1;}
+.flex-start-end {display: flex; align-items: flex-start; justify-content: flex-end; flex:1;}
+.flex-start-spacebetween {display: flex; align-items: start; justify-content: space-between; flex:1;}
+.flex-start-spaceevenly {display: flex; align-items: start; justify-content: space-evenly; flex:1;}
+
+.flex-end-center {display: flex; align-items: flex-end; justify-content: center; flex:1;}
+.flex-end-start {display: flex; align-items: flex-end; justify-content: flex-start; flex:1;}
+.flex-end-end {display: flex; align-items: flex-end; justify-content: flex-end; flex:1;}
+.flex-end-spacebetween {display: flex; align-items: center; justify-content: space-between; flex:1;}
+.flex-end-spaceevenly {display: flex; align-items: center; justify-content: space-evenly; flex:1;}
+
+.flex-column {flex-direction: column;}
+.flex-wrap {flex-wrap: wrap}
+
+.hover:hover {cursor: pointer; transform: scale(1.05);}
+.hover {cursor: pointer;}
+.box-shadow {box-shadow: 2px 2px 2px rgba(0,0,0,0.5);}
+.text-shadow {text-shadow: 0 0 2px rgba(0,0,0,0.5);}
+
+.active-link {text-decoration: underline;}
+
+#designElixirCredits {text-decoration: none; font-size: 12px; color: black;}
+
+
+/* Navigation styles */
+#mainHeader { border: 1px solid lime; margin: 2.5vh 0 2.5vh 0; width: 98vw;}
+.nav-link {width: 100%; border: 1px solid red;  text-decoration: none; text-align: center;}
+.logo {width: 20vw; max-width: 400px; margin: 2vw;}
+.goodluckbuck-header {border: 1px solid purple}
+.logo-icon {width: 6vw;}
