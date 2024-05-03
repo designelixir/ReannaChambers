@@ -2,18 +2,14 @@
     --maxWidth: 960px;
     --cardWidth: 100px;
     --cardHeight: 130px;
-    --colorMain: #3498db;
-    --colorMainDarker: #2980b9;
-    --colorSecundary: #9b59b6;
-    --colorSecundaryDarker: #9b59b6;
 }
 
 .homepage-hero {
-    background-color: #eeeeee;
+    
     font-family: 'helvetica', sans-serif!important;
     font-size: 16px;
     transform: translate3d(0,0,0);
-    background: linear-gradient(135deg, var(--colorMainDarker) 0%, var(--colorSecundaryDarker) 100%);
+    
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1 );
 }
 
