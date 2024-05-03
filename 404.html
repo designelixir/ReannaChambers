@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="paper-bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of the page">
+    <meta name="keywords" content="comma separated">
+    <meta name="author" content="Design Elixir Studio | Megan Byers">
+    <title>Reanna Chambers | 404</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/laa5csh.css">
+    <script src="scripts/index.js"></script>
+</head>
+
+<body class="flex-center-start flex-column" id="AboutContainer">
+    
+
+        <main class="flex-center-center flex-column">
+            <header-component data-nav="About" id="navigation"></header-component>
+            <div style="min-height: 50vh; width: 100%;" class="flex-center-center">
+                <h1>404 Not Found :-C</h1>
+            </div>
+            
+        </main>
+
+        <footer-component></footer-component>
+</body>
+<script>
+    $(document).ready(function () {
+
+                var newHeight = $('.about-hero').height() - $('#navigation').height();
+
+                console.log(newHeight)
+                
+                $(':root').css('--about-hero-link-height', newHeight + 'px');
+            
+
+            
+        });
+</script>
+</html>
