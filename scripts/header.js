@@ -8,10 +8,11 @@ class Header extends HTMLElement {
     <header id="mainHeader" class="flex-center-center flex-column">
       <nav class="flex-center-spaceevenly">
           <a href="/about" class="nav-link hover engraved" id="About">About</a>
-          <a href="/photography" class="nav-link hover engraved" id="Photography">Photography</a>
+          <a href="/photo" class="nav-link hover engraved" id="Photo">Photo</a>
           <h1 class="logo desktop-logo hover engraved" onclick="window.open('/', '_self')"/>Reanna Chambers </h1>
-          <a href="/coloring" class="nav-link hover engraved" id="Coloring">Coloring</a>
           <a href="/production" class="nav-link hover engraved" id="Production">Production</a>
+          <a href="/video" class="nav-link hover engraved" id="Video">Video</a>
+          
       </nav>
       <h1 class="logo mobile-logo hover engraved" onclick="window.open('/', '_self')"/>Reanna Chambers </h1>
       <div class="goodluckbuck-header flex-center-center">

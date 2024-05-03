@@ -10,6 +10,7 @@
     <title>Reanna Chambers | Home</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cards.scss">
     <link rel="stylesheet" href="https://use.typekit.net/laa5csh.css">
     <script src="scripts/index.js"></script>
     
@@ -19,13 +20,80 @@
 <body class="flex-center-start flex-column" id="Home">
     <header-component data-nav="Home" id="navigation"></header-component>
 
-    <main class="flex-center-center">
+    <main class="flex-center-center flex-column home-wrapper">
+        <div class="flex-center-spacebetween filgery-container">
+            <img src="assets/filgery-1.png" >
+            <img src="assets/filgery-1.png" style="transform: rotate(-270deg)">
+        </div>
         <section class="homepage-hero">
+            <div class="container">
+	
+                <div class="card" id="aboutCard">
+                    <div class="front-facing flex-center-center">
+                        <img src="assets/about.svg" style="height: 100%; padding: 15px;"/>
+                    </div>
+                    <div class="back-facing flex-center-center">
+                        <img src="assets/card-back2.svg" style="height: 100%;"/>
+                    </div>
+                </div>
+                
+                <div class="card" id="photoCard">
+                    <div class="front-facing flex-center-center">
+                        <img src="assets/photo-card3.svg" style="height: 100%; padding: 15px;"/>
+                    </div>
+                    <div class="back-facing flex-center-center">
+                        <img src="assets/card-back2.svg" style="height: 100%;"/>
+                    </div>
+                </div>
+                
+                <div class="card" id="productionCard">
+                    <div class="front-facing flex-center-center">
+                        <img src="assets/production2.svg" style="height: 100%; padding: 15px;"/>
+                    </div>
+                    <div class="back-facing flex-center-center">
+                        <img src="assets/card-back2.svg" style="height: 100%;"/>
+                    </div>
+                </div>
+                
+                <div class="card" id="videoCard">
+                    <div class="front-facing flex-center-center">
+                        <img src="assets/video-card.svg" style="height: 100%; padding: 15px;"/>
+                    </div>
+                    <div class="back-facing flex-center-center">
+                        <img src="assets/card-back2.svg" style="height: 100%;"/>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+
+            
             
         </section>
+        <div class="flex-center-spacebetween filgery-container" style="transform:rotate(-180deg)">
+            <img src="assets/filgery-1.png">
+            <img src="assets/filgery-1.png" style="transform: rotate(-270deg)">
+        </div>
     </main>
 
     <footer-component></footer-component>
 </body>
+<script>
+    $(document).ready(function(){
+	
+	$('.card').on('click', function(){
+		
+		if ( $(this).hasClass('open') ) {
+			$(this).removeClass('open');
+		} else {
+			$('.card').removeClass('open');
+			$(this).addClass('open');
+		}
+		
+	});
+	
+});
+</script>
 
 </html>

@@ -5,6 +5,7 @@
 }
 :root {
     --about-hero-link-height: 50%;
+    --cream: #f8f6ea;
 }
 html {max-width: 100vw; min-height: 100vh; width: 100%; overflow-x: hidden; background: #E8E0D2}
 body { margin: 0px;}
@@ -62,7 +63,7 @@ p {margin: 5px 0; font-weight: 400; font-style: normal; font-size: 16px;}
 .mobile-logo {display: none;}
 nav {width: 100%;}
 
-.paper-bg {background-image: url('assets/paper.jpg'); background-size: 300px; background-position: center center;}
+.paper-bg {background-image: url('assets/paper-light.png'); background-size: 300px; background-position: center center;}
 
 .small-hero { width: 100%;}
 .hero-title {padding: 25px 25px 0px; margin-top: 50px;}
@@ -89,16 +90,20 @@ nav {width: 100%;}
 
 /* Homepage Hero */
 #Home {  min-height: 100vh;}
-.homepage-hero { padding: 2.5vh 2.5vh; height: 75vh; width: 100%;}
+.home-wrapper {padding: 2.5vh 2.5vh;}
+.homepage-hero { border: 2px solid black; height: 75vh; width: 100%; margin: -230px 2.5vw}
+.filgery-container {width: 100%; padding: 15px;}
+.filgery-container img {max-width: 200px; min-width: 100px; width: 100%;}
 
 /* About */
-.about-hero { height: 90vh; width: 100%; background-image: url('assets/ReannaPortrait-bg.png'); max-height: 80vh; min-height: 80vh; height: 100%; background-size: cover; background-position: center 100%; background-origin: 0% 0%; background-repeat: no-repeat;}
-.about-hero-link { height: 62.25vh; background-image: url('assets/ReannaPortrait-cutout.png'); background-size: contain; background-position: center 100%; background-repeat: no-repeat; }
-.about-hero-link h1 {padding: 25px;}
+.about-hero { min-height: 60vh; height: 100%; max-height: 60vh; width: 100%; background-image: url('assets/ReannaPortrait-bg.png'); background-size: cover; background-position: center 100%; background-origin: 0% 0%; background-repeat: no-repeat;}
+.about-hero-link { width: 100%; height: 62.25vh; background-image: url('assets/ReannaPortrait-cutout.png'); background-size: contain; background-position: center 100%; background-repeat: no-repeat; }
+.about-hero-link h1 {padding: 25px; color: var(--cream); text-shadow:0px 0px 5px black;}
 .reanna-cutout {height: 100%;}
 
 .about-content {padding: 25px;}
 .about-content-text {width: 60%; }
+.about-content-text p {font-size: 18px;}
 .about-content-socials { padding-left: 50px;}
 .about-content-images {padding: 25px 0; }
 .about-content-images img {width: 100%;}
