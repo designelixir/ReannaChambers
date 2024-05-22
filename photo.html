@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/laa5csh.css">
+    <link rel="stylesheet" href="cards.css">
     <script src="scripts/index.js"></script>
 </head>
 
@@ -21,59 +22,163 @@
         
         <section class="small-hero" id="photographyHero">
             <header-component data-nav="Photo" id="navigation"></header-component>
-            <div class="flex-center-spacebetween">
-                <img src="assets/filgery-1.png" style="height: 200px; padding: 25px;">
-                <div class="small-hero" style="margin-left: -100px">
-                    <h1 class="engraved" >Photo</h1>
-                    <p>Here is some text if you wanted to describe the photos page. Here is some text if you wanted to describe the photos page. </p>
+            <div class="flex-center-spacebetween" style="margin-top: 50px; position: absolute; left: 0;">
+                <img src="assets/filgery-1.png" style="height: 200px; position: absolute; margin-top: 100px; margin-left: 25px;">
+                <img src="assets/filgery-1.png" style="height: 200px; position: absolute; margin-top: 100px; margin-left: calc(100vw - 225px); transform: rotate(-270deg)">
+            </div>
+            <div>
+                <div style="margin: 50px 10vw">
+                    <br>
+                    <h1 class="engraved">Photo</h1>
+                    <p>Here is some text if you wanted to describe the photos page. Here is some text if you wanted to describe the
+                        photos page. </p>
                 </div>
-                <img src="assets/filgery-1.png" style="height: 200px; padding: 25px; transform: rotate(-270deg)">
-    
             </div>
             
         </section>
-        <section class="photography-container flex-start-start flex-wrap">
+        <section class="photography-container flex-start-center flex-wrap">
+
             <div class="project-column">
-                <div class="photography-project-wrapper">
-                    <div class="photography-project flex-end-center" id="ItzcalliMarie">
-                        <h2 class="project-title">Itzcalli Marie</h2>
+                <div class="photography-project-wrapper photo-card-wrapper flex-center-center">
+                    <div class="card  card-slide-up">
+                        <div class="back-facing flex-center-center">
+                            <div class="photography-project flex-end-center" id="ItzcalliMarie">
+                                <h2 class="project-title">Itzcalli Marie</h2>
+                            </div>
+                        </div>
+                        <div class="front-facing flex-center-center">
+                            <div class="project-window">
+                                Some stuff
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
+                    <div class="card  card-slide-up">
+                        <div class="back-facing flex-center-center">
+                            <div class="photography-project flex-end-center" id="ItzcalliMarie">
+                                <h2 class="project-title">Itzcalli Marie</h2>
+                            </div>
+                        </div>
+                        <div class="front-facing flex-center-center">
+                            <div class="project-window">
+                                Some stuff
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <div class="project-column-wide">
-                <div class="photography-project-wrapper">
-                    <div class="photography-project flex-end-center" id="SophieBabette">
-                        <h2 class="project-title">Sophie Babette</h2>
+                <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
+                    <div class="card card-slide-up" style="width: 30vw; height: 22vw;">
+                        <div class="back-facing flex-center-center">
+                            <div class="photography-project flex-end-center" id="SophieBabette">
+                                <h2 class="project-title">Sophie Babette</h2>
+                            </div>
+                        </div>
+                        <div class="front-facing flex-center-center">
+                            <div class="project-window">
+                                Some stuff
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
+                    <div class="card card-slide-up" style="width: 30vw; height: 22vw;">
+                        <div class="back-facing flex-center-center">
+                            <div class="photography-project flex-end-center" id="SophieBabette">
+                                <h2 class="project-title">Sophie Babette</h2>
+                            </div>
+                        </div>
+                        <div class="front-facing flex-center-center">
+                            <div class="project-window">
+                                Some stuff
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="project-column">
-                <div class="photography-project-wrapper">
-                    <div class="photography-project flex-end-center" id="MarieLouise">
-                        <h2 class="project-title">Marie Louise</h2>
+                <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
+                    <div class="card  card-slide-up">
+                        <div class="back-facing flex-center-center">
+                            <div class="photography-project flex-end-center" id="MarieLouise">
+                                <h2 class="project-title">Marie Louise</h2>
+                            </div>
+                        </div>
+                        <div class="front-facing flex-center-center">
+                            <div class="project-window">
+                                Some stuff
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
+                    <div class="card  card-slide-up">
+                        <div class="back-facing flex-center-center">
+                            <div class="photography-project flex-end-center" id="MarieLouise">
+                                <h2 class="project-title">Marie Louise</h2>
+                            </div>
+                        </div>
+                        <div class="front-facing flex-center-center">
+                            <div class="project-window">
+                                Some stuff
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
+
+            
+
             
 
         </section>
         
     </main>
 
+
     <footer-component></footer-component>
 </body>
 <script>
-    $(document).ready(function () {
 
-        var newHeight = $('.about-hero').height() - $('#navigation').height();
+$(document).ready(function () {
+        $('.photo-card-wrapper').addClass('slide-in');
+        $('.photo-card-wrapper').addClass('open');
 
-        console.log(newHeight)
+        $('.photo-card-wrapper').on('click', function () {
+        if ($(this).hasClass('open')) {
+            $(this).removeClass('open')
+            
+            $(this).css({"position":"fixed", "top": "0", "z-index": "300", "left": "0"} )
+            $(this).find('.card').addClass('fullscreen')
+            $(this).find('.project-window').css('display', 'block')
+            
 
-        $(':root').css('--about-hero-link-height', newHeight + 'px');
+        } else if ($(this).find('.card').hasClass('fullscreen') && $(this).hasClass('open')) {
+            $(this).find('card').css('border', '20px solid blue')
 
-
+        } else {
+            $(this).addClass('open');
+            
+        }
 
     });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    //initial animation
+    var cards = document.querySelectorAll('.card');
+    cards.forEach(function (card) {
+        card.classList.add('open');
+    });
+});
 </script>
 
 </html>

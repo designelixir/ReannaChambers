@@ -16,7 +16,9 @@
 
 <body class="flex-center-start flex-column" id="AboutContainer">
     
-
+            <div id="floatingDiv" class="flex-center-center" onclick="window.open('https://www.goodluckbuck.co/')">
+                <img src="assets/luck-knife.svg" style="width: 30px; transform: rotate(-45deg)" alt="luck knife"/>
+            </div>
         <main class="flex-center-center flex-column">
             <section class="about-hero flex-end-end flex-column">
                 <header-component data-nav="About" id="navigation"></header-component>
@@ -67,5 +69,37 @@
 
             
         });
+</script>
+<script>
+    $(document).ready(function () {
+        var $div = $('#floatingDiv');
+        var speedX = 0.5;
+        var speedY = 0.5;
+
+        function moveDiv() {
+            var windowWidth = $(window).width();
+            var windowHeight = $(window).height();
+            var divWidth = $div.width();
+            var divHeight = $div.height();
+            var newLeft = $div.position().left + speedX;
+            var newTop = $div.position().top + speedY;
+
+            if (newLeft < 0 || newLeft + divWidth > windowWidth) {
+                speedX = -speedX;
+            }
+            if (newTop < 0 || newTop + divHeight > windowHeight) {
+                speedY = -speedY;
+            }
+
+            $div.css({
+                left: newLeft,
+                top: newTop
+            });
+
+            requestAnimationFrame(moveDiv);
+        }
+
+        moveDiv();
+    });
 </script>
 </html>

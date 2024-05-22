@@ -3,6 +3,8 @@
   font-family: 'PinkSunset-Regular';
   src: url('assets/fonts/PinkSunset-Regular.otf') format('opentype');
 }
+
+
 :root {
     --about-hero-link-height: 50%;
     --cream: #f8f6ea;
@@ -58,7 +60,8 @@ p {margin: 5px 0; font-weight: 400; font-style: normal; font-size: 16px;}
 #mainHeader {padding: 15px; width: 100vw;}
 .nav-link {margin: 0 15px; font-size: 18px; font-family: 'quincy-cf', serif; font-weight: 500; color: black; text-decoration: none; text-align: center;}
 
-
+.logo-container {max-height: 100px; -webkit-animation:fade-in 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 1s cubic-bezier(.39,.575,.565,1.000) both}
+.logo {max-height: 75px;}
 .logo-icon {width: 75px;}
 .mobile-logo {display: none;}
 nav {width: 100%;}
@@ -84,16 +87,25 @@ nav {width: 100%;}
   .desktop-logo {display: none!important;}
   .mobile-logo {display: block; margin-bottom: 15px;}
   .logo-icon {width: 75px;}
+  .logo {max-height: unset; width: 90%;}
   nav {width: 100%; }
   .small-hero {text-align: center;}
 }
 
 /* Homepage Hero */
-#Home {  min-height: 100vh;}
+#Home { height: 100vh; overflow-y: hidden;}
 .home-wrapper {padding: 2.5vh 2.5vh;}
-.homepage-hero { border: 2px solid black; height: 75vh; width: 100%; margin: -230px 2.5vw}
-.filgery-container {width: 100%; padding: 15px;}
-.filgery-container img {max-width: 200px; min-width: 100px; width: 100%;}
+.homepage-hero { border: 2px solid black; height: 100%; width: 100%; margin: -230px 2.5vw}
+.filgery-container {width: 100%; }
+.filgery-container img {max-width: 100px; min-width: 100px; width: 100%;}
+#currentFilgery {font-size: 14px;}
+.filgery-bg {height: 100px; width: 100px; background-image: url('assets/filgery-1.png'); margin: 10px; background-size: 100px 100px; background-repeat: no-repeat;}
+.shuffle-button {
+  position: absolute;top: 15px; left: 120px; z-index: 3;
+  font-size: 24px; border: 1px solid black; padding: 5px 20px; border-radius: 4px; font-family: 'carol-gothic', sans-serif;
+}
+
+#aboutCard {transform: rotate(-45degrees)}
 
 /* About */
 .about-hero { min-height: 60vh; height: 100%; max-height: 60vh; width: 100%; background-image: url('assets/ReannaPortrait-bg.png'); background-size: cover; background-position: center 100%; background-origin: 0% 0%; background-repeat: no-repeat;}
@@ -128,28 +140,30 @@ nav {width: 100%;}
     background-position: center 90%;
     -webkit-background-clip: text;
     color: #E8E0D2;
-    display: none;
+    
 }
 
 .project-column {width: 27%;}
-.project-column-wide {width: calc(45% - 50px); margin: 0px 25px; }
+.project-column-wide {width: 38%;  }
 
 @media screen and (max-width: 700px) {
-  .project-column {width: 100%;}
+  .project-column .photo-card-wrapper .card {width: 100%; height: 500px;}
+  .project-column-wide .photo-card-wrapper .card {min-width: 100%;  min-height: 280px;}
+  .project-column {width: 400px;}
   .project-column-wide {width: 100%; margin: 0px}
   .project-title {display: block;}
 }
 /* Photography */
 
 .photography-container { padding: 25px;  width: 100%;}
-.photography-project-wrapper:hover {transform: scale(1.01); cursor: pointer; border: 2px solid black;}
-.photography-project-wrapper {border-radius: 8px; padding: 10px; border: 1px solid black; margin-bottom: 25px; width: 100%}
+.photography-project-wrapper:hover {transform: scale(1.01); cursor: pointer; }
+.photography-project-wrapper {border-radius: 8px; padding: 10px; margin-bottom: 25px; width: 100%}
 .photography-project { border-radius: 6px;  background-size: cover; background-repeat: no-repeat; background-position: center center;}
 
-.photography-project-wrapper:hover .project-title {display: block;}
 
-.project-column .photography-project {height: 400px}
-.project-column-wide .photography-project {height: 300px}
+
+.project-column .photography-project {height: 100%;}
+.project-column-wide .photography-project {height: 100%}
 
 #ItzcalliMarie {background-image: url('photography/ItzcalliMarie/F1000011.JPG'); }
 #SophieBabette {background-image: url('photography/SophieBabette/IMG_7807.jpg'); }
@@ -157,3 +171,20 @@ nav {width: 100%;}
 
 /* Footer */
 .footer-container {padding: 25px;}
+
+
+/* Animations */
+.fade-in{-webkit-animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both}
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+
+
+#floatingDiv {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            left: 90%;
+            
+        }

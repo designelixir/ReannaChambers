@@ -18,27 +18,30 @@
 </head>
 
 <body class="flex-center-start flex-column" id="Home">
-    
-    <img src="assets/reanna-chambers-letter.svg" style="max-height: 75px; margin: 25px;" alt="Reanna Chambers Lettermark">
+    <div class="flex-center-center logo-container"> 
+        <img src="assets/reanna-chambers-letter.svg" class="logo" alt="Reanna Chambers Lettermark">
+    </div>
 
-    <main class="flex-center-center flex-column home-wrapper">
-        <div class="flex-center-spacebetween filgery-container">
-            <img src="assets/filgery-1.png" >
-            <img src="assets/filgery-1.png" style="transform: rotate(-270deg)">
+    <main class="flex-center-center flex-column home-wrapper fade-in">
+        <div class="flex-start-spacebetween filgery-container">
+            <div class="filgery-bg"></div>
+            <div class="filgery-bg" style="transform: rotate(-270deg)"></div>
         </div>
         <section class="homepage-hero">
+            <button class="shuffle-button hover" onclick="switchFilgery()">shuffle <span id="currentFilgery"></span></button>
             <div class="container">
-	
-                <div class="card" id="aboutCard">
-                    <div class="front-facing flex-center-center">
-                        <img src="assets/about.svg" style="height: 100%; padding: 15px;"/>
-                    </div>
-                    <div class="back-facing flex-center-center">
-                        <img src="assets/card-back2.svg" style="height: 100%;"/>
+                <div class="card-wrapper">
+                    <div class="card card-slide-up" id="aboutCard">
+                        <div class="front-facing flex-center-center">
+                            <img src="assets/about.svg" style="height: 100%; padding: 15px;"/>
+                        </div>
+                        <div class="back-facing flex-center-center">
+                            <img src="assets/card-back2.svg" style="height: 100%;"/>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="card" id="photoCard">
+                <div class="card-wrapper">
+                <div class="card card-slide-up" id="photoCard">
                     <div class="front-facing flex-center-center">
                         <img src="assets/photo-card3.svg" style="height: 100%; padding: 15px;"/>
                     </div>
@@ -46,8 +49,9 @@
                         <img src="assets/card-back2.svg" style="height: 100%;"/>
                     </div>
                 </div>
-                
-                <div class="card" id="productionCard">
+                </div>
+                <div class="card-wrapper">
+                <div class="card card-slide-up" id="productionCard">
                     <div class="front-facing flex-center-center">
                         <img src="assets/production2.svg" style="height: 100%; padding: 15px;"/>
                     </div>
@@ -55,8 +59,9 @@
                         <img src="assets/card-back2.svg" style="height: 100%;"/>
                     </div>
                 </div>
-                
-                <div class="card" id="videoCard">
+                </div>
+                <div class="card-wrapper">
+                <div class="card card-slide-up" id="videoCard">
                     <div class="front-facing flex-center-center">
                         <img src="assets/video-card.svg" style="height: 100%; padding: 15px;"/>
                     </div>
@@ -64,39 +69,53 @@
                         <img src="assets/card-back2.svg" style="height: 100%;"/>
                     </div>
                 </div>
-                
+                </div>
             </div>
-            <div class="goodluckbuck-header flex-center-center flex-column hover" onclick="window.open('https://www.goodluckbuck.co/')">
-                <img src="assets/goodluckbuck.svg" alt="GoodLuckBuck logo" style="background-image: url('assets/paper.png'); background-size: 50vw; width: 100px; padding: 15px; margin-top: -35px;"/>
+            <div class="goodluckbuck-header flex-center-center flex-column hover" onclick="window.open('https://www.goodluckbuck.co/')" >
+                <img src="assets/goodluckbuck.svg" alt="GoodLuckBuck logo" style="background-image: url('assets/paper.png'); background-size: 50vw; width: 90px; padding: 15px; margin-top: -35px;"/>
               </div>
             
 
             
             
         </section>
-        <div class="flex-center-spacebetween filgery-container" style="transform:rotate(-180deg)">
-            <img src="assets/filgery-1.png">
-            <img src="assets/filgery-1.png" style="transform: rotate(-270deg)">
+        
+        <div class="flex-start-spacebetween filgery-container" style="transform:rotate(-180deg)">
+            <div class="filgery-bg"></div>
+            <div class="filgery-bg" style="transform: rotate(-270deg)"></div>
         </div>
     </main>
 
-    <footer-component></footer-component>
+    
 </body>
 <script>
     $(document).ready(function(){
 	
-	$('.card').on('click', function(){
+	$('.card-wrapper').on('click', function(){
 		
 		if ( $(this).hasClass('open') ) {
 			$(this).removeClass('open');
 		} else {
-			$('.card').removeClass('open');
+			$('.card-wrapper').removeClass('open');
 			$(this).addClass('open');
 		}
 		
 	});
 	
 });
+counter = 0;
+var filgery = ['assets/filgery-1.png', 'assets/filgery-2.svg', 'assets/filgery-3.svg', 'assets/filgery-4.svg', 'assets/filgery-5.svg', 'assets/filgery-6.svg', 'assets/filgery-7.svg']
+function switchFilgery(){
+    if (counter >= filgery.length - 1){
+        counter = 0
+    }
+    counter++; 
+    var thisOne = 'url(' + filgery[counter] + ')'
+    $('.filgery-bg').css('background-image', thisOne)
+    $('#currentFilgery').text('option ' + (counter + 1))
+    console.log(filgery[counter], counter)
+
+}
 </script>
 
 </html>

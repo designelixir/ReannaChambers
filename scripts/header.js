@@ -9,15 +9,14 @@ class Header extends HTMLElement {
       <nav class="flex-center-spaceevenly">
           <a href="/ReannaChambers/about" class="nav-link hover engraved" id="About">About</a>
           <a href="/ReannaChambers/photo" class="nav-link hover engraved" id="Photo">Photo</a>
-          <h1 class="logo desktop-logo hover engraved" onclick="window.open('/', '_self')"/>Reanna Chambers </h1>
+          
+          <h1 class="logo desktop-logo hover engraved" style="font-family: 'medusa', sans-serif; font-size: 36px"/>Reanna Chambers </h1>
           <a href="/ReannaChambers/production" class="nav-link hover engraved" id="Production">Production</a>
           <a href="/ReannaChambers/video" class="nav-link hover engraved" id="Video">Video</a>
           
       </nav>
-      <h1 class="logo mobile-logo hover engraved" onclick="window.open('/', '_self')"/>Reanna Chambers </h1>
-      <div class="goodluckbuck-header flex-center-center">
-          <img src="assets/goodluckbuck.svg" class="logo-icon hover" alt="GoodLuckBuck logo" onclick="window.open('https://www.goodluckbuck.co/')"/>
-      </div>
+      <h1 class="logo mobile-logo hover engraved" style="font-family: 'medusa', sans-serif; font-size: 36px" onclick="window.open('/', '_self')"/>Reanna Chambers </h1>
+      
     </header>
     
 `;
