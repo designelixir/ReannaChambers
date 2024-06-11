@@ -99,7 +99,7 @@ nav {width: 100%;}
 .filgery-container {width: 100%; }
 .filgery-container img {max-width: 100px; min-width: 100px; width: 100%;}
 #currentFilgery {font-size: 14px;}
-.filgery-bg {height: 100px; width: 100px; background-image: url('assets/filgery-1.png'); margin: 10px; background-size: 100px 100px; background-repeat: no-repeat;}
+.filgery-bg {height: 60px; width: 60px; background-image: url('assets/filgery-4.svg'); margin: 10px; background-size: 60px 60px; background-repeat: no-repeat;}
 .shuffle-button {
   position: absolute;top: 15px; left: 120px; z-index: 3;
   font-size: 24px; border: 1px solid black; padding: 5px 20px; border-radius: 4px; font-family: 'carol-gothic', sans-serif;
@@ -180,11 +180,144 @@ nav {width: 100%;}
 
 
 #floatingDiv {
-            width: 100px;
-            height: 100px;
-            cursor: pointer;
-            position: absolute;
-            top: 40%;
-            left: 90%;
-            
-        }
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 90%;
+  
+}
+
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+.knife {
+  min-width: 150px;
+  max-width: 150px;
+  height: 50px;
+  
+  background-size: 125px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  flex-shrink: 0;
+  /* Ensure items don't shrink */
+}
+
+
+.marquee-content {
+  padding: 10px;
+}
+
+.knife:nth-child(odd) {
+background-image: url('assets/luck-knife.svg');
+
+}
+
+.knife:nth-child(even) {
+background-image: url('assets/luck-knife-inverted.svg');
+
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 300s linear infinite;
+}
+
+
+
+
+
+
+.star {
+  position: fixed;
+  font-size: 30px;
+  transform-origin: center;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.star1 {
+  padding-left: 15px; padding-top: 15px;
+  transition: left 0.2s linear, top 0.2s linear;
+  animation: vibrate-1 3s linear infinite both;
+}
+
+.star2 {
+  transition: left 0.35s linear, top 0.35s linear;
+  padding-left: 10px;
+  padding-top: 25px;
+  animation: vibrate-1 2s linear infinite both;
+}
+
+.star3 {
+  transition: left 0.3s linear, top 0.3s linear;
+  padding-top: 40px;
+  animation: vibrate-1 4s linear infinite both;
+}
+
+
+
+
+
+.hovercursor:nth-child(odd) {
+  animation: blink-1 2s infinite alternate-reverse both;
+}
+
+.hovercursor:nth-child(even) {
+  animation: blink-1 3s infinite  both;
+}
+
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-4px, 4px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(4px, 4px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+    
+  }
+  25%,
+  75% {
+    opacity: 0.25;
+    
+  }
+}
+

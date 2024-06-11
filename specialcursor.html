@@ -1,0 +1,109 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  /* background-image: url('assets/sparkle_1.svg'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  background-image: url('assets/star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+}
+
+.hovercursor {animation: rotateExpand 1s forwards;}
+
+
+@keyframes rotateExpand {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    100% {
+        transform: rotate(180deg) scale(1.25);
+    }
+}
+
+@keyframes rotateShrink {
+    from {
+        transform: rotate(180deg) scale(1.25);
+    }
+    to {
+        transform: rotate(0deg) scale(1);
+    }
+}
+</style>
+
+<section style="width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <a href="#">Hover Me</a>
+</section>
+
+
+
+
+<script>
+    // UPDATE: I was able to get this working again... Enjoy!
+
+        var cursor = document.querySelector('.cursor');
+        var cursorinner = document.querySelector('.cursor2');
+        var a = document.querySelectorAll('a');
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.left = (x + 40) + 'px';
+            cursor.style.top = (y + 60) + 'px';
+        });
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursorinner.style.left = x + 'px';
+            cursorinner.style.top = y + 'px';
+        });
+
+        document.addEventListener('mousedown', function () {
+            cursor.classList.add('click');
+            cursorinner.classList.add('cursorinnerhover')
+        });
+
+        document.addEventListener('mouseup', function () {
+            cursor.classList.remove('click')
+            cursorinner.classList.remove('cursorinnerhover')
+        });
+
+        a.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                cursorinner.classList.add('hovercursor');
+            });
+            item.addEventListener('mouseleave', () => {
+                cursorinner.classList.remove('hovercursor');
+                
+            });
+        })
+</script>
+

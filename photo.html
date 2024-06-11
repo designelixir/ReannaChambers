@@ -23,15 +23,15 @@
         <section class="small-hero" id="photographyHero">
             <header-component data-nav="Photo" id="navigation"></header-component>
             <div class="flex-center-spacebetween" style="margin-top: 50px; position: absolute; left: 0;">
-                <img src="assets/filgery-1.png" style="height: 200px; position: absolute; margin-top: 100px; margin-left: 25px;">
-                <img src="assets/filgery-1.png" style="height: 200px; position: absolute; margin-top: 100px; margin-left: calc(100vw - 225px); transform: rotate(-270deg)">
+                <img src="assets/filgery-4.svg" style="height: 60px; position: absolute; margin-top: 20px; margin-left: 25px;">
+                <img src="assets/filgery-4.svg" style="height: 60px; position: absolute; margin-top: 20px; margin-left: calc(100vw - 80px); transform: rotate(-270deg)">
             </div>
             <div>
-                <div style="margin: 50px 10vw">
-                    <br>
+                <div style="margin: 50px 75px 0">
+                    
                     <h1 class="engraved">Photo</h1>
-                    <p>Here is some text if you wanted to describe the photos page. Here is some text if you wanted to describe the
-                        photos page. </p>
+                    <!-- <p>Here is some text if you wanted to describe the photos page. Here is some text if you wanted to describe the
+                        photos page. </p> -->
                 </div>
             </div>
             
@@ -40,7 +40,7 @@
 
             <div class="project-column">
                 <div class="photography-project-wrapper photo-card-wrapper flex-center-center">
-                    <div class="card  card-slide-up">
+                    <div class="card hover card-slide-up">
                         <div class="back-facing flex-center-center">
                             <div class="photography-project flex-end-center" id="ItzcalliMarie">
                                 <h2 class="project-title">Itzcalli Marie</h2>
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
-                    <div class="card  card-slide-up">
+                    <div class="card hover card-slide-up">
                         <div class="back-facing flex-center-center">
                             <div class="photography-project flex-end-center" id="ItzcalliMarie">
                                 <h2 class="project-title">Itzcalli Marie</h2>
@@ -72,7 +72,7 @@
             
             <div class="project-column-wide">
                 <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
-                    <div class="card card-slide-up" style="width: 30vw; height: 22vw;">
+                    <div class="card  hover card-slide-up" style="width: 30vw; height: 22vw;">
                         <div class="back-facing flex-center-center">
                             <div class="photography-project flex-end-center" id="SophieBabette">
                                 <h2 class="project-title">Sophie Babette</h2>
@@ -87,7 +87,7 @@
                 </div>
             
                 <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
-                    <div class="card card-slide-up" style="width: 30vw; height: 22vw;">
+                    <div class="card hover card-slide-up" style="width: 30vw; height: 22vw;">
                         <div class="back-facing flex-center-center">
                             <div class="photography-project flex-end-center" id="SophieBabette">
                                 <h2 class="project-title">Sophie Babette</h2>
@@ -104,7 +104,7 @@
 
             <div class="project-column">
                 <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
-                    <div class="card  card-slide-up">
+                    <div class="card hover card-slide-up">
                         <div class="back-facing flex-center-center">
                             <div class="photography-project flex-end-center" id="MarieLouise">
                                 <h2 class="project-title">Marie Louise</h2>
@@ -119,7 +119,7 @@
                 </div>
 
                 <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
-                    <div class="card  card-slide-up">
+                    <div class="card hover card-slide-up">
                         <div class="back-facing flex-center-center">
                             <div class="photography-project flex-end-center" id="MarieLouise">
                                 <h2 class="project-title">Marie Louise</h2>
@@ -148,6 +148,8 @@
 </body>
 <script>
 
+   
+
 $(document).ready(function () {
         $('.photo-card-wrapper').addClass('slide-in');
         $('.photo-card-wrapper').addClass('open');
@@ -171,6 +173,12 @@ $(document).ready(function () {
 
     });
 });
+
+    $('.hover, a').on('mouseover', function () {
+        $('.star').addClass('hovercursor');
+    }).on('mouseleave', function () {
+        $('.star').removeClass('hovercursor');
+    });
 
 document.addEventListener('DOMContentLoaded', function () {
     //initial animation

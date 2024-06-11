@@ -18,14 +18,19 @@
 </head>
 
 <body class="flex-center-start flex-column" id="Home">
-    <h1 class="logo  hover" style="font-family: 'medusa', sans-serif; margin-bottom: -15px; font-size: 48px; text-align: center;">Reanna Chambers</h1>
+    <div class="star star1">&#x2726; <span style="font-size: 14px; padding-left: 30px;">&#x2726;</span></div>
+    <div class="star star2"><span style="font-size: 14px; padding-left: 20px;">&#x2726;</span> &#x2726;</div>
+    <div class="star star3">&#x2726;</div>
+    <!-- <h1 class="logo  hover" style="font-family: 'medusa', sans-serif; margin-bottom: -15px; font-size: 48px; text-align: center;">Reanna Chambers</h1> -->
+     <img src="assets/logo2.svg" class="hover" style="height: 30px; margin-top: 10px;" id="changeLogo" alt="logo" onclick="changeLogo()"/>
     <main class="flex-center-center flex-column home-wrapper fade-in">
         <div class="flex-start-spacebetween filgery-container">
             <div class="filgery-bg"></div>
             <div class="filgery-bg" style="transform: rotate(-270deg)"></div>
         </div>
         <section class="homepage-hero">
-            <button class="shuffle-button hover" onclick="switchFilgery()">shuffle <span id="currentFilgery"></span></button>
+            <button class="shuffle-button hover" >shuffle <span id="currentFilgery"></span></button>
+            <!-- onclick="switchFilgery()" - add this back to the above button to switch filgery designs -->
             <div class="container">
                 <div class="card-wrapper">
                     <div class="card card-slide-up" id="aboutCard" onclick="window.open('/ReannaChambers/about', '_self')">
@@ -86,7 +91,16 @@
     
 </body>
 <script>
+
+    $('.hover').on('mouseover', function () {
+        $('.star').addClass('hovercursor');
+    }).on('mouseleave', function () {
+        $('.star').removeClass('hovercursor');
+    });
+    
     $(document).ready(function(){
+
+        
 	
 	$('.card-wrapper').on('click', function(){
 		
@@ -101,7 +115,7 @@
 	
 });
 counter = 0;
-var filgery = ['assets/filgery-1.png', 'assets/filgery-2.svg', 'assets/filgery-3.svg', 'assets/filgery-4.svg', 'assets/filgery-5.svg', 'assets/filgery-6.svg', 'assets/filgery-7.svg']
+var filgery = ['assets/filgery-4.svg', 'assets/filgery-2.svg', 'assets/filgery-3.svg', 'assets/filgery-1.png', 'assets/filgery-5.svg', 'assets/filgery-6.svg', 'assets/filgery-7.svg']
 function switchFilgery(){
     if (counter >= filgery.length - 1){
         counter = 0
@@ -112,6 +126,18 @@ function switchFilgery(){
     $('#currentFilgery').text('option ' + (counter + 1))
     console.log(filgery[counter], counter)
 
+}
+
+function changeLogo() {
+    var $image = $('#changeLogo');
+
+    console.log($image.attr('src'));
+    if ($image.attr('src') === 'assets/logo2.svg') {
+        console.log("nice");
+        $image.attr('src', 'assets/logo3.svg');
+    } else {
+        $image.attr('src', 'assets/logo2.svg');
+    }
 }
 </script>
 
