@@ -1,4 +1,4 @@
-* {box-sizing: border-box; font-family: "quincy-cf", serif;}
+* {box-sizing: border-box; font-family: "quincy-cf", serif; transition: ease;}
 @font-face {
   font-family: 'PinkSunset-Regular';
   src: url('assets/fonts/PinkSunset-Regular.otf') format('opentype');
@@ -319,5 +319,10 @@ background-image: url('assets/luck-knife-inverted.svg');
     opacity: 0.25;
     
   }
+}
+
+.knife:hover {
+  background-image: url('assets/goodluckbuck.svg');
+  cursor: pointer;
 }
 

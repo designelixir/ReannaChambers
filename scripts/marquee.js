@@ -13,6 +13,8 @@ class MarqueeComponent extends HTMLElement {
         `;
     }
 
+    
+
     generateKnives(count) {
         let knives = '';
         for (let i = 0; i < count; i++) {
@@ -20,6 +22,8 @@ class MarqueeComponent extends HTMLElement {
         }
         return knives;
     }
+
+    
 }
 
 customElements.define('marquee-component', MarqueeComponent);
