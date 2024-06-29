@@ -255,19 +255,19 @@ background-image: url('assets/luck-knife-inverted.svg');
 
 .star1 {
   padding-left: 15px; padding-top: 15px;
-  transition: left 0.2s linear, top 0.2s linear;
+  transition: left 0.02s linear, top 0.02s linear;
   animation: vibrate-1 3s linear infinite both;
 }
 
 .star2 {
-  transition: left 0.35s linear, top 0.35s linear;
+  transition: left 0.035s linear, top 0.035s linear;
   padding-left: 10px;
   padding-top: 25px;
   animation: vibrate-1 2s linear infinite both;
 }
 
 .star3 {
-  transition: left 0.3s linear, top 0.3s linear;
+  transition: left 0.03s linear, top 0.03s linear;
   padding-top: 40px;
   animation: vibrate-1 4s linear infinite both;
 }

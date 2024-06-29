@@ -6,9 +6,9 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <header id="mainHeader" class="flex-center-center flex-column">
-    <div class="star star1">&#x2726; <span style="font-size: 14px; padding-left: 30px;">&#x2726;</span></div>
-    <div class="star star2"><span style="font-size: 14px; padding-left: 20px;">&#x2726;</span> &#x2726;</div>
-    <div class="star star3">&#x2726;</div>
+    <div class="star star1"><img src="./assets/sharp-star.svg" style="height: 20px;"/><span style="font-size: 14px; padding-left: 30px;"><img src="./assets/sharp-star.svg" style="height: 20px;"/></span></div>
+    <div class="star star2"><span style="font-size: 14px; padding-left: 20px;"><img src="./assets/sharp-star.svg" style="height: 30px;"/></span> <img src="./assets/sharp-star.svg" style="height: 20px;"/></div>
+    <div class="star star3"><img src="./assets/sharp-star.svg" style="height: 40px;"/></div>
     <img class="mobile-logo hover" src="assets/logo2.svg" style="height: 15px; margin-top: 10px;"  alt="logo" onclick="changeLogo()"/>
       <nav class="flex-center-spaceevenly">
           <a href="/ReannaChambers/about" class="nav-link hover engraved" id="About">About</a>
