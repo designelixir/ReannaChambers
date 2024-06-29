@@ -1,0 +1,103 @@
+
+<link rel="stylesheet" href="card.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    
+    crossorigin="anonymous"></script>
+    <div class="flex-center-start">
+<div class="cards-container flex-center-center">
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front flex-center-center"><img src="assets/video-card.svg"
+                    style="height: 100%; padding: 15px;" />
+            </div>
+            <div class="card-back flex-center-center"><img src="assets/card-back2.svg" style="height: 100%;" /></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front flex-center-center"><img src="assets/production-card.svg"
+                    style="height: 100%; padding: 15px;" />
+            </div>
+            <div class="card-back flex-center-center"><img src="assets/card-back2.svg" style="height: 100%;" /></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front flex-center-center"><img src="assets/photo-card.svg"
+                    style="height: 100%; padding: 15px;" />
+            </div>
+            <div class="card-back flex-center-center"><img src="assets/card-back2.svg" style="height: 100%;" /></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front flex-center-center"><img src="assets/about-card.svg" style="height: 100%; padding: 15px;" /></div>
+            <div class="card-back flex-center-center"><img src="assets/card-back2.svg" style="height: 100%;" /></div>
+        </div>
+
+    </div>
+    </div>
+    
+    
+</div>
+<button id="start-animation">Start Animation</button>
+<button id="shuffle-cards">Shuffle</button>
+
+<script>
+
+    $(document).ready(function () {
+            
+                // Step 1: Stack cards on top of each other with the back facing
+                $('.card').addClass('stacked');
+
+                // Step 2: Flip cards one by one and move them to the right stack
+                $('.card').each(function (index) {
+                    var $this = $(this);
+                    setTimeout(function () {
+                        $this.removeClass('stacked').addClass('flipped');
+                        setTimeout(function () {
+                            $this.addClass('moved');
+                        }, 600); // Time for flipping animation to complete
+                    }, index * 1000); // Delay each card flip by 1 second
+                    $('.card-container').css("transform", "rotateY(25deg)")
+                });
+
+                
+
+                // Step 3: Fan out the cards after they are all moved
+                setTimeout(function () {
+                    var angles = [-15, 0, 15, 30]; // Angles for fanning out
+                    $('.card').each(function (index) {
+                        $(this).addClass('fanned').css({
+                            'transform': `translateY(-50px) rotateY(180deg) rotate(${angles[index]}deg) translateX(${index * 50}px)`
+                        });
+                    });
+                }, 5000); // Adjust this timeout to start fanning after the move is complete
+            });
+
+            $('#shuffle-cards').on('click', function () {
+                    var cards = $('.card');
+                    var positions = [];
+                    var zIndexes = [];
+
+                    // Capture the current transforms and z-index values
+                    cards.each(function (index) {
+                        var transform = $(this).css('transform');
+                        var zIndex = $(this).css('z-index');
+                        positions.push(transform);
+                        zIndexes.push(zIndex);
+                    });
+
+                    // Shift the first card's position and z-index to the end
+                    positions.push(positions.shift());
+                    zIndexes.push(zIndexes.shift());
+
+                    // Apply the new transforms and z-index values
+                    cards.each(function (index) {
+                        $(this).css('transform', positions[index]);
+                        $(this).css('z-index', zIndexes[index]);
+                    });
+                });
+        
+</script>
