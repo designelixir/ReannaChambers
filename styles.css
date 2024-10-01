@@ -1,4 +1,4 @@
-* {box-sizing: border-box; font-family: "quincy-cf", serif; transition: ease;}
+
 @font-face {
   font-family: 'PinkSunset-Regular';
   src: url('assets/fonts/PinkSunset-Regular.otf') format('opentype');
@@ -19,6 +19,8 @@
 	font-style: normal;
 }
 
+* {box-sizing: border-box; font-family: "PalaceRegular", serif; transition: ease; transition: all ease-in-out}
+
 :root {
     --about-hero-link-height: 50%;
     --cream: #f8f6ea;
@@ -36,17 +38,21 @@ body { margin: 0px;}
 .flex-start-center {display: flex; align-items: flex-start; justify-content: center; flex:1}
 .flex-start-start {display: flex; align-items: flex-start; justify-content: flex-start; flex:1;}
 .flex-start-end {display: flex; align-items: flex-start; justify-content: flex-end; flex:1;}
-.flex-start-spacebetween {display: flex; align-items: start; justify-content: space-between; flex:1;}
-.flex-start-spaceevenly {display: flex; align-items: start; justify-content: space-evenly; flex:1;}
+.flex-start-spacebetween {display: flex; align-items: flex-start; justify-content: space-between; flex:1;}
+.flex-start-spaceevenly {display: flex; align-items: flex-start; justify-content: space-evenly; flex:1;}
 
 .flex-end-center {display: flex; align-items: flex-end; justify-content: center; flex:1;}
 .flex-end-start {display: flex; align-items: flex-end; justify-content: flex-start; flex:1;}
 .flex-end-end {display: flex; align-items: flex-end; justify-content: flex-end; flex:1;}
-.flex-end-spacebetween {display: flex; align-items: center; justify-content: space-between; flex:1;}
-.flex-end-spaceevenly {display: flex; align-items: center; justify-content: space-evenly; flex:1;}
+.flex-end-spacebetween {display: flex; align-items: flex-end; justify-content: space-between; flex:1;}
+.flex-end-spaceevenly {display: flex; align-items: flex-end; justify-content: space-evenly; flex:1;}
+
 
 .flex-column {flex-direction: column;}
 .flex-wrap {flex-wrap: wrap}
+.no-flex-grow {flex: unset;}
+
+.no-text-spacing {margin: 0; padding: 0; line-height: 0;}
 
 .hover:hover {cursor: pointer; transform: scale(1.05);}
 a:hover {cursor: pointer; transform: scale(1.05);}
@@ -65,7 +71,7 @@ main {width: 100%;}
 
 
 h1 {font-size: clamp(36px, 3rem, 48px); margin: 10px 0; line-height: clamp(40px, 3.25rem, 52px); font-family: 'PalaceRegular', serif;  font-style: italic;}
-h2 {font-size: clamp(32px, 2.5rem, 36px); margin: 10px 0; line-height: clamp(32px, 2.5rem, 36px);}
+h2 {font-size: clamp(32px, 2.5rem, 36px); margin: 10px 0; line-height: clamp(32px, 2.5rem, 36px); font-family: 'PalaceRegular-Italic', serif;}
 p {margin: 5px 0; font-weight: 100; font-style: normal; font-size: 16px; font-family: 'PalaceRegular', serif!important; font-size: 24px;}
 
 
@@ -183,6 +189,7 @@ nav {width: 100%;}
 #MarieLouise {background-image: url('photography/MarieLouise/Marie.JPG'); }
 #MonetCheung {background-image: url('photography/MonetCheung/Monet-11.jpg'); }
 #LeiShimabukuro {background-image: url('photography/LeiShimabukuro/AJK-10.jpg'); }
+#TheGeminiSet {background-image: url('photography/TheGeminiSet/BRENNANDANI-3.jpg'); }
 
 /* Footer */
 .footer-container {padding: 25px;}
@@ -346,3 +353,17 @@ background-image: url('assets/luck-knife-inverted.svg');
   cursor: pointer;
 }
 
+
+.grainy-overlay {
+  background-size: cover; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: 1px solid teal; z-index: 999; opacity: 0.5; pointer-events: none;}
+  .grainy-overlay-gradient {
+    
+      width: 100vw;
+      height: 100vh;
+      filter: contrast(100%) brightness(200%);
+      background: 
+      linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+      url('assets/grainy-overlay.svg');
+    
+    
+  }
