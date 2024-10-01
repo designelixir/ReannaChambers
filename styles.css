@@ -3,7 +3,21 @@
   font-family: 'PinkSunset-Regular';
   src: url('assets/fonts/PinkSunset-Regular.otf') format('opentype');
 }
-
+@font-face {
+	font-family: 'PalaceRegular';
+	src: url('assets/fonts/palace-regular.woff') format('woff'),
+  url('assets/fonts/palace-regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PalaceRegular-Italic';
+  
+	src: url('assets/fonts/palace-italic.woff2') format('woff'),
+  url('assets/fonts/palace-italic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
 
 :root {
     --about-hero-link-height: 50%;
@@ -50,46 +64,38 @@ main {width: 100%;}
 #designElixirCredits {text-decoration: none; font-size: 12px; color: black;}
 
 
-h1 {font-size: clamp(36px, 3rem, 48px); margin: 10px 0; line-height: clamp(40px, 3.25rem, 52px);}
+h1 {font-size: clamp(36px, 3rem, 48px); margin: 10px 0; line-height: clamp(40px, 3.25rem, 52px); font-family: 'PalaceRegular', serif;  font-style: italic;}
 h2 {font-size: clamp(32px, 2.5rem, 36px); margin: 10px 0; line-height: clamp(32px, 2.5rem, 36px);}
-p {margin: 5px 0; font-weight: 400; font-style: normal; font-size: 16px;}
+p {margin: 5px 0; font-weight: 100; font-style: normal; font-size: 16px; font-family: 'PalaceRegular', serif!important; font-size: 24px;}
 
 
 
 /* Navigation styles */
 #mainHeader {padding: 15px; width: 100vw;}
-.nav-link {margin: 0 15px; font-size: 18px; font-family: 'quincy-cf', serif; font-weight: 500; color: black; text-decoration: none; text-align: center;}
+
+.nav-link {margin: 0 5px; font-size: 22px; font-family: 'PalaceRegular', serif; font-weight: 500; color: black; text-decoration: none; text-align: center;}
 
 .logo-container {max-height: 100px; -webkit-animation:fade-in 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 1s cubic-bezier(.39,.575,.565,1.000) both}
 .logo {max-height: 75px;}
 .logo-icon {width: 75px;}
-.mobile-logo {display: none;}
+.mobile-logo {display: none; height: 75px;}
 nav {width: 100%;}
-
-.paper-bg {background-image: url('assets/paper.png'); background-size: 50%; background-position: center center;}
-
+.homepage-logo {height: 100px; margin-top: 10px; margin-bottom: -35px; z-index: 2;}
+.paper-bg {background-image: url('assets/paper.png'); background-size: 100%; background-position: center center;}
+.desktop-logo {height: 75px;}
 .small-hero { width: 100%;}
 .hero-title {padding: 25px 25px 0px; margin-top: 50px;}
-.engraved {
-    
-    background-color: black;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(245,245,245,0.2) 1px 2px 1px;
- }
-
- .desktop-logo {font-family: 'PinkSunset-Regular', serif; font-size: 32px; text-align: center;}
- .mobile-logo {font-family: 'PinkSunset-Regular', serif; font-size: 32px;  text-align: center;}
+.engraved {background-color: black; -webkit-background-clip: text; -moz-background-clip: text; background-clip: text; color: transparent; text-shadow: rgba(245,245,245,0.2) 1px 2px 1px;}
 
 @media screen and (max-width: 800px) {
   .desktop-logo {display: none!important;}
   .mobile-logo {display: block; margin-bottom: 15px;}
   .logo-icon {width: 75px;}
-  .logo {max-height: unset; width: 90%;}
+  .logo {height: 100px;}
   nav {width: 100%; }
   .small-hero {text-align: center;}
+  .homepage-logo {height: 70px;}
+  
 }
 
 /* Homepage Hero */
@@ -100,28 +106,24 @@ nav {width: 100%;}
 .filgery-container img {max-width: 100px; min-width: 100px; width: 100%;}
 #currentFilgery {font-size: 14px;}
 .filgery-bg {height: 60px; width: 60px; background-image: url('assets/filgery-4.svg'); margin: 10px; background-size: 60px 60px; background-repeat: no-repeat;}
-.shuffle-button {
-  position: absolute;top: 15px; left: 120px; z-index: 3;
-  font-size: 24px; border: 1px solid black; padding: 5px 20px; border-radius: 4px; font-family: 'carol-gothic', sans-serif;
-}
+.shuffle-button {font-size: 24px; position: fixed; top: 125px; left: 53px; border: 1px solid black; padding: 5px 20px; border-radius: 4px; font-family: 'carol-gothic', sans-serif; z-index: 10;}
 
 #aboutCard {transform: rotate(-45degrees)}
 
 /* About */
 .about-hero { min-height: 60vh; height: 100%; max-height: 60vh; width: 100%; background-image: url('assets/ReannaPortrait-bg.png'); background-size: cover; background-position: center 100%; background-origin: 0% 0%; background-repeat: no-repeat;}
 .about-hero-link { width: 100%; height: 62.25vh; background-image: url('assets/ReannaPortrait-cutout.png'); background-size: contain; background-position: center 100%; background-repeat: no-repeat; }
-.about-hero-link h1 {padding: 25px; color: var(--cream); text-shadow:0px 0px 5px black;}
+.about-hero-link h1 {padding: 25px; color: var(--cream); text-shadow:0px 0px 5px black; }
 .reanna-cutout {height: 100%;}
 
 .about-content {padding: 25px;}
 .about-content-text {width: 60%; }
-.about-content-text p {font-size: 18px;}
 .about-content-socials { padding-left: 50px;}
 .about-content-images {padding: 25px 0; }
 .about-content-images img {width: 100%;}
 .about-content-images img:nth-child(1) {margin-right: 50px}
 .social-icon {width: 25px; margin-right: 10px;}
-.social-link a {text-decoration: none; color: black;}
+.social-link a {text-decoration: none; color: black; font-family: 'PalaceRegular', serif!important; }
 .social-link {margin: 10px 0px}
 
 @media screen and (max-width: 700px) {
@@ -139,8 +141,19 @@ nav {width: 100%;}
     text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black;
     background-position: center 90%;
     -webkit-background-clip: text;
+    font-family: 'PalaceRegular', serif;
+    text-transform: uppercase;
     color: #E8E0D2;
     
+}
+
+.project-closer-button {
+  padding: 20px; background: white; position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 301;
+  border: 3px solid black;
+  border-radius: 5px;
 }
 
 .project-column {width: 27%;}
@@ -160,7 +173,7 @@ nav {width: 100%;}
 .photography-project-wrapper {border-radius: 8px; padding: 10px; margin-bottom: 25px; width: 100%}
 .photography-project { border-radius: 6px;  background-size: cover; background-repeat: no-repeat; background-position: center center;}
 
-
+.photography-project-wrapper:hover .open {transform: unset;}
 
 .project-column .photography-project {height: 100%;}
 .project-column-wide .photography-project {height: 100%}
@@ -168,6 +181,8 @@ nav {width: 100%;}
 #ItzcalliMarie {background-image: url('photography/ItzcalliMarie/F1000011.JPG'); }
 #SophieBabette {background-image: url('photography/SophieBabette/IMG_7807.jpg'); }
 #MarieLouise {background-image: url('photography/MarieLouise/Marie.JPG'); }
+#MonetCheung {background-image: url('photography/MonetCheung/Monet-11.jpg'); }
+#LeiShimabukuro {background-image: url('photography/LeiShimabukuro/AJK-10.jpg'); }
 
 /* Footer */
 .footer-container {padding: 25px;}
@@ -177,8 +192,7 @@ nav {width: 100%;}
 .fade-in{-webkit-animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both}
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
-
-
+#socialsContainer {position: relative;}
 #floatingDiv {
   width: 100px;
   height: 100px;
@@ -188,7 +202,13 @@ nav {width: 100%;}
   left: 90%;
   
 }
+#floatingDivContainer {
+  width: 100%; height: 100%; 
+  background-image: url('assets/luck-knife.svg'); background-size: 100%; background-repeat: no-repeat; background-position: center; transform: rotate(-45deg);
+}
 
+
+#floatingDivContainer:hover {background-image: url('assets/goodluckbuck.svg'); transform: rotate(0deg); cursor: pointer;} 
 
 .marquee {
   display: flex;

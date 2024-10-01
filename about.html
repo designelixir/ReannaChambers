@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/laa5csh.css">
     <script src="scripts/index.js"></script>
-        <script src="scripts/marquee.js" defer></script>
+    <script src="scripts/floatingKnife.js"></script>
+        <!-- <script src="scripts/marquee.js" defer></script> -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/1hb5B5WZ3rn5Jg4Go5WfH4OCp3E5ytns0KUWnP" crossorigin="anonymous"></script>
+
+        
 </head>
 
 <body class="flex-center-start flex-column" id="AboutContainer">
     
-            <!-- <div id="floatingDiv" class="flex-center-center" onclick="window.open('https://www.goodluckbuck.co/')">
-                <img src="assets/luck-knife.svg" style="width: 30px; transform: rotate(-45deg)" alt="luck knife"/>
-            </div> -->
+            
 
             
         <main class="flex-center-center flex-column">
@@ -32,14 +35,16 @@
             <section class="about-content flex-start-start">
                 <div class="about-content-text">
                     <br>
-                    <p>This could be your bio. This could be your bio.This could be your bio.This could be your bio.This could be your bio.This could be your bio. This could be your bio.This could be your bio.This could be your bio.This could be your bio.This could be your bio.This could be your bio.</p>
+                    <p>I&apos;m an artist, photographer, producer, and videographer currently based in Honolulu, Hawai&apos;i. My career began as a barista, where I developed a passion for creativity and connection. This led me to freelance work as an analog photographer, video editor, and colorist, honing my ability to manage multiple projects simultaneously.
+
+                        Since then, I&apos;ve gained experience in all facets of production, from art direction and styling to permitting, event coordination, and various pre- and post-production tasks. My work merges technical skill with creative intuition, capturing unique moments that evoke emotion and connection. Let&apos;s connect!</p>
                     <br>
                     <div class="flex-start-spacebetween about-content-images" >
                         <img src="assets/reanna-2.png" alt="photo of Reanna"/>
                         <img src="assets/about-additional.JPG" alt="additional photo of Reanna" />
                     </div>
                 </div>
-                <div class="about-content-socials">
+                <div class="about-content-socials" id="socialsContainer">
                     <div class="flex-center-start social-link">
                         <img src="assets/ig.svg" alt="Instagram icon" class="social-icon hover">
                         <a href="https://www.instagram.com/goodluckbuck.co/" target="_blank">@goodluckbuck.co</a>
@@ -53,63 +58,16 @@
                         <a href="mailto:reanna@reannachambers.com" target="_blank">reanna@reannachambers.com</a>
                     </div>
                     
+                    <div id="floatingDiv" class="flex-center-center" onclick="window.open('https://www.goodluckbuck.co/')">
+                        <div id="floatingDivContainer"></div>
+                    </div>
                 </div>
 
             </section>
-            <marquee-component></marquee-component>
+            <!-- <marquee-component></marquee-component> -->
         </main>
 
         <footer-component></footer-component>
 </body>
-<script>
-    $(document).ready(function () {
 
-                var newHeight = $('.about-hero').height() - $('#navigation').height();
-
-                console.log(newHeight)
-                
-                $(':root').css('--about-hero-link-height', newHeight + 'px');
-            
-
-            
-        });
-
-
-    $('.hover, a').on('mouseover', function () {
-        $('.star').addClass('hovercursor');
-    }).on('mouseleave', function () {
-        $('.star').removeClass('hovercursor');
-    });
-
-    $(document).ready(function () {
-        var $div = $('#floatingDiv');
-        var speedX = 0.5;
-        var speedY = 0.5;
-
-        function moveDiv() {
-            var windowWidth = $(window).width();
-            var windowHeight = $(window).height();
-            var divWidth = $div.width();
-            var divHeight = $div.height();
-            var newLeft = $div.position().left + speedX;
-            var newTop = $div.position().top + speedY;
-
-            if (newLeft < 0 || newLeft + divWidth > windowWidth) {
-                speedX = -speedX;
-            }
-            if (newTop < 0 || newTop + divHeight > windowHeight) {
-                speedY = -speedY;
-            }
-
-            $div.css({
-                left: newLeft,
-                top: newTop
-            });
-
-            requestAnimationFrame(moveDiv);
-        }
-
-        // moveDiv();
-    });
-</script>
 </html>

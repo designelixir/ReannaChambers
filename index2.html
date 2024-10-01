@@ -1,103 +1,129 @@
-
 <link rel="stylesheet" href="card.css">
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    
-    crossorigin="anonymous"></script>
-    <div class="flex-center-start">
-<div class="cards-container flex-center-center">
-    <div class="card">
-        <div class="card-inner">
-            <div class="card-front flex-center-center"><img src="assets/video-card.svg"
-                    style="height: 100%; padding: 15px;" />
-            </div>
-            <div class="card-back flex-center-center"><img src="assets/card-back2.svg" style="height: 100%;" /></div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-inner">
-            <div class="card-front flex-center-center"><img src="assets/production-card.svg"
-                    style="height: 100%; padding: 15px;" />
-            </div>
-            <div class="card-back flex-center-center"><img src="assets/card-back2.svg" style="height: 100%;" /></div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-inner">
-            <div class="card-front flex-center-center"><img src="assets/photo-card.svg"
-                    style="height: 100%; padding: 15px;" />
-            </div>
-            <div class="card-back flex-center-center"><img src="assets/card-back2.svg" style="height: 100%;" /></div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-inner">
-            <div class="card-front flex-center-center"><img src="assets/about-card.svg" style="height: 100%; padding: 15px;" /></div>
-            <div class="card-back flex-center-center"><img src="assets/card-back2.svg" style="height: 100%;" /></div>
-        </div>
-
-    </div>
-    </div>
-    
-    
-</div>
-
-<button id="shuffle-cards">Shuffle</button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 
 <script>
+// Declare the leaderCard array outside the shuffle function
+var leaderCard = ['#VideoCard', '#ProductionCard', '#PhotoCard', '#AboutCard' ];
 
-    $(document).ready(function () {
-            
-                // Step 1: Stack cards on top of each other with the back facing
-                $('.card').addClass('stacked');
+// Define leaderCard globally or within a higher scope to persist changes
+var leaderCard = ['#AboutCard', '#PhotoCard', '#ProductionCard', '#VideoCard'];
 
-                // Step 2: Flip cards one by one and move them to the right stack
-                $('.card').each(function (index) {
-                    var $this = $(this);
-                    setTimeout(function () {
-                        $this.removeClass('stacked').addClass('flipped');
-                        setTimeout(function () {
-                            $this.addClass('moved');
-                        }, 600); // Time for flipping animation to complete
-                    }, index * 1000); // Delay each card flip by 1 second
-                    $('.card-container').css("transform", "rotateY(25deg)")
-                });
+function shuffle(executeShift) {
+  // Helper function to remove all card-position classes from an element
+  function clearCardClasses(card) {
+    $(card).removeClass('card-position-1 card-position-2 card-position-3 card-position-4');
+  }
 
-                
+  if (executeShift) {
+    // This should shift the first card to the end of the array
+    console.log(executeShift);
+    leaderCard.push(leaderCard.shift());  // Mutate leaderCard, move first to the end
+    console.log("After shift:", leaderCard);
+  } else {
+    console.log("Didn't have to shift");
+  }
 
-                // Step 3: Fan out the cards after they are all moved
-                setTimeout(function () {
-                    var angles = [-15, 0, 15, 30]; // Angles for fanning out
-                    $('.card').each(function (index) {
-                        $(this).addClass('fanned').css({
-                            'transform': `translateY(-50px) rotateY(180deg) rotate(${angles[index]}deg) translateX(${index * 50}px)`
-                        });
-                    });
-                }, 5000); // Adjust this timeout to start fanning after the move is complete
-            });
+  // Loop through the cards in reverse order
+  for (var i = leaderCard.length - 1; i >= 0; i--) {
+    clearCardClasses(leaderCard[i]); // Remove any previous card-position classes
+    $(leaderCard[i]).removeAttr('style'); // Remove any inline styles
+    $(leaderCard[i]).addClass('card-position-' + (i + 1)); // Assign new class based on position
+    console.log('hi ', leaderCard[i], (i + 1));
+  }
 
-            $('#shuffle-cards').on('click', function () {
-                    var cards = $('.card');
-                    var positions = [];
-                    var zIndexes = [];
+  
 
-                    // Capture the current transforms and z-index values
-                    cards.each(function (index) {
-                        var transform = $(this).css('transform');
-                        var zIndex = $(this).css('z-index');
-                        positions.push(transform);
-                        zIndexes.push(zIndex);
-                    });
+  // Log the updated order
+  console.log('Updated leaderCard order: ', leaderCard);
+}
 
-                    // Shift the first card's position and z-index to the end
-                    positions.push(positions.shift());
-                    zIndexes.push(zIndexes.shift());
 
-                    // Apply the new transforms and z-index values
-                    cards.each(function (index) {
-                        $(this).css('transform', positions[index]);
-                        $(this).css('z-index', zIndexes[index]);
-                    });
-                });
-        
+
+
+    </script>
+
+<div class="flex-center-start">
+  <div class="cards-container flex-center-center">
+    <div class="card" id="VideoCard" onclick='window.open("ReannaChambers/video")'>
+      <div class="card-inner">
+        <div class="card-front flex-center-center">
+          <img src="assets/video-card.svg" style="height: 100%; padding: 15px;" />
+        </div>
+        <div class="card-back flex-center-center">
+          <img src="assets/card-back2.svg" style="height: 100%;" />
+        </div>
+      </div>
+    </div>
+    <div class="card" id="ProductionCard" onclick='window.open("ReannaChambers/production")'>
+      <div class="card-inner">
+        <div class="card-front flex-center-center">
+          <img src="assets/production-card.svg" style="height: 100%; padding: 15px;" />
+        </div>
+        <div class="card-back flex-center-center">
+          <img src="assets/card-back2.svg" style="height: 100%;" />
+        </div>
+      </div>
+    </div>
+    <div class="card" id="PhotoCard" onclick='window.open("ReannaChambers/photo")'>
+      <div class="card-inner">
+        <div class="card-front flex-center-center">
+          <img src="assets/photo-card.svg" style="height: 100%; padding: 15px;" />
+        </div>
+        <div class="card-back flex-center-center">
+          <img src="assets/card-back2.svg" style="height: 100%;" />
+        </div>
+      </div>
+    </div>
+    <div class="card" id="AboutCard" onclick='window.open("ReannaChambers/about")'>
+      <div class="card-inner">
+        <div class="card-front flex-center-center">
+          <img src="assets/about-card.svg" style="height: 100%; padding: 15px;" />
+        </div>
+        <div class="card-back flex-center-center">
+          <img src="assets/card-back2.svg" style="height: 100%;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button id="shuffle-cards" onclick="shuffle(true)">Shuffle</button>
+
+<script>
+  $(document).ready(function () {
+    // Step 1: Stack cards on top of each other with the back facing
+    $('.card').addClass('stacked');
+
+    // Step 2: Flip cards one by one and move them to the right stack
+    $('.card').each(function (index) {
+      var $this = $(this);
+      setTimeout(function () {
+        $this.removeClass('stacked').addClass('flipped');
+        setTimeout(function () {
+          $this.addClass('moved');
+        }, 600); // Time for flipping animation to complete
+      }, index * 1000); // Delay each card flip by 1 second
+      $('.card-container').css("transform", "rotateY(25deg)")
+    });
+
+   // Step 3: Fan out the cards after they are all moved
+setTimeout(function() {
+  // Call the shuffle function after a 5-second delay
+  shuffle(false);
+}, 5000); // Delay for 5 seconds
+
+    
+  });
+    
+
+    
+  
+    
+    
+  
+
+
+
+  
 </script>

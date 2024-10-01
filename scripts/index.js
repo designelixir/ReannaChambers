@@ -17,3 +17,23 @@ document.addEventListener('mousemove', function (e) {
 
       });
     });
+
+// Select all elements with the class 'hover' and all <a> tags
+const hoverElements = document.querySelectorAll('.hover, a');
+
+// // Loop through each element and add the event listeners
+// hoverElements.forEach(function(element) {
+//     element.addEventListener('mouseover', function() {
+//         // Add the 'hovercursor' class to all elements with the class 'star'
+//         document.querySelectorAll('.star').forEach(function(star) {
+//             star.classList.add('hovercursor');
+//         });
+//     });
+
+//     element.addEventListener('mouseleave', function() {
+//         // Remove the 'hovercursor' class from all elements with the class 'star'
+//         document.querySelectorAll('.star').forEach(function(star) {
+//             star.classList.remove('hovercursor');
+//         });
+//     });
+// });

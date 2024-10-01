@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/laa5csh.css">
     <link rel="stylesheet" href="cards.css">
     <script src="scripts/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="flex-center-start flex-column" id="PhotoContainer">
@@ -22,24 +23,18 @@
         
         <section class="small-hero" id="photographyHero">
             <header-component data-nav="Photo" id="navigation"></header-component>
-            <div class="flex-center-spacebetween" style="margin-top: 50px; position: absolute; left: 0;">
-                <img src="assets/filgery-4.svg" style="height: 60px; position: absolute; margin-top: 20px; margin-left: 25px;">
-                <img src="assets/filgery-4.svg" style="height: 60px; position: absolute; margin-top: 20px; margin-left: calc(100vw - 80px); transform: rotate(-270deg)">
-            </div>
-            <div>
+            
                 <div style="margin: 50px 75px 0">
-                    
                     <h1 class="engraved">Photo</h1>
-                    <!-- <p>Here is some text if you wanted to describe the photos page. Here is some text if you wanted to describe the
-                        photos page. </p> -->
                 </div>
-            </div>
+            
             
         </section>
         <section class="photography-container flex-start-center flex-wrap">
 
             <div class="project-column">
-                <div class="photography-project-wrapper photo-card-wrapper flex-center-center">
+                <!-- Itzcalli Marie -->
+                <div id="Project1" class="photography-project-wrapper photo-card-wrapper flex-center-center">
                     <div class="card hover card-slide-up">
                         <div class="back-facing flex-center-center">
                             <div class="photography-project flex-end-center" id="ItzcalliMarie">
@@ -47,55 +42,160 @@
                             </div>
                         </div>
                         <div class="front-facing flex-center-center">
-                            <div class="project-window">
-                                Some stuff
+                            <button class="project-closer-button hover">X</button>
+                            <div class="project-window flex-start-start flex-column">
+                                <div class="image-scroller">
+                                    <button class="scroll-btn prev-btn" id="prevBtn">&#10094;</button>
+                                    
+                                    <div class="scroller-container" id="scrollerContainer">
+                                      <div class="scroller-content">
+                                        <img src="photography/ItzcalliMarie/000031.JPG" alt="Image 1">
+                                        <img src="photography/ItzcalliMarie/F1000005.JPG" alt="Image 2">
+                                        <img src="photography/ItzcalliMarie/F1000011.JPG" alt="Image 3">
+                                        <img src="photography/ItzcalliMarie/F1000019.JPG" alt="Image 4">
+                                        <img src="photography/ItzcalliMarie/F1000022.JPG" alt="Image 5">
+                                        <img src="photography/ItzcalliMarie/F1000027.JPG" alt="Image 5">
+                                        <img src="photography/ItzcalliMarie/F1000035.JPG" alt="Image 5">
+                                        <img src="photography/ItzcalliMarie/F1000037.JPG" alt="Image 5">
+                                      </div>
+                                    </div>
+                                    
+                                    <button class="scroll-btn next-btn" id="nextBtn">&#10095;</button>
+                                  </div>
+                                  <div class="photo-project-description">
+                                    <h2>Itzcalli Marie</h2>
+                                  </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
+                <!-- Monet Cheung -->
+                <div class="photography-project-wrapper photo-card-wrapper flex-center-center">
                     <div class="card hover card-slide-up">
                         <div class="back-facing flex-center-center">
-                            <div class="photography-project flex-end-center" id="ItzcalliMarie">
-                                <h2 class="project-title">Itzcalli Marie</h2>
+                            <div class="photography-project flex-end-center" id="MonetCheung">
+                                <h2 class="project-title">Monet Cheung</h2>
                             </div>
                         </div>
                         <div class="front-facing flex-center-center">
-                            <div class="project-window">
-                                Some stuff
+                            <button class="project-closer-button hover">X</button>
+                            <div class="project-window flex-start-start flex-column">
+                                <div class="image-scroller">
+                                    <button class="scroll-btn prev-btn" id="prevBtn">&#10094;</button>
+                                    
+                                    <div class="scroller-container" id="scrollerContainer">
+                                      <div class="scroller-content">
+                                        <img src="photography/MonetCheung/Monet-1.jpg" alt="Monet Cheung Image 1">
+                                        <img src="photography/MonetCheung/Monet-2.jpg" alt="Monet Cheung Image 2">
+                                        <img src="photography/MonetCheung/Monet-3.jpg" alt="Monet Cheung Image 3">
+                                        <img src="photography/MonetCheung/Monet-8.jpg" alt="Monet Cheung Image 4">
+                                        <img src="photography/MonetCheung/Monet-11.jpg" alt="Monet Cheung Image 5">
+                                        <img src="photography/MonetCheung/Monet-14.jpg" alt="Monet Cheung Image 6">
+                                        <img src="photography/MonetCheung/Monet-33.jpg" alt="Monet Cheung Image 7">
+                                        <img src="photography/MonetCheung/Monet-35.jpg" alt="Monet Cheung Image 8">
+                                        <img src="photography/MonetCheung/Monet-36.jpg" alt="Monet Cheung Image 9">
+                                        <img src="photography/MonetCheung/Monet-47.jpg" alt="Monet Cheung Image 10">
+                                        
+                                      </div>
+                                    </div>
+                                    
+                                    <button class="scroll-btn next-btn" id="nextBtn">&#10095;</button>
+                                  </div>
+                                  <div class="photo-project-description">
+                                    <h2>Monet Cheung</h2>
+                                  </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
             
             <div class="project-column-wide">
+                <!-- Sophie Babette -->
                 <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
-                    <div class="card  hover card-slide-up" style="width: 30vw; height: 22vw;">
+                    <div class="card hover card-slide-up wide-card">
                         <div class="back-facing flex-center-center">
                             <div class="photography-project flex-end-center" id="SophieBabette">
                                 <h2 class="project-title">Sophie Babette</h2>
                             </div>
                         </div>
                         <div class="front-facing flex-center-center">
-                            <div class="project-window">
-                                Some stuff
+                            <button class="project-closer-button hover">X</button>
+                            <div class="project-window flex-start-start flex-column">
+                                <div class="image-scroller">
+                                    <button class="scroll-btn prev-btn" id="prevBtn">&#10094;</button>
+                                    
+                                    <div class="scroller-container" id="scrollerContainer">
+                                        <div class="scroller-content">
+                                        <img src="photography/SophieBabette/IMG_7807.jpg" alt="Sophie Babette Photo 1">
+                                        <img src="photography/SophieBabette/IMG_7808.jpg" alt="Sophie Babette Photo 2">
+                                        <img src="photography/SophieBabette/IMG_7809.jpg" alt="Sophie Babette Photo 3">
+                                        <img src="photography/SophieBabette/IMG_7810.jpg" alt="Sophie Babette Photo 4">
+                                        <img src="photography/SophieBabette/IMG_7811.jpg" alt="Sophie Babette Photo 5">
+                                        <img src="photography/SophieBabette/IMG_7812.jpg" alt="Sophie Babette Photo 6">
+                                        <img src="photography/SophieBabette/IMG_7813.jpg" alt="Sophie Babette Photo 7">
+                                        <img src="photography/SophieBabette/IMG_7814.jpg" alt="Sophie Babette Photo 8">
+                                        <img src="photography/SophieBabette/IMG_7815.jpg" alt="Sophie Babette Photo 9">
+                                        <img src="photography/SophieBabette/IMG_7816.jpg" alt="Sophie Babette Photo 10">
+                                        <img src="photography/SophieBabette/IMG_7817.jpg" alt="Sophie Babette Photo 11">
+                                        <img src="photography/SophieBabette/IMG_7818.jpg" alt="Sophie Babette Photo 12">
+                                    
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="scroll-btn next-btn" id="nextBtn">&#10095;</button>
+                                    </div>
+                                    <div class="photo-project-description">
+                                    <h2>Sophie Babette</h2>
+                                    <p>HMU by Remy Reed</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            
-                <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
-                    <div class="card hover card-slide-up" style="width: 30vw; height: 22vw;">
+                <!-- Lei Shimabukuro for Anna Jean Kos -->
+                <div class="photography-project-wrapper photo-card-wrapper flex-center-center" ></div>
+                    <div class="card hover card-slide-up wide-card">
                         <div class="back-facing flex-center-center">
-                            <div class="photography-project flex-end-center" id="SophieBabette">
-                                <h2 class="project-title">Sophie Babette</h2>
+                            <div class="photography-project flex-end-center" id="LeiShimabukuro">
+                                <h2 class="project-title">Lei Shimabukuro</h2>
+                                <h3 class="project-title">Anna Jean Kos</h3>
                             </div>
                         </div>
                         <div class="front-facing flex-center-center">
-                            <div class="project-window">
-                                Some stuff
+                            <button class="project-closer-button hover">X</button>
+                            <div class="project-window flex-start-start flex-column">
+                                <div class="image-scroller">
+                                    <button class="scroll-btn prev-btn" id="prevBtn">&#10094;</button>
+                                    
+                                    <div class="scroller-container" id="scrollerContainer">
+                                        <div class="scroller-content">
+                                        <img src="photography/LeiShimabukuro/AJK-10.jpg" alt="AJK Photo 1">
+                                        <img src="photography/LeiShimabukuro/AJK-14.jpg" alt="AJK Photo 2">
+                                        <img src="photography/LeiShimabukuro/AJK-15.jpg" alt="AJK Photo 3">
+                                        <img src="photography/LeiShimabukuro/AJK-16.jpg" alt="AJK Photo 4">
+                                        <img src="photography/LeiShimabukuro/AJK-17.jpg" alt="AJK Photo 5">
+                                        <img src="photography/LeiShimabukuro/AJK-22.jpg" alt="AJK Photo 6">
+                                        <img src="photography/LeiShimabukuro/AJK-24.jpg" alt="AJK Photo 7">
+                                        <img src="photography/LeiShimabukuro/AJK-25.jpg" alt="AJK Photo 8">
+                                        <img src="photography/LeiShimabukuro/AJK-27.jpg" alt="AJK Photo 9">
+                                        <img src="photography/LeiShimabukuro/AJK-31.jpg" alt="AJK Photo 10">
+                                        <img src="photography/LeiShimabukuro/AJK-36.jpg" alt="AJK Photo 11">
+                                        <img src="photography/LeiShimabukuro/AJK-38.jpg" alt="AJK Photo 12">
+                                        
+                                        
+                                    
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="scroll-btn next-btn" id="nextBtn">&#10095;</button>
+                                    </div>
+                                    <div class="photo-project-description">
+                                    <h2>The Gemini Set</h2>
+                                    <p>A collaboration between Goodluckbuck and Anna Jean Kos. V1 SS22</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -111,34 +211,42 @@
                             </div>
                         </div>
                         <div class="front-facing flex-center-center">
-                            <div class="project-window">
-                                Some stuff
+                            <button class="project-closer-button hover">X</button>
+                            <div class="project-window flex-start-start flex-column">
+                                <div class="image-scroller">
+                                    <button class="scroll-btn prev-btn" id="prevBtn">&#10094;</button>
+                                    
+                                    <div class="scroller-container" id="scrollerContainer">
+                                      <div class="scroller-content">
+                                        <img src="photography/MarieLouise/000008.JPG" alt="Marie Louise Photo 1">
+                                        <img src="photography/MarieLouise/000009.JPG" alt="Marie Louise Photo 2">
+                                        <img src="photography/MarieLouise/000010.JPG" alt="Marie Louise Photo 3">
+                                        <img src="photography/MarieLouise/000011.JPG" alt="Marie Louise Photo 4">
+                                        <img src="photography/MarieLouise/000013.JPG" alt="Marie Louise Photo 5">
+                                        <img src="photography/MarieLouise/000014.JPG" alt="Marie Louise Photo 6">
+                                        <img src="photography/MarieLouise/000016.JPG" alt="Marie Louise Photo 7">
+                                        <img src="photography/MarieLouise/000021.JPG" alt="Marie Louise Photo 8">
+                                        <img src="photography/MarieLouise/000023.JPG" alt="Marie Louise Photo 9">
+                                        <img src="photography/MarieLouise/000024.JPG" alt="Marie Louise Photo 10">
+                                        <img src="photography/MarieLouise/000025.JPG" alt="Marie Louise Photo 11">
+                                        <img src="photography/MarieLouise/000030.JPG" alt="Marie Louise Photo 12">
+                                        <img src="photography/MarieLouise/000032.JPG" alt="Marie Louise Photo 13">
+                                        <img src="photography/MarieLouise/000035.JPG" alt="Marie Louise Photo 14">
+                                        
+                                   
+                                      </div>
+                                    </div>
+                                    
+                                    <button class="scroll-btn next-btn" id="nextBtn">&#10095;</button>
+                                  </div>
+                                  <div class="photo-project-description">
+                                    <h2>Marie Louise</h2>
+                                  </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="photography-project-wrapper photo-card-wrapper flex-center-center" >
-                    <div class="card hover card-slide-up">
-                        <div class="back-facing flex-center-center">
-                            <div class="photography-project flex-end-center" id="MarieLouise">
-                                <h2 class="project-title">Marie Louise</h2>
-                            </div>
-                        </div>
-                        <div class="front-facing flex-center-center">
-                            <div class="project-window">
-                                Some stuff
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
             </div>
-
-            
-
-            
-
         </section>
         
     </main>
@@ -147,44 +255,95 @@
     <footer-component></footer-component>
 </body>
 <script>
+// Use querySelectorAll to target all .image-scroller instances
+document.querySelectorAll('.image-scroller').forEach(scroller => {
+    const prevBtn = scroller.querySelector('.prev-btn');
+    const nextBtn = scroller.querySelector('.next-btn');
+    const scrollerContainer = scroller.querySelector('.scroller-container');
+    const scrollerContent = scroller.querySelector('.scroller-content');
+    const images = scrollerContent.querySelectorAll('img'); // Assuming the images are direct children
 
-   
+    let scrollAmount = 0;
 
-$(document).ready(function () {
-        $('.photo-card-wrapper').addClass('slide-in');
-        $('.photo-card-wrapper').addClass('open');
+    // Function to scroll to the next image based on its width
+    nextBtn.addEventListener('click', () => {
+        const maxScroll = scrollerContent.scrollWidth - scrollerContainer.clientWidth;
 
-        $('.photo-card-wrapper').on('click', function () {
-        if ($(this).hasClass('open')) {
-            $(this).removeClass('open')
-            
-            $(this).css({"position":"fixed", "top": "0", "z-index": "300", "left": "0"} )
-            $(this).find('.card').addClass('fullscreen')
-            $(this).find('.project-window').css('display', 'block')
-            
-
-        } else if ($(this).find('.card').hasClass('fullscreen') && $(this).hasClass('open')) {
-            $(this).find('card').css('border', '20px solid blue')
-
+        // Find the next image based on the current scroll position
+        let currentImageIndex = Math.floor(scrollAmount / scrollerContainer.clientWidth);
+        if (currentImageIndex < images.length - 1) {
+            const nextImage = images[currentImageIndex + 1];
+            scrollAmount += nextImage.offsetWidth;
         } else {
-            $(this).addClass('open');
-            
+            scrollAmount = maxScroll; // Loop back to the beginning
         }
 
+        // Ensure the scroll amount does not exceed the max scrollable width
+        scrollAmount = Math.min(scrollAmount, maxScroll);
+
+        scrollerContent.style.transform = `translateX(-${scrollAmount}px)`;
+    });
+
+    // Function to scroll to the previous image based on its width
+    prevBtn.addEventListener('click', () => {
+        // Find the current image based on the scroll position
+        let currentImageIndex = Math.floor(scrollAmount / scrollerContainer.clientWidth);
+        if (currentImageIndex > 0) {
+            const prevImage = images[currentImageIndex - 1];
+            scrollAmount -= prevImage.offsetWidth;
+        } else {
+            scrollAmount = scrollerContent.scrollWidth - scrollerContainer.clientWidth; // Loop back to the end
+        }
+
+        // Ensure the scroll amount does not go below 0
+        scrollAmount = Math.max(scrollAmount, 0);
+
+        scrollerContent.style.transform = `translateX(-${scrollAmount}px)`;
     });
 });
 
-    $('.hover, a').on('mouseover', function () {
-        $('.star').addClass('hovercursor');
-    }).on('mouseleave', function () {
-        $('.star').removeClass('hovercursor');
-    });
+
+$(document).ready(function () {
+        $('.photo-card-wrapper').addClass('slide-in');
+        $('.photo-card-wrapper').addClass('intro-flip');
+        $('.photo-card-wrapper').addClass('closed');
+
+        
+        $('.photo-card-wrapper').on('click', function () {
+        if ($(this).hasClass('closed')) {
+            $(this).removeClass('closed')
+            $(this).removeClass('intro-flip')
+            
+            
+            $(this).addClass('fixed-position')
+            $(this).find('.card').addClass('fullscreen')
+            $(this).find('.project-closer-button').addClass('ready-to-close')
+            $(this).find('.project-window').css('display', 'block')
+            
+
+        }
+    }
+    )
+    
+        $('.project-closer-button').on('click', function () {
+            console.log("got this one")
+            $(this).closest('.card').addClass('close-card')
+            $(this).closest('.photo-card-wrapper').removeClass('fixed-position')
+            $(this).closest('.photo-card-wrapper .card').removeClass('fullscreen')
+
+
+        }
+
+    );
+});
+
+    
 
 document.addEventListener('DOMContentLoaded', function () {
     //initial animation
     var cards = document.querySelectorAll('.card');
     cards.forEach(function (card) {
-        card.classList.add('open');
+        card.classList.add('intro-flip');
     });
 });
 </script>

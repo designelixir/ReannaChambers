@@ -1,8 +1,8 @@
 .cards-container {
     position: relative;
-    width: 300px;
-    height: 80vh;
-    
+    width: 90vw;
+    height: calc(100vh - 100px);
+    margin-top: 30px;
 }
 
 .card {
@@ -10,7 +10,7 @@
     height: 400px;
     position: absolute;
     
-    transition: transform 1s, left 1s;
+    transition: transform 1s, left 0.1s;
     transform-style: preserve-3d;
     transform: translateY(0) rotateY(0deg);
     left: 0;
@@ -21,7 +21,7 @@
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
-    transition: transform 0.6s;
+    transition: transform 0.1s;
     
 }
 
@@ -57,12 +57,12 @@
 }
 
 .moved {
-    left: 320px;
+    left: calc((90vw / 2) - 50px);
     transform: translateY(-50px) rotateY(180deg);
 }
 
 .fanned {
-    transition: transform 1s;
+    transition: transform 0.1s;
 }
 
 .flex-center-center {
@@ -71,6 +71,44 @@
     align-items: center;
 }
 
-.card:hover {
+.card .fanned:hover {
     cursor: pointer;
+    transform: scale(1.1)
 }
+
+.card .closed:hover {margin-top: -20px; margin-bottom: 50px;}
+
+.card-position-4 {
+    transform: rotate(15deg) rotateY(180deg) translateY(-48px) translateX(12px);
+    z-index: -3;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for transforms */
+    pointer-events: none;
+  }
+  
+  .card-position-3 {
+    transform: rotateY(180deg) translateY(-50px) translateX(20px);
+    z-index: -2;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for transforms */
+    pointer-events: none;
+  }
+  
+  .card-position-2 {
+    transform: rotate(-15deg) rotateY(180deg) translateY(-50px) translateX(20px);
+    z-index: -1;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for transforms */
+    pointer-events: none;
+  }
+  
+  .card-position-1 {
+    transform: rotate(-30deg) rotateY(180deg) translateY(-50px) translateX(20px);
+    z-index: 1;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for transforms */
+    pointer-events: all;
+  }
+  
+  .card-position-1:hover {
+    transform: scale(1.25) rotateY(180deg) !important;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition when hovered */
+  }
+  

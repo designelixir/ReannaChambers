@@ -56,11 +56,7 @@
 
 }
 
-/* .card:hover {
-    transform: rotatey(45deg) translatex(0px) translatey(0px);
-} */
 
-.card-slide-up:hover {margin-top: -20px; margin-bottom: 50px;}
 .photo-card-wrapper {opacity: 0;
     transform: translateX(-100%);
     transition: transform 0.5s linear
@@ -72,11 +68,8 @@
     transform: translateX(0);
 }
 
-.photo-card-wrapper.open .card {
-        transition-duration: 1s;
-        transform: rotatey(-180deg) translatex(0px) translatey(0px);
-    
-}
+/* initial animation  */
+.photo-card-wrapper.intro-flip .card {transition-duration: 1s; transform: rotatey(-180deg) translatex(0px) translatey(0px);}
 
 
 .fullscreen {
@@ -92,29 +85,15 @@
     
 }
 
-.full-screen .front-facing {background-size: 100%}
 
 
 .card-wrapper #aboutCard {transform: rotate(-35deg); }
 #photoCard {transform: rotate(-15deg); margin-left: -150px;}
 #productionCard {transform: rotate(5deg); margin-left: -150px; margin-bottom: -50px;}
 #videoCard {transform: rotate(25deg); margin-left: -175px; margin-bottom: -125px;}
-.card-wrapper.open {
-    
-    transform: rotateY(-180deg) rotate(70deg);
-    
-}
+.card-wrapper.intro-flip {transform: rotateY(-180deg) rotate(70deg);}
 
-/* .card-wrapper.open .card {
-    animation: center-card 1s forwards;
-    
-}
 
-@keyframes center-card {
-    0%{transform: rotate(70deg); top: 0; z-index: 0; }
-    100% {transform: rotate(-160deg); top: -200px; z-index: 30; animation: grow-card 2s forwards;}
-    
-} */
 
 
 
@@ -130,7 +109,7 @@
     border-radius: 5px;
 }
 
-.project-window {display: none; width: 90%; height: 90%; border: 4px solid black;  background: #ecf0f1; border-radius: 25px; padding: 2.5vh 2.5vw;}
+.project-window {display: none; width: 95%; height: 95%; border: 4px solid black;  background: #ecf0f1; padding: 2.5%; margin: 2.5%;}
 
 .project-column .front-facing {background-image: url('assets/card-back2.svg'); background-size: 110%; background-repeat: no-repeat; background-position: center;}
 .project-column-wide .front-facing {background-image: url('assets/card-back-wide.svg'); background-size: 110%; background-repeat: no-repeat; background-position: center; }
@@ -173,3 +152,102 @@
     text-align: center;
     overflow: hidden;
 }
+
+.photo-card-wrapper.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.photo-card-wrapper.intro-flip .card {
+    transition-duration: 1s;
+    transform: rotateY(-180deg);
+}
+
+.fullscreen {
+    width: 90vw !important;
+    height: 90vh !important;
+    transition: all 1s ease;
+    z-index: 9999;
+}
+
+.fullscreen .front-facing {
+    background-size: 50%;
+    background-repeat: repeat;
+}
+
+.front-facing {
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
+}
+
+.back-facing {
+    transform: rotateY(180deg);
+}
+
+.close-card {transform: rotateY(180deg);}
+.fixed-position {position: fixed; top: 0; z-index: 300; left: 0;}
+
+/* Basic styling for the image scroller */
+.image-scroller {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 80%;
+  }
+  
+  /* The container that holds the images */
+  .scroller-container {
+    overflow-x: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .scroller-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .scroller-content img {
+    height: 100%; 
+    width: auto;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Scroll buttons */
+  .scroll-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .wide-card {
+    width: 30vw; height: 22vw;
+  }
+
+  .close-card .photo-project-description {
+    opacity: 0;
+  }
+
+  

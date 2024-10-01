@@ -10,69 +10,32 @@
     <title>Reanna Chambers | Home</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="https://use.typekit.net/laa5csh.css">
     <script src="scripts/index.js"></script>
+    <script src="scripts/flipCardAnimation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/1hb5B5WZ3rn5Jg4Go5WfH4OCp3E5ytns0KUWnP" crossorigin="anonymous"></script>
+
     
     
 </head>
 
 <body class="flex-center-start flex-column" id="Home">
-    <div class="star star1">&#x2726; <span style="font-size: 14px; padding-left: 30px;">&#x2726;</span></div>
-    <div class="star star2"><span style="font-size: 14px; padding-left: 20px;">&#x2726;</span> &#x2726;</div>
-    <div class="star star3">&#x2726;</div>
-    <!-- <h1 class="logo  hover" style="font-family: 'medusa', sans-serif; margin-bottom: -15px; font-size: 48px; text-align: center;">Reanna Chambers</h1> -->
-     <img src="assets/logo2.svg" class="hover" style="height: 30px; margin-top: 10px;" id="changeLogo" alt="logo" onclick="changeLogo()"/>
+    <div class="star star1"><img src="./assets/sharp-star.svg" style="height: 20px;"/><span style="font-size: 14px; padding-left: 30px;"><img src="./assets/sharp-star.svg" style="height: 20px;"/></span></div>
+    <div class="star star2"><span style="font-size: 14px; padding-left: 20px;"><img src="./assets/sharp-star.svg" style="height: 30px;"/></span> <img src="./assets/sharp-star.svg" style="height: 20px;"/></div>
+    <div class="star star3"><img src="./assets/sharp-star.svg" style="height: 40px;"/></div>
+    
+     <img src="assets/reanna-chambers-logo-outlined.svg" class="hover homepage-logo" alt="Reanna Chambers logo"/>
     <main class="flex-center-center flex-column home-wrapper fade-in">
         <div class="flex-start-spacebetween filgery-container">
             <div class="filgery-bg"></div>
             <div class="filgery-bg" style="transform: rotate(-270deg)"></div>
         </div>
         <section class="homepage-hero">
-            <button class="shuffle-button hover" >shuffle <span id="currentFilgery"></span></button>
+            
             <!-- onclick="switchFilgery()" - add this back to the above button to switch filgery designs -->
-            <div class="container">
-                <div class="card-wrapper">
-                    <div class="card card-slide-up" id="aboutCard" onclick="window.open('/ReannaChambers/about', '_self')">
-                        <div class="front-facing flex-center-center">
-                            <img src="assets/about-card.svg" style="height: 100%; padding: 15px;"/>
-                        </div>
-                        <div class="back-facing flex-center-center">
-                            <img src="assets/card-back2.svg" style="height: 100%;"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-wrapper">
-                <div class="card card-slide-up" id="photoCard" onclick="window.open('/ReannaChambers/photo', '_self')">
-                    <div class="front-facing flex-center-center">
-                        <img src="assets/photo-card.svg" style="height: 100%; padding: 15px;"/>
-                    </div>
-                    <div class="back-facing flex-center-center">
-                        <img src="assets/card-back2.svg" style="height: 100%;"/>
-                    </div>
-                </div>
-                </div>
-                <div class="card-wrapper">
-                <div class="card card-slide-up" id="productionCard" onclick="window.open('/ReannaChambers/production', '_self')">
-                    <div class="front-facing flex-center-center">
-                        <img src="assets/production-card.svg" style="height: 100%; padding: 15px;"/>
-                    </div>
-                    <div class="back-facing flex-center-center">
-                        <img src="assets/card-back2.svg" style="height: 100%;"/>
-                    </div>
-                </div>
-                </div>
-                <div class="card-wrapper">
-                <div class="card card-slide-up" id="videoCard" onclick="window.open('/ReannaChambers/video', '_self')">
-                    <div class="front-facing flex-center-center">
-                        <img src="assets/video-card.svg" style="height: 100%; padding: 15px;"/>
-                    </div>
-                    <div class="back-facing flex-center-center">
-                        <img src="assets/card-back2.svg" style="height: 100%;"/>
-                    </div>
-                </div>
-                </div>
-            </div>
+            <flip-card-animation></flip-card-animation>
+            
             <div class="goodluckbuck-header flex-center-center flex-column hover" onclick="window.open('https://www.goodluckbuck.co/')" >
                 <img src="assets/goodluckbuck.svg" alt="GoodLuckBuck logo" style="background-image: url('assets/paper.png'); background-size: 50vw; width: 90px; padding: 15px; margin-top: -35px;"/>
               </div>
