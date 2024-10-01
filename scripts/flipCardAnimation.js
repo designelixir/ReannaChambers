@@ -10,7 +10,7 @@
           <div class="flex-center-center">
           
             <div class="cards-container flex-center-center">
-              <div class="card" id="VideoCard" onclick='window.open("ReannaChambers/video")'>
+              <div class="card" id="VideoCard" onclick='window.open("/video")'>
                 <div class="card-inner">
                   <div class="card-front flex-center-center">
                     <img src="assets/video-card.svg" style="height: 100%; padding: 15px;" />
@@ -20,7 +20,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card" id="ProductionCard" onclick='window.open("ReannaChambers/production")'>
+              <div class="card" id="ProductionCard" onclick='window.open("/production")'>
                 <div class="card-inner">
                   <div class="card-front flex-center-center">
                     <img src="assets/production-card.svg" style="height: 100%; padding: 15px;" />
@@ -30,7 +30,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card" id="PhotoCard" onclick='window.open("ReannaChambers/photo")'>
+              <div class="card" id="PhotoCard" onclick='window.open("/photo")'>
                 <div class="card-inner">
                   <div class="card-front flex-center-center">
                     <img src="assets/photo-card.svg" style="height: 100%; padding: 15px;" />
@@ -40,7 +40,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card" id="AboutCard" onclick='window.open("ReannaChambers/about")'>
+              <div class="card" id="AboutCard" onclick='window.open("/about")'>
                 <div class="card-inner">
                   <div class="card-front flex-center-center">
                     <img src="assets/about-card.svg" style="height: 100%; padding: 15px;" />
