@@ -111,8 +111,8 @@
 
 .project-window {display: none; width: 100%; height: 100%; border: 4px solid black;  background: #ecf0f1; padding: 2.5%;}
 
-.project-column .front-facing {background-image: url('assets/card-back2.svg'); background-size: 110%; background-repeat: no-repeat; background-position: center;}
-.project-column-wide .front-facing {background-image: url('assets/card-back-wide.svg'); background-size: 110%; background-repeat: no-repeat; background-position: center; }
+.project-column .front-facing {background-image: url('assets/unnamed.jpg'); background-size: 110%; background-repeat: no-repeat; background-position: center;}
+.project-column-wide .front-facing {background-image: url('assets/unnamed.jpg'); background-size: 110%; background-repeat: no-repeat; background-position: center; }
 
 .side-card .front-facing {
     transform: rotateY( 0deg ) translateZ( 2px );

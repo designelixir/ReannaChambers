@@ -25,12 +25,13 @@
     <div class="star star2"><span style="font-size: 14px; padding-left: 20px;"><img src="./assets/sharp-star.svg" style="height: 30px;"/></span> <img src="./assets/sharp-star.svg" style="height: 20px;"/></div>
     <div class="star star3"><img src="./assets/sharp-star.svg" style="height: 40px;"/></div>
     <div class="grainy-overlay"><div class="grainy-overlay-gradient"></div></div>
-     <img src="assets/reanna-chambers-logo-outlined.svg" class="hover homepage-logo" alt="Reanna Chambers logo"/>
+     <img src="assets/reanna-chambers-logo-outlined.svg" class="hover homepage-logo" onclick="changeLogo()" alt="Reanna Chambers logo" id="changeLogo"/>
     <main class="flex-center-center flex-column home-wrapper fade-in">
-        <div class="flex-start-spacebetween filgery-container">
-            <div class="filgery-bg"></div>
-            <div class="filgery-bg" style="transform: rotate(-270deg)"></div>
-        </div>
+        <!-- <div class="flex-start-spacebetween filgery-container">
+            <div class="filgery-bg" style="transform: rotate(-180deg)"></div>
+            
+            <div class="filgery-bg" style="transform: rotate(270deg)"></div>
+        </div> -->
         <section class="homepage-hero">
             
             <!-- onclick="switchFilgery()" - add this back to the above button to switch filgery designs -->
@@ -42,13 +43,14 @@
             
 
             
+
             
         </section>
         
-        <div class="flex-start-spacebetween filgery-container" style="transform:rotate(-180deg)">
+        <!-- <div class="flex-start-spacebetween filgery-container" style="transform:rotate(-180deg)">
             <div class="filgery-bg"></div>
             <div class="filgery-bg" style="transform: rotate(-270deg)"></div>
-        </div>
+        </div> -->
     </main>
 
     
@@ -95,11 +97,12 @@ function changeLogo() {
     var $image = $('#changeLogo');
 
     console.log($image.attr('src'));
-    if ($image.attr('src') === 'assets/logo2.svg') {
-        console.log("nice");
-        $image.attr('src', 'assets/logo3.svg');
+    if ($image.attr('src') === 'assets/reanna-chambers-logo-outlined.svg') {
+        $image.attr('src', 'assets/reanna-chambers-alt.svg');
+        $image.css({'height': '50px', 'margin-bottom': '5px'})
     } else {
-        $image.attr('src', 'assets/logo2.svg');
+        $image.attr('src', 'assets/reanna-chambers-logo-outlined.svg');
+        $image.css({'height': '75px', 'margin-bottom': '0px'})
     }
 }
 </script>

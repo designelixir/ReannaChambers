@@ -14,7 +14,7 @@ class Header extends HTMLElement {
           <a href="/about" class="nav-link hover engraved" id="About">About</a>
           <a href="/photo" class="nav-link hover engraved" id="Photo">Photo</a>
           
-          <img src="assets/reanna-chambers-logo.svg" class="desktop-logo hover" alt="logo" onclick="window.open('/', '_self')"/>
+          <img src="assets/reanna-chambers-logo.svg" class="desktop-logo hover" alt="logo" onclick="changeLogo()" id="changeLogo"/>
           <a href="/production" class="nav-link hover engraved" id="Production">Production</a>
           <a href="/video" class="nav-link hover engraved" id="Video">Video</a>
           
@@ -38,16 +38,16 @@ $(document).ready(function () {
   $('#' + customName).addClass('active-link')
 });
 
-// function changeLogo() {
-//     var $image = $('#changeLogo');
 
-//     console.log($image.attr('src'));
-//     if ($image.attr('src') === 'assets/logo2.svg') {
-//         console.log("nice");
-//         $image.attr('src', 'assets/logo3.svg');
-//         $image.css('height', '50px')
-//     } else {
-//         $image.attr('src', 'assets/logo2.svg');
-//         $image.css('height', '20px')
-//     }
-// }
+function changeLogo() {
+    var $image = $('#changeLogo');
+
+    if ($image.attr('src') === 'assets/reanna-chambers-alt.svg') {
+        
+        $image.attr('src', 'assets/reanna-chambers-logo.svg');
+        $image.css('height', '75px')
+    } else {
+        $image.attr('src', 'assets/reanna-chambers-alt.svg');
+        $image.css('height', '50px')
+    }
+}

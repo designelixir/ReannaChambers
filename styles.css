@@ -81,12 +81,10 @@ p {margin: 5px 0; font-weight: 100; font-style: normal; font-size: 16px; font-fa
 
 .nav-link {margin: 0 5px; font-size: 22px; font-family: 'PalaceRegular', serif; font-weight: 500; color: black; text-decoration: none; text-align: center;}
 
-.logo-container {max-height: 100px; -webkit-animation:fade-in 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 1s cubic-bezier(.39,.575,.565,1.000) both}
-.logo {max-height: 75px;}
-.logo-icon {width: 75px;}
+
 .mobile-logo {display: none; height: 75px;}
 nav {width: 100%;}
-.homepage-logo {height: 100px; margin-top: 10px; margin-bottom: -35px; z-index: 2;}
+.homepage-logo {height: 75px; margin-top: 10px; margin-bottom: -35px; z-index: 2;}
 .paper-bg {background-image: url('assets/paper.png'); background-size: 100%; background-position: center center;}
 .desktop-logo {height: 75px;}
 .small-hero { width: 100%;}
@@ -107,12 +105,12 @@ nav {width: 100%;}
 /* Homepage Hero */
 #Home { height: 100vh; overflow-y: hidden;}
 .home-wrapper {padding: 2.5vh 2.5vh;}
-.homepage-hero { border: 2px solid black; height: 100%; width: 100%; margin: -230px 2.5vw}
+.homepage-hero { height: 100%; width: 100%; margin: -230px 2.5vw; background-image: url('assets/circle-corner-bg-wide.png'); background-repeat: no-repeat; background-position: center; background-size: 100% 100%}
 .filgery-container {width: 100%; }
 .filgery-container img {max-width: 100px; min-width: 100px; width: 100%;}
 #currentFilgery {font-size: 14px;}
-.filgery-bg {height: 60px; width: 60px; background-image: url('assets/filgery-4.svg'); margin: 10px; background-size: 60px 60px; background-repeat: no-repeat;}
-.shuffle-button {font-size: 24px; position: fixed; top: 125px; left: 53px; border: 1px solid black; padding: 5px 20px; border-radius: 4px; font-family: 'carol-gothic', sans-serif; z-index: 10;}
+.filgery-bg {height: 60px; width: 60px; background-image: url('assets/circle-corner.svg'); margin: 10px; background-size: 60px 60px; background-repeat: no-repeat;}
+.shuffle-button {font-size: 24px; position: fixed; top: 125px; left: 125px; border: 1px solid black; padding: 5px 20px; border-radius: 4px; font-family: 'carol-gothic', sans-serif; z-index: 10;}
 
 #aboutCard {transform: rotate(-45degrees)}
 
@@ -354,16 +352,3 @@ background-image: url('assets/luck-knife-inverted.svg');
 }
 
 
-.grainy-overlay {
-  background-size: cover; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: 1px solid teal; z-index: 999; opacity: 0.5; pointer-events: none;}
-  .grainy-overlay-gradient {
-    
-      width: 100vw;
-      height: 100vh;
-      filter: contrast(100%) brightness(200%);
-      background: 
-      linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-      url('assets/grainy-overlay.svg');
-    
-    
-  }
