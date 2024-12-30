@@ -1,21 +1,20 @@
-import type { Metadata } from "next";
-import "./globals.css";
+'use client';
 
-export const metadata: Metadata = {
-  title: "Reanna Chambers",
-  description: "Portfolio website for Reanna Chambers",
-};
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+import './globals.css';
+
+
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <div className="noise-overlay">
-      <body>{children}</body>
-      </div>
+      <body>
+        
+          
+          {children}
+        
+        
+      </body>
     </html>
   );
 }

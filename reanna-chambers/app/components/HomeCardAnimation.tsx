@@ -3,6 +3,7 @@ import React from "react";
 import "./component-styles/CardAnimation.css"; // Add corresponding styles
 import PlayingCardFormat from "./PlayingCardFormat";
 import gsap from "gsap";
+import next from "next";
 
 // Declare the types for card arrays and timeout
 const cardNames = ["PhotoCard", "ProductionCard", "VideoCard", "AboutCard"];
@@ -42,17 +43,55 @@ function wobbleCards() {
   resetInactivityTimer();
 }
 
-// Add event listener to reset the inactivity timer on click
-window.addEventListener("click", resetInactivityTimer);
-
 // Start the inactivity timer when the page loads
 resetInactivityTimer();
 
 function handleFlip(cardId: string) {
   const card = document.getElementById(cardId);
+  const cardInner = document.querySelector(`#${cardId} .card-inner`)
+
   if (card) {
     card.classList.toggle("flipped");
   }
+
+}
+
+function expandCard(cardId: string, destination: string){
+  const card = document.getElementById(cardId);
+  const cardInner = document.querySelector(`#${cardId} .card-inner`)
+
+  if (card) {
+    animation3(cardId)
+    const delay = 0.5; // Adjust the delay as needed
+    const flipDuration = 0.5; // Assumed flip animation duration
+    const totalDelay = flipDuration + delay;
+    
+  // // Apply GSAP animation
+  gsap.delayedCall(totalDelay, () => {
+    handleFlip(cardId)
+  });
+
+  gsap.delayedCall(totalDelay * 2, () => {
+    if (cardInner) {
+      gsap.to(cardInner, {
+        duration: 1, // Adjust duration for smoothness
+        width: "300vw",
+        minWidth: "300vw",
+        minHeight: "300vh",
+        borderRadius: "0px",
+        borderWidth: "2px",
+        borderColor: "blue",
+        transformOrigin: "center center",
+        ease: "power2.out",
+        onUpdate: () => {
+          if (destination) {
+            window.location.href = destination;
+          }
+        },
+      });
+    }
+  });
+} 
 }
 
 function animation1() {
@@ -113,33 +152,33 @@ function animation2() {
   resetInactivityTimer();
 }
 
-function expandCard(cardName: string) {
-  // Flip the card
-  handleFlip(cardName);
+function animation3(cardId: string) {
+  const targetCard = document.getElementById(cardId);
+  const targetPosition = `${cardId}Positioner`;
+  const positionElement = document.getElementById(targetPosition);
 
-  // Get the card element
-  const expandCardTarget = document.getElementById(cardName);
+  if (targetCard && positionElement) {
+    const positionerBox = positionElement.getBoundingClientRect();
+    const cardBox = targetCard.getBoundingClientRect();
 
-  if (expandCardTarget) {
-    // Calculate the position and size for the expanded card
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
+    // Calculate the reverse distance to return the card to its original spot
+    const deltaX =
+      cardBox.left +
+      cardBox.width / 2 -
+      (positionerBox.left + positionerBox.width / 2);
+    const deltaY =
+      cardBox.top -
+      (positionerBox.top + positionerBox.height);
 
-    // Set the card's position to absolute for smooth transition
-    expandCardTarget.style.position = "absolute";
-    expandCardTarget.style.zIndex = "9999"; // Bring it to the top of the stacking order
+    targetCard.style.transition = "transform 0.8s ease";
+    targetCard.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+    targetCard.style.minWidth = '100vw'
+    targetCard.style.minHeight = '100vh'
 
-    // Apply GSAP animation to smoothly expand the card
-    gsap.to(expandCardTarget, {
-      width: viewportWidth,
-      height: viewportHeight,
-      top: 0,
-      left: 0,
-      duration: 0.8, // Smooth transition duration
-      ease: "power2.out", // Smooth easing
-    });
+    
   }
 }
+
 
 export default function HomeCardAnimation() {
   return (
@@ -151,7 +190,7 @@ export default function HomeCardAnimation() {
         <div id="VideoCardPositioner" className="positioner"></div>
       </div>
       <div className="cards-container animation-1" id="cardsContainer">
-      <div className="card flipped animation-1-card flex-center-center"  id="AboutCard" onClick={() => expandCard("AboutCard")}>
+      <div className="card flipped animation-1-card flex-center-center"  id="AboutCard" onClick={() => expandCard("AboutCard", '/about')}>
             <div className="card-inner">
                 <div className="card-front flex-center-center">
                     <PlayingCardFormat suit={"clubs"} title="About" color="black"></PlayingCardFormat>
@@ -161,7 +200,7 @@ export default function HomeCardAnimation() {
                 </div>
             </div>
         </div>
-        <div className="card flipped card-hover animation-1-card flex-center-center" id="PhotoCard" onClick={() => handleFlip("PhotoCard")}>
+        <div className="card flipped card-hover animation-1-card flex-center-center" id="PhotoCard" onClick={() => expandCard("PhotoCard", '/photo')}>
             <div className="card-inner">
                 <div className="card-front flex-center-center">
                     <PlayingCardFormat suit={"diamond"} title="Photo" color="red"></PlayingCardFormat>
@@ -171,7 +210,7 @@ export default function HomeCardAnimation() {
                 </div>
             </div>
         </div>
-        <div className="card flipped animation-1-card flex-center-center" id="ProductionCard" onClick={() => handleFlip("ProductionCard")}>
+        <div className="card flipped animation-1-card flex-center-center" id="ProductionCard" onClick={() => expandCard("ProductionCard", 'production')}>
             <div className="card-inner">
                 <div className="card-front flex-center-center">
                     <PlayingCardFormat suit={"heart"} title="Production" color="black"></PlayingCardFormat>
@@ -181,7 +220,7 @@ export default function HomeCardAnimation() {
                 </div>
             </div>
         </div>
-        <div className="card flipped animation-1-card flex-center-center" id="VideoCard" onClick={() => handleFlip("VideoCard")}>
+        <div className="card flipped animation-1-card flex-center-center" id="VideoCard" onClick={() => expandCard("VideoCard", '/video')}>
             <div className="card-inner">
                 <div className="card-front flex-center-center">
                     <PlayingCardFormat suit={"spade"} title="Video" color="red"></PlayingCardFormat>

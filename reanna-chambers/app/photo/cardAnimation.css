@@ -1,0 +1,109 @@
+#cardContainer {width: 100%; height: calc(100vh - 200px);  margin-top: 200px}
+.wide-card {width: 30vw; height: 22vw; max-height: 22vw; max-width: 30vw; }
+.tall-card {width: 22vw; height: 30vw; max-height: 30vw; max-width: 22vw; }
+
+.card {margin: 25px;}
+.card-inner {width: 100%; height: 100%; border-radius: 10px; border: 2px solid black; }
+#viewerWindow {width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; pointer-events: all;}
+.inactive-viewer-window {pointer-events: none!important;}
+ #goToMe { width: 30vw; height: 22vw;  transition: width 0.5s ease, height 0.5s ease, opacity 4s ease, border-width 0.5s ease; }
+
+.fullscreen {width: 100vw!important; height: 100vh!important;}
+
+.card {
+    margin: 25px;
+    perspective: 1000px; /* Adds a 3D perspective effect */
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    
+    transform-style: preserve-3d; /* Enables 3D transformations */
+    
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the side not facing the viewer */
+    border-radius: 8px;
+  }
+  
+  .front {
+    background-image: url('/cards/card-bg.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Ensure front is on top initially */
+    transform: rotateY(0deg); /* Default position */
+  }
+
+  .front-content {width: 100%; height: 100%; padding: 1.5vw; background: white; border: 2px solid black; }
+  
+  .back {
+    background-color: white;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg); /* Positioned on the opposite side */
+  }
+
+  .back-content { padding: 10px;}
+  .project-title {background: #E8E0D2; text-align: center; background-position: cover; text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
+  
+
+  .front-content {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .visible-content {
+    opacity: 1 !important;
+  }
+  
+  .card-inner.flip {
+    transform: rotateY(180deg); /* Flips to show the back */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+    gap: 10px;
+    padding: 10px;
+    max-height: 85vh; 
+    border: 3px solid orange;
+    overflow-y: scroll;
+  }
+
+  .tall-grid-image {border: 3px solid lime}
+  .wide-grid-image {border: 3px solid blue;}
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .grid-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .grid-caption {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #555;
+  }
+
+  .close-button {
+    padding: 20px; background: white; 
+    z-index: 301;
+    border: 3px solid black;
+    border-radius: 5px;
+  }
+  
+  .black-text {color: black!important;}

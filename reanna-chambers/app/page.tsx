@@ -5,7 +5,9 @@ import WelcomeMarquee from "./components/WelcomeMarquee";
 import HomeCardAnimation from "./components/HomeCardAnimation";
 import { gsap } from "gsap";
 
+
 export default function Home() {
+  
   useEffect(() => {
     // GSAP Animation for marqueeWrapper
     gsap.fromTo(
@@ -28,6 +30,7 @@ export default function Home() {
 
   return (
     <section id="Home">
+      
       <div id="marqueeWrapper">
         <WelcomeMarquee />
       </div>
