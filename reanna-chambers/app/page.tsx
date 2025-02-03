@@ -32,30 +32,23 @@ export default function Home() {
     <section id="Home">
       
       <div id="marqueeWrapper">
-        <WelcomeMarquee />
+        <WelcomeMarquee items={['Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome']} />
       </div>
       <div className="hero-wrapper flex-center-center flex-column">
-        <div>
+        <div className="logo-wrapper">
         <Image
           src="/reanna-chambers-logo.png"
           className="fade-in"
           height={150}
           width={700}
+          objectFit="contain"
           alt="Reanna Chambers Logo"
         />
         </div>
-        <h2>
-          <i>art</i>
-        </h2>
+        <h2><i>art</i></h2>
         <h2>PRODUCTION</h2>
-        <h2>
-          <i>
-            photog<span className="aalt">r</span>aphy
-          </i>
-        </h2>
-        <h2 style={{ marginTop: "10px" }}>
-          <i>&#xF00E; MORE</i>
-        </h2>
+        <h2><i>photog<span className="aalt">r</span>aphy</i></h2>
+        <h2 style={{ marginTop: "10px" }}><i>&#xF00E; MORE</i></h2>
       </div>
       <div className="animation-desktop">
         <HomeCardAnimation />

@@ -46,6 +46,8 @@ body {width: 100%; margin: 0px}
 .flex-end-spacebetween {display: flex; align-items: flex-end; justify-content: space-between; flex:1;}
 .flex-end-spaceevenly {display: flex; align-items: flex-end; justify-content: space-evenly; flex:1;}
 
+.full-width {width: 100%!important}
+
 .margin-left {margin-left: 10px;}
 .margin-right {margin-right: 10px;}
 .margin-top {margin-top: 10px;}
@@ -58,7 +60,9 @@ body {width: 100%; margin: 0px}
 
 h1 {font-size: 72px; line-height: 80px; font-weight: 100; margin: 0;}
 h2 {font-size: 48px;  line-height: 60px; font-weight: 100; margin: 0;}
+h3 {font-size: 24px;}
 p {font-size: 22px; line-height: 26px; font-weight: 200; margin: 0;}
+strong {font-weight: 700}
 i * {font-family: var(--palace-italic)!important;}
 .all-caps {text-transform: uppercase;}
 .aalt { font-feature-settings: 'aalt' on;}
@@ -69,11 +73,16 @@ i * {font-family: var(--palace-italic)!important;}
 
 .white-text {color: white!important;}
 .all-caps {text-transform: uppercase;}
+.no-link-styling {text-decoration: unset;}
+
+
+.white-button {padding: 10px; border: 1px solid black; border-radius: 5px;}
 
 nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 .nav-link {font-size: 24px; font-family: var(--palace-italic); text-decoration: unset; color: var(--off-black);}
 .nav-link:hover {transform: scale(1.1); cursor: pointer;}
 .active-link {text-decoration: underline!important; stroke: 1px solid black;}
+.logo-wrapper { width: 100%; max-width: 750px; padding: 25px;}
 .logo {min-height: 100px; width: 45vw; height: 10vh; min-width: 300px; 
   background-image: url('../public/reanna-chambers-logo.png'); background-size: contain; background-repeat: no-repeat; background-position: center 15px; background-origin: center center;}
 
@@ -82,6 +91,7 @@ nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
     .logo-container {order: 1; width: 100vw; min-width: 100%;}
     .links-left {order: 2; width: 45%; min-width: 45vw;}
     .links-right {order: 3; width: 45%; min-width: 45vw;}
+    
   }
 
 
@@ -135,15 +145,15 @@ nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 }
 .split-section {width: 100%;}
 .dark-section {background: var(--off-black)}
-.left-60 {width: 60%;}
+.left-60 {width: 60%; padding: 50px 0;}
 .left-40 {width: 40%;}
 #socialIcons {margin-top: 50px;}
 @media screen and (max-width: 850px) {
   .image-split {flex-direction: column;}
-  .left-60 {width: 100%;}
-  .left-40 {width: 100%;}
+  .left-60 {width: 100%; padding: 25px 0;}
+  .left-40 {width: 100%; padding-bottom: 50px;}
   #socialIcons {align-items: flex-start; justify-content: flex-start;}
-  
+  .split-section {flex-direction: column;}
 }
 
 .reanna-image {height: 625px; width: 30vw; max-width: 425px;  background-size: cover; background-repeat: no-repeat; background-position: center;}
@@ -151,3 +161,12 @@ nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 
 #clientList p {font-size: 18px}
 #artExhibitionsList p { padding-bottom: 10px!important;}
+
+/* Hide scrollbars */
+.hide-scrollbars {
+  overflow: scroll; /* Ensure scrolling is enabled */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.hide-scrollbars::-webkit-scrollbar {display: none; /* For Chrome, Safari, and Edge */}

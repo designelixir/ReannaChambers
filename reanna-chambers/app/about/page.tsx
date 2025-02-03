@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navigation from "../components/Navigation"
 import '../globals.css';
 import Link from "next/link";
+import WelcomeMarquee from "../components/WelcomeMarquee";
 export default function AboutPage(){
   
 
@@ -14,26 +15,29 @@ export default function AboutPage(){
         </div>
       <div className="dark-section basic-padding split-section flex-start-start">
         <div className="left-60">
-            <p className="white-text" style={{padding: '50px 0'}}><i>
+            <p className="white-text"><i>
             I'm an artist, photographer, producer, and videographer currently based in Honolulu, Hawai'i. My career began as a barista, where I developed a passion for creativity and connection. This led me to freelance work as an analog photographer, video editor, and colorist, honing my ability to manage multiple projects simultaneously. Since then, I've gained experience in all facets of production, from art direction and styling to permitting, event coordination, and various pre- and post-production tasks. My work merges technical skill with creative intuition, capturing unique moments that evoke emotion and connection. Let's connect!
             </i></p>
             
         </div>
         <div className="left-40 flex-center-center" id="socialIcons">
             <div className="flex-start-start flex-column no-flex-grow" >
-            <Link href="https://instagram.com/reannasea" className="flex-center-start no-flex-grow margin-bottom" >
-                <Image src="./icons/instagram.svg" width={25} height={25} alt="Instagram Icon" className="margin-right"></Image>
-                <p className="white-text ">@reannasea</p>
-            </Link>
-            <Link href="https://instagram.com/reannasea" className="flex-center-start no-flex-grow">
-                <Image src="./icons/email.svg" width={25} height={25} alt="Email Icon" className="margin-right"></Image>
-                <p className="white-text ">reannachambers@gmail.com</p>
-            </Link>
+                <Link href="https://instagram.com/reannasea" className="flex-center-start no-flex-grow margin-bottom no-link-styling" >
+                    <Image src="./icons/instagram.svg" width={25} height={25} alt="Instagram Icon" className="margin-right"></Image>
+                    <p className="white-text ">@reannasea</p>
+                </Link>
+                <Link href="https://instagram.com/reannasea" className="flex-center-start no-flex-grow no-link-styling">
+                    <Image src="./icons/email.svg" width={25} height={25} alt="Email Icon" className="margin-right"></Image>
+                    <p className="white-text ">reannachambers@gmail.com</p>
+                </Link>
             </div>
         </div>
       </div>
+      <div style={{backgroundColor: 'var(--offblack)'}}>
+        <WelcomeMarquee items={['Creative Direction', 'Photography', 'Brand Consulting', 'Casting', 'Prop Styling', 'Art Direction', 'Content Creation', 'Filming', 'Coloring', 'Producing', 'Styling', 'Painting', 'Art Installing', 'Editing', 'Social Media', 'Set Design', 'Locations and Permitting', 'Coffee Making :)',]}></WelcomeMarquee>
+      </div>
       <div className=" basic-padding image-split flex-start-start flex-wrap">
-        <div style={{minWidth: '600px', marginBottom: '50px'}} className="flex-start-start left-60">
+        {/* <div style={{minWidth: '600px', marginBottom: '50px'}} className="flex-start-start left-60">
             <div style={{ width: '50%', maxWidth: '450px', marginRight: '25px' }}>
                 <Image
                 src="/portraits/reanna-2.png" // Replace with your actual image path
@@ -54,7 +58,7 @@ export default function AboutPage(){
                 className="reanna-image"
                 />
             </div>
-        </div>
+        </div> */}
         <div id="clientList">
             <h2><span className="aalt">C</span><span style={{textDecoration: 'underline'}}>LIENT</span> <span className="aalt" style={{paddingRight: '2px'}}>L</span><span style={{textDecoration: 'underline'}}>IST</span></h2>
             <br></br><br></br>
