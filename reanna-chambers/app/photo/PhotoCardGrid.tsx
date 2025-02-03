@@ -109,16 +109,29 @@ export default function PhotoPage() {
   return (
     <section>
       <Navigation />
-      <main id="cardContainer" className="flex-start-spaceevenly flex-wrap" ref={containerRef}>
-        {projectCards.map((projectData, index) => (
-          <div
-            key={`column-${index}`}
-            className={index % 2 === 0 ? 'tall-column' : 'wide-column'}
-            id={`column${index + 1}`}
-          >
-            <ProjectCard projectData={projectData} onClick={changeTeam} />
+      <main id="cardContainer" className="flex-start-start" ref={containerRef}>
+        <div className='wide-column flex-center-center flex-wrap' id="column1">
+          <ProjectCard projectData={projectCards[0]} onClick={changeTeam} />
+          <ProjectCard projectData={projectCards[3]} onClick={changeTeam} />
+          <ProjectCard projectData={projectCards[6]} onClick={changeTeam} />
+          
+          
+        </div>
+        <div id="column2and3wrapper" className='flex-start-start'>
+          <div className='wide-column flex-center-center flex-wrap' id="column2">
+            <ProjectCard projectData={projectCards[1]} onClick={changeTeam} />
+            <ProjectCard projectData={projectCards[4]} onClick={changeTeam} />
+            <ProjectCard projectData={projectCards[7]} onClick={changeTeam} />
           </div>
-        ))}
+          <div className='wide-column flex-center-center flex-wrap' id="column3">
+            <ProjectCard projectData={projectCards[2]} onClick={changeTeam} />
+            <ProjectCard projectData={projectCards[5]} onClick={changeTeam} />
+            <ProjectCard projectData={projectCards[8]} onClick={changeTeam} />
+          </div>
+        </div>
+        
+        
+
       </main>
       <div id="viewerWindow" className="flex-center-center inactive-viewer-window">
         <div id="goToMe"></div>

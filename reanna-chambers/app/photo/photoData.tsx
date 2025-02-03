@@ -123,13 +123,77 @@ export interface ProjectData {
         </button>
       </Link>
       ,
-      mainImage: "photography/EstelleInes/Towa-21.jpg",
+      mainImage: "photography/KaiaSoul/KaiaSoul-2(wide).jpg",
       className: "tall-card",
       imagesAndCaptions: [
-        
-        
-        
+        { path: "photography/KaiaSoul/KaiaSoul-1(wide).jpg", caption: "1", wide: false },
+        { path: "photography/KaiaSoul/KaiaSoul-2(wide).jpg", caption: "1", wide: false },
+        { path: "photography/KaiaSoul/KaiaSoul-3(wide).jpg", caption: "1", wide: false },
+        { path: "photography/KaiaSoul/KaiaSoul-4(wide).jpg", caption: "1", wide: false },
+        { path: "photography/KaiaSoul/KaiaSoul-5(wide).jpg", caption: "1", wide: false },
+        { path: "photography/KaiaSoul/KaiaSoul-6(wide).jpg", caption: "1", wide: false },
+        { path: "photography/KaiaSoul/KaiaSoul-7(wide).jpg", caption: "1", wide: false },
+        { path: "photography/KaiaSoul/KaiaSoul-8(wide).jpg", caption: "1", wide: false },
+      ],
+    },
+    
+    {
+      id: "card7",
+      title: "Monet Cheung",
+      
+      mainImage: "photography/MonetCheung/Monet-36.jpg",
+      className: "tall-card",
+      imagesAndCaptions: [
+        { path: "photography/MonetCheung/Monet-1.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-2.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-3.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-8.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-11.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-14.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-33.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-35.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-36.jpg", wide: false },
 
+      ],
+    },
+    {
+      id: "card8",
+      title: "Kaimana Beach Hotel",
+      
+      mainImage: "photography/KaimanaBeachHotel/KaimanaBeachDigis-3.jpg",
+      className: "wide-card",
+      imagesAndCaptions: [
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-13.jpg", wide: true },
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-2.jpg", wide: true },
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-3.jpg", wide: false },
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-4.jpg", wide: false },
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-10.jpg", wide: false },
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-11.jpg", wide: false },
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-12.jpg", wide: false },
+        
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-19.jpg", wide: false },
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-31.jpg", wide: false },
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-36.jpg", wide: false },
+        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-56.jpg", wide: false },
+        
+      ],
+    },
+    {
+      id: "card9",
+      title: "Nani Welch Keli'iho'omalu",
+      subtitle: 'for M3N3HUN3',
+      mainImage: "photography/MonetCheung/Monet-36.jpg",
+      className: "tall-card",
+      imagesAndCaptions: [
+        { path: "photography/MonetCheung/Monet-1.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-2.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-3.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-8.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-11.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-14.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-33.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-35.jpg", wide: false },
+        { path: "photography/MonetCheung/Monet-36.jpg", wide: false },
 
       ],
     },

@@ -74,7 +74,7 @@ i * {font-family: var(--palace-italic)!important;}
 .white-text {color: white!important;}
 .all-caps {text-transform: uppercase;}
 .no-link-styling {text-decoration: unset;}
-
+.centered-text {text-align: center;}
 
 .white-button {padding: 10px; border: 1px solid black; border-radius: 5px;}
 

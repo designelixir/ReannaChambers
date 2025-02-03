@@ -1,7 +1,58 @@
-#cardContainer {width: 100%; height: calc(100vh - 200px); margin-top: 200px;}
-.wide-card {width: 34vw; height: 26vw; max-height: 26vw; max-width: 34vw;}
-.tall-card {width: 26vw; height: 34vw; max-height: 34vw; max-width: 26vw;}
+:root {
+  --wide-card-width: 36vw!important;
+  --tall-card-width: 26vw!important;
+}
 
+#cardContainer {width: 100%; min-height: 100vh; padding: 1.5vw; overflow-y: scroll; margin-top: 200px;}
+/* 4:3 */
+.wide-card { 
+  min-width: var(--wide-card-width);
+  width: var(--wide-card-width); 
+  max-width: var(--wide-card-width);
+
+  min-height: var(--tall-card-width);
+  height: var(--tall-card-width); 
+  max-height: var(--tall-card-width); 
+  margin: 0 1vw 4vw;
+}
+.tall-card {
+  margin: 0 1vw 2vw;
+  min-width: var(--tall-card-width);
+  width: var(--tall-card-width); 
+  max-width: var(--tall-card-width);
+  
+  min-height: var(--wide-card-width);
+  height: var(--wide-card-width); 
+  max-height: var(--wide-card-width); 
+}
+
+@media screen and (max-width: 600px) {
+.wide-column {flex-direction: column; min-width: 95vw!important; width: 100%; max-width: 90vw;}
+.card, .wide-card, .tall-card {width: 94vw!important; min-height: 60vw!important; height: 60vw!important;  max-height: 60vw!important; max-width: unset!important; }
+.card-inner {min-height: 60vw;}
+#column1 {min-width: 100vw; max-width: unset; width: 100vw;}
+#cardContainer {flex-direction: column; height: 100%;}
+}
+
+@media screen and (max-width: 750px){
+  
+  #column1 {min-width: 45vw; max-width: 45vw;}
+  #column2and3wrapper {flex-direction: column;}
+  #column3 .tall-card {width: 48vw; height: 36vw; max-height: 36vw; max-width: 48vw;}
+  .wide-card {width: 48vw; height: 36vw; max-height: 36vw; max-width: 48vw;}
+  .tall-card {width: 38vw; height: 48vw; max-height: 48vw; max-width: 38vw;}
+}
+
+.masonry-grid {
+  display: flex;
+  width: 100%;
+}
+
+.masonry-column {
+  background-clip: padding-box;
+}
+
+.wide-column { width: 100%;}
 .card { perspective: 1000px;}
 .card-inner {width: 100%; height: 100%; border-radius: 10px; border: 2px solid black; transform-style: preserve-3d;}
 .card-inner.flip {transform: rotateY(180deg);}
@@ -10,7 +61,8 @@
 .front {background-image: url('/cards/card-bg.png'); background-size: cover; background-position: center; z-index: 2; transform: rotateY(0deg);}
 .back {background-color: white; background-size: cover; background-position: center center; background-repeat: no-repeat; transform: rotateY(180deg);}
 
-.front-content {width: 100%; height: 100%; padding: 1.5vw; background: white; border: 2px solid black; opacity: 0; transition: opacity 0.5s ease; border-radius: 5px; }
+.front-content {width: 100%; height: 100%;  padding: 1.5vw; background: white; border: 2px solid black; opacity: 0; transition: opacity 0.5s ease; border-radius: 5px; }
+.front-content-wrapper {object-fit: contain; overflow-y: scroll; max-height: 85vh;}
 .visible-content {opacity: 1 !important;}
 
 .back-content {padding: 10px;}
@@ -35,8 +87,8 @@
   display: block;
   clear: both;
 }
-.grid-sizer, .grid-item {width: 33.3%; height: auto; }
-.grid-item--width2 {width: 66.6%;}
+.grid-sizer, .grid-item {width: 33%; height: auto; }
+.grid-item--width2 {width: 66%;}
 
 .grid-item {opacity: 0; padding: 5px; overflow: hidden; transition: transform 0.3s ease-in-out;}
 
@@ -44,17 +96,11 @@
 .grid-item:hover img {transform: scale(1.02);}
 .caption {padding: 10px; font-size: 14px; text-align: center; color: #555; background: rgba(0, 0, 0, 0.1);}
 
-@media screen and (min-width: 1200px) {
-  .wide-card {width: 26vw; height: 16vw; max-height: 16vw; max-width: 26vw;}
-  .tall-card {width: 18vw; height: 26vw; max-height: 26vw; max-width: 18vw;}
-}
 
 @media screen and (max-width: 800px) {
   .grid-sizer, .grid-item {width: 50%;}
   .grid-item--width2 {width: 100%;}
-  #cardContainer {border: 2px solid blue}
-  .wide-card {width: 48vw; height: 36vw; max-height: 36vw; max-width: 48vw;}
-  .tall-card {width: 38vw; height: 48vw; max-height: 48vw; max-width: 38vw;}
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -62,4 +108,4 @@
   .grid-item--width2 {width: 100%;}
 }
 
-#masonryWrapper {overflow-y: scroll; height: calc(100vh - 400px); width: 100%; }
+#masonryWrapper {overflow-y: scroll;  width: 100%; }

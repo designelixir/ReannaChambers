@@ -47,18 +47,6 @@ const ResponsiveMasonry: React.FC<ResponsiveMasonryProps> = ({ images, id }) => 
             
             );
           }, 3000);
-
-
-        // Initialize Masonry
-        
-
-        // Animate items with GSAP after all images are loaded
-        
-
-        // Trigger layout update for Masonry
-        
-
-        // Cleanup Masonry instance on component unmount
         return () => masonryInstance.destroy();
       });
     }

@@ -55,20 +55,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
       <div id={`${id}-move`} className="card-inner" ref={cardRef}>
         <div className="front">
           <div className="front-content" ref={frontContentRef}>
-            <div className="flex-start-start flex-column full-width" style={{ padding: '10px' }}>
-              <div className='flex-start-spacebetween full-width'>
-                <h1 className="project-title black-text">{title} {subtitle ? <span>- {subtitle}</span> : ''}</h1>
-                <button className="close-button hover" onClick={handleClick}>X</button>
+            <div className='front-content-wrapper'>
+              <div className="flex-start-start flex-column full-width" style={{ padding: '10px' }}>
+                <div className='flex-start-spacebetween full-width'>
+                  <h1 className="project-title black-text centered-text">{title} {subtitle ? <span>- {subtitle}</span> : ''}</h1>
+                  <button className="close-button hover" onClick={handleClick}>X</button>
+                </div>
+                {description && <div>{description}</div>}
               </div>
-              {description && <div>{description}</div>}
-            </div>
-            <div id="masonryWrapper" className="hide-scrollbars">
-              {readyLoadImages && (
-                <ResponsiveMasonry
-                  images={imagesAndCaptions}
-                  id={title.replace(/\s+/g, '')}
-                />
-              )}
+              <div id="masonryWrapper" className="hide-scrollbars">
+                {readyLoadImages && (
+                  <ResponsiveMasonry
+                    images={imagesAndCaptions}
+                    id={title.replace(/\s+/g, '')}
+                  />
+                )}
+              </div>
             </div>
           </div>
         </div>
