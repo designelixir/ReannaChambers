@@ -2,7 +2,7 @@
 
 import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import { flipCard } from './animationUtils';
-import {ProjectData } from './photoData';
+import { ProjectData } from './photoData';
 import ProjectCardPhotoGrid from './ProjectCardPhotoGrid';
 
 interface ProjectCardProps {
@@ -17,7 +17,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
     subtitle,
     description,
     mainImage,
-    imagesAndCaptions = [],
     columnLayout,
     className = '',
   } = projectData;
@@ -25,21 +24,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const frontContentRef = useRef<HTMLDivElement>(null);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [readyLoadImages, setReadyLoadImages] = useState(false); // Track when to load images
+  const [readyLoadImages, setReadyLoadImages] = useState(false);
+  const [isInGoToMe, setIsInGoToMe] = useState(false); // ✅ Track if the card is inside #goToMe
 
   useEffect(() => {
     if (cardRef.current) {
-      // Trigger the flip animation on initial load
       flipCard(cardRef.current, true);
-      setIsFlipped(true); // Update state to reflect the flipped state
+      setIsFlipped(true);
     }
   }, []);
 
   const handleClick = () => {
     if (cardRef.current) {
-      flipCard(cardRef.current, !isFlipped); // Flip to the opposite side
-      setIsFlipped(!isFlipped); // Update the flipped state
+      flipCard(cardRef.current, !isFlipped);
+      setIsFlipped(!isFlipped);
     }
+
+    // Check if the card is now inside #goToMe
+    setTimeout(() => {
+      if (cardRef.current?.parentElement?.id === "goToMe") {
+        setIsInGoToMe(true);
+      } else {
+        setIsInGoToMe(false);
+      }
+    }, 500); // Slight delay to ensure the transition completes
+
     setReadyLoadImages(true);
     onClick(`#${id}-move`);
   };
@@ -49,25 +58,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
       <div id={`${id}-move`} className="card-inner" ref={cardRef}>
         <div className="front">
           <div className="front-content" ref={frontContentRef}>
-            <div className='front-content-wrapper'>
-            <div className="flex-start-start flex-column full-width" style={{ padding: '10px' }}>
-              <div className='flex-start-spacebetween full-width'>
-                <div>
-                  <h1 className="project-title black-text" style={{textShadow: 'unset', fontWeight: '700'}}>{title}</h1>
-                  {subtitle && <h2 style={{fontSize: '28px', lineHeight: '32px'}}>{subtitle}</h2>}
-                  {description && <div><br></br>{description}</div>}
+            <div className="front-content-wrapper">
+              <div className="flex-start-start flex-column full-width" style={{ padding: '10px' }}>
+                <div className="flex-start-spacebetween full-width">
+                  <div>
+                    <h1 className="project-title black-text" style={{ textShadow: 'unset', fontWeight: '700' }}>
+                      {title}
+                    </h1>
+                    {subtitle && <h2 style={{ fontSize: '28px', lineHeight: '32px' }}>{subtitle}</h2>}
+                    {description && <div><br />{description}</div>}
+                  </div>
+                  <button className="close-button hover" onClick={handleClick}>X</button>
                 </div>
-                <button className="close-button hover" onClick={handleClick}>X</button>
               </div>
-              
-            </div>
-            <div id="masonryWrapper" className="hide-scrollbars">
-              {columnLayout ? (
-                <ProjectCardPhotoGrid columnLayout={columnLayout}></ProjectCardPhotoGrid>
-              ): (
-                <div>No images to display.</div>
-              )}
-            </div>
+              <div id="masonryWrapper" className="hide-scrollbars">
+                <ProjectCardPhotoGrid 
+                  columnLayout={columnLayout} 
+                  shouldRender={isInGoToMe} // Pass the control prop
+                />
+              </div>
             </div>
           </div>
         </div>

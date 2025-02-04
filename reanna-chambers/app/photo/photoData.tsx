@@ -48,7 +48,7 @@ export interface ProjectData {
       id: "card2",
       title: "Anna",
       subtitle: "Anna Jean Kos",
-      mainImage: "photography/AnnaJeanKos/AJKcaves-33.jpg",
+      mainImage: "photography/AnnaJeanKos/AJKcaves-18.jpg",
       className: "wide-card",
       columnLayout: 
       <div className="mason-grid">
@@ -93,7 +93,7 @@ export interface ProjectData {
       id: "card4",
       title: "Estelle Ines",
       subtitle: "Towa & Janessa Leone",
-      mainImage: "photography/EstelleInes/Towa-21.jpg",
+      mainImage: "photography/EstelleInes/Towa-43.jpg",
       className: "tall-card",
       columnLayout: 
       <div className="mason-grid">
@@ -132,7 +132,7 @@ export interface ProjectData {
         <p><strong>Production:</strong> Anna Atkinson, Grace Lacio</p>
         <p><strong>Models:</strong> Brennan Alexa, Danielle McCleave</p>
       </div>,
-      mainImage: "photography/TheGeminiSet/GeminiSet-2(wide).jpg",
+      mainImage: "photography/TheGeminiSet/GeminiSet-5(wide).jpg",
       className: "wide-card",
       columnLayout:
       <div className="mason-grid">
@@ -174,8 +174,8 @@ export interface ProjectData {
         </button>
       </Link>
       ,
-      mainImage: "photography/KaiaSoul/KaiaSoul-2(wide).jpg",
-      className: "tall-card",
+      mainImage: "photography/KaiaSoul/KaiaSoul-1(wide).jpg",
+      className: "wide-card",
       columnLayout: 
       <div className="mason-grid">
         <img src="photography/KaiaSoul/KaiaSoul-4(wide).jpg" className="mason-1 mason-item" alt="Kaia Soul Photo 4"/>
@@ -210,8 +210,8 @@ export interface ProjectData {
     {
       id: "card8",
       title: "Kaimana Beach Hotel",
-      mainImage: "photography/KaimanaBeachHotel/KaimanaBeachDigis-3.jpg",
-      className: "wide-card",
+      mainImage: "photography/KaimanaBeachHotel/KaimanaBeachDigis-36.jpg",
+      className: "tall-card",
       columnLayout: 
       <div className="mason-grid">
         <div className="mason-inner-container">
@@ -256,34 +256,124 @@ export interface ProjectData {
       id: "card10",
       title: "Pono Collective Coffee",
       subtitle: 'El Salvador / Guatemala Event',
-      mainImage: "photography/PonoCollective/PonoCollective-24.jpg",
+      mainImage: "photography/PonoCollective/PonoCollective-6.jpg",
       className: "wide-card",
       columnLayout: 
       <div className="mason-grid">
+        <img src="photography/PonoCollective/PonoCollective-6.jpg" className="mason-1 mason-item" alt="Pono Collective Photo 6"/>
         <img src="photography/PonoCollective/PonoCollective-1.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 1"/>
         <img src="photography/PonoCollective/PonoCollective-2.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 2"/>
         <img src="photography/PonoCollective/PonoCollective-3.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 3"/>
         <img src="photography/PonoCollective/PonoCollective-4.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 4"/>
-        <img src="photography/PonoCollective/PonoCollective-5.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 5"/>
-        <img src="photography/PonoCollective/PonoCollective-6.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 6"/>
+        <img src="photography/PonoCollective/PonoCollective-5.jpg" className="mason-1 mason-item" alt="Pono Collective Photo 5"/>
         <img src="photography/PonoCollective/PonoCollective-7.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 7"/>
         <img src="photography/PonoCollective/PonoCollective-8.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 8"/>
-        <img src="photography/PonoCollective/PonoCollective-9.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 9"/>
-        <img src="photography/PonoCollective/PonoCollective-10.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 10"/>
         <img src="photography/PonoCollective/PonoCollective-11.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 11"/>
-        <img src="photography/PonoCollective/PonoCollective-12.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 12"/>
         <img src="photography/PonoCollective/PonoCollective-13.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 13"/>
+        <img src="photography/PonoCollective/PonoCollective-12.jpg" className="mason-1 mason-item" alt="Pono Collective Photo 12"/>
+        <img src="photography/PonoCollective/PonoCollective-9.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 9"/>
+        <img src="photography/PonoCollective/PonoCollective-18.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 18"/>
         <img src="photography/PonoCollective/PonoCollective-14.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 14"/>
         <img src="photography/PonoCollective/PonoCollective-15.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 15"/>
         <img src="photography/PonoCollective/PonoCollective-16.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 16"/>
-        <img src="photography/PonoCollective/PonoCollective-17.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 17"/>
-        <img src="photography/PonoCollective/PonoCollective-18.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 18"/>
         <img src="photography/PonoCollective/PonoCollective-19.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 19"/>
+        <img src="photography/PonoCollective/PonoCollective-24.jpg" className="mason-1 mason-item" alt="Pono Collective Photo 24"/>
         <img src="photography/PonoCollective/PonoCollective-20.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 20"/>
         <img src="photography/PonoCollective/PonoCollective-21.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 21"/>
         <img src="photography/PonoCollective/PonoCollective-22.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 22"/>
         <img src="photography/PonoCollective/PonoCollective-23.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 23"/>
-        <img src="photography/PonoCollective/PonoCollective-24.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 24"/>
+        <img src="photography/PonoCollective/PonoCollective-17.jpg" className="mason-1 mason-item" alt="Pono Collective Photo 17"/>
+        
+      </div>
+    },
+    {
+      id: "card11",
+      title: "Towa Clothing",
+      subtitle: 'Sydney for Azure Co',
+      mainImage: "photography/TowaClothing/Azure-19.jpg",
+      className: "tall-card",
+      columnLayout: 
+      <div className="mason-grid">
+        <img src="photography/TowaClothing/Azure-16.jpg" className="mason-1 mason-item" alt="Towa Clothing Photo 16"/>
+        <img src="photography/TowaClothing/Azure-19.jpg" className="mason-2 mason-item" alt="Towa Clothing Photo 19"/>
+        <img src="photography/TowaClothing/Azure-12.jpg" className="mason-2 mason-item" alt="Towa Clothing Photo 12"/>
+        <img src="photography/TowaClothing/Azure-129.jpg" className="mason-2 mason-item" alt="Towa Clothing Photo 129"/>
+        <img src="photography/TowaClothing/Azure-26.jpg" className="mason-2 mason-item" alt="Towa Clothing Photo 26"/>
+        <img src="photography/TowaClothing/Azure-43.jpg" className="mason-1 mason-item" alt="Towa Clothing Photo 43"/>
+        <img src="photography/TowaClothing/Azure-85.jpg" className="mason-1 mason-item" alt="Towa Clothing Photo 85"/>
+        <img src="photography/TowaClothing/Azure-32.jpg" className="mason-2 mason-item" alt="Towa Clothing Photo 32"/>
+        <img src="photography/TowaClothing/Azure-5.jpg" className="mason-2 mason-item" alt="Towa Clothing Photo 5"/>
+        <img src="photography/TowaClothing/Azure-8.jpg" className="mason-2 mason-item" alt="Towa Clothing Photo 8"/>
+        <img src="photography/TowaClothing/Azure-33.jpg" className="mason-2 mason-item" alt="Towa Clothing Photo 33"/>
+        <img src="photography/TowaClothing/Azure-69.jpg" className="mason-1 mason-item" alt="Towa Clothing Photo 69"/>
+      </div>
+    },
+    {
+      id: "card12",
+      title: "Wayfinder Hotel",
+      subtitle: 'Waikiki',
+      mainImage: "photography/WayfinderHotel/Wayfinder-12.jpg",
+      className: "wide-card",
+      columnLayout: 
+      <div className="mason-grid">
+        <div className="mason-inner-container">
+          <div className="mason-50-container">
+            <img src="photography/WayfinderHotel/Wayfinder-1.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 1"/>
+            <img src="photography/WayfinderHotel/Wayfinder-6.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 6"/>
+            
+            <img src="photography/WayfinderHotel/Wayfinder-12.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 12"/>
+            <img src="photography/WayfinderHotel/Wayfinder-7.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 7"/>
+            
+          </div>
+          <div className="mason-50-container">
+            <img src="photography/WayfinderHotel/Wayfinder-10.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 10"/>
+            <img src="photography/WayfinderHotel/Wayfinder-14.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 14"/>
+            <img src="photography/WayfinderHotel/Wayfinder-4.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 4"/>
+          </div>
+        </div>
+        
+        <img src="photography/WayfinderHotel/Wayfinder-3.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 3"/>
+        
+        <div className="mason-inner-container">
+          <div className="mason-50-container">
+          <img src="photography/WayfinderHotel/Wayfinder-13.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 13"/>
+          <img src="photography/WayfinderHotel/Wayfinder-8.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 8"/>    
+          </div>
+        
+        <div className="mason-50-container">
+          
+          <img src="photography/WayfinderHotel/Wayfinder-5.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 5"/> 
+          <img src="photography/WayfinderHotel/Wayfinder-11.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 11"/>
+        </div>
+        </div>
+        
+          
+
+               
+        
+        
+        
+        
+        
+        
+      </div>
+    },
+    {
+      id: "card13",
+      title: "AVVA Brand",
+      subtitle: 'Zeke Lau',
+      description: 
+      <div>
+        <p><strong>DP: </strong>Zak Noyle</p>
+        <p><strong>Assist: </strong>Sheadon Shimabukuro</p>
+        <p><strong>Athlete:</strong>Zeke Lau</p>
+      </div>,
+      mainImage: "photography/AVVABrand/Wayfinder-3.jpg",
+      className: "tall-card",
+      columnLayout: 
+      <div className="mason-grid">
+        <img src="photography/AVVABrand/Wayfinder-1.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 1"/>
+        
       </div>
     },
   ];

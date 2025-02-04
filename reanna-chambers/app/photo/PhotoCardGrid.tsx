@@ -113,6 +113,7 @@ export default function PhotoPage() {
           <ProjectCard projectData={projectCards[0]} onClick={changeTeam} />
           <ProjectCard projectData={projectCards[3]} onClick={changeTeam} />
           <ProjectCard projectData={projectCards[6]} onClick={changeTeam} />
+          <ProjectCard projectData={projectCards[10]} onClick={changeTeam} />
           
           
         </div>
@@ -120,13 +121,16 @@ export default function PhotoPage() {
           <div className='wide-column flex-center-center flex-wrap' id="column2">
             <ProjectCard projectData={projectCards[1]} onClick={changeTeam} />
             <ProjectCard projectData={projectCards[4]} onClick={changeTeam} />
-            <ProjectCard projectData={projectCards[7]} onClick={changeTeam} />
+            
+            <ProjectCard projectData={projectCards[5]} onClick={changeTeam} />
             <ProjectCard projectData={projectCards[9]} onClick={changeTeam} />
+            <ProjectCard projectData={projectCards[11]} onClick={changeTeam} />
           </div>
           <div className='tall-column flex-center-center flex-wrap' id="column3">
             <ProjectCard projectData={projectCards[2]} onClick={changeTeam} />
-            <ProjectCard projectData={projectCards[5]} onClick={changeTeam} />
+            <ProjectCard projectData={projectCards[7]} onClick={changeTeam} />
             <ProjectCard projectData={projectCards[8]} onClick={changeTeam} />
+            <ProjectCard projectData={projectCards[12]} onClick={changeTeam} />
           </div>
         </div>
         
