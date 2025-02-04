@@ -37,7 +37,7 @@ export default function Footer({ dark = false }: FooterProps) {
           />
         </Link>
       </div>
-      <p style={{fontSize: '14px'}} className="margin-bottom">Copyright &copy; Reanna Chambers, 2025</p>
+      <p style={{fontSize: '14px'}} className={`margin-bottom ${dark ? "white-text" : "black-text"}`}>Copyright &copy; Reanna Chambers, 2025</p>
       <Link className={`no-link-styling ${dark ? "white-text" : "black-text"}`} style={{opacity: '0.75', fontSize: '10px'}} href="https://designelixir.studio">
         Made with &hearts; by Design Elixir Studio
       </Link>

@@ -158,3 +158,8 @@ media-theme-sutro {min-width: 100%; aspect-ratio: 1.5/1!important;  flex-grow: 1
   .half-video {min-width: 100%; min-height: 40vw; aspect-ratio: 2/1!important;}
   .video-wrapper {margin-right: unset; margin-bottom: 25px;}
 }
+
+@media screen and (max-width: 950px) {
+  .break-950 {flex-direction: column;}
+  .break-950-children {width: 100%; margin: 25px 0 0 0;}
+}
