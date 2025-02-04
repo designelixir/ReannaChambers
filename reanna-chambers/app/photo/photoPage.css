@@ -8,7 +8,7 @@
 .wide-column { width: 100%; max-width: 40vw; padding: 2vw 1vw;}
 .tall-column { width: 100%; max-width: 29vw; padding: 2vw 1vw;}
 #column2, #column3 {width: 50%;}
-#viewerWindow {width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; pointer-events: all; padding: 2.5vh 2.5vw;  transition: all 0.3s ease-in-out;}
+#viewerWindow {width: 100vw; height: 100vh; z-index: 30000; position: fixed; top: 0; left: 0; pointer-events: all; padding: 2.5vh 2.5vw;  transition: all 0.3s ease-in-out;}
 .inactive-viewer-window {pointer-events: none !important;}
 .fullscreen {width: 90vw !important; height: 90vh !important;}
 .visible-content .project-title {font-size: clamp(28px, 5vw, 56px);}
@@ -46,10 +46,11 @@
 .project-title {background: #E8E0D2; font-size: clamp(24px, 4vw, 36px); line-height: clamp(30px, 5vw, 42px);  text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
 .project-subtitle {background: #E8E0D2;  text-align: center; text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
 
-.close-button {padding: 10px; background: white; z-index: 301; border: 3px solid black; border-radius: 5px;}
+
+.close-button {padding: 10px; margin-top: -5px; height: 50px; width: 50px; background: white; z-index: 301; border: 3px solid black; border-radius: 5px;}
 
 /* PhotoCardPhotoGrid.tsx */
-#masonryWrapper {overflow-y: scroll;  width: 100%; }
+#masonryWrapper {overflow-y: scroll; height: 100%; width: 100%; padding: 0 15px; }
 .mason-grid { width: calc(100% - 10px); display: flex; align-items: flex-start; justify-content: flex-start; flex-wrap: wrap;}
 .mason-inner-container {display: flex; align-items: flex-start; justify-content: flex-start; width: 100%;}
 .mason-50-container {min-width: 50%;}

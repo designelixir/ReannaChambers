@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   const handleClick = () => {
     if (cardRef.current) {
       flipCard(cardRef.current, !isFlipped);
-     
+      setIsFlipped(!isFlipped);
     }
 
     // Check if the card is now inside #goToMe
@@ -60,21 +60,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
     <div id={id} className={`card ${className} flex-center-center`}>
       <div id={`${id}-move`} className="card-inner" ref={cardRef}>
         <div className="front">
-          <div className="front-content" ref={frontContentRef}>
-            <div className="front-content-wrapper">
+          <div className="front-content" ref={frontContentRef} >
+            <div className="front-content-wrapper" >
               <div className="flex-start-start flex-column full-width" style={{ padding: '10px' }}>
                 <div className="flex-start-spacebetween full-width">
-                  <div>
+                  <div className='flex-start-start flex-column'>
                     <h1 className="project-title black-text" style={{ textShadow: 'unset', fontWeight: '700' }}>
                       {title}
                     </h1>
                     {subtitle && <h2 style={{ fontSize: '28px', lineHeight: '32px' }}>{subtitle}</h2>}
-                    {description && <div><br />{description}</div>}
                   </div>
                   <button className="close-button hover" onClick={handleClick}>X</button>
                 </div>
               </div>
               <div id="masonryWrapper" className="hide-scrollbars">
+                {description && <div><br />{description}</div>}
                 <ProjectCardPhotoGrid 
                   columnLayout={columnLayout} 
                   shouldRender={isInGoToMe} // Pass the control prop
@@ -88,7 +88,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
           style={{ backgroundImage: `url('${mainImage}')` }}
           onClick={handleClick}
         >
-          <div className="back-content flex-center-center centered-text flex-column">
+          <div className="back-content flex-center-center  centered-text flex-column">
             <h2 className="project-title">{title}</h2>
             {subtitle && <h3 className="project-subtitle">{subtitle}</h3>}
           </div>

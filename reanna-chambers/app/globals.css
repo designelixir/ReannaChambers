@@ -136,7 +136,25 @@ nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 /* Lightbox.tsx */
 
 
+/* Footer */
+footer {z-index: 1;}
+footer a {z-index: 1;}
 .invert-img {
   filter: invert(1);
   transition: filter 0.3s ease-in-out;
+}
+
+
+
+/* VideoPlayer.tsx */
+.video-container {width: 100%!important;}
+.video {aspect-ratio: 2/1; flex-grow: 1; display: flex; align-items: flex-center; justify-content: center; width: 100%;}
+.half-video {min-width: 500px}
+.full-video {min-width: 100%;}
+media-theme-sutro {min-width: 100%; aspect-ratio: 1.5/1!important;  flex-grow: 1;}
+.video-wrapper { margin-right: 25px;}
+
+@media screen and (max-width: 1200px) {
+  .half-video {min-width: 100%; min-height: 40vw; aspect-ratio: 2/1!important;}
+  .video-wrapper {margin-right: unset; margin-bottom: 25px;}
 }

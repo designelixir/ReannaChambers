@@ -112,6 +112,7 @@ export default function ProductionCardGrid() {
       <main id="cardContainer" className="flex-start-start" ref={containerRef}>
         <div className='tall-column flex-center-center flex-wrap' id="column1">
           <ProjectCard projectData={productionCards[0]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[3]} onClick={changeTeam} />
           
           
           
@@ -123,7 +124,7 @@ export default function ProductionCardGrid() {
             
           </div>
           <div className='tall-column flex-center-center flex-wrap' id="column3">
-            
+          <ProjectCard projectData={productionCards[2]} onClick={changeTeam} />
             
           </div>
         </div>
