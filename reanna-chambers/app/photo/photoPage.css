@@ -55,7 +55,7 @@
 .mason-inner-container {display: flex; align-items: flex-start; justify-content: flex-start; width: 100%;}
 .mason-50-container {min-width: 50%;}
 
-.mason-inner-container {min-width: calc(50% - 10px);}
+.mason-inner-container {min-width: calc(50% - 10px); padding: 5px 0;}
 .mason-item {padding: 5px; object-fit: contain;}
 
 .mason-item img {width: 100%;}

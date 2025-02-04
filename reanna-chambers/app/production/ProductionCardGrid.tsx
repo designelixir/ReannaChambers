@@ -125,9 +125,7 @@ export default function ProductionCardGrid() {
             <ProjectCard projectData={productionCards[4]} onClick={changeTeam} />
             <ProjectCard projectData={productionCards[6]} onClick={changeTeam} />
             <ProjectCard projectData={productionCards[9]} onClick={changeTeam} />
-            
-            
-            
+            <ProjectCard projectData={productionCards[15]} onClick={changeTeam} />
           </div>
           <div className='tall-column flex-center-center flex-wrap' id="column3">
           <ProjectCard projectData={productionCards[2]} onClick={changeTeam} />

@@ -611,8 +611,88 @@ export interface ProductionData {
         className: "tall-card",
         columnLayout:
         <div className="mason-grid" style={{marginTop: '25px'}}>
-            <p style={{color: 'red'}}>Left a note - video URL is incorrect and please narrow down photos for this gallery!</p>
-            {/* <img src="production/MarieClaire/MarieClaire-BTS-1.jpg" className="mason-1 mason-item" alt="Marie Claire BTS Photo 1"/> */}
+            <p style={{color: 'red'}}>Left a note - video URL is incorrect in the credits document</p>
+            <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-1.jpg" className="mason-2 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 1"/>
+            <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-2.jpg" className="mason-2 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 2"/>
+            <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-3.jpg" className="mason-2 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 3"/>
+            <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-4.jpg" className="mason-2 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 4"/>
+            <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-5.jpg" className="mason-2 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 5"/>
+            <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-6.jpg" className="mason-2 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 6"/>
+            <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-10.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 10"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-7.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 7"/>
+                <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-11.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 11"/>
+                <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-8.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 8"/>
+                <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-15.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 15"/>
+                <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-21.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 21"/>
+                <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-24.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 24"/>
+                <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-17.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 17"/>
+                </div>
+                <div className="mason-50-container">
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-9.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 9"/>
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-14.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 14"/>
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-22.jpg" className="mason-2 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 22"/>
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-23.jpg" className="mason-2 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 23"/>
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-12.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 12"/>
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-13.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 13"/>
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-18.jpg" className="mason-2 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 18"/>
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-19.jpg" className="mason-2 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 19"/>
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-25.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 25"/>
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-16.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 16"/>
+                    <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-20.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 20"/>
+                </div>
+            </div>
+        </div>
+        
+    },
+    {
+        id: "card16",
+        title: "Urban Outfitters",
+        subtitle: `United Kingdom`,
+        mainImage: "production/UrbanOutfitters/UrbanOutfitters-16.jpg",
+        description:
+        <div className="credits-section">
+            <h3>Credits</h3>
+            <p><strong>Photography: </strong>Abby Oh</p>
+            <p><strong>HMU: </strong>Jonah Face</p>
+            <p><strong>Production Assistant: </strong>Kiana Weight</p>
+        </div>,
+        className: "wide-card",
+        columnLayout:
+        <div className="mason-grid" style={{marginTop: '25px'}}>
+            
+            <img src="production/UrbanOutfitters/UrbanOutfitters-2.jpg" className="mason-1 mason-item" alt="Urban Outfitters Photo 2"/>
+            <img src="production/UrbanOutfitters/UrbanOutfitters-1.jpg" className="mason-2 mason-item" alt="Urban Outfitters Photo 1"/>
+            <img src="production/UrbanOutfitters/UrbanOutfitters-3.jpg" className="mason-2 mason-item" alt="Urban Outfitters Photo 3"/>
+            <img src="production/UrbanOutfitters/UrbanOutfitters-4.jpg" className="mason-2 mason-item" alt="Urban Outfitters Photo 4"/>
+            <img src="production/UrbanOutfitters/UrbanOutfitters-5.jpg" className="mason-2 mason-item" alt="Urban Outfitters Photo 5"/>
+            <img src="production/UrbanOutfitters/UrbanOutfitters-11.jpg" className="mason-1 mason-item" alt="Urban Outfitters Photo 11"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                <img src="production/UrbanOutfitters/UrbanOutfitters-7.jpg" className="mason-1 mason-item" alt="Urban Outfitters Photo 7"/>
+                <img src="production/UrbanOutfitters/UrbanOutfitters-10.jpg" className="mason-1 mason-item" alt="Urban Outfitters Photo 10"/>
+                <img src="production/UrbanOutfitters/UrbanOutfitters-12.jpg" className="mason-1 mason-item" alt="Urban Outfitters Photo 12"/>
+                </div>
+                <div className="mason-50-container">
+                <img src="production/UrbanOutfitters/UrbanOutfitters-8.jpg" className="mason-1 mason-item" alt="Urban Outfitters Photo 8"/>   
+                <img src="production/UrbanOutfitters/UrbanOutfitters-9.jpg" className="mason-1 mason-item" alt="Urban Outfitters Photo 9"/> 
+                <img src="production/UrbanOutfitters/UrbanOutfitters-6.jpg" className="mason-1 mason-item" alt="Urban Outfitters Photo 6"/>    
+                </div>
+            </div>
+            
+            <img src="production/UrbanOutfitters/UrbanOutfitters-13.jpg" className="mason-2 mason-item" alt="Urban Outfitters Photo 13"/>
+            <img src="production/UrbanOutfitters/UrbanOutfitters-18.jpg" className="mason-2 mason-item" alt="Urban Outfitters Photo 18"/>
+            <img src="production/UrbanOutfitters/UrbanOutfitters-15.jpg" className="mason-1 mason-item" alt="Urban Outfitters Photo 15"/>
+            <img src="production/UrbanOutfitters/UrbanOutfitters-14.jpg" className="mason-2 mason-item" alt="Urban Outfitters Photo 14"/>
+            <img src="production/UrbanOutfitters/UrbanOutfitters-17.jpg" className="mason-2 mason-item" alt="Urban Outfitters Photo 17"/>
+
+            
+            <img src="production/UrbanOutfitters/UrbanOutfitters-16.jpg" className="mason-2 mason-item" alt="Urban Outfitters Photo 16"/>
+            <img src="production/UrbanOutfitters/UrbanOutfitters-20.jpg" className="mason-2 mason-item" alt="Urban Outfitters Photo 20"/>
+            
+            <img src="production/UrbanOutfitters/UrbanOutfitters-19.jpg" className="mason-1 mason-item" alt="Urban Outfitters Photo 19"/>
+            
         </div>
         
     },
