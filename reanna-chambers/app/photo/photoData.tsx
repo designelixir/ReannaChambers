@@ -256,7 +256,7 @@ export interface ProjectData {
       id: "card10",
       title: "Pono Collective Coffee",
       subtitle: 'El Salvador / Guatemala Event',
-      mainImage: "photography/PonoCollective/PonoCollective-6.jpg",
+      mainImage: "photography/PonoCollective/PonoCollective-9.jpg",
       className: "wide-card",
       columnLayout: 
       <div className="mason-grid">
@@ -312,7 +312,7 @@ export interface ProjectData {
       id: "card12",
       title: "Wayfinder Hotel",
       subtitle: 'Waikiki',
-      mainImage: "photography/WayfinderHotel/Wayfinder-12.jpg",
+      mainImage: "photography/WayfinderHotel/Wayfinder-5.jpg",
       className: "wide-card",
       columnLayout: 
       <div className="mason-grid">
@@ -364,16 +364,47 @@ export interface ProjectData {
       subtitle: 'Zeke Lau',
       description: 
       <div>
-        <p><strong>DP: </strong>Zak Noyle</p>
+        <p><strong>DP: </strong> Zak Noyle</p>
         <p><strong>Assist: </strong>Sheadon Shimabukuro</p>
-        <p><strong>Athlete:</strong>Zeke Lau</p>
+        <p><strong>Athlete:</strong> Zeke Lau</p>
       </div>,
-      mainImage: "photography/AVVABrand/Wayfinder-3.jpg",
+      mainImage: "photography/AVVABrand/AvvaBrand-28.jpg",
       className: "tall-card",
       columnLayout: 
       <div className="mason-grid">
-        <img src="photography/AVVABrand/Wayfinder-1.jpg" className="mason-1 mason-item" alt="Wayfinder Hotel Photo 1"/>
+        <img src="photography/AVVABrand/AvvaBrand-25.jpg" className="mason-1 mason-item" alt="Avva Brand Photo 25"/>
         
+        <img src="photography/AVVABrand/AvvaBrand-2.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 2"/>
+        <img src="photography/AVVABrand/AvvaBrand-17.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 17"/>
+        
+        <img src="photography/AVVABrand/AvvaBrand-7.jpg" className="mason-1 mason-item" alt="Avva Brand Photo 7"/>
+        <img src="photography/AVVABrand/AvvaBrand-4.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 4"/>
+        <img src="photography/AVVABrand/AvvaBrand-5.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 5"/>
+        <img src="photography/AVVABrand/AvvaBrand-6.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 6"/>
+        <img src="photography/AVVABrand/AvvaBrand-8.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 8"/>
+        <img src="photography/AVVABrand/AvvaBrand-1.jpg" className="mason-1 mason-item" alt="Avva Brand Photo 1"/>
+        <img src="photography/AVVABrand/AvvaBrand-9.jpg" className="mason-1 mason-item" alt="Avva Brand Photo 9"/>
+        <img src="photography/AVVABrand/AvvaBrand-10.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 10"/>
+        <img src="photography/AVVABrand/AvvaBrand-11.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 11"/>
+        <img src="photography/AVVABrand/AvvaBrand-12.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 12"/>
+        <img src="photography/AVVABrand/AvvaBrand-13.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 13"/>
+        <img src="photography/AVVABrand/AvvaBrand-14.jpg" className="mason-1 mason-item" alt="Avva Brand Photo 14"/>
+        <img src="photography/AVVABrand/AvvaBrand-15.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 15"/>
+        <img src="photography/AVVABrand/AvvaBrand-16.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 16"/>
+        
+        <img src="photography/AVVABrand/AvvaBrand-3.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 3"/>
+        <img src="photography/AVVABrand/AvvaBrand-18.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 18"/>
+        <img src="photography/AVVABrand/AvvaBrand-19.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 19"/>
+        <img src="photography/AVVABrand/AvvaBrand-20.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 20"/>
+        <img src="photography/AVVABrand/AvvaBrand-21.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 21"/>
+        <img src="photography/AVVABrand/AvvaBrand-22.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 22"/>
+        <img src="photography/AVVABrand/AvvaBrand-23.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 23"/>
+        <img src="photography/AVVABrand/AvvaBrand-24.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 24"/>
+        
+        
+        <img src="photography/AVVABrand/AvvaBrand-27.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 27"/>
+        <img src="photography/AVVABrand/AvvaBrand-28.jpg" className="mason-2 mason-item" alt="Avva Brand Photo 28"/>
+        <img src="photography/AVVABrand/AvvaBrand-26.jpg" className="mason-1 mason-item" alt="Avva Brand Photo 26"/>
       </div>
     },
   ];

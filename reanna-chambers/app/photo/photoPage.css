@@ -4,7 +4,7 @@
   }
 
 /* PhotoCardGrid.tsx */
-#cardContainer {width: 100%; padding: 1.5vw; margin-top: 100px;}
+#cardContainer {width: 100%; padding: 1.5vw; margin-top: 150px;}
 .wide-column { width: 100%; max-width: 40vw; padding: 2vw 1vw;}
 .tall-column { width: 100%; max-width: 29vw; padding: 2vw 1vw;}
 #column2, #column3 {width: 50%;}

@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   const frontContentRef = useRef<HTMLDivElement>(null);
   const [isFlipped, setIsFlipped] = useState(false);
   const [readyLoadImages, setReadyLoadImages] = useState(false);
-  const [isInGoToMe, setIsInGoToMe] = useState(false); // ✅ Track if the card is inside #goToMe
+  const [isInGoToMe, setIsInGoToMe] = useState(false); 
 
   useEffect(() => {
     if (cardRef.current) {
@@ -37,20 +37,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   const handleClick = () => {
     if (cardRef.current) {
       flipCard(cardRef.current, !isFlipped);
-      setIsFlipped(!isFlipped);
+     
     }
 
     // Check if the card is now inside #goToMe
     setTimeout(() => {
       if (cardRef.current?.parentElement?.id === "goToMe") {
         setIsInGoToMe(true);
+        
       } else {
         setIsInGoToMe(false);
+        
       }
     }, 500); // Slight delay to ensure the transition completes
 
     setReadyLoadImages(true);
     onClick(`#${id}-move`);
+    
   };
 
   return (

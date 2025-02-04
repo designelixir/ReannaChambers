@@ -11,5 +11,5 @@ export const flipCard = (cardElement: HTMLElement, isFlipped: boolean) => {
     })
     .set(cardElement, {
       zIndex: isFlipped ? 1 : 0,
-    }); // Optionally manage z-index for layered content during the flip
+    }); 
 };
