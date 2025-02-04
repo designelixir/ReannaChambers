@@ -483,7 +483,8 @@ export interface ProductionData {
             <p><strong>Assists: </strong>Malia Mizuno</p>
             <p><strong>Athletes: </strong>Megan Godinez, Kelia Moniz, Monyca Eleogram, Kelis Kaleopa&apos;a</p>
             <p><strong>Models: </strong>Malia Kaleopa&apos;a, Tiara Hernandez, Bri Atisone</p>
-        </div>,
+        </div>
+        ,
         className: "tall-card",
         columnLayout:
         <div className="mason-grid" style={{marginTop: '25px'}}>
@@ -496,7 +497,7 @@ export interface ProductionData {
         id: "card12",
         title: "Roxy",
         subtitle: `Holiday '24`,
-        mainImage: "production/RoxyHoliday24/RoxyHoliday24-1.jpg",
+        mainImage: "production/RoxyHoliday24/RoxyHoliday24-4.jpg",
         description:
         <div className="credits-section">
             <h3>Credits</h3>
@@ -506,10 +507,111 @@ export interface ProductionData {
             <p><strong>Athletes: </strong>Kelis Kaleopa&apos;a, Maluhia Kinimaka</p>
             <p><strong>Model: </strong>Tiara Hernandez</p>
         </div>,
+        className: "wide-card",
+        columnLayout:
+        <div className="mason-grid" style={{marginTop: '25px'}}>
+            <p style={{color: 'red'}}>Left a note - please narrow down photos for this gallery!</p>
+            {/* <img src="production/MarieClaire/MarieClaire-BTS-1.jpg" className="mason-1 mason-item" alt="Marie Claire BTS Photo 1"/> */}
+        </div>
+        
+    },
+    {
+        id: "card13",
+        title: "Roxy OTB",
+        subtitle: `Australia / New Zealand Collection`,
+        mainImage: "production/RoxyOTB24/RoxyOTB24-2.jpg",
+        description:
+        <div className="credits-section">
+            <h3>Credits</h3>
+            <p><strong>Photography: </strong>Abby Oh</p>
+            <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
+            <p><strong>Assists: </strong>Grace Lacio</p>
+            <p><strong>Athletes: </strong>Kelis Kaleopa&apos;a, Maluhia Kinimaka</p>
+            <p><strong>Model: </strong>Tiara Hernandez</p>
+        </div>,
+        className: "tall-card",
+        columnLayout:
+        <div className="mason-grid" style={{marginTop: '25px'}}>
+            <img src="production/RoxyOTB24/RoxyOTB24-2.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 2"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                    <img src="production/RoxyOTB24/RoxyOTB24-4.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 4"/>
+                    <img src="production/RoxyOTB24/RoxyOTB24-3.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 3"/>
+                </div>
+                <div className="mason-50-container">
+                    <img src="production/RoxyOTB24/RoxyOTB24-7.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 7"/>
+                    <img src="production/RoxyOTB24/RoxyOTB24-6.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 6"/>
+                </div>
+            </div>
+            <img src="production/RoxyOTB24/RoxyOTB24-1.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 1"/>
+            <img src="production/RoxyOTB24/RoxyOTB24-5.jpg" className="mason-2 mason-item" alt="Roxy On the Beach 2024 Photo 5"/><img src="production/RoxyOTB24/RoxyOTB24-8.jpg" className="mason-2 mason-item" alt="Roxy On the Beach 2024 Photo 8"/>
+            <img src="production/RoxyOTB24/RoxyOTB24-9.jpg" className="mason-2 mason-item" alt="Roxy On the Beach 2024 Photo 9"/>
+            <img src="production/RoxyOTB24/RoxyOTB24-10.jpg" className="mason-2 mason-item" alt="Roxy On the Beach 2024 Photo 10"/>
+            <img src="production/RoxyOTB24/RoxyOTB24-12.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 12"/>
+            <img src="production/RoxyOTB24/RoxyOTB24-11.jpg" className="mason-2 mason-item" alt="Roxy On the Beach 2024 Photo 11"/>
+            <img src="production/RoxyOTB24/RoxyOTB24-13.jpg" className="mason-2 mason-item" alt="Roxy On the Beach 2024 Photo 13"/>
+            <img src="production/RoxyOTB24/RoxyOTB24-17.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 17"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                    <img src="production/RoxyOTB24/RoxyOTB24-22.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 22"/>
+                    <img src="production/RoxyOTB24/RoxyOTB24-15.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 15"/>
+                    <img src="production/RoxyOTB24/RoxyOTB24-18.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 18"/>
+                    <img src="production/RoxyOTB24/RoxyOTB24-19.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 19"/>
+                </div>
+                <div className="mason-50-container">
+                    <img src="production/RoxyOTB24/RoxyOTB24-16.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 16"/>
+                    <img src="production/RoxyOTB24/RoxyOTB24-14.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 14"/>
+                    <img src="production/RoxyOTB24/RoxyOTB24-20.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 20"/>
+                    <img src="production/RoxyOTB24/RoxyOTB24-21.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 21"/>
+                </div>
+            </div>
+        </div>
+        
+    },
+    {
+        id: "card14",
+        title: "Roxy",
+        subtitle: `Peace Joy Aloha '22`,
+        mainImage: "production/RoxyPeaceJoyAloha22/RoxyPeaceJoyAloha22-3.jpg",
+        description:
+        <div className="credits-section">
+            <h3>Credits</h3>
+            <p><strong>Photography: </strong>Abby Oh</p>
+            <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
+            <p><strong>Cinematography: </strong>Tahnei Roy</p>
+            <p><strong>Assists: </strong>Malia Mizuno</p>
+            <p><strong>Athletes: </strong>Megan Godinez, Kelis Kaleopa&apos;a</p>
+            <p><strong>Models: </strong>Malia Kaleopa&apos;a, Tiara Hernandez, Bri Atisone</p>
+        </div>,
         className: "tall-card",
         columnLayout:
         <div className="mason-grid" style={{marginTop: '25px'}}>
             <p style={{color: 'red'}}>Left a note - please narrow down photos for this gallery!</p>
+            {/* <img src="production/MarieClaire/MarieClaire-BTS-1.jpg" className="mason-1 mason-item" alt="Marie Claire BTS Photo 1"/> */}
+        </div>
+    },
+    {
+        id: "card15",
+        title: "Roxy",
+        subtitle: `Peace Joy Aloha x Wayfinder Hotel Waikiki '23`,
+        mainImage: "production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-24.jpg",
+        description:
+        <div className="flex-start-start flex-column">
+            <div className="credits-section" style={{marginBottom: '25px'}}>
+                <h3>Credits</h3>
+                <p><strong>Photography: </strong>Abby Oh</p>
+                <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
+                <p><strong>Cinematography: </strong>Roxy Facer</p>
+                <p><strong>Assists: </strong>Kiana Weight, Simeon Ke-Paloma</p>
+                <p><strong>Athletes: </strong>Megan Godinez, Kelia Moniz, Lisa Andersen, Bruna Zuan, Monyca Eleogram, Kelis Kaleopa&apos;a</p>
+                <p><strong>Models: </strong>Malia Kaleopa&apos;a, Tiara Hernandez, Bri Atisone</p>
+            </div>
+            <VideoPlayer youtube={true} classes="full-video" src="https://youtu.be/coZqPryKVj8?si=yMAZzedY-QGCbQ6n"></VideoPlayer>
+        </div>,
+        className: "tall-card",
+        columnLayout:
+        <div className="mason-grid" style={{marginTop: '25px'}}>
+            <p style={{color: 'red'}}>Left a note - video URL is incorrect and please narrow down photos for this gallery!</p>
             {/* <img src="production/MarieClaire/MarieClaire-BTS-1.jpg" className="mason-1 mason-item" alt="Marie Claire BTS Photo 1"/> */}
         </div>
         
