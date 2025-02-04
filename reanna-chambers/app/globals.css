@@ -78,6 +78,8 @@ i * {font-family: var(--palace-italic)!important;}
 .black-text {color: black !important;}
 .white-button {padding: 10px; border: 1px solid black; border-radius: 5px;}
 
+.navigation-spacer {height: 150px}
+.active-tab {font-weight: 700; text-decoration: underline;}
 nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 .nav-link {font-size: 24px; font-family: var(--palace-italic); text-decoration: unset; color: var(--off-black);}
 .nav-link:hover {transform: scale(1.1); cursor: pointer;}
@@ -87,7 +89,7 @@ nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
   background-image: url('../public/reanna-chambers-logo.png'); background-size: contain; background-repeat: no-repeat; background-position: center 15px; background-origin: center center;}
 
   @media screen and (max-width: 750px) {
-    nav {border: 2px solid red; flex-wrap: wrap;}
+    nav { flex-wrap: wrap;}
     .logo-container {order: 1; width: 100vw; min-width: 100%;}
     .links-left {order: 2; width: 45%; min-width: 45vw;}
     .links-right {order: 3; width: 45%; min-width: 45vw;}
@@ -98,7 +100,7 @@ nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 
 .hover:hover {cursor: pointer; transform: scale(1.05);}
 .hover {cursor: pointer;}
-.box-shadow {box-shadow: 2px 2px 2px rgba(0,0,0,0.5);}
+.box-shadow {box-shadow: 2px 2px 2px rgba(0,0,0,0.25);}
 .text-shadow {text-shadow: 0 0 2px rgba(0,0,0,0.5);}
 
 .active-link {text-decoration: underline;}
@@ -170,3 +172,9 @@ nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 }
 
 .hide-scrollbars::-webkit-scrollbar {display: none; /* For Chrome, Safari, and Edge */}
+
+/* Lightbox.tsx */
+.lightbox-overlay {position: fixed; top: 0; left: 0; z-index: 301; width: 100vw; height: 100vh;}
+.lightbox-content {width: 100vw; padding: 2.5vw; backdrop-filter: blur(5px);}
+.lightbox-content img {width: 100%;}
+.lightbox-content .caption {margin-top: -5px; padding: 25px;}

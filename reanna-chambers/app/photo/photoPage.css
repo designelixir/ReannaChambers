@@ -4,7 +4,7 @@
   }
 
 /* PhotoCardGrid.tsx */
-#cardContainer {width: 100%; padding: 1.5vw; margin-top: 150px;}
+#cardContainer {width: 100%; padding: 1.5vw;}
 .wide-column { width: 100%; max-width: 40vw; padding: 2vw 1vw;}
 .tall-column { width: 100%; max-width: 29vw; padding: 2vw 1vw;}
 #column2, #column3 {width: 50%;}
@@ -27,7 +27,7 @@
     #column1 { max-width: 45vw;}
     #column2and3wrapper {flex-direction: column; max-width: unset; min-width: 45vw;}
     #column2, #column3 {width: 100%; min-width: unset; max-width: unset;}
-    #column3 .tall-card {aspect-ratio: 4/3!important; border: 2px solid purple;}
+    #column3 .tall-card {aspect-ratio: 4/3!important; }
 }
 
 /* PhotoCard.tsx */
@@ -42,7 +42,7 @@
 
 .front-content {width: 100%; height: 100%;  padding: 1.5vw; background: white; border: 2px solid black; opacity: 0; transition: opacity 0.5s ease; border-radius: 5px; }
 .front-content-wrapper {object-fit: contain; overflow-y: scroll; max-height: 85vh;}
-.back-content {padding: 10px; backdrop-filter: blur(1px);}
+.back-content {padding: 10px;}
 .project-title {background: #E8E0D2; font-size: clamp(24px, 4vw, 36px); line-height: clamp(30px, 5vw, 42px);  text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
 .project-subtitle {background: #E8E0D2;  text-align: center; text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
 
@@ -65,3 +65,9 @@
   .mason-1, .mason-2 {width: 100%}
   .mason-inner-container {flex-direction: column;} 
 }
+
+/* Prints.tsx */
+.print {width: 30vw; margin: 1vw 0; display: flex; align-items: flex-center; justify-content: flex-center; flex-direction: column;}
+.print img {width: 100%; }
+.caption {padding: 10px; background: #e2e2e2; text-align: center; }
+.caption p {font-size: 18px;}

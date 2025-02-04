@@ -1,18 +1,21 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-import PhotoCardGrid from './PhotoCardGrid';
-import { projectCards } from './photoData'; // Import your photo data
 import './photoPage.css';
+import PhotoTabSwitcher from './PhotoTabSwitcher';
+
 
 export const metadata = {
   title: 'Photo | Reanna Chambers'
 }
 
 export default function PhotoPage() {
+  
+
   return (
     <section>
       <Navigation />
-      <PhotoCardGrid />
+      <div className="navigation-spacer"></div>
+      <PhotoTabSwitcher></PhotoTabSwitcher>
     </section>
   );
 }
