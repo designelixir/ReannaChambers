@@ -6,6 +6,7 @@ export interface ImageData {
   path: string;
   caption?: string;
   wide: boolean;
+  ultraWide?: boolean;
 }
 
 export interface ProjectData {
@@ -16,19 +17,32 @@ export interface ProjectData {
   mainImage: string;
   imagesAndCaptions?: ImageData[];
   className?: string;
+  columnLayout?: ReactNode;
 }
   
   export const projectCards: ProjectData[] = [
     {
       id: "card1",
       title: "Itzcalli Marie",
-      mainImage: "photography/ItzcalliMarie/F1000011.JPG",
+      mainImage: "photography/ItzcalliMarie/ItzcalliMarie-1.jpg",
       className: "tall-card",
-      imagesAndCaptions: [
-        { path: 'photography/ItzcalliMarie/000031.JPG', caption: 'Caption 1', wide: false },
-        { path: 'photography/ItzcalliMarie/F1000005.JPG', caption: 'Caption 2', wide: false },
-        { path: 'photography/ItzcalliMarie/F1000011.JPG', caption: 'Caption 3', wide: false },
-      ],
+      columnLayout:
+      <div className="mason-grid">
+          <img src="photography/ItzcalliMarie/ItzcalliMarie-3.jpg" className="mason-1 mason-item" alt="Itzcalli Marie Photo 3"></img>
+          <div className="mason-inner-container">
+            <img src="photography/ItzcalliMarie/ItzcalliMarie-2.jpg" className="mason-2 mason-item" alt="Itzcalli Marie Photo 2"></img>
+            <img src="photography/ItzcalliMarie/ItzcalliMarie-1.jpg" className="mason-2 mason-item" alt="Itzcalli Marie Photo 1"></img>
+          </div>
+          <img src="photography/ItzcalliMarie/ItzcalliMarie-6.jpg" className="mason-1 mason-item" alt="Itzcalli Marie Photo 6"></img>
+          <div className="mason-inner-container">
+            <img src="photography/ItzcalliMarie/ItzcalliMarie-5.jpg" className="mason-2 mason-item" alt="Itzcalli Marie Photo 5"></img>
+            <img src="photography/ItzcalliMarie/ItzcalliMarie-7.jpg" className="mason-2 mason-item" alt="Itzcalli Marie Photo 7"></img>
+          </div>
+          <div className="mason-inner-container">
+            <img src="photography/ItzcalliMarie/ItzcalliMarie-4.jpg" className="mason-2 mason-item" alt="Itzcalli Marie Photo 4"></img>
+            <img src="photography/ItzcalliMarie/ItzcalliMarie-8.jpg" className="mason-2 mason-item" alt="Itzcalli Marie Photo 8"></img>
+          </div>
+      </div>
     },
     {
       id: "card2",
@@ -36,27 +50,44 @@ export interface ProjectData {
       subtitle: "Anna Jean Kos",
       mainImage: "photography/AnnaJeanKos/AJKcaves-33.jpg",
       className: "wide-card",
-      imagesAndCaptions: [
-        { path: 'photography/AnnaJeanKos/AJKcaves-18.jpg', caption: 'AJKcaves-18.jpg', wide: false },
-        { path: 'photography/AnnaJeanKos/AJKcaves-40.jpg', caption: 'AJKcaves-40.jpg', wide: false },
-        { path: 'photography/AnnaJeanKos/AJKcaves-5.jpg', caption: 'AJKcaves-5.jpg', wide: false },
-      ],
+      columnLayout: 
+      <div className="mason-grid">
+        <img src="photography/AnnaJeanKos/AJKcaves-18.jpg" className="mason-2 mason-item" alt="Anna Jean Kos Photo 18"></img>
+        <img src="photography/AnnaJeanKos/AJKcaves-32.jpg" className="mason-2 mason-item" alt="Anna Jean Kos Photo 32"></img>
+        <div className="mason-inner-container">
+          <img src="photography/AnnaJeanKos/AJKcaves-5.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 5"></img>
+          <img src="photography/AnnaJeanKos/AJKcaves-31.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 31"></img>
+        </div>
+        <img src="photography/AnnaJeanKos/AJKcaves-27.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 27"></img>
+        <div className="mason-inner-container">
+          <img src="photography/AnnaJeanKos/AJKcaves-33.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 33"></img>
+          <img src="photography/AnnaJeanKos/AJKcaves-40.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 40"></img>
+        </div>
+        <img src="photography/AnnaJeanKos/AJKcaves-38.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 38"></img>
+      </div>
     },
     {
       id: "card3",
       title: "Darling Rooftop NYC",
       mainImage: "photography/DarlingRooftop/Darling-25.jpg",
       className: "tall-card",
-      imagesAndCaptions: [
-        { path: 'photography/DarlingRooftop/Darling-25.jpg', wide: false },
-        { path: 'photography/DarlingRooftop/Darling-44.jpg', caption: 'Darling-44.jpg', wide: false },
-        { path: 'photography/DarlingRooftop/Darling-34.jpg', caption: 'Darling-34.jpg', wide: false },
-        { path: 'photography/DarlingRooftop/Darling-22.jpg', caption: 'Darling-22.jpg', wide: false },
-        { path: 'photography/DarlingRooftop/Darling-12.jpg', caption: 'Darling-12.jpg', wide: false },
-        { path: 'photography/DarlingRooftop/Darling-5.jpg', caption: 'Darling-5.jpg', wide: false },
-        { path: 'photography/DarlingRooftop/Darling-53.jpg', caption: 'Darling-53.jpg', wide: false },
-        { path: 'photography/DarlingRooftop/Darling-57.jpg', wide: false },
-      ],
+      columnLayout: 
+      <div className="mason-grid">
+        <img src="photography/DarlingRooftop/Darling-57.jpg" className="mason-1 mason-item" alt="Darling Rooftop NYC Photo 57"></img>
+        <div className="mason-inner-container mason-1">
+          <div className="mason-50-container">
+            <img src="photography/DarlingRooftop/Darling-25.jpg" className="mason-1  mason-item" alt="Darling Rooftop NYC Photo 25"></img>
+            <img src="photography/DarlingRooftop/Darling-22.jpg" className="mason-1 mason-item" alt="Darling Rooftop NYC Photo 22"></img>
+            <img src="photography/DarlingRooftop/Darling-53.jpg" className="mason-1 mason-item" alt="Darling Rooftop NYC Photo 53"></img>
+          </div>
+          <div>
+            <img src="photography/DarlingRooftop/Darling-44.jpg" className="mason-1 mason-item" alt="Darling Rooftop NYC Photo 44"></img>
+            <img src="photography/DarlingRooftop/Darling-34.jpg" className="mason-1 mason-item" alt="Darling Rooftop NYC Photo 34"></img>
+            <img src="photography/DarlingRooftop/Darling-12.jpg" className="mason-1 mason-item" alt="Darling Rooftop NYC Photo 12"></img>
+            <img src="photography/DarlingRooftop/Darling-5.jpg" className="mason-1 mason-item" alt="Darling Rooftop NYC Photo 5"></img>
+          </div>
+        </div>
+      </div>
     },
     {
       id: "card4",
@@ -64,22 +95,33 @@ export interface ProjectData {
       subtitle: "Towa & Janessa Leone",
       mainImage: "photography/EstelleInes/Towa-21.jpg",
       className: "tall-card",
-      imagesAndCaptions: [
-        { path: "photography/EstelleInes/Towa-3.jpg", caption: "Towa-3.jpg", wide: false },
-        { path: "photography/EstelleInes/Towa-14.jpg", caption: "Towa-14.jpg", wide: false },
-        { path: "photography/EstelleInes/Towa-16.jpg", caption: "Towa-16.jpg", wide: false },
-        { path: "photography/EstelleInes/Towa-19.jpg", caption: "Towa-16.jpg", wide: false },
-        { path: "photography/EstelleInes/Towa-28.jpg", caption: "Towa-28.jpg", wide: false },
-        { path: "photography/EstelleInes/Towa-43.jpg", caption: "Towa-43.jpg", wide: false },
-        { path: "photography/EstelleInes/Towa-48.jpg", caption: "Towa-48.jpg", wide: false },
-        { path: "photography/EstelleInes/Towa-66.jpg", caption: "", wide: false },
-        { path: "photography/EstelleInes/Towa-75.jpg", caption: "", wide: false },
-        { path: "photography/EstelleInes/Towa-77.jpg", caption: "", wide: false },
-        { path: "photography/EstelleInes/Towa-79.jpg", caption: "", wide: false },
-        { path: "photography/EstelleInes/Towa-21.jpg", caption: "", wide: false },
+      columnLayout: 
+      <div className="mason-grid">
+        <img src="photography/EstelleInes/Towa-19.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 19"></img>
+        <div className="mason-inner-container">
+          <div className="mason-50-container">
+            <img src="photography/EstelleInes/Towa-3.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 3"></img>
+            <img src="photography/EstelleInes/Towa-43.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 33"></img>
+            <img src="photography/EstelleInes/Towa-74.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 74"></img>
+            <img src="photography/EstelleInes/Towa-14.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 14"></img>
+          </div>
+          <div className="mason-50-container">
+            <img src="photography/EstelleInes/Towa-16.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 16"></img>
+            <img src="photography/EstelleInes/Towa-28.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 28"></img>
+            <img src="photography/EstelleInes/Towa-79.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 79"></img>
+            <img src="photography/EstelleInes/Towa-48.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 48"></img>
+            <img src="photography/EstelleInes/Towa-66.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 66"></img>
+          </div>
+          
+        </div>
+        
+        
+        
+        
+        
+        
 
-
-      ],
+      </div>
     },
     {
       id: "card5",
@@ -92,19 +134,28 @@ export interface ProjectData {
       </div>,
       mainImage: "photography/TheGeminiSet/GeminiSet-2(wide).jpg",
       className: "wide-card",
-      imagesAndCaptions: [
-        { path: "photography/TheGeminiSet/GeminiSet-9(wide).jpg", caption: "9", wide: false },
-        { path: "photography/TheGeminiSet/GeminiSet-1(wide).jpg", caption: "1", wide: false },
-        { path: "photography/TheGeminiSet/GeminiSet-6(tall).jpg", caption: "6", wide: false },
-        { path: "photography/TheGeminiSet/GeminiSet-7(tall).jpg", caption: "7", wide: true },
-        { path: "photography/TheGeminiSet/GeminiSet-2(wide).jpg", caption: "2", wide: false },
-        { path: "photography/TheGeminiSet/GeminiSet-3(wide).jpg", caption: "3", wide: false },
-        { path: "photography/TheGeminiSet/GeminiSet-4(wide).jpg", caption: "4", wide: false },
-        { path: "photography/TheGeminiSet/GeminiSet-5(wide).jpg", caption: "5", wide: false },
-        { path: "photography/TheGeminiSet/GeminiSet-8(wide).jpg", caption: "8", wide: false },
-        { path: "photography/TheGeminiSet/GeminiSet-10(wide).jpg", caption: "10", wide: false },
-        { path: "photography/TheGeminiSet/GeminiSet-11(wide).jpg", caption: "11", wide: false },
-      ],
+      columnLayout:
+      <div className="mason-grid">
+        <img src="photography/TheGeminiSet/GeminiSet-2(wide).jpg" className="mason-1 mason-item" alt="Gemini Set Photo 2" />
+        <div className="mason-inner-container">
+          <img src="photography/TheGeminiSet/GeminiSet-3(wide).jpg" className="mason-2 mason-item" alt="Gemini Set Photo 3"/>
+          <img src="photography/TheGeminiSet/GeminiSet-1(wide).jpg" className="mason-2 mason-item" alt="Gemini Set Photo 1"/>
+        </div>
+        <div className="mason-inner-container">
+          <div className="mason-50-container">
+            <img src="photography/TheGeminiSet/GeminiSet-6(tall).jpg" className="mason-1 mason-item" alt="Gemini Set Photo 11"/>
+            <img src="photography/TheGeminiSet/GeminiSet-5(wide).jpg" className="mason-1 mason-item" alt="Gemini Set Photo 5"/>  
+          </div>
+          <div className="mason-50-container">
+            <img src="photography/TheGeminiSet/GeminiSet-8(wide).jpg" className="mason-1 mason-item" alt="Gemini Set Photo 8"/>
+            <img src="photography/TheGeminiSet/GeminiSet-7(tall).jpg" className="mason-1 mason-item" alt="Gemini Set Photo 9"/>
+          </div>
+        </div>
+        <img src="photography/TheGeminiSet/GeminiSet-10(wide).jpg" className="mason-2 mason-item" alt="Gemini Set Photo 10"/>
+        <img src="photography/TheGeminiSet/GeminiSet-4(wide).jpg" className="mason-2 mason-item" alt="Gemini Set Photo 4"/>  
+        <img src="photography/TheGeminiSet/GeminiSet-11(wide).jpg" className="mason-1 mason-item" alt="Gemini Set Photo 11"/>
+        <img src="photography/TheGeminiSet/GeminiSet-9(wide).jpg" className="mason-2 mason-item" alt="Gemini Set Photo 9"/>
+      </div>
     },
     {
       id: "card6",
@@ -125,77 +176,115 @@ export interface ProjectData {
       ,
       mainImage: "photography/KaiaSoul/KaiaSoul-2(wide).jpg",
       className: "tall-card",
-      imagesAndCaptions: [
-        { path: "photography/KaiaSoul/KaiaSoul-1(wide).jpg", caption: "1", wide: false },
-        { path: "photography/KaiaSoul/KaiaSoul-2(wide).jpg", caption: "1", wide: false },
-        { path: "photography/KaiaSoul/KaiaSoul-3(wide).jpg", caption: "1", wide: false },
-        { path: "photography/KaiaSoul/KaiaSoul-4(wide).jpg", caption: "1", wide: false },
-        { path: "photography/KaiaSoul/KaiaSoul-5(wide).jpg", caption: "1", wide: false },
-        { path: "photography/KaiaSoul/KaiaSoul-6(wide).jpg", caption: "1", wide: false },
-        { path: "photography/KaiaSoul/KaiaSoul-7(wide).jpg", caption: "1", wide: false },
-        { path: "photography/KaiaSoul/KaiaSoul-8(wide).jpg", caption: "1", wide: false },
-      ],
+      columnLayout: 
+      <div className="mason-grid">
+        <img src="photography/KaiaSoul/KaiaSoul-4(wide).jpg" className="mason-1 mason-item" alt="Kaia Soul Photo 4"/>
+        <img src="photography/KaiaSoul/KaiaSoul-3(wide).jpg" className="mason-2 mason-item" alt="Kaia Soul Photo 3"/>
+        <img src="photography/KaiaSoul/KaiaSoul-6(wide).jpg" className="mason-2 mason-item" alt="Kaia Soul Photo 6"/>
+        <img src="photography/KaiaSoul/KaiaSoul-1(wide).jpg" className="mason-1 mason-item" alt="Kaia Soul Photo 1"/>
+        <img src="photography/KaiaSoul/KaiaSoul-5(wide).jpg" className="mason-2 mason-item" alt="Kaia Soul Photo 5"/>
+        <img src="photography/KaiaSoul/KaiaSoul-7(wide).jpg" className="mason-2 mason-item" alt="Kaia Soul Photo 7"/>
+        <img src="photography/KaiaSoul/KaiaSoul-8(wide).jpg" className="mason-2 mason-item" alt="Kaia Soul Photo 8"/>
+        <img src="photography/KaiaSoul/KaiaSoul-2(wide).jpg" className="mason-2 mason-item" alt="Kaia Soul Photo 2"/>
+      </div>
     },
     
     {
       id: "card7",
       title: "Monet Cheung",
-      
       mainImage: "photography/MonetCheung/Monet-36.jpg",
       className: "tall-card",
-      imagesAndCaptions: [
-        { path: "photography/MonetCheung/Monet-1.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-2.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-3.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-8.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-11.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-14.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-33.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-35.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-36.jpg", wide: false },
-
-      ],
+      columnLayout:
+      <div className="mason-grid">
+        <img src="photography/MonetCheung/Monet-1.jpg" className="mason-1 mason-item" alt="Monet Cheung Photo 1"/>
+        <img src="photography/MonetCheung/Monet-36.jpg" className="mason-2 mason-item" alt="Monet Cheung Photo 36"/>
+        <img src="photography/MonetCheung/Monet-2.jpg" className="mason-2 mason-item" alt="Monet Cheung Photo 2"/>
+        <img src="photography/MonetCheung/Monet-3.jpg" className="mason-2 mason-item" alt="Monet Cheung Photo 3"/>
+        <img src="photography/MonetCheung/Monet-8.jpg" className="mason-2 mason-item" alt="Monet Cheung Photo 8"/>
+        <img src="photography/MonetCheung/Monet-11.jpg" className="mason-2 mason-item" alt="Monet Cheung Photo 11"/>
+        <img src="photography/MonetCheung/Monet-14.jpg" className="mason-2 mason-item" alt="Monet Cheung Photo 14"/>
+        <img src="photography/MonetCheung/Monet-33.jpg" className="mason-2 mason-item" alt="Monet Cheung Photo 33"/>
+        <img src="photography/MonetCheung/Monet-35.jpg" className="mason-2 mason-item" alt="Monet Cheung Photo 35"/>
+      </div>
     },
     {
       id: "card8",
       title: "Kaimana Beach Hotel",
-      
       mainImage: "photography/KaimanaBeachHotel/KaimanaBeachDigis-3.jpg",
       className: "wide-card",
-      imagesAndCaptions: [
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-13.jpg", wide: true },
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-2.jpg", wide: true },
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-3.jpg", wide: false },
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-4.jpg", wide: false },
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-10.jpg", wide: false },
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-11.jpg", wide: false },
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-12.jpg", wide: false },
-        
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-19.jpg", wide: false },
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-31.jpg", wide: false },
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-36.jpg", wide: false },
-        { path: "photography/KaimanaBeachHotel/KaimanaBeachDigis-56.jpg", wide: false },
-        
-      ],
+      columnLayout: 
+      <div className="mason-grid">
+        <div className="mason-inner-container">
+          <div className="mason-50-container">
+            <img src="photography/KaimanaBeachHotel/KaimanaBeachDigis-13.jpg" className="mason-1 mason-item" alt="Kaimana Beach Hotel Photo 13"/>
+          </div>
+          <div className="mason-50-container">
+            <img src="photography/KaimanaBeachHotel/KaimanaBeachDigis-4.jpg" className="mason-1 mason-item" alt="Kaimana Beach Hotel Photo 4"/>
+            <img src="photography/KaimanaBeachHotel/KaimanaBeachDigis-2.jpg" className="mason-1 mason-item" alt="Kaimana Beach Hotel Photo 2"/>
+          </div>
+        </div>
+        <img src="photography/KaimanaBeachHotel/KaimanaBeachDigis-56.jpg" className="mason-2 mason-item" alt="Kaimana Beach Hotel Photo 56"/>
+        <img src="photography/KaimanaBeachHotel/KaimanaBeachDigis-31.jpg" className="mason-2 mason-item" alt="Kaimana Beach Hotel Photo 31"/>
+        <img src="photography/KaimanaBeachHotel/KaimanaBeachDigis-36.jpg" className="mason-1 mason-item" alt="Kaimana Beach Hotel Photo 36"/>
+        <img src="photography/KaimanaBeachHotel/KaimanaBeachDigis-12.jpg" className="mason-2 mason-item" alt="Kaimana Beach Hotel Photo 12"/>
+        <img src="photography/KaimanaBeachHotel/KaimanaBeachDigis-3.jpg" className="mason-2 mason-item" alt="Kaimana Beach Hotel Photo 3"/>
+        <img src="photography/KaimanaBeachHotel/KaimanaBeachDigis-19.jpg" className="mason-1 mason-item" alt="Kaimana Beach Hotel Photo 19"/>
+        <img src="photography/KaimanaBeachHotel/KaimanaBeachDigis-10.jpg" className="mason-2 mason-item" alt="Kaimana Beach Hotel Photo 10"/>
+      </div>
     },
     {
       id: "card9",
       title: "Nani Welch Keli'iho'omalu",
       subtitle: 'for M3N3HUN3',
-      mainImage: "photography/MonetCheung/Monet-36.jpg",
+      mainImage: "photography/NaniWelch/NaniWelch-10.jpg",
       className: "tall-card",
-      imagesAndCaptions: [
-        { path: "photography/MonetCheung/Monet-1.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-2.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-3.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-8.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-11.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-14.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-33.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-35.jpg", wide: false },
-        { path: "photography/MonetCheung/Monet-36.jpg", wide: false },
-
-      ],
+      columnLayout: 
+      <div className="mason-grid">
+        <img src="photography/NaniWelch/NaniWelch-12.jpg" className="mason-1 mason-item" alt="Nani Welch Keli'iho'omalu Photo 12"/>
+        <img src="photography/NaniWelch/NaniWelch-11.jpg" className="mason-2 mason-item" alt="Nani Welch Keli'iho'omalu Photo 11"/>
+        <img src="photography/NaniWelch/NaniWelch-4.jpg" className="mason-2 mason-item" alt="Nani Welch Keli'iho'omalu Photo 4"/>
+        <img src="photography/NaniWelch/NaniWelch-3.jpg" className="mason-2 mason-item" alt="Nani Welch Keli'iho'omalu Photo 3"/>
+        <img src="photography/NaniWelch/NaniWelch-7.jpg" className="mason-2 mason-item" alt="Nani Welch Keli'iho'omalu Photo 7"/>
+        <img src="photography/NaniWelch/NaniWelch-9.jpg" className="mason-1 mason-item" alt="Nani Welch Keli'iho'omalu Photo 9"/>
+        <img src="photography/NaniWelch/NaniWelch-8.jpg" className="mason-2 mason-item" alt="Nani Welch Keli'iho'omalu Photo 8"/>
+        <img src="photography/NaniWelch/NaniWelch-1.jpg" className="mason-2 mason-item" alt="Nani Welch Keli'iho'omalu Photo 1"/>
+        <img src="photography/NaniWelch/NaniWelch-10.jpg" className="mason-2 mason-item" alt="Nani Welch Keli'iho'omalu Photo 10"/>
+        <img src="photography/NaniWelch/NaniWelch-6.jpg" className="mason-2 mason-item" alt="Nani Welch Keli'iho'omalu Photo 6"/>
+      </div>
+    },
+    {
+      id: "card10",
+      title: "Pono Collective Coffee",
+      subtitle: 'El Salvador / Guatemala Event',
+      mainImage: "photography/PonoCollective/PonoCollective-24.jpg",
+      className: "wide-card",
+      columnLayout: 
+      <div className="mason-grid">
+        <img src="photography/PonoCollective/PonoCollective-1.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 1"/>
+        <img src="photography/PonoCollective/PonoCollective-2.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 2"/>
+        <img src="photography/PonoCollective/PonoCollective-3.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 3"/>
+        <img src="photography/PonoCollective/PonoCollective-4.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 4"/>
+        <img src="photography/PonoCollective/PonoCollective-5.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 5"/>
+        <img src="photography/PonoCollective/PonoCollective-6.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 6"/>
+        <img src="photography/PonoCollective/PonoCollective-7.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 7"/>
+        <img src="photography/PonoCollective/PonoCollective-8.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 8"/>
+        <img src="photography/PonoCollective/PonoCollective-9.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 9"/>
+        <img src="photography/PonoCollective/PonoCollective-10.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 10"/>
+        <img src="photography/PonoCollective/PonoCollective-11.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 11"/>
+        <img src="photography/PonoCollective/PonoCollective-12.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 12"/>
+        <img src="photography/PonoCollective/PonoCollective-13.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 13"/>
+        <img src="photography/PonoCollective/PonoCollective-14.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 14"/>
+        <img src="photography/PonoCollective/PonoCollective-15.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 15"/>
+        <img src="photography/PonoCollective/PonoCollective-16.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 16"/>
+        <img src="photography/PonoCollective/PonoCollective-17.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 17"/>
+        <img src="photography/PonoCollective/PonoCollective-18.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 18"/>
+        <img src="photography/PonoCollective/PonoCollective-19.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 19"/>
+        <img src="photography/PonoCollective/PonoCollective-20.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 20"/>
+        <img src="photography/PonoCollective/PonoCollective-21.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 21"/>
+        <img src="photography/PonoCollective/PonoCollective-22.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 22"/>
+        <img src="photography/PonoCollective/PonoCollective-23.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 23"/>
+        <img src="photography/PonoCollective/PonoCollective-24.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 24"/>
+      </div>
     },
   ];
   

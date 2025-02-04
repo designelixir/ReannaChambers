@@ -3,9 +3,8 @@
 import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import './cardAnimation.css';
 import { flipCard } from './animationUtils';
-import ResponsiveMasonry from './ResponsiveMasonry';
-import { initializeMasonry } from './masonryUtils';
-import { ImageData, ProjectData } from './photoData';
+import {ProjectData } from './photoData';
+import ProjectCardPhotoGrid from './ProjectCardPhotoGrid';
 
 interface ProjectCardProps {
   projectData: ProjectData; // Pass all project data as a single object
@@ -20,6 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
     description,
     mainImage,
     imagesAndCaptions = [],
+    columnLayout,
     className = '',
   } = projectData;
 
@@ -43,11 +43,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
     }
     setReadyLoadImages(true);
     onClick(`#${id}-move`);
-
-    // After handling other click functionalities, delay setting readyLoadImages
-    
-       
-      
   };
 
   return (
@@ -56,21 +51,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
         <div className="front">
           <div className="front-content" ref={frontContentRef}>
             <div className='front-content-wrapper'>
-              <div className="flex-start-start flex-column full-width" style={{ padding: '10px' }}>
-                <div className='flex-start-spacebetween full-width'>
-                  <h1 className="project-title black-text centered-text">{title} {subtitle ? <span>- {subtitle}</span> : ''}</h1>
-                  <button className="close-button hover" onClick={handleClick}>X</button>
+            <div className="flex-start-start flex-column full-width" style={{ padding: '10px' }}>
+              <div className='flex-start-spacebetween full-width'>
+                <div>
+                  <h1 className="project-title black-text" style={{textShadow: 'unset', fontWeight: '700'}}>{title}</h1>
+                  {subtitle && <h2 style={{fontSize: '28px', lineHeight: '32px'}}>{subtitle}</h2>}
+                  {description && <div><br></br>{description}</div>}
                 </div>
-                {description && <div>{description}</div>}
+                <button className="close-button hover" onClick={handleClick}>X</button>
               </div>
-              <div id="masonryWrapper" className="hide-scrollbars">
-                {readyLoadImages && (
-                  <ResponsiveMasonry
-                    images={imagesAndCaptions}
-                    id={title.replace(/\s+/g, '')}
-                  />
-                )}
-              </div>
+              
+            </div>
+            <div id="masonryWrapper" className="hide-scrollbars">
+              {columnLayout ? (
+                <ProjectCardPhotoGrid columnLayout={columnLayout}></ProjectCardPhotoGrid>
+              ): (
+                <div>No images to display.</div>
+              )}
+            </div>
             </div>
           </div>
         </div>
