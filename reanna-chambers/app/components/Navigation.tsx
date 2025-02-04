@@ -2,11 +2,11 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Hook to get the current route
+import { usePathname } from 'next/navigation';
 import '../globals.css';
 
 export default function Navigation() {
-  const pathname = usePathname(); // Get the current route
+  const pathname = usePathname(); 
 
   return (
     <nav className="flex-center-spaceevenly">

@@ -46,6 +46,15 @@ export default function Lightbox({ children, isOpen, onClose }: LightboxProps) {
         
         {children}
       </div>
+      <style jsx>{`
+        .lightbox-overlay {position: fixed; top: 0; left: 0; z-index: 301; width: 100vw; height: 100vh;}
+        .lightbox-content {width: 100vw; padding: 2.5vw; backdrop-filter: blur(5px);}
+        .lightbox-content img {width: 100%;}
+        .lightbox-content .caption {margin-top: -5px; padding: 25px;}
+
+
+        }
+      `}</style>
     </div>
   );
 }
