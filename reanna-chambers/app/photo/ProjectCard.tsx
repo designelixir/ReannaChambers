@@ -1,7 +1,6 @@
 'use client';
 
 import React, { ReactNode, useEffect, useRef, useState } from 'react';
-import './cardAnimation.css';
 import { flipCard } from './animationUtils';
 import {ProjectData } from './photoData';
 import ProjectCardPhotoGrid from './ProjectCardPhotoGrid';

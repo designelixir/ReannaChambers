@@ -4,8 +4,7 @@ import React, { useRef, useState } from 'react';
 import Navigation from '../components/Navigation';
 import gsap from 'gsap';
 import ProjectCard from './ProjectCard';
-import './cardAnimation.css';
-import { projectCards } from './photoData'; // Import your photo data
+import { projectCards } from './photoData'; 
 
 interface CardState {
   id: string;

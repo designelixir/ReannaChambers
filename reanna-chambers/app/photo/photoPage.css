@@ -35,4 +35,33 @@
 .wide-card {aspect-ratio: 4/3; min-width: 100%;}
 .tall-card {aspect-ratio: 3/4; min-width: 100%;}
 .front, .back {position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 8px;}
+.front {background-image: url('/cards/card-bg.png'); background-size: cover; background-position: center; z-index: 2; transform: rotateY(0deg);}
+.back {background-color: white; background-size: cover; background-position: center center; background-repeat: no-repeat; transform: rotateY(180deg);}
+.card-inner {width: 100%; height: 100%; border-radius: 10px; border: 2px solid black; transform-style: preserve-3d;}
+.card-inner.flip {transform: rotateY(180deg);}
 
+.front-content {width: 100%; height: 100%;  padding: 1.5vw; background: white; border: 2px solid black; opacity: 0; transition: opacity 0.5s ease; border-radius: 5px; }
+.front-content-wrapper {object-fit: contain; overflow-y: scroll; max-height: 85vh;}
+.back-content {padding: 10px;}
+.project-title {background: #E8E0D2; font-size: clamp(24px, 4vw, 36px); line-height: clamp(30px, 5vw, 42px);  text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
+.project-subtitle {background: #E8E0D2;  text-align: center; text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
+
+.close-button {padding: 10px; background: white; z-index: 301; border: 3px solid black; border-radius: 5px;}
+
+/* PhotoCardPhotoGrid.tsx */
+#masonryWrapper {overflow-y: scroll;  width: 100%; }
+.mason-grid { width: calc(100% - 10px); display: flex; align-items: flex-start; justify-content: flex-start; flex-wrap: wrap;}
+.mason-inner-container {display: flex; align-items: flex-start; justify-content: flex-start; width: 100%;}
+.mason-50-container {min-width: 50%;}
+
+.mason-inner-container {min-width: calc(50% - 10px);}
+.mason-item {padding: 5px; object-fit: contain;}
+
+.mason-item img {width: 100%;}
+.mason-1 {width: 100%;}
+.mason-2 {width: 50%;}
+
+@media screen and (max-width: 800px) {
+  .mason-1, .mason-2 {width: 100%}
+  .mason-inner-container {flex-direction: column;} 
+}
