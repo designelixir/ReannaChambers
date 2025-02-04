@@ -59,7 +59,7 @@
 .mason-item {padding: 5px; object-fit: contain;}
 
 .mason-item img {width: 100%;}
-.mason-1 {width: 100%; opacty: 0;}
+.mason-1 {width: 100%; opacity: 0;}
 .mason-2 {width: 50%;}
 
 @media screen and (max-width: 800px) {
