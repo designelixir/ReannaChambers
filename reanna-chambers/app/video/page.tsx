@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 
 export const metadata = {
-  title: 'Video| Reanna Chambers'
+  title: 'Video | Reanna Chambers'
 }
 
 export default function VideoPage() {
