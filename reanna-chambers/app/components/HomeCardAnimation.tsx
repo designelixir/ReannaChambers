@@ -1,186 +1,186 @@
-'use client';
-import React from "react";
-import "./component-styles/CardAnimation.css"; // Add corresponding styles
+"use client"; // Ensures this runs only on the client
+
+import React, { useEffect } from "react";
+import "./component-styles/CardAnimation.css";
 import PlayingCardFormat from "./PlayingCardFormat";
 import gsap from "gsap";
-import next from "next";
 
-// Declare the types for card arrays and timeout
 const cardNames = ["PhotoCard", "ProductionCard", "VideoCard", "AboutCard"];
 const cardOrder = ["AboutCard", "PhotoCard", "VideoCard", "ProductionCard"];
-let inactivityTimeout: ReturnType<typeof setTimeout>; // Explicit type for setTimeout
+let inactivityTimeout: ReturnType<typeof setTimeout>;
 
-// Function to reset the inactivity timer
 function resetInactivityTimer() {
   clearTimeout(inactivityTimeout);
   inactivityTimeout = setTimeout(() => {
     wobbleCards();
-  }, 5000); // 5 seconds of inactivity
+  }, 5000);
 }
 
-// Function to add the wobble animation to each card
 function wobbleCards() {
-  const cards = document.querySelectorAll(".card");
-  const positioners = document.querySelectorAll(".positioner");
-  console.log("starting wobble");
+  if (typeof window !== "undefined") {
+    const cards = document.querySelectorAll(".card");
+    const positioners = document.querySelectorAll(".positioner");
 
-  cards.forEach((card, index) => {
-    gsap.fromTo(
-      [card, positioners[index]],
-      { marginTop: 0 }, // Initial state
-      {
-        marginTop: -50,
-        duration: 0.5, // Halfway duration
-        ease: "ease-in-out",
-        yoyo: true,
-        repeat: 1, // Goes back to original state
-        delay: index * 0.2, // Stagger each card by 0.2s
-      }
-    );
-  });
+    cards.forEach((card, index) => {
+      gsap.fromTo(
+        [card, positioners[index]],
+        { marginTop: 0 },
+        {
+          marginTop: -50,
+          duration: 0.5,
+          ease: "ease-in-out",
+          yoyo: true,
+          repeat: 1,
+          delay: index * 0.2,
+        }
+      );
+    });
 
-  // Restart the inactivity timer after wobbling is complete
-  resetInactivityTimer();
+    resetInactivityTimer();
+  }
 }
-
-// Start the inactivity timer when the page loads
-resetInactivityTimer();
 
 function handleFlip(cardId: string) {
-  const card = document.getElementById(cardId);
-  const cardInner = document.querySelector(`#${cardId} .card-inner`)
-
-  if (card) {
-    card.classList.toggle("flipped");
+  if (typeof window !== "undefined") {
+    const card = document.getElementById(cardId);
+    if (card) {
+      card.classList.toggle("flipped");
+    }
   }
-
 }
 
-function expandCard(cardId: string, destination: string){
-  const card = document.getElementById(cardId);
-  const cardInner = document.querySelector(`#${cardId} .card-inner`)
+function expandCard(cardId: string, destination: string) {
+  if (typeof window !== "undefined") {
+    const card = document.getElementById(cardId);
+    const cardInner = document.querySelector(`#${cardId} .card-inner`);
 
-  if (card) {
-    animation3(cardId)
-    const delay = 0.5; // Adjust the delay as needed
-    const flipDuration = 0.5; // Assumed flip animation duration
-    const totalDelay = flipDuration + delay;
-    
-  // // Apply GSAP animation
-  gsap.delayedCall(totalDelay, () => {
-    handleFlip(cardId)
-  });
+    if (card) {
+      animation3(cardId);
+      const delay = 0.5;
+      const flipDuration = 0.5;
+      const totalDelay = flipDuration + delay;
 
-  gsap.delayedCall(totalDelay * 2, () => {
-    if (cardInner) {
-      gsap.to(cardInner, {
-        duration: 1, // Adjust duration for smoothness
-        width: "300vw",
-        minWidth: "300vw",
-        minHeight: "300vh",
-        borderRadius: "0px",
-        borderWidth: "2px",
-        borderColor: "blue",
-        transformOrigin: "center center",
-        ease: "power2.out",
-        onUpdate: () => {
-          if (destination) {
-            window.location.href = destination;
-          }
-        },
+      gsap.delayedCall(totalDelay, () => {
+        handleFlip(cardId);
+      });
+
+      gsap.delayedCall(totalDelay * 2, () => {
+        if (cardInner) {
+          gsap.to(cardInner, {
+            duration: 1,
+            width: "300vw",
+            minWidth: "300vw",
+            minHeight: "300vh",
+            borderRadius: "0px",
+            borderWidth: "2px",
+            borderColor: "blue",
+            transformOrigin: "center center",
+            ease: "power2.out",
+            onUpdate: () => {
+              if (destination) {
+                window.location.href = destination;
+              }
+            },
+          });
+        }
       });
     }
-  });
-} 
+  }
 }
 
 function animation1() {
-  cardOrder.forEach((cardId, index) => {
+  if (typeof window !== "undefined") {
+    cardOrder.forEach((cardId, index) => {
+      setTimeout(() => {
+        const card = document.getElementById(cardId);
+        if (card) {
+          card.style.transform = "rotate(0deg) translate(0px, 0px)";
+        }
+      }, index * 200);
+    });
+
     setTimeout(() => {
-      const card = document.getElementById(cardId);
-      if (card) {
-        card.style.transform = "rotate(0deg) translate(0px, 0px)";
-      }
-    }, index * 200); // Stagger each animation by 200ms
-  });
-  setTimeout(() => {
-    animation2();
-  }, 1000);
+      animation2();
+    }, 1000);
+  }
 }
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    animation1();
-  }, 1000);
-});
-
 function animation2() {
-  const cardsLength = cardNames.length;
+  if (typeof window !== "undefined") {
+    const cardsLength = cardNames.length;
+    for (let i = 0; i < cardsLength; i++) {
+      setTimeout(() => {
+        const targetCard = document.getElementById(cardNames[i]);
+        const targetPosition = `${cardNames[i]}Positioner`;
+        const positionElement = document.getElementById(targetPosition);
 
-  for (let i = 0; i < cardsLength; i++) {
-    setTimeout(() => {
-      const targetCard = document.getElementById(cardNames[i]);
-      const targetPosition = `${cardNames[i]}Positioner`;
-      const positionElement = document.getElementById(targetPosition);
+        if (targetCard && positionElement) {
+          const positionerBox = positionElement.getBoundingClientRect();
+          const cardBox = targetCard.getBoundingClientRect();
 
-      if (targetCard && positionElement) {
-        const positionerBox = positionElement.getBoundingClientRect();
-        const cardBox = targetCard.getBoundingClientRect();
+          const deltaX =
+            positionerBox.left +
+            positionerBox.width / 2 -
+            (cardBox.left + cardBox.width / 2);
+          const deltaY =
+            positionerBox.top + positionerBox.height - cardBox.top;
 
-        // Calculate the distance to center the card on the positioner (x-axis and y-axis)
-        const deltaX =
-          positionerBox.left +
-          positionerBox.width / 2 -
-          (cardBox.left + cardBox.width / 2);
-        const deltaY =
-          positionerBox.top + positionerBox.height - cardBox.top;
+          targetCard.style.transition = "transform 0.8s ease";
+          targetCard.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
 
-        targetCard.style.transition = "transform 0.8s ease";
-        targetCard.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+          setTimeout(() => {
+            handleFlip(cardNames[i]);
+            positionElement.style.opacity = "1";
+          }, 900);
+        }
+      }, i * 1000);
+    }
 
-        setTimeout(() => {
-          handleFlip(cardNames[i]);
-          positionElement.style.opacity = "1"; // Correctly reference positionElement to update style
-        }, 900);
-      }
-    }, i * 1000); // Stagger the animations by 1 second
+    const parentContainer = document.getElementById("cardContainer");
+    parentContainer?.classList.remove("flex-center-center");
+    parentContainer?.classList.add("flex-end-spacebetween");
+
+    resetInactivityTimer();
   }
-  const parentContainer = document.getElementById('cardContainer')
-  parentContainer?.classList.remove('flex-center-center')
-  parentContainer?.classList.add('flex-end-spacebetween')
-  
-  resetInactivityTimer();
 }
 
 function animation3(cardId: string) {
-  const targetCard = document.getElementById(cardId);
-  const targetPosition = `${cardId}Positioner`;
-  const positionElement = document.getElementById(targetPosition);
+  if (typeof window !== "undefined") {
+    const targetCard = document.getElementById(cardId);
+    const targetPosition = `${cardId}Positioner`;
+    const positionElement = document.getElementById(targetPosition);
 
-  if (targetCard && positionElement) {
-    const positionerBox = positionElement.getBoundingClientRect();
-    const cardBox = targetCard.getBoundingClientRect();
+    if (targetCard && positionElement) {
+      const positionerBox = positionElement.getBoundingClientRect();
+      const cardBox = targetCard.getBoundingClientRect();
 
-    // Calculate the reverse distance to return the card to its original spot
-    const deltaX =
-      cardBox.left +
-      cardBox.width / 2 -
-      (positionerBox.left + positionerBox.width / 2);
-    const deltaY =
-      cardBox.top -
-      (positionerBox.top + positionerBox.height);
+      const deltaX =
+        cardBox.left +
+        cardBox.width / 2 -
+        (positionerBox.left + positionerBox.width / 2);
+      const deltaY =
+        cardBox.top -
+        (positionerBox.top + positionerBox.height);
 
-    targetCard.style.transition = "transform 0.8s ease";
-    targetCard.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-    targetCard.style.minWidth = '100vw'
-    targetCard.style.minHeight = '100vh'
-
-    
+      targetCard.style.transition = "transform 0.8s ease";
+      targetCard.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+      targetCard.style.minWidth = "100vw";
+      targetCard.style.minHeight = "100vh";
+    }
   }
 }
 
-
 export default function HomeCardAnimation() {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setTimeout(() => {
+        animation1();
+      }, 1000);
+
+      resetInactivityTimer();
+    }
+  }, []);
+
   return (
     <>
       <div className="flex-center-center positioner-wrapper">

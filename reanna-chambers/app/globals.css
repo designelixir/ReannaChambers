@@ -1,4 +1,4 @@
-* {box-sizing: border-box; font-weight: 100; font-family: var(--palace-regular); text-shadow: 0px 0px 0.75px black;}
+* {box-sizing: border-box; font-weight: 100; font-family: var(--palace-regular); }
 @font-face {font-family: "PalaceRegular"; src: url("/fonts/palace-regular.ttf") format("truetype"); font-weight: 100; font-style: normal;}
 @font-face {font-family: "PalaceItalic"; src: url("/fonts/palace-italic.ttf") format("truetype"); font-weight: 100; font-style: italic;}
 
@@ -68,9 +68,10 @@ i * {font-family: var(--palace-italic)!important;}
 .navigation-spacer {height: 150px}
 .active-tab {font-weight: 700; text-decoration: underline;}
 nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
-.nav-link {font-size: 24px; font-family: var(--palace-italic); text-decoration: unset; color: var(--off-black);}
-.nav-link:hover {transform: scale(1.1); cursor: url('/star2.svg');}
-.active-link {text-decoration: underline!important; stroke: 1px solid black;}
+.nav-link {font-size: 24px; font-family: var(--palace-italic); text-decoration: unset!important; color: var(--off-black);}
+.nav-link:hover {color: gray;}
+
+.active-link i {text-decoration: unset; border-bottom: 1px solid black;}
 .logo-wrapper { width: 100%; max-width: 750px; padding: 25px;}
 .text-logo-wrapper {min-width: 300px; background-image: url('../public/logo-shelf.png'); background-size: contain; background-repeat: no-repeat; background-position: center 100%;}
 .logo-text {font-size: clamp(32px, 2.25rem, 36px); margin-bottom: 10px; line-height: 3.25rem; font-weight: 100!important; text-decoration: unset!important;}

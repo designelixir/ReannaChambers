@@ -4,12 +4,6 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { clientsList } from "./clientListData";
 
-interface Client {
-  clientName: string;
-  clientCategory: string;
-  clientLink?: string;
-}
-
 const categories = ["all", "fashion", "airlines", "food", "finance", "other"];
 
 export default function ClientList() {

@@ -295,8 +295,8 @@ export interface ProductionData {
             <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
             <p><strong>Cinematography: </strong>Roxy Facer</p>
             <p><strong>Assists: </strong>Kiana Weight, Simeon Ke-Paloma</p>
-            <p><strong>Atheletes: </strong>Megan Godinez, Kelia Moniz, Lisa Andersen, Bettylou Sakura Johnson, Bruna Zuan, Monyca Eleogram, Kelis Kaleopa'a, Coral Sallas </p>
-            <p><strong>Models: </strong>Malia Kaleopa'a, Tiara Hernandez, Bri Atisone</p>
+            <p><strong>Atheletes: </strong>Megan Godinez, Kelia Moniz, Lisa Andersen, Bettylou Sakura Johnson, Bruna Zuan, Monyca Eleogram, Kelis Kaleopa&apos;a, Coral Sallas </p>
+            <p><strong>Models: </strong>Malia Kaleopa&apos;a, Tiara Hernandez, Bri Atisone</p>
         </div>,
         className: "tall-card",
         columnLayout:

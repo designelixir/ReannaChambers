@@ -56,8 +56,8 @@ export default function Prints({ prints }: PrintsProps) {
       {/* Lightbox Component */}
       {selectedImage && (
         <Lightbox isOpen={!!selectedImage} onClose={() => setSelectedImage(null)}>
-          <img src={selectedImage.imageUrl} alt={selectedImage.imageCaption} />
-          <p className="caption">{selectedImage.imageCaption}</p>
+          <img src={selectedImage.imageUrl} style={{width: '100%'}} alt={selectedImage.imageCaption} />
+          <p className="caption" style={{width: '100%'}}>{selectedImage.imageCaption}</p>
         </Lightbox>
       )}
     </section>

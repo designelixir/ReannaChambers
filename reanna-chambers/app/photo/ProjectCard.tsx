@@ -1,6 +1,6 @@
 'use client';
 
-import React, { ReactNode, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { flipCard } from './animationUtils';
 import { ProjectData } from './photoData';
 import ProjectCardPhotoGrid from './ProjectCardPhotoGrid';
@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   const handleClick = () => {
     if (cardRef.current) {
       flipCard(cardRef.current, !isFlipped);
-      setIsFlipped(!isFlipped);
+      setIsFlipped(!isFlipped && readyLoadImages);
     }
 
     // Check if the card is now inside #goToMe

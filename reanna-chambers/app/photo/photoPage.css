@@ -47,7 +47,7 @@
 .project-subtitle {background: #E8E0D2;  text-align: center; text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
 
 
-.close-button {padding: 10px; margin-top: -5px; height: 50px; width: 50px; background: white; z-index: 301; border: 3px solid black; border-radius: 5px;}
+.close-button {padding: 10px; margin-top: -5px; margin-right: 20px; height: 50px; width: 50px; background: white; z-index: 301; border: 3px solid black; border-radius: 5px;}
 
 /* PhotoCardPhotoGrid.tsx */
 #masonryWrapper {overflow-y: scroll; height: 100%; width: 100%; padding: 0 15px; }

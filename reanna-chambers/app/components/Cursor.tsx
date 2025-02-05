@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef } from "react";
 
 export default function Cursor() {
@@ -5,53 +6,19 @@ export default function Cursor() {
   const cursorInnerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    if (typeof window === "undefined") return; // Ensure this runs only in the browser
+
     const moveCursor = (e: MouseEvent) => {
-      if (cursorRef.current) {
-        cursorRef.current.style.left = `${e.clientX + 40}px`;
-        cursorRef.current.style.top = `${e.clientY + 60}px`;
-      }
-      if (cursorInnerRef.current) {
-        cursorInnerRef.current.style.left = `${e.clientX}px`;
-        cursorInnerRef.current.style.top = `${e.clientY}px`;
-      }
-    };
-
-    const handleMouseDown = () => {
-      cursorRef.current?.classList.add("click");
-      cursorInnerRef.current?.classList.add("cursorinnerhover");
-    };
-
-    const handleMouseUp = () => {
-      cursorRef.current?.classList.remove("click");
-      cursorInnerRef.current?.classList.remove("cursorinnerhover");
-    };
-
-    const handleHover = (e: Event) => {
-      cursorInnerRef.current?.classList.add("hovercursor");
-    };
-
-    const handleLeave = (e: Event) => {
-      cursorInnerRef.current?.classList.remove("hovercursor");
+      cursorRef.current!.style.left = `${e.clientX + 40}px`;
+      cursorRef.current!.style.top = `${e.clientY + 60}px`;
+      cursorInnerRef.current!.style.left = `${e.clientX}px`;
+      cursorInnerRef.current!.style.top = `${e.clientY}px`;
     };
 
     document.addEventListener("mousemove", moveCursor);
-    document.addEventListener("mousedown", handleMouseDown);
-    document.addEventListener("mouseup", handleMouseUp);
-
-    // Attach hover events for all links
-    document.querySelectorAll("a").forEach((item) => {
-      item.addEventListener("mouseover", handleHover);
-      item.addEventListener("mouseleave", handleLeave);
-    });
 
     return () => {
       document.removeEventListener("mousemove", moveCursor);
-      document.removeEventListener("mousedown", handleMouseDown);
-      document.removeEventListener("mouseup", handleMouseUp);
-      document.querySelectorAll("a").forEach((item) => {
-        item.removeEventListener("mouseover", handleHover);
-        item.removeEventListener("mouseleave", handleLeave);
-      });
     };
   }, []);
 
@@ -59,6 +26,8 @@ export default function Cursor() {
     <>
       <div ref={cursorRef} className="cursor"></div>
       <div ref={cursorInnerRef} className="cursor2"></div>
+ 
+
 
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
@@ -79,7 +48,7 @@ export default function Cursor() {
           position: fixed;
           pointer-events: none;
           transform: translate(calc(-50% + 15px), -50%);
-          z-index: 9999;
+          z-index: 9999999999999999;
         }
 
         .cursor2 {

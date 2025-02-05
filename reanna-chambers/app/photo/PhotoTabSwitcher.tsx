@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react';
 import PhotoCardGrid from './PhotoCardGrid';
-import { projectCards } from './photoData'; 
 import prints from './printData';
 import Prints from './Prints';
 

@@ -9,24 +9,26 @@ import { gsap } from "gsap";
 export default function Home() {
   
   useEffect(() => {
-    // GSAP Animation for marqueeWrapper
-    gsap.fromTo(
-      "#marqueeWrapper",
-      { opacity: 0, y: "-10vh" },
-      { opacity: 1, y: "15px", duration: 1, ease: "power1.out" }
-    );
-    const heroElements = document.querySelectorAll(".hero-wrapper > *");
-    gsap.to(heroElements, {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      stagger: 0.5, // Fade in elements one by one
-      delay: 6, // Start after 10 seconds
-      ease: "power1.out",
-    });
-
-    
+    if (typeof window !== "undefined") {
+      // GSAP Animation for marqueeWrapper
+      gsap.fromTo(
+        "#marqueeWrapper",
+        { opacity: 0, y: "-10vh" },
+        { opacity: 1, y: "15px", duration: 1, ease: "power1.out" }
+      );
+  
+      const heroElements = document.querySelectorAll(".hero-wrapper > *");
+      gsap.to(heroElements, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.5, // Fade in elements one by one
+        delay: 6, // Start after 6 seconds
+        ease: "power1.out",
+      });
+    }
   }, []);
+  
 
   return (
     <section id="Home">
@@ -54,7 +56,7 @@ export default function Home() {
         <HomeCardAnimation />
       </div>
       <div className="animation-mobile">
-        Test
+        Mobile card animation goes here
       </div>
       
     </section>

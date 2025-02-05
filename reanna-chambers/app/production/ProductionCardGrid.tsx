@@ -29,7 +29,7 @@ export default function ProductionCardGrid() {
     if (box && target && originalContainer && viewerWindow) {
         viewerWindow.classList.remove('blur-bg')
       const rect = box.getBoundingClientRect();
-      const destination = moved ? originalContainer : target;
+      // const destination = moved ? originalContainer : target;
 
       if (moved) {
         if (content) {
