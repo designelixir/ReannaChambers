@@ -1,4 +1,4 @@
-* {box-sizing: border-box; font-weight: 100; font-family: var(--palace-regular);}
+* {box-sizing: border-box; font-weight: 100; font-family: var(--palace-regular); text-shadow: 0px 0px 0.75px black;}
 @font-face {font-family: "PalaceRegular"; src: url("/fonts/palace-regular.ttf") format("truetype"); font-weight: 100; font-style: normal;}
 @font-face {font-family: "PalaceItalic"; src: url("/fonts/palace-italic.ttf") format("truetype"); font-weight: 100; font-style: italic;}
 
@@ -9,8 +9,9 @@
   --palace-regular: 'Palace', sans-serif; /* Fallback font */
 }
 
-html {max-width: 100vw; overflow-x: hidden; background-image: url('/bg.jpg');}
+html {max-width: 100vw; overflow-x: hidden; background-image: url('/bg.jpg'); }
 body {width: 100%; margin: 0px}
+
 
 .flex-center-center {display: flex; align-items: center; justify-content: center; flex:1}
 .flex-center-end {display: flex; align-items: center; justify-content: flex-end; flex:1}
@@ -58,21 +59,26 @@ i * {font-family: var(--palace-italic)!important;}
 .white-text {color: white!important;}
 .all-caps {text-transform: uppercase;}
 .no-link-styling {text-decoration: unset;}
-.no-link-styling:hover {text-decoration: underline; cursor: pointer; color: inherit;}
+.no-link-styling:hover {text-decoration: underline; cursor: url('/star2.svg')!important; color: inherit;}
 .centered-text {text-align: center;}
-.black-text {color: black !important;}
+.black-text {color: var(--off-black)!important;}
 .white-button {padding: 10px; border: 1px solid black; border-radius: 5px;}
+
 
 .navigation-spacer {height: 150px}
 .active-tab {font-weight: 700; text-decoration: underline;}
 nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 .nav-link {font-size: 24px; font-family: var(--palace-italic); text-decoration: unset; color: var(--off-black);}
-.nav-link:hover {transform: scale(1.1); cursor: pointer;}
+.nav-link:hover {transform: scale(1.1); cursor: url('/star2.svg');}
 .active-link {text-decoration: underline!important; stroke: 1px solid black;}
 .logo-wrapper { width: 100%; max-width: 750px; padding: 25px;}
+.text-logo-wrapper {min-width: 300px; background-image: url('../public/logo-shelf.png'); background-size: contain; background-repeat: no-repeat; background-position: center 100%;}
+.logo-text {font-size: clamp(32px, 2.25rem, 36px); margin-bottom: 10px; line-height: 3.25rem; font-weight: 100!important; text-decoration: unset!important;}
+.logo-text:hover {text-decoration: unset!important;}
 .logo {min-height: 100px; width: 45vw; height: 10vh; min-width: 300px; 
   background-image: url('../public/reanna-chambers-logo.png'); background-size: contain; background-repeat: no-repeat; background-position: center 15px; background-origin: center center;}
 
+  
   @media screen and (max-width: 750px) {
     nav { flex-wrap: wrap;}
     .logo-container {order: 1; width: 100vw; min-width: 100%;}

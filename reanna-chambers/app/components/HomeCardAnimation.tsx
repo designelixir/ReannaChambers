@@ -220,7 +220,7 @@ export default function HomeCardAnimation() {
                 </div>
             </div>
         </div>
-        <div className="card flipped animation-1-card flex-center-center" id="VideoCard" onClick={() => expandCard("VideoCard", '/video')}>
+        <div className="card flipped animation-1-card flex-center-center" id="VideoCard" onClick={() => expandCard("VideoCard", 'https://www.youtube.com/@reannasea/videos')}>
             <div className="card-inner">
                 <div className="card-front flex-center-center">
                     <PlayingCardFormat suit={"spade"} title="Video" color="red"></PlayingCardFormat>

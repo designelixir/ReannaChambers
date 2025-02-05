@@ -36,8 +36,9 @@ export default function Navigation() {
 
       {/* Center Logo */}
       <div className="flex-center-center logo-container">
-        <Link href="/">
-          <div className="logo"></div>
+        <Link href="/" className='no-link-styling black-text flex-center-center flex-column text-logo-wrapper'>
+          <h1 className='logo-text'>REANNA CHAMBERS</h1>
+          <div className="logo-shelf"></div>
         </Link>
       </div>
 
