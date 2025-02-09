@@ -13,7 +13,6 @@ export default function VideoPage() {
 
   return (
     <section>
-      <Navigation />
       <div className="navigation-spacer"></div>
       <div className='flex-center-center' style={{ height: '60vh', width: '100%'}}>
         <div className='flex-center-center flex-column'>

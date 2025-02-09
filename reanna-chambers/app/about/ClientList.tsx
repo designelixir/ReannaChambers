@@ -48,17 +48,17 @@ export default function ClientList() {
     <div id="clientList" className="flex-start-start flex-column full-width">
       {/* Header with filters */}
       <div className="client-list-header flex-center-spacebetween full-width">
-        <h2>
+        <h2 className="black-text-glow">
           <span className="aalt">C</span><span style={{ textDecoration: "underline" }}>LIENT</span>
           <span className="aalt" style={{ paddingRight: "2px" }}>&nbsp;L</span>
           <span style={{ textDecoration: "underline" }}>IST</span>
         </h2>
         <div className="tag-wrapper flex-center-end flex-wrap">
-          <span style={{ textWrap: 'nowrap', marginTop: '5px' }}>Filter by:&nbsp;</span>
+          <span className="black-text-glow" style={{ textWrap: 'nowrap', marginTop: '5px' }}>Filter by:&nbsp;</span>
           {categories.map((category) => (
             <div
               key={category}
-              className={`client-tag ${selectedCategory === category ? "active-tag" : ""}`}
+              className={`client-tag modern-font ${selectedCategory === category ? "active-tag white-text-glow" : ""}`}
               onClick={() => setSelectedCategory(category)}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}

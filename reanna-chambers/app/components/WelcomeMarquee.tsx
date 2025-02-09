@@ -1,6 +1,5 @@
 'use client';
 import React, { useEffect, useRef } from "react";
-import Image from "next/image";
 import gsap from "gsap";
 
 interface WelcomeMarqueeProps {
@@ -40,8 +39,8 @@ export default function WelcomeMarquee({ items }: WelcomeMarqueeProps) {
       <div className="marquee-content flex-center-start">
         {items.map((text, index) => (
           <React.Fragment key={index}>
-            <p className="all-caps" style={{textWrap: 'nowrap'}}>{text}</p>
-            <Image src="/flower-white.png" className="marquee-image" width={15} height={15} alt="decorative flower" />
+            <p className="all-caps white-text-glow" style={{textWrap: 'nowrap'}}>{text}</p>
+            <p className="custom-symbol-font white-flower">*</p>
           </React.Fragment>
         ))}
       </div>

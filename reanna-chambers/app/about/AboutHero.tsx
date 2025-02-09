@@ -13,6 +13,7 @@ export default function AboutHero() {
             background-repeat: no-repeat;
             background-position: center bottom;
             min-height: 600px;
+            z-index: 0;
           }
   
           .reanna-portrait {

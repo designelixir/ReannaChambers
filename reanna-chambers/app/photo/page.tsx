@@ -14,7 +14,6 @@ export default function PhotoPage() {
 
   return (
     <section>
-      <Navigation />
       <div className="navigation-spacer"></div>
       <PhotoTabSwitcher></PhotoTabSwitcher>
       <Footer dark={true}></Footer>

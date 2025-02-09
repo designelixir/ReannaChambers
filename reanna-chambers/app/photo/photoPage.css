@@ -31,13 +31,13 @@
 }
 
 /* PhotoCard.tsx */
-.card { perspective: 1000px; margin-bottom: 2vw;}
+
 .wide-card {aspect-ratio: 4/3; min-width: 100%;}
 .tall-card {aspect-ratio: 3/4; min-width: 100%;}
 .front, .back {position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 8px;}
 .front {background-image: url('/cards/card-bg.png'); background-size: cover; background-position: center; z-index: 2; transform: rotateY(0deg);}
 .back {background-color: white; background-size: cover; background-position: center center; background-repeat: no-repeat; transform: rotateY(180deg);}
-.card-inner {width: 100%; height: 100%; border-radius: 10px; border: 2px solid black; transform-style: preserve-3d;}
+.card-inner {width: 100%; height: 100%; border-radius: 10px; transform-style: preserve-3d;}
 .card-inner.flip {transform: rotateY(180deg);}
 
 .front-content {width: 100%; height: 100%;  padding: 1.5vw; background: white; border: 2px solid black; opacity: 0; transition: opacity 0.5s ease; border-radius: 5px; }

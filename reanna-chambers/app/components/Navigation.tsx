@@ -4,49 +4,39 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import '../globals.css';
+import Logo from './Logo';
 
 export default function Navigation() {
   const pathname = usePathname(); 
 
   return (
-    <nav className="flex-center-spaceevenly">
+    <nav className="flex-center-spaceevenly" style={{zIndex: '99'}}>
       {/* Left Side Links */}
       <div className="flex-center-spacebetween links-left">
-        <Link
-          href="/about"
-          className={`nav-link flex-center-center ${
-            pathname === '/about' ? 'active-link' : ''
-          }`}
-        >
+        <Link href="/about" className={`italic nav-link black-text-glow flex-center-center ${pathname === '/about' ? 'active-link' : ''}`}>
+
           <i>
             A<span className="aalt">b</span>out
           </i>
         </Link>
         <Link
           href="/photo"
-          className={`nav-link flex-center-center ${
+          className={`nav-link black-text-glow flex-center-center ${
             pathname === '/photo' ? 'active-link' : ''
           }`}
         >
-          <i>
-            Pho<span className="aalt">t</span>o
-          </i>
+          <i>Pho<span className="aalt">t</span>o</i>
         </Link>
       </div>
 
       {/* Center Logo */}
-      <div className="flex-center-center logo-container">
-        <Link href="/" className='no-link-styling black-text flex-center-center flex-column text-logo-wrapper'>
-          <h1 className='logo-text'>REANNA CHAMBERS</h1>
-          <div className="logo-shelf"></div>
-        </Link>
-      </div>
+      <Logo></Logo>
 
       {/* Right Side Links */}
       <div className="flex-center-spacebetween links-right">
         <Link
           href="/production"
-          className={`nav-link flex-center-center ${
+          className={`nav-link black-text-glow flex-center-center ${
             pathname === '/production' ? 'active-link' : ''
           }`}
         >
@@ -56,7 +46,7 @@ export default function Navigation() {
         </Link>
         <Link
           href="/video"
-          className={`nav-link flex-center-center ${
+          className={`nav-link black-text-glow flex-center-center ${
             pathname === '/video' ? 'active-link' : ''
           }`}
         >

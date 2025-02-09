@@ -36,9 +36,18 @@ export default function Footer({ dark = false }: FooterProps) {
             className={`margin-right hover ${dark ? "" : "invert-img"}`} 
           />
         </Link>
+        <Link href="https://foundation.app/@reanna" className="flex-center-start no-flex-grow no-link-styling">
+          <Image 
+            src="/icons/foundation-outlines.svg" 
+            width={45} 
+            height={35} 
+            alt="foundation.app Icon" 
+            className={`margin-right hover ${dark ? "" : "invert-img"}`} 
+          />
+        </Link>
       </div>
-      <p style={{fontSize: '14px'}} className={`margin-bottom ${dark ? "white-text" : "black-text"}`}>Copyright &copy; Reanna Chambers, 2025</p>
-      <Link className={`no-link-styling ${dark ? "white-text" : "black-text"}`} style={{opacity: '0.75', fontSize: '10px'}} href="https://designelixir.studio">
+      <p style={{fontSize: '14px'}} className={`margin-bottom modern-font ${dark ? "white-text" : "black-text"}`}>Copyright &copy; Reanna Chambers, 2025</p>
+      <Link className={`no-link-styling modern-font ${dark ? "white-text" : "black-text"}`} style={{opacity: '0.75', fontSize: '10px'}} href="https://designelixir.studio">
         Made with &hearts; by Design Elixir Studio
       </Link>
     </footer>

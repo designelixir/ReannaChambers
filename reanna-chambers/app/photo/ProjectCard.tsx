@@ -26,6 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [readyLoadImages, setReadyLoadImages] = useState(false);
   const [isInGoToMe, setIsInGoToMe] = useState(false); 
+  
 
   useEffect(() => {
     if (cardRef.current) {
@@ -57,8 +58,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   };
 
   return (
-    <div id={id} className={`card ${className} flex-center-center`}>
-      <div id={`${id}-move`} className="card-inner" ref={cardRef}>
+    <div id={id} className={`card ${className} flex-center-center`} style={{margin: '0vw 2vw 2vw 0'}}>
+      <div id={`${id}-move`} className="card-inner box-shadow  " ref={cardRef}>
         <div className="front">
           <div className="front-content" ref={frontContentRef} >
             <div className="front-content-wrapper" >
