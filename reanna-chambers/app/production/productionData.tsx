@@ -147,7 +147,7 @@ export interface ProductionData {
     },
     {
         id: "card4",
-        title: "Jams World x Rowing Blazers '23",
+        title: "Jams World x Rowing Blazers",
         mainImage: "production/JamsWorld/JamsWorld-1.jpg",
         description:
         <div>
@@ -431,7 +431,7 @@ export interface ProductionData {
     {
         id: "card9",
         title: "Manachrome Wetplate Photography",
-        mainImage: "production/Manachrome/TheMizunos.jpg",
+        mainImage: "production/Manachrome/TheMizunos.JPG",
         description:
         <div>
             <p>Collodian Wet-Plate Photography by Kenyatta Kelechi</p>

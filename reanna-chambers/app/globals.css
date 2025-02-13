@@ -96,7 +96,7 @@ nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 }
 .nav-link:hover {text-shadow: unset!important; color: var(--deep-red); text-shadow: 0 0 1.25px var(--deep-red)!important;}
 
-.active-link {text-decoration: unset!important;}
+.active-link {text-decoration: unset!important; color: var(--deep-red)}
 .black-text-glow  .active-link {text-shadow: 0 0 1.25px var(--deep-red)!important; color: var(--deep-red)}
 
 .logo-container {padding: 0px 2vw;}

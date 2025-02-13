@@ -66,10 +66,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
               <div className="flex-start-start flex-column full-width" style={{ padding: '10px' }}>
                 <div className="flex-start-spacebetween full-width">
                   <div className='flex-start-start flex-column'>
-                    <h1 className="project-title black-text" style={{ textShadow: 'unset', fontWeight: '700' }}>
-                      {title}
+                    <h1 className=" black-text" style={{ textShadow: 'unset', fontSize: '48px', fontWeight: '700' }}>
+                      <i>{title}</i>
                     </h1>
-                    {subtitle && <h2 style={{ fontSize: '28px', lineHeight: '32px' }}>{subtitle}</h2>}
+                    {subtitle && <h2 className='modern-font' style={{ fontSize: '18px', lineHeight: '32px' }}>{subtitle}</h2>}
                   </div>
                   <button className="close-button hover" onClick={handleClick}>X</button>
                 </div>

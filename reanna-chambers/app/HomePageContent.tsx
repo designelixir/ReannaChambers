@@ -83,7 +83,7 @@ export default function HomePageContent() {
       </div>
       
       <div className="flex-start-center positioner-wrapper full-width" id="mainCardsWrapper">
-        <div id="AboutCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("AboutCard", '/production')}>
+        <div id="AboutCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("AboutCard", '/about')}>
           <div id="AboutCardStar" className="positioner-star black-text-glow custom-symbol-font">*</div>
           <div className="card flex-start-center" id="AboutCardPost" >
               <div className="card-inner">
@@ -96,7 +96,7 @@ export default function HomePageContent() {
               </div>
           </div>
         </div>
-        <div id="PhotoCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("PhotoCard", '/production')}>
+        <div id="PhotoCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("PhotoCard", '/photo')}>
           <div id="PhotoCardStar" className="positioner-star black-text-glow custom-symbol-font">*</div>
           <div className="card flex-start-center" id="PhotoCardPost" >
               <div className="card-inner">

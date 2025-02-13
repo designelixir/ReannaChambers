@@ -11,7 +11,7 @@ export interface ImageData {
 
 export interface ProjectData {
   id?: string;
-  title: string;
+  title: ReactNode;
   subtitle?: string;
   description?: ReactNode;
   mainImage: string;
@@ -354,7 +354,7 @@ export interface ProjectData {
       title: "AVVA Brand",
       subtitle: 'Zeke Lau',
       description: 
-      <div>
+      <div className="credits-section margin-bottom">
         <p><strong>DP: </strong> Zak Noyle</p>
         <p><strong>Assist: </strong>Sheadon Shimabukuro</p>
         <p><strong>Athlete:</strong> Zeke Lau</p>
@@ -426,25 +426,25 @@ export interface ProjectData {
       subtitle: 'Foundation Collection',
       description: 
       <div>
-        <a href="https://foundation.app/collection/tea" target="_blank">Shop the Foundation NFT Collection</a>
+        <a href="https://foundation.app/collection/tea" target="_blank" className="modern-font">Shop the Foundation NFT Collection</a>
       </div>,
-      mainImage: "photography/NFTEA/NFTEA-1.jpg",
+      mainImage: "photography/NFTEA/NFTEA-1.JPG",
       className: "tall-card",
       columnLayout: 
       <div className="mason-grid">
         <img src="photography/NFTEA/NFTEA-6.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
-        <img src="photography/NFTEA/NFTEA-1.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
+        <img src="photography/NFTEA/NFTEA-1.JPG" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
         <div className="mason-inner-container">
             <div className="mason-50-container">
-              <img src="photography/NFTEA/NFTEA-2.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
-              <img src="photography/NFTEA/NFTEA-3.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
+              <img src="photography/NFTEA/NFTEA-2.JPG" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
+              <img src="photography/NFTEA/NFTEA-3.JPG" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
             </div>
             <div className="mason-50-container">
               <img src="photography/NFTEA/NFTEA-7.png" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
-              <img src="photography/NFTEA/NFTEA-5.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
+              <img src="photography/NFTEA/NFTEA-5.JPG" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
             </div>
           </div>
-          <img src="photography/NFTEA/NFTEA-4.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
+          <img src="photography/NFTEA/NFTEA-4.JPG" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
           
 
       </div>
