@@ -23,8 +23,8 @@ const prints = [
     { imageUrl: '/prints/Prints22.JPG', imageCaption: 'Print22.JPG' },
     { imageUrl: '/prints/Prints23.JPG', imageCaption: 'Print23.JPG' },
     { imageUrl: '/prints/Prints24.JPG', imageCaption: 'Print24.JPG' },
-    { imageUrl: '/prints/Prints25.JPG', imageCaption: 'Print24.JPG' },
-    { imageUrl: '/prints/Prints26.JPG', imageCaption: 'Print24.JPG' },
+    { imageUrl: '/prints/Prints25.jpg', imageCaption: 'Print24.JPG' },
+    { imageUrl: '/prints/prints26.JPG', imageCaption: 'Print24.JPG' },
     
   ];
   
