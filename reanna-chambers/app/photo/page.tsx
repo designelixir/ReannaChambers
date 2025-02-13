@@ -1,5 +1,4 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
 import './photoPage.css';
 import PhotoTabSwitcher from './PhotoTabSwitcher';
 import Footer from '../components/Footer';

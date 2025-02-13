@@ -59,7 +59,7 @@
 .mason-item {padding: 5px; object-fit: contain;}
 
 .mason-item img {width: 100%;}
-.mason-1 {width: 100%; opacity: 0;}
+.mason-1 {width: 100%;}
 .mason-2 {width: 50%;}
 
 @media screen and (max-width: 800px) {
@@ -68,10 +68,19 @@
 }
 
 /* Prints.tsx */
-.print {width: 30vw; margin: 1vw 0; display: flex; align-items: flex-center; justify-content: flex-center; flex-direction: column;}
+.print {width: 30vw; margin: 1vw 0 0; display: flex; align-items: flex-center; justify-content: flex-center; flex-direction: column;}
 .print img {width: 100%; }
 .caption {padding: 10px; background: #e2e2e2; text-align: center; }
 .caption p {font-size: 18px;}
+
+@media screen and (max-width: 750px) {
+  .print {width: 45vw;}
+}
+
+@media screen and (max-width: 550px) {
+  .print {width: 100%;}
+}
+
 
 .credits-section h3 {font-size: 20px; font-weight: 700; line-height: 24px; margin: 0;}
 .credits-section p {font-size: 16px; line-height: 20px;}

@@ -2,29 +2,20 @@
 
 import React, { useEffect } from "react";
 import "./component-styles/CardAnimation2.css";
-import PlayingCardFormat from "./PlayingCardFormat";
 import gsap from "gsap";
 import HomeCards from "./HomeCards";
 import $ from 'jquery'
 
 const cardNames = ["PhotoCard", "ProductionCard", "VideoCard", "AboutCard"];
-const cardOrder = ["AboutCard", "PhotoCard", "VideoCard", "ProductionCard"];
 let inactivityTimeout: ReturnType<typeof setTimeout>;
 
 function handleFlip(cardId: string) {
-    console.log("handle flip ", cardId);
-
-    // Remove 'flipped' class immediately
     $('#' + cardId).removeClass("flipped");
-
-    // Wait 1 second before applying CSS to the positioner
     setTimeout(() => {
         $('#' + cardId + "Star").addClass("fade-in")
         $('#' + cardId + "PositionerPost").css({"opacity": "1"});
     }, 500); // Delay set to 1000ms (1 second)
 }
-
-
 
 
 function resetInactivityTimer() {

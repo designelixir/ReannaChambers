@@ -1,6 +1,5 @@
 'use client';
 import React from "react";
-import Image from "next/image";
 import "./component-styles/CardAnimation2.css"; // Add corresponding styles
 
 type PlayingCardFormatProps = {
@@ -20,8 +19,6 @@ export default function PlayingCardFormat({ title, color }: PlayingCardFormatPro
         <div className="playing-card-top flex-start-start" style={{transform: 'rotate(180deg)'}}>
             <p style={{color: `${color}`}}>{title}</p>
         </div>
-        
-        
     </div>
   );
 }

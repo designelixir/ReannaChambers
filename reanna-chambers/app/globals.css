@@ -20,6 +20,7 @@ body {width: 100%; margin: 0px}
 .custom-symbol-font {font-family: "CustomSymbols"!important;}
 .modern-font {font-family: "consolas", sans-serif!important; text-transform: uppercase!important; letter-spacing: 1px;}
 .s-text {font-size: 18px;}
+.xs-text {font-size: 12px!important;}
 
 .bio-test-font i {font-family: "consolas", sans-serif!important; font-size: 16px; line-height: 14px!important; font-style: normal!important; text-transform: uppercase; }
 

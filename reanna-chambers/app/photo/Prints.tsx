@@ -38,7 +38,7 @@ export default function Prints({ prints }: PrintsProps) {
 
   return (
     <section className="basic-padding">
-      <div ref={containerRef} className="flex-start-spaceevenly flex-wrap">
+      <div ref={containerRef} className="flex-start-start flex-wrap" style={{gap: '1vw'}}>
         {prints.map((print, index) => (
           <div
             key={index}
@@ -46,9 +46,9 @@ export default function Prints({ prints }: PrintsProps) {
             onClick={() => setSelectedImage(print)} // Open Lightbox with clicked image
           >
             <img src={print.imageUrl} alt={print.imageCaption} />
-            <div className="caption">
+            {/* <div className="caption">
               <p>{print.imageCaption}</p>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
@@ -57,7 +57,7 @@ export default function Prints({ prints }: PrintsProps) {
       {selectedImage && (
         <Lightbox isOpen={!!selectedImage} onClose={() => setSelectedImage(null)}>
           <img src={selectedImage.imageUrl} style={{width: '100%'}} alt={selectedImage.imageCaption} />
-          <p className="caption" style={{width: '100%'}}>{selectedImage.imageCaption}</p>
+          {/* <p className="caption" style={{width: '100%'}}>{selectedImage.imageCaption}</p> */}
         </Lightbox>
       )}
     </section>

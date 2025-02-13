@@ -116,6 +116,8 @@ export default function ProductionCardGrid() {
           <ProjectCard projectData={productionCards[3]} onClick={changeTeam} />
           <ProjectCard projectData={productionCards[7]} onClick={changeTeam} />
           <ProjectCard projectData={productionCards[13]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[17]} onClick={changeTeam} />
+          
         
         </div>
         <div id="column2and3wrapper" className='flex-start-start'>
@@ -126,6 +128,7 @@ export default function ProductionCardGrid() {
             <ProjectCard projectData={productionCards[6]} onClick={changeTeam} />
             <ProjectCard projectData={productionCards[9]} onClick={changeTeam} />
             <ProjectCard projectData={productionCards[15]} onClick={changeTeam} />
+            <ProjectCard projectData={productionCards[16]} onClick={changeTeam} />
           </div>
           <div className='tall-column flex-center-center flex-wrap' id="column3">
           <ProjectCard projectData={productionCards[2]} onClick={changeTeam} />
@@ -133,6 +136,7 @@ export default function ProductionCardGrid() {
           <ProjectCard projectData={productionCards[8]} onClick={changeTeam} />
           <ProjectCard projectData={productionCards[12]} onClick={changeTeam} />
           <ProjectCard projectData={productionCards[14]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[18]} onClick={changeTeam} />
           
             
           </div>

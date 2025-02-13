@@ -4,7 +4,7 @@ const prints = [
     { imageUrl: '/prints/Prints3.JPG', imageCaption: 'Print3.JPG' },
     { imageUrl: '/prints/Prints4.JPG', imageCaption: 'Print4.JPG' },
     { imageUrl: '/prints/Prints5.JPG', imageCaption: 'Print5.JPG' },
-    { imageUrl: '/prints/Prints6.JPG', imageCaption: 'Print6.JPG' },
+    // { imageUrl: '/prints/Prints6.JPG', imageCaption: 'Print6.JPG' },
     { imageUrl: '/prints/Prints7.JPG', imageCaption: 'Print7.JPG' },
     { imageUrl: '/prints/Prints8.JPG', imageCaption: 'Print8.JPG' },
     { imageUrl: '/prints/Prints9.JPG', imageCaption: 'Print9.JPG' },
@@ -22,7 +22,10 @@ const prints = [
     { imageUrl: '/prints/Prints21.JPG', imageCaption: 'Print21.JPG' },
     { imageUrl: '/prints/Prints22.JPG', imageCaption: 'Print22.JPG' },
     { imageUrl: '/prints/Prints23.JPG', imageCaption: 'Print23.JPG' },
-    { imageUrl: '/prints/Prints24.JPG', imageCaption: 'Print24.JPG' }
+    { imageUrl: '/prints/Prints24.JPG', imageCaption: 'Print24.JPG' },
+    { imageUrl: '/prints/Prints25.JPG', imageCaption: 'Print24.JPG' },
+    { imageUrl: '/prints/Prints26.JPG', imageCaption: 'Print24.JPG' },
+    
   ];
   
   export default prints;

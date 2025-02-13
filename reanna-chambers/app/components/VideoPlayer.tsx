@@ -1,8 +1,7 @@
-'use client'
+import { useEffect, useState } from "react";
 import YoutubeVideo from "youtube-video-element/react";
 import MediaThemeSutro from "player.style/sutro/react";
-import VimeoVideo from 'vimeo-video-element/react';
-
+import VimeoVideo from "vimeo-video-element/react";
 
 interface VideoPlayerProps {
   src: string;
@@ -12,28 +11,27 @@ interface VideoPlayerProps {
 }
 
 export default function VideoPlayer({ src, vimeo, youtube, classes }: VideoPlayerProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null; // Prevent SSR mismatch
+
   return (
     <div className={`video ${classes}`}>
-    
-        {youtube && 
+      {youtube && (
         <MediaThemeSutro>
-            <YoutubeVideo slot="media" src={src} playsInline></YoutubeVideo>
+          <YoutubeVideo slot="media" src={src} playsInline></YoutubeVideo>
         </MediaThemeSutro>
-        }
+      )}
 
-        {vimeo && 
+      {vimeo && (
         <MediaThemeSutro>
-            <VimeoVideo
-            slot="media"
-            src={src}
-            playsInline
-            
-            ></VimeoVideo>
+          <VimeoVideo slot="media" src={src} playsInline></VimeoVideo>
         </MediaThemeSutro>
-        }
-      
-     
-    
+      )}
     </div>
   );
 }

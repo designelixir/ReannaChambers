@@ -5,7 +5,6 @@ import gsap from "gsap";
 interface WelcomeMarqueeProps {
   items: string[];
 }
-
 export default function WelcomeMarquee({ items }: WelcomeMarqueeProps) {
   const marqueeRef = useRef<HTMLDivElement | null>(null);
 
@@ -39,7 +38,11 @@ export default function WelcomeMarquee({ items }: WelcomeMarqueeProps) {
       <div className="marquee-content flex-center-start">
         {items.map((text, index) => (
           <React.Fragment key={index}>
-            <p className="all-caps white-text-glow" style={{textWrap: 'nowrap'}}>{text}</p>
+            {text.includes("<span") ? (
+              <p className="all-caps white-text-glow" style={{ textWrap: "nowrap" }} dangerouslySetInnerHTML={{ __html: text }} />
+            ) : (
+              <p className="all-caps white-text-glow" style={{ textWrap: "nowrap" }}>{text}</p>
+            )}
             <p className="custom-symbol-font white-flower">*</p>
           </React.Fragment>
         ))}

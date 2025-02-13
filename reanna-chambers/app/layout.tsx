@@ -1,7 +1,6 @@
 'use client';
 
 import Cursor from './components/Cursor';
-import Navigation from './components/Navigation';
 import './globals.css';
 
 
