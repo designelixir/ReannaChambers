@@ -58,8 +58,8 @@ body {width: 100%; margin: 0px}
 
 h1 {font-size: 72px; line-height: 80px; font-weight: 100; margin: 0;}
 h2 {font-size: 48px;  line-height: 60px; font-weight: 100; margin: 0;}
-h3 {font-size: 24px;}
-p {font-size: 22px; line-height: 26px; font-weight: 200; margin: 0;}
+h3 {font-size: 24px; font-family: var(--modern-font)!important; text-transform: uppercase; font-weight: 700}
+p {font-size: 22px; line-height: 26px; font-weight: 200; margin: 0; font-family: var(--modern-font)!important;}
 strong {font-weight: 700}
 i * {font-family: var(--palace-italic)!important;}
 .italic * {font-family: var(--palace-italic)!important;}
@@ -201,10 +201,11 @@ footer a {z-index: 1;}
 /* VideoPlayer.tsx */
 .video-container {width: 100%!important;}
 .video {aspect-ratio: 2/1; flex-grow: 1; display: flex; align-items: flex-center; justify-content: center; width: 100%;}
-.half-video {min-width: 500px}
+.half-video {min-width: 50%;}
 .full-video {min-width: 100%;}
 media-theme-sutro {min-width: 100%; aspect-ratio: 1.5/1!important;  flex-grow: 1;}
-.video-wrapper { margin-right: 25px;}
+.video-wrapper { padding-right: 25px; width: 50%;}
+
 
 @media screen and (max-width: 1200px) {
   .half-video {min-width: 100%; min-height: 40vw; aspect-ratio: 2/1!important;}

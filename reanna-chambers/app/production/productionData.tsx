@@ -69,7 +69,7 @@ export interface ProductionData {
             <p><strong>Hair and Makeup: </strong>Risa Hoshino</p>
         </div>
         <div className="video-container flex-start-start margin-top flex-wrap">
-            <div className="video-wrapper">
+            <div className="video-wrapper" >
                 <VideoPlayer youtube={true} classes="half-video" src="https://www.youtube.com/watch?v=tUC7JuymNgQ"></VideoPlayer>    
                 <div className="caption"><p>View the production</p></div>
             </div>
@@ -82,7 +82,6 @@ export interface ProductionData {
     className: "wide-card",
     columnLayout:
     <div className="flex-start-start flex-column">
-        <h3>Photos</h3>
         <div className="mason-grid margin-top">
             <img src="production/AsicsKayano/ASICSKayano-6.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 6"/>
             <img src="production/AsicsKayano/ASICSKayano-1.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 1"/>
@@ -137,12 +136,16 @@ export interface ProductionData {
             <p><strong>Producer: </strong>Reanna Chambers</p>
             <p><strong>Creative Direction: </strong>Kelia Moniz</p>
             <p><strong>Styling/Assist: </strong>Grace Lacio</p>
+            <div style={{marginTop: '25px'}}>
+                <VideoPlayer youtube={true} classes="full-video" src="https://www.youtube.com/watch?v=coZqPryKVj8"></VideoPlayer>
+            </div>
         </div>,
         className: "tall-card",
         columnLayout:
-        <div style={{marginTop: '50px'}}>
-            <VideoPlayer youtube={true} classes="full-video" src="https://youtu.be/coZqPryKVj8?si=IfysAbmMbmkywaAl"></VideoPlayer>
-        </div>
+        <>
+            
+        </>
+        
     },
     {
         id: "card4",
@@ -442,73 +445,73 @@ export interface ProductionData {
         <div className="mason-grid margin-top">
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/Alika.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of Alika"/>
-                <div className="caption">
+                <div className="caption modern-font modern-font">
                     <p>Alika</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/BuffaloKeaulana.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of Buffalo Keaulana"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>Buffalo Keaulana</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/Mainei.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of Mainei"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>Mainei</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/Mainei&Alika.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of Mainei & Alika"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>Mainei &amp; Alika</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/Noa&Sean.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of Noa & Sean"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>Noa &amp; Sean</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/Tati&Emiri.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of Tati and Emiri"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>Tati &amp; Emiri</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/TheFukumitsus.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of The Fukumitsus"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>The Fukumitsus</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/TheKahalewais.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of The Kahalewais"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>The Kahalewais</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/TheMizunos.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of The Mizunos"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>The Mizunos</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/TheMonizFamily.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of The Moniz Family"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>The Moniz Family</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/TheWehners.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of The Wehners"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>The Wehners</p>
                 </div>
             </div>
             <div className="mason-item mason-2">
                 <img src="production/Manachrome/TheWiggins.JPG" className="mason-2 mason-item" alt="Manachrome Wetplate Photography of The Wiggins"/>
-                <div className="caption">
+                <div className="caption modern-font">
                     <p>The Wiggins</p>
                 </div>
             </div>
@@ -548,7 +551,7 @@ export interface ProductionData {
                 <div className="credits-section break-950-children">
                     <Link href="https://www.marieclaire.co.uk/digital-covers/kate-bosworth" target="_blank" className="hover no-link-styling black-text">
                         <h3>Read the Article</h3>
-                        <Image src="/production/MarieClaire/MC_KB_Cover.jpg" className="hover" width={330} height={400} alt="Marie Claire Cover"></Image>
+                        <Image src="/production/MarieClaire/MC_KB_Cover.jpg" width={330} height={400} alt="Marie Claire Cover"></Image>
                     </Link>
                 </div>
             </div>
@@ -556,7 +559,7 @@ export interface ProductionData {
         </div>,
         className: "wide-card",
         columnLayout:
-        <div className="flex-start-start flex-column" style={{marginTop: '25px'}}>
+        <div className="flex-start-start flex-column modern-font" style={{marginTop: '25px'}}>
             <h3>Behind the Scenes</h3>
             <div className="mason-grid">
                 <img src="production/MarieClaire/MarieClaire-BTS-1.jpg" className="mason-1 mason-item" alt="Marie Claire BTS Photo 1"/>
@@ -1013,7 +1016,7 @@ export interface ProductionData {
         mainImage: "production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-40.jpg",
         description:
         <div className="flex-start-start flex-column">
-        <div className="credits-section" style={{marginBottom: '25px'}}>
+        <div className="credits-section">
             <h3>Credits</h3>
             <p><strong>Photography: </strong>Abby Oh</p>
             <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>

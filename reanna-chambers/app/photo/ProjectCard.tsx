@@ -36,31 +36,56 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   }, []);
 
   const handleClick = () => {
+    onClick(`#${id}-move`);
     if (cardRef.current) {
-      flipCard(cardRef.current, !isFlipped);
-      setIsFlipped(!isFlipped && readyLoadImages);
+      if (isFlipped){
+        flipCard(cardRef.current, !isFlipped);
+        setReadyLoadImages(true);
+        setIsInGoToMe(true);
+        setIsFlipped(false)
+        console.log("done here")
+        
+      } else {
+        
+        setReadyLoadImages(false);
+        
+        
+        console.log(" here")
+        setTimeout(() => {
+          if (cardRef.current && isInGoToMe) {
+            setIsInGoToMe(false);
+            setIsFlipped(true)
+            console.log(" here")
+            flipCard(cardRef.current, !isFlipped);
+          } else {
+            console.log("false")
+          }
+        }, 1000);
+      }
     }
 
     // Check if the card is now inside #goToMe
     setTimeout(() => {
       if (cardRef.current?.parentElement?.id === "goToMe") {
         setIsInGoToMe(true);
+        setReadyLoadImages(true);
+        console.log("true")
         
       } else {
-        setIsInGoToMe(false);
         
+        console.log("false")
       }
     }, 500); // Slight delay to ensure the transition completes
 
-    setReadyLoadImages(true);
-    onClick(`#${id}-move`);
+    
+    
     
   };
 
   return (
     <div id={id} className={`card ${className} flex-center-center`} style={{margin: '0vw 2vw 2vw 0'}}>
       <div id={`${id}-move`} className="card-inner box-shadow  " ref={cardRef}>
-        <div className="front">
+        <div className="front card-back-design">
           <div className="front-content" ref={frontContentRef} >
             <div className="front-content-wrapper"  >
             <div className="card-header-wrapper flex-center-spacebetween full-width">
@@ -72,7 +97,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
                   </div>
                   <button className="close-button hover" onClick={handleClick}>X</button>
                 </div>
-              <div className="flex-start-start flex-column full-width ">
+                {readyLoadImages && 
+                <div className="flex-start-start flex-column full-width ">
                 {description && <div className='card-description modern-font full-width'><br />{description}</div>}
                 
                   <ProjectCardPhotoGrid 
@@ -81,7 +107,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
                   />
               
               </div>
-              
+                }
             </div>
           </div>
         </div>

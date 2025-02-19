@@ -32,10 +32,12 @@
 
 /* PhotoCard.tsx */
 
-.wide-card {aspect-ratio: 4/3; min-width: 100%;}
+.wide-card {aspect-ratio: 4/3; min-width: 100%; }
 .tall-card {aspect-ratio: 3/4; min-width: 100%;}
 .front, .back {position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 8px;}
-.front {background-image: url('/cards/card-bg.png'); background-size: cover; background-position: center; z-index: 2; transform: rotateY(0deg);}
+.front { z-index: 2; transform: rotateY(0deg); background: white;}
+.wide-card .card-inner .front { background-image: url('/cards/card-bg-wide.png'); background-size: 100% 100%; background-repeat: no-repeat; background-position: center center;}
+.tall-card .card-inner .front { background-image: url('/cards/card-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; background-position: center center;}
 .back {background-color: white; background-size: cover; background-position: center center; background-repeat: no-repeat; transform: rotateY(180deg);}
 .card-inner {width: 100%; height: 100%; border-radius: 10px; transform-style: preserve-3d;}
 .card-inner.flip {transform: rotateY(180deg);}
@@ -47,7 +49,7 @@
 .front-content-wrapper {object-fit: contain; overflow-y: scroll; max-height: 85vh;}
 .back-content {padding: 10px;}
 .project-title {background: #E8E0D2; font-size: clamp(24px, 4vw, 36px); line-height: clamp(30px, 5vw, 42px);  text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
-.project-subtitle {background: #E8E0D2;  text-align: center; text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
+.project-subtitle {background: #E8E0D2; font-family: "Palace", serif!important;  text-align: center; text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; font-family: 'PalaceRegular', serif; text-transform: uppercase; color: #E8E0D2; margin: 0;}
 
 
 .close-button {padding: 10px; margin-top: -5px; margin-right: 10px; height: 50px; width: 50px; background: white; z-index: 301; border: 3px solid black; border-radius: 5px;}
@@ -73,7 +75,7 @@
 /* Prints.tsx */
 .print {width: 30vw; margin: 1vw 0 0; display: flex; align-items: flex-center; justify-content: flex-center; flex-direction: column;}
 .print img {width: 100%; }
-.caption {padding: 10px; background: #e2e2e2; text-align: center; }
+.caption {padding: 10px; background: #e2e2e2; text-align: center; font-family: var(--modern-font)!important;}
 .caption p {font-size: 18px;}
 
 @media screen and (max-width: 750px) {
