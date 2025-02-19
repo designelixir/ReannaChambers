@@ -500,11 +500,11 @@ export interface ProjectData {
       <>
         <div className="credits">
           <p><strong>Muralists:</strong></p>
-          <p><span className="custom-symbol-font black-flower">*</span> <strong>Kamea Hadar:</strong> “Eve” Ala Moana, HI</p>
+          <p><span className="custom-symbol-font black-flower">*</span> <strong>Kamea Hadar:</strong> &quot;Eve&quot; Ala Moana, HI</p>
           <p><span className="custom-symbol-font black-flower">*</span> <strong>Cory Kamehanaokala, Kamea Hadar:</strong> Hyatt Hotel Waikiki, HI</p>
-          <p><span className="custom-symbol-font black-flower">*</span> <strong>Chanel Tanaka:</strong> Kaka'ako, HI</p>
-          <p><span className="custom-symbol-font black-flower">*</span> <strong>Kamea Hadar:</strong> Kaka'ako, HI</p>
-          <p><span className="custom-symbol-font black-flower">*</span> <strong>Kamea Hadar, Denim McNeil:</strong> "Hina" Aiea, HI</p>
+          <p><span className="custom-symbol-font black-flower">*</span> <strong>Chanel Tanaka:</strong> Kaka&apos;ako, HI</p>
+          <p><span className="custom-symbol-font black-flower">*</span> <strong>Kamea Hadar:</strong> Kaka&apos;ako, HI</p>
+          <p><span className="custom-symbol-font black-flower">*</span> <strong>Kamea Hadar, Denim McNeil:</strong> &quot;Hina&quot; Aiea, HI</p>
         </div>
       </>
         ,
