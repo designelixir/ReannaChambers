@@ -21,110 +21,110 @@ export interface ProductionData {
 }
   
   export const productionCards: ProductionData[] = [
-    {
-      id: "card1",
-      title: "Andie Swim",
-      mainImage: "production/AndieSwim/AndieSwim-1.jpg",
-      description:
-      <div className="credits-section">
-        <h3>Credits</h3>
-        <p><strong>Photographer: </strong>Cece Alana</p>
-        <p><strong>Stylist: </strong>Lindsey Higa</p>
-        <p><strong>Hair and Makeup: </strong>Risa Hoshino</p>
-        <p><strong>Assists: </strong>Kiana Weight, Faith Jones</p>
-      </div>,
-      className: "tall-card",
-      columnLayout:
-      <div className="mason-grid margin-top">
-        <img src="production/AndieSwim/AndieSwim-1.jpg" className="mason-2 mason-item" alt="Andie Swim 1"/>
-        <img src="production/AndieSwim/AndieSwim-8.jpg" className="mason-2 mason-item" alt="Andie Swim 8"/>
-        <img src="production/AndieSwim/AndieSwim-14.jpg" className="mason-1 mason-item" alt="Andie Swim 14"/>
-        <img src="production/AndieSwim/AndieSwim-6.jpg" className="mason-2 mason-item" alt="Andie Swim 6"/>
-        <img src="production/AndieSwim/AndieSwim-3.jpg" className="mason-2 mason-item" alt="Andie Swim 3"/>
-        <img src="production/AndieSwim/AndieSwim-4.jpg" className="mason-2 mason-item" alt="Andie Swim 4"/>
-        <img src="production/AndieSwim/AndieSwim-5.jpg" className="mason-2 mason-item" alt="Andie Swim 5"/>
-        <img src="production/AndieSwim/AndieSwim-2.jpg" className="mason-2 mason-item" alt="Andie Swim 2"/>
-        <img src="production/AndieSwim/AndieSwim-7.jpg" className="mason-2 mason-item" alt="Andie Swim 7"/>
-        <img src="production/AndieSwim/AndieSwim-9.jpg" className="mason-2 mason-item" alt="Andie Swim 9"/>
-        <img src="production/AndieSwim/AndieSwim-10.jpg" className="mason-2 mason-item" alt="Andie Swim 10"/>
-        <img src="production/AndieSwim/AndieSwim-11.jpg" className="mason-2 mason-item" alt="Andie Swim 11"/>
-        <img src="production/AndieSwim/AndieSwim-12.jpg" className="mason-2 mason-item" alt="Andie Swim 12"/>
-        <img src="production/AndieSwim/AndieSwim-13.jpg" className="mason-1 mason-item" alt="Andie Swim 13"/>
-      </div>
-    },
-    {
-        id: "card2",
-        title: "ASICS Kayano 30 + Anniversary",
-        mainImage: "production/AsicsKayano/ASICSKayano-2.jpg",
-        description:
-        <div className="flex-start-start flex-column full-width">
-            <div className="credits-section">
-                <h3>Credits</h3>
-                <p><strong>Production Team: </strong>Oak St Productions</p>
-                <p><strong>Production Managers: </strong>Arielle Scheres, Clay Southerland</p>
-                <p><strong>Production Coordinator &amp; Permitting: </strong>Reanna Chambers</p>
-                <p><strong>Photography: </strong>David Salafia</p>
-                <p><strong>Cinematography: </strong>Matt Heirakuji</p>
-                <p><strong>Stylist: </strong>Lindsey Higa</p>
-                <p><strong>Hair and Makeup: </strong>Risa Hoshino</p>
+{
+    id: "card1",
+    title: "Andie Swim",
+    mainImage: "production/AndieSwim/AndieSwim-1.jpg",
+    description:
+    <div className="credits-section">
+    <h3>Credits</h3>
+    <p><strong>Photographer: </strong>Cece Alana</p>
+    <p><strong>Stylist: </strong>Lindsey Higa</p>
+    <p><strong>Hair and Makeup: </strong>Risa Hoshino</p>
+    <p><strong>Assists: </strong>Kiana Weight, Faith Jones</p>
+    </div>,
+    className: "tall-card",
+    columnLayout:
+    <div className="mason-grid margin-top">
+    <img src="production/AndieSwim/AndieSwim-1.jpg" className="mason-2 mason-item" alt="Andie Swim 1"/>
+    <img src="production/AndieSwim/AndieSwim-8.jpg" className="mason-2 mason-item" alt="Andie Swim 8"/>
+    <img src="production/AndieSwim/AndieSwim-14.jpg" className="mason-1 mason-item" alt="Andie Swim 14"/>
+    <img src="production/AndieSwim/AndieSwim-6.jpg" className="mason-2 mason-item" alt="Andie Swim 6"/>
+    <img src="production/AndieSwim/AndieSwim-3.jpg" className="mason-2 mason-item" alt="Andie Swim 3"/>
+    <img src="production/AndieSwim/AndieSwim-4.jpg" className="mason-2 mason-item" alt="Andie Swim 4"/>
+    <img src="production/AndieSwim/AndieSwim-5.jpg" className="mason-2 mason-item" alt="Andie Swim 5"/>
+    <img src="production/AndieSwim/AndieSwim-2.jpg" className="mason-2 mason-item" alt="Andie Swim 2"/>
+    <img src="production/AndieSwim/AndieSwim-7.jpg" className="mason-2 mason-item" alt="Andie Swim 7"/>
+    <img src="production/AndieSwim/AndieSwim-9.jpg" className="mason-2 mason-item" alt="Andie Swim 9"/>
+    <img src="production/AndieSwim/AndieSwim-10.jpg" className="mason-2 mason-item" alt="Andie Swim 10"/>
+    <img src="production/AndieSwim/AndieSwim-11.jpg" className="mason-2 mason-item" alt="Andie Swim 11"/>
+    <img src="production/AndieSwim/AndieSwim-12.jpg" className="mason-2 mason-item" alt="Andie Swim 12"/>
+    <img src="production/AndieSwim/AndieSwim-13.jpg" className="mason-1 mason-item" alt="Andie Swim 13"/>
+    </div>
+},
+{
+    id: "card2",
+    title: "ASICS",
+    mainImage: "production/AsicsKayano/ASICSKayano-15.jpg",
+    description:
+    <div className="flex-start-start flex-column full-width">
+        <div className="credits-section">
+            <h3>Credits</h3>
+            <p><strong>Production Team: </strong>Oak St Productions</p>
+            <p><strong>Production Managers: </strong>Arielle Scheres, Clay Southerland</p>
+            <p><strong>Production Coordinator &amp; Permitting: </strong>Reanna Chambers</p>
+            <p><strong>Photography: </strong>David Salafia</p>
+            <p><strong>Cinematography: </strong>Matt Heirakuji</p>
+            <p><strong>Stylist: </strong>Lindsey Higa</p>
+            <p><strong>Hair and Makeup: </strong>Risa Hoshino</p>
+        </div>
+        <div className="video-container flex-start-start margin-top flex-wrap">
+            <div className="video-wrapper">
+                <VideoPlayer youtube={true} classes="half-video" src="https://www.youtube.com/watch?v=tUC7JuymNgQ"></VideoPlayer>    
+                <div className="caption"><p>View the production</p></div>
             </div>
-            <div className="video-container flex-start-start margin-top flex-wrap">
-                <div className="video-wrapper">
-                    <VideoPlayer youtube={true} classes="half-video" src="https://www.youtube.com/watch?v=tUC7JuymNgQ"></VideoPlayer>    
-                    <div className="caption"><p>View the production</p></div>
-                </div>
-                <div className="video-wrapper">
-                    <VideoPlayer vimeo={true} classes="half-video" src="https://vimeo.com/842024523"></VideoPlayer>    
-                    <div className="caption"><p>Matt Heirakuji Director&apos;s Cut</p></div>
-                </div>
+            <div className="video-wrapper">
+                <VideoPlayer vimeo={true} classes="half-video" src="https://vimeo.com/842024523"></VideoPlayer>    
+                <div className="caption"><p>Matt Heirakuji Director&apos;s Cut</p></div>
             </div>
-        </div>,
-        className: "wide-card",
-        columnLayout:
-        <div className="flex-start-start flex-column">
-            <h3>Photos</h3>
-            <div className="mason-grid margin-top">
-                <img src="production/AsicsKayano/ASICSKayano-6.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 6"/>
-                <img src="production/AsicsKayano/ASICSKayano-1.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 1"/>
-                <img src="production/AsicsKayano/ASICSKayano-2.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 2"/>
-                <img src="production/AsicsKayano/ASICSKayano-3.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 3"/>
-                <img src="production/AsicsKayano/ASICSKayano-28.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 28"/>
-                
-                <img src="production/AsicsKayano/ASICSKayano-4.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 4"/>
-                <img src="production/AsicsKayano/ASICSKayano-5.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 5"/>
-                <img src="production/AsicsKayano/ASICSKayano-8.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 8"/>
-                <img src="production/AsicsKayano/ASICSKayano-7.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 7"/>
-                
-                <img src="production/AsicsKayano/ASICSKayano-9.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 9"/>
-                <img src="production/AsicsKayano/ASICSKayano-10.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 10"/>
-                <img src="production/AsicsKayano/ASICSKayano-19.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 19"/>
-                <div className="mason-inner-container">
-                    <div className="mason-50-container">
-                        <img src="production/AsicsKayano/ASICSKayano-11.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 11"/>
-                        <img src="production/AsicsKayano/ASICSKayano-14.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 14"/>
-                        <img src="production/AsicsKayano/ASICSKayano-15.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 15"/>
-                        <img src="production/AsicsKayano/ASICSKayano-16.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 16"/>
-                        <img src="production/AsicsKayano/ASICSKayano-18.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 18"/>
-                        <img src="production/AsicsKayano/ASICSKayano-20.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 20"/>
-                        <img src="production/AsicsKayano/ASICSKayano-26.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 26"/>
-                        <img src="production/AsicsKayano/ASICSKayano-23.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 23"/>
-                    </div>
-                    <div className="mason-50-container">
-                        <img src="production/AsicsKayano/ASICSKayano-12.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 12"/>
-                        <img src="production/AsicsKayano/ASICSKayano-13.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 13"/>
-                        <img src="production/AsicsKayano/ASICSKayano-17.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 17"/>        
-                        <img src="production/AsicsKayano/ASICSKayano-27.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 27"/>
-                        <img src="production/AsicsKayano/ASICSKayano-29.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 29"/>
-                        <img src="production/AsicsKayano/ASICSKayano-30.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 30"/>
-                        <img src="production/AsicsKayano/ASICSKayano-21.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 21"/>
-                        <img src="production/AsicsKayano/ASICSKayano-22.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 22"/>
-                        <img src="production/AsicsKayano/ASICSKayano-24.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 24"/>
-                        <img src="production/AsicsKayano/ASICSKayano-25.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 25"/>
-                    </div>
+        </div>
+    </div>,
+    className: "wide-card",
+    columnLayout:
+    <div className="flex-start-start flex-column">
+        <h3>Photos</h3>
+        <div className="mason-grid margin-top">
+            <img src="production/AsicsKayano/ASICSKayano-6.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 6"/>
+            <img src="production/AsicsKayano/ASICSKayano-1.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 1"/>
+            <img src="production/AsicsKayano/ASICSKayano-2.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 2"/>
+            <img src="production/AsicsKayano/ASICSKayano-3.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 3"/>
+            <img src="production/AsicsKayano/ASICSKayano-28.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 28"/>
+            
+            <img src="production/AsicsKayano/ASICSKayano-4.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 4"/>
+            <img src="production/AsicsKayano/ASICSKayano-5.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 5"/>
+            <img src="production/AsicsKayano/ASICSKayano-8.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 8"/>
+            <img src="production/AsicsKayano/ASICSKayano-7.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 7"/>
+            
+            <img src="production/AsicsKayano/ASICSKayano-9.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 9"/>
+            <img src="production/AsicsKayano/ASICSKayano-10.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 10"/>
+            <img src="production/AsicsKayano/ASICSKayano-19.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 19"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                    <img src="production/AsicsKayano/ASICSKayano-11.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 11"/>
+                    <img src="production/AsicsKayano/ASICSKayano-14.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 14"/>
+                    <img src="production/AsicsKayano/ASICSKayano-15.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 15"/>
+                    <img src="production/AsicsKayano/ASICSKayano-16.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 16"/>
+                    <img src="production/AsicsKayano/ASICSKayano-18.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 18"/>
+                    <img src="production/AsicsKayano/ASICSKayano-20.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 20"/>
+                    <img src="production/AsicsKayano/ASICSKayano-26.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 26"/>
+                    <img src="production/AsicsKayano/ASICSKayano-23.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 23"/>
+                </div>
+                <div className="mason-50-container">
+                    <img src="production/AsicsKayano/ASICSKayano-12.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 12"/>
+                    <img src="production/AsicsKayano/ASICSKayano-13.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 13"/>
+                    <img src="production/AsicsKayano/ASICSKayano-17.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 17"/>        
+                    <img src="production/AsicsKayano/ASICSKayano-27.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 27"/>
+                    <img src="production/AsicsKayano/ASICSKayano-29.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 29"/>
+                    <img src="production/AsicsKayano/ASICSKayano-30.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 30"/>
+                    <img src="production/AsicsKayano/ASICSKayano-21.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 21"/>
+                    <img src="production/AsicsKayano/ASICSKayano-22.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 22"/>
+                    <img src="production/AsicsKayano/ASICSKayano-24.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 24"/>
+                    <img src="production/AsicsKayano/ASICSKayano-25.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 25"/>
                 </div>
             </div>
         </div>
-    },
+    </div>
+},
     {
         id: "card3",
         title: "Honolulu Pawn Shop",
@@ -137,7 +137,6 @@ export interface ProductionData {
             <p><strong>Producer: </strong>Reanna Chambers</p>
             <p><strong>Creative Direction: </strong>Kelia Moniz</p>
             <p><strong>Styling/Assist: </strong>Grace Lacio</p>
-            <p><strong>Creative Direction: </strong>Kelia Moniz</p>
         </div>,
         className: "tall-card",
         columnLayout:
@@ -253,8 +252,8 @@ export interface ProductionData {
     {
         id: "card6",
         title: "Kelia Moniz",
-        subtitle: 'Activewear Collections',
-        mainImage: "production/KeliaMoniz/KeliaMoniz-14.jpg",
+        subtitle: `"Active Collections"`,
+        mainImage: "production/KeliaMoniz/KeliaMoniz-40.jpg",
         description:
         <div className="credits-section">
             <h3>Credits</h3>
@@ -268,65 +267,67 @@ export interface ProductionData {
             <VideoPlayer youtube={true} classes="full-video" src="https://www.youtube.com/watch?v=kIgoo0FMC-U"></VideoPlayer>
             
             <div className="mason-grid margin-top">
-            <img src="production/KeliaMoniz/KeliaMoniz-10.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-            <div className="mason-inner-container">
-                <div className="mason-50-container">
-                    <img src="production/KeliaMoniz/KeliaMoniz-3.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                    <img src="production/KeliaMoniz/KeliaMoniz-8.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                </div>
-                <div className="mason-50-container">
-                    <img src="production/KeliaMoniz/KeliaMoniz-4.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                    <img src="production/KeliaMoniz/KeliaMoniz-11.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                </div>
-            </div>
-            
-            <div className="mason-inner-container">
-                <div className="mason-50-container">
-                <img src="production/KeliaMoniz/KeliaMoniz-14.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-17.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-26.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-23.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-30.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-35.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-38.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-33.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                </div>
-                <div className="mason-50-container">
-                <img src="production/KeliaMoniz/KeliaMoniz-28.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-19.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-21.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-24.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-34.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-31.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-32.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-39.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                </div>
-            </div>
-            
-            
-            <img src="production/KeliaMoniz/KeliaMoniz-40.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
+  <img src="production/KeliaMoniz/KeliaMoniz-51.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 51"/>
 
-            <div className="mason-inner-container">
-                <div className="mason-50-container">
-                <img src="production/KeliaMoniz/KeliaMoniz-42.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-48.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-50.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                </div>
-                <div className="mason-50-container">
-                <img src="production/KeliaMoniz/KeliaMoniz-43.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-45.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                <img src="production/KeliaMoniz/KeliaMoniz-49.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-                </div>
-            </div>            
-            <img src="production/KeliaMoniz/KeliaMoniz-51.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo"/>
-            </div>
+  <div className="mason-inner-container">
+    <div className="mason-50-container">
+      <img src="production/KeliaMoniz/KeliaMoniz-49.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 49"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-45.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 45"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-43.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 43"/>
+    </div>
+    <div className="mason-50-container">
+      <img src="production/KeliaMoniz/KeliaMoniz-50.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 50"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-48.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 48"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-42.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 42"/>
+    </div>
+  </div>
+
+  <img src="production/KeliaMoniz/KeliaMoniz-40.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 40"/>
+
+  <div className="mason-inner-container">
+    <div className="mason-50-container">
+      <img src="production/KeliaMoniz/KeliaMoniz-39.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 39"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-32.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 32"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-31.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 31"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-34.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 34"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-24.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 24"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-21.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 21"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-19.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 19"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-28.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 28"/>
+    </div>
+    <div className="mason-50-container">
+      <img src="production/KeliaMoniz/KeliaMoniz-33.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 33"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-38.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 38"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-35.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 35"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-30.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 30"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-23.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 23"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-26.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 26"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-17.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 17"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-14.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 14"/>
+    </div>
+  </div>
+
+  <div className="mason-inner-container">
+    <div className="mason-50-container">
+      <img src="production/KeliaMoniz/KeliaMoniz-11.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 11"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-4.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 4"/>
+    </div>
+    <div className="mason-50-container">
+      <img src="production/KeliaMoniz/KeliaMoniz-8.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 8"/>
+      <img src="production/KeliaMoniz/KeliaMoniz-3.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 3"/>
+    </div>
+  </div>
+
+  <img src="production/KeliaMoniz/KeliaMoniz-10.jpg" className="mason-1 mason-item" alt="Kelia Moniz Photo 10"/>
+</div>
+
         </div>
     },
     {
         id: "card7",
         title: "Last Light",
         subtitle: 'Short Film',
-        mainImage: "production/LastLight/LastLight-4.jpg",
+        mainImage: "production/LastLight/LastLight-1.jpg",
         description:
         <div className="flex-start-start flex-column">
             <div className="credits-section">
@@ -388,7 +389,7 @@ export interface ProductionData {
         id: "card8",
         title: "Lisa Andersen",
         subtitle: 'Roxy Collection',
-        mainImage: "production/LisaAndersen/LisaAndersen-9.jpg",
+        mainImage: "production/LisaAndersen/LisaAndersen-new3.jpg",
         description:
         <div className="credits-section">
             <h3>Credits</h3>
@@ -431,7 +432,7 @@ export interface ProductionData {
     {
         id: "card9",
         title: "Manachrome Wetplate Photography",
-        mainImage: "production/Manachrome/TheMizunos.JPG",
+        mainImage: "production/Manachrome/BuffaloKeaulana.JPG",
         description:
         <div>
             <p>Collodian Wet-Plate Photography by Kenyatta Kelechi</p>
@@ -586,7 +587,7 @@ export interface ProductionData {
         id: "card11",
         title: "Roxy",
         subtitle: 'Hawaiian Heat',
-        mainImage: "production/RoxyHawaiianHeat/RoxyHawaiianHeat-14.jpg",
+        mainImage: "production/RoxyHawaiianHeat/RoxyHawaiianHeat-13.jpg",
         description:
         <div className="credits-section">
             <h3>Credits</h3>
@@ -653,8 +654,8 @@ export interface ProductionData {
     {
         id: "card12",
         title: "Roxy Holiday",
-        subtitle: `AUS / NZ Collection`,
-        mainImage: "production/RoxyHoliday24/RoxyHoliday24-4.jpg",
+        subtitle: `AUS / NZ`,
+        mainImage: "production/RoxyHoliday24/RoxyHoliday24-19.jpg",
         description:
         <div className="credits-section">
             <h3>Credits</h3>
@@ -673,8 +674,7 @@ export interface ProductionData {
             <img src="production/RoxyHoliday24/RoxyHoliday24-4.jpg" className="mason-2 mason-item" alt="Roxy Holiday 24 Photo"/>
             <img src="production/RoxyHoliday24/RoxyHoliday24-5.jpg" className="mason-2 mason-item" alt="Roxy Holiday 24 Photo"/>
             <img src="production/RoxyHoliday24/RoxyHoliday24-6.jpg" className="mason-2 mason-item" alt="Roxy Holiday 24 Photo"/>
-            <img src="production/RoxyHoliday24/RoxyHoliday24-7.jpg" className="mason-2 mason-item" alt="Roxy Holiday 24 Photo"/>
-            <img src="production/RoxyHoliday24/RoxyHoliday24-8.jpg" className="mason-2 mason-item" alt="Roxy Holiday 24 Photo"/>
+            
             <img src="production/RoxyHoliday24/RoxyHoliday24-9.jpg" className="mason-2 mason-item" alt="Roxy Holiday 24 Photo"/>
             <img src="production/RoxyHoliday24/RoxyHoliday24-10.jpg" className="mason-2 mason-item" alt="Roxy Holiday 24 Photo"/>
             <img src="production/RoxyHoliday24/RoxyHoliday24-11.jpg" className="mason-1 mason-item" alt="Roxy Holiday 24 Photo"/>
@@ -695,12 +695,14 @@ export interface ProductionData {
             <div className="mason-inner-container">
                 <div className="mason-50-container">
                 <img src="production/RoxyHoliday24/RoxyHoliday24-25.jpg" className="mason-1 mason-item" alt="Roxy Holiday 24 Photo"/>
-                
+                <img src="production/RoxyHoliday24/RoxyHoliday24-7.jpg" className="mason-1 mason-item" alt="Roxy Holiday 24 Photo"/>
                 </div>
                 <div className="mason-50-container">
                 <img src="production/RoxyHoliday24/RoxyHoliday24-27.jpg" className="mason-1 mason-item" alt="Roxy Holiday 24 Photo"/>
                 <img src="production/RoxyHoliday24/RoxyHoliday24-28.jpg" className="mason-1 mason-item" alt="Roxy Holiday 24 Photo"/>
                 <img src="production/RoxyHoliday24/RoxyHoliday24-29.jpg" className="mason-1 mason-item" alt="Roxy Holiday 24 Photo"/>
+                
+            <img src="production/RoxyHoliday24/RoxyHoliday24-8.jpg" className="mason-1 mason-item" alt="Roxy Holiday 24 Photo"/>
                 </div>
             </div>
             
@@ -759,6 +761,7 @@ export interface ProductionData {
                     <img src="production/RoxyOTB24/RoxyOTB24-14.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 14"/>
                     <img src="production/RoxyOTB24/RoxyOTB24-20.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 20"/>
                     <img src="production/RoxyOTB24/RoxyOTB24-21.jpg" className="mason-1 mason-item" alt="Roxy On the Beach 2024 Photo 21"/>
+                    
                 </div>
             </div>
         </div>
@@ -820,7 +823,7 @@ export interface ProductionData {
         id: "card15",
         title: "Roxy",
         subtitle: `Peace Joy Aloha x Wayfinder Hotel Waikiki`,
-        mainImage: "production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-24.jpg",
+        mainImage: "production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-7.jpg",
         description:
         <div className="flex-start-start flex-column">
             <div className="credits-section" style={{marginBottom: '25px'}}>
@@ -925,7 +928,7 @@ export interface ProductionData {
         id: "card17",
         title: "Roxy",
         subtitle: `Active By Nature`,
-        mainImage: "production/RoxyActiveByNature/Roxy-ActiveByNature-10.jpg",
+        mainImage: "production/RoxyActiveByNature/Roxy-ActiveByNature-3.jpg",
         description:
         <div className="flex-start-start flex-column">
         <div className="credits-section" style={{marginBottom: '25px'}}>
@@ -933,7 +936,6 @@ export interface ProductionData {
             <p><strong>Production/Cinematography: </strong>Ben Ono</p>
             <p><strong>Camera Assist: </strong>Xav Sho</p>
             <p><strong>Styling/Production Assist/Film BTS: </strong>Reanna Chambers</p>
-
         </div>
         
         <VideoPlayer youtube={true} classes="full-video" src="https://www.youtube.com/watch?v=8dI9DpYQVNE"></VideoPlayer>
@@ -942,8 +944,7 @@ export interface ProductionData {
         className: "wide-card",
         columnLayout:
         <div className="mason-grid" style={{marginTop: '25px'}}>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-9.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-10.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+            
             <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-1.jpg" className="mason-2 mason-item" alt="Active By Nature Photo"/>
             <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-3.jpg" className="mason-2 mason-item" alt="Active By Nature Photo"/>
             <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-5.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
@@ -954,14 +955,16 @@ export interface ProductionData {
             
             
             <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-2.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-9.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-10.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
             
         </div>
         
     },
     {
         id: "card18",
-        title: `"Jamaica"`,
-        subtitle: `Roxy`,
+        title: "Roxy",
+        subtitle: `"Jamaica"`,
         mainImage: "production/RoxyJamaica/RoxyJamaica-2.jpeg",
         description:
         <div className="flex-start-start flex-column">
@@ -1005,9 +1008,9 @@ export interface ProductionData {
     },
     {
         id: "card19",
-        title: "Roxy On The Beach",
+        title: "Roxy OTB",
         subtitle: `AUS / NZ`,
-        mainImage: "",
+        mainImage: "production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-40.jpg",
         description:
         <div className="flex-start-start flex-column">
         <div className="credits-section" style={{marginBottom: '25px'}}>
@@ -1023,7 +1026,76 @@ export interface ProductionData {
         className: "tall-card",
         columnLayout:
         <div className="mason-grid" style={{marginTop: '25px'}}>
-           <p className="red-text">Added optimized photos to narrow down in this folder! </p>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                    <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-3.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 3"/>
+                </div>
+                <div className="mason-50-container">
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-5.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 5"/>
+                </div>
+            </div>
+           
+            
+            <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-7.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 7"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-14.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 14"/>
+                </div>
+                <div className="mason-50-container">
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-13.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 13"/>
+                </div>
+            </div>
+            <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-9.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 9"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-11.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 11"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-19.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 19"/>
+                </div>
+                <div className="mason-50-container">
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-17.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 17"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-21.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 21"/>
+                </div>
+            </div>
+            <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-20.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 20"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-23.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 23"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-27.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 27"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-31.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 31"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-33.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 33"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-37.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 37"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-32.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 32"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-43.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 43"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-47.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 47"/>
+                
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-51.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 51"/>
+                </div>
+                <div className="mason-50-container">
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-25.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 25"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-28.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 28"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-22.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 22"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-35.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 35"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-39.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 39"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-40.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 40"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-45.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 45"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-49.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 49"/>
+                <img src="production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-50.jpg" className="mason-1 mason-item" alt="Roxy OTB Aus / NZ Photo 50"/>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
         </div>
         
     },

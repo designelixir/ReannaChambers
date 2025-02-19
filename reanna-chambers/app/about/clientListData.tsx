@@ -46,7 +46,7 @@ export const clientsList = [
   { clientName: "Toast Swim", clientCategory: "fashion", clientLink: "https://www.toastswim.com/" },
   { clientName: "Towa", clientCategory: "fashion", clientLink: "https://towaclothing.com/" },
   { clientName: "Urban Outfitters UK", clientCategory: "fashion", clientLink: "https://www.urbanoutfitters.com/en-gb/" },
-  { clientName: "Vissla", clientCategory: "fashion", clientLink: "" },
+  { clientName: "Vissla", clientCategory: "fashion", clientLink: "https://www.vissla.com/" },
   { clientName: "Wayfinder Hotel Waikiki", clientCategory: "hotel", clientLink: "https://www.wayfinderhotels.com/waikiki/" },
   { clientName: "World Surf League", clientCategory: "other", clientLink: "https://www.worldsurfleague.com/" }
 ];

@@ -18,8 +18,9 @@
 html {max-width: 100vw; overflow-x: hidden; background-image: url('/tile1.jpg'); background-size: 400px; background-position: fixed; }
 body {width: 100%; margin: 0px}
 
-.custom-symbol-font {font-family: "CustomSymbols"!important;}
-.modern-font {font-family:var(--modern-font)!important; text-transform: uppercase!important; letter-spacing: 1px;}
+.custom-symbol-font * {font-family: "CustomSymbols", serif!important;}
+.modern-font * {font-family:var(--modern-font)!important; text-transform: uppercase!important; }
+.modern-font strong {font-family:var(--modern-font)!important; text-transform: uppercase!important; font-weight: 800;}
 .s-text {font-size: 18px;}
 .xs-text {font-size: 12px!important;}
 
@@ -64,6 +65,8 @@ i * {font-family: var(--palace-italic)!important;}
 .italic * {font-family: var(--palace-italic)!important;}
 
 .palace-italic {font-family: var(--palace-italic)!important;}
+
+
 
 .all-caps {text-transform: uppercase;}
 .aalt { font-feature-settings: 'aalt' on!important;}

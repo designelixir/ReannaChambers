@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useRef, useState } from 'react';
-import Navigation from '../components/Navigation';
 import gsap from 'gsap';
 import '../photo/photoPage.css';
 import ProjectCard from '../photo/ProjectCard';
@@ -108,7 +107,6 @@ export default function ProductionCardGrid() {
 
   return (
     <section>
-      <Navigation />
       <main id="cardContainer" className="flex-start-start" ref={containerRef}>
         <div className='tall-column flex-center-center flex-wrap' id="column1">
           <ProjectCard projectData={productionCards[0]} onClick={changeTeam} />

@@ -11,35 +11,23 @@ export default function PhotoTabSwitcher(){
     setActiveTab(tab);
   };
     return (
-        <section>
-        <div className="flex-start-start" style={{ padding: '0 2.5vw' }}>
-        <p
-          className={activeTab === 'projects' ? 'active-tab' : 'hover'}
-          onClick={() => showTab('projects')}
-        >
-          Projects
-        </p>
-        <p>&nbsp;/&nbsp;</p>
-        <p
-          className={activeTab === 'prints' ? 'active-tab' : 'hover'}
-          onClick={() => showTab('prints')}
-        >
-          Prints
-        </p>
-      </div>
-
-      {/* Show only the active section */}
-      {activeTab === 'projects' && (
-        <div id="projects">
-          <PhotoCardGrid />
+        <>
+        <div className="flex-start-start modern-font" style={{ padding: '0 2.5vw' }}>
+          <p className={` ${activeTab === 'projects' ? 'active-tab' : 'hover'}`} onClick={() => showTab('projects')}>Projects</p>
+          <p>&nbsp;/&nbsp;</p>
+          <p className={activeTab === 'prints' ? 'active-tab' : 'hover'} onClick={() => showTab('prints')}>Prints</p>
         </div>
-      )}
 
-      {activeTab === 'prints' && (
-        <div id="prints">
+      
+        {activeTab === 'projects' ? (
+          <div id="projects">
+            <PhotoCardGrid />
+          </div>
+        ): (
+          <div id="prints">
           <Prints prints={prints} />
         </div>
-      )}
-        </section>
+        )}
+        </>
     )
 }

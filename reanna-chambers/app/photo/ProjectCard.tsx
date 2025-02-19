@@ -62,25 +62,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
       <div id={`${id}-move`} className="card-inner box-shadow  " ref={cardRef}>
         <div className="front">
           <div className="front-content" ref={frontContentRef} >
-            <div className="front-content-wrapper" >
-              <div className="flex-start-start flex-column full-width" style={{ padding: '10px' }}>
-                <div className="flex-start-spacebetween full-width">
+            <div className="front-content-wrapper"  >
+            <div className="card-header-wrapper flex-center-spacebetween full-width">
                   <div className='flex-start-start flex-column'>
-                    <h1 className=" black-text" style={{ textShadow: 'unset', fontSize: '48px', fontWeight: '700' }}>
-                      <i>{title}</i>
-                    </h1>
-                    {subtitle && <h2 className='modern-font' style={{ fontSize: '18px', lineHeight: '32px' }}>{subtitle}</h2>}
+                    <h1 className="black-text card-header-title"><i>{title}</i></h1>
+                    {subtitle && 
+                      <h2 className='modern-font card-header-subtitle'><strong>{subtitle}</strong></h2>
+                    }
                   </div>
                   <button className="close-button hover" onClick={handleClick}>X</button>
                 </div>
+              <div className="flex-start-start flex-column full-width ">
+                {description && <div className='card-description modern-font full-width'><br />{description}</div>}
+                
+                  <ProjectCardPhotoGrid 
+                    columnLayout={columnLayout} 
+                    shouldRender={isInGoToMe} // Pass the control prop
+                  />
+              
               </div>
-              <div id="masonryWrapper" className="hide-scrollbars">
-                {description && <div><br />{description}</div>}
-                <ProjectCardPhotoGrid 
-                  columnLayout={columnLayout} 
-                  shouldRender={isInGoToMe} // Pass the control prop
-                />
-              </div>
+              
             </div>
           </div>
         </div>

@@ -57,7 +57,7 @@ export default function AboutBio(){
           </div>
           <div className="dark-section">
             <WelcomeMarquee items={['Creative Direction', 'Photography', 'Brand Consulting', 'Casting', 'Prop Styling', 'Art Direction', 'Content Creation', 'Filming',
-                 'Coloring', 'Producing', 'Styling', 'Painting', 'Art Installing', 'Editing', 'Social Media', 'Set Design', "Locations", "Permitting", 'Making Coffee',]}></WelcomeMarquee>
+                 'Coloring', 'Producing', 'Styling', 'Painting', 'Art Installing', 'Editing', 'Social Media', 'Set Design', "Locations", "Permitting", 'Making Coffee ♥',]}></WelcomeMarquee>
         </div>
         </>
     )

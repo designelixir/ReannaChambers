@@ -24,7 +24,7 @@ export interface ProjectData {
     {
       id: "card1",
       title: "Itzcalli Marie",
-      mainImage: "photography/ItzcalliMarie/ItzcalliMarie-1.jpg",
+      mainImage: "photography/ItzcalliMarie/ItzcalliMarie-3.jpg",
       className: "tall-card",
       columnLayout:
       <div className="mason-grid">
@@ -48,7 +48,7 @@ export interface ProjectData {
       id: "card2",
       title: "Anna Atkinson",
       subtitle: "Anna Jean Kos",
-      mainImage: "photography/AnnaJeanKos/AJKcaves-18.jpg",
+      mainImage: "photography/AnnaJeanKos/AJKcaves-27.jpg",
       className: "wide-card",
       columnLayout: 
       <div className="mason-grid">
@@ -260,8 +260,8 @@ export interface ProjectData {
     {
       id: "card10",
       title: "Pono Collective Coffee",
-      subtitle: 'El Salvador / Guatemala Event',
-      mainImage: "photography/PonoCollective/PonoCollective-9.jpg",
+      subtitle: 'El Salvador / Guatemala',
+      mainImage: "photography/PonoCollective/PonoCollective-19.jpg",
       className: "wide-card",
       columnLayout: 
       <div className="mason-grid">
@@ -295,7 +295,7 @@ export interface ProjectData {
       id: "card11",
       title: "Sydney Malia Walker",
       subtitle: 'Azure Co',
-      mainImage: "photography/TowaClothing/Azure-19.jpg",
+      mainImage: "photography/TowaClothing/Azure-16.jpg",
       className: "tall-card",
       columnLayout: 
       <div className="mason-grid">
@@ -351,8 +351,8 @@ export interface ProjectData {
     },
     {
       id: "card13",
-      title: "AVVA Brand",
-      subtitle: 'Zeke Lau',
+      title: "Zeke Lau",
+      subtitle: 'Avva Brand',
       description: 
       <div className="credits-section margin-bottom">
         <p><strong>DP: </strong> Zak Noyle</p>
@@ -392,32 +392,28 @@ export interface ProjectData {
           <img src="photography/AVVABrand/AVVA-28.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 28"/>
           <div className="mason-inner-container">
             <div className="mason-50-container">
-              <img src="photography/AVVABrand/AVVA-43.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 11"/>
-              <img src="photography/AVVABrand/AVVA-48.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
+              <img src="photography/AVVABrand/AVVA-43.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 43"/>
+              <img src="photography/AVVABrand/AVVA-48.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 48"/>
             </div>
             <div className="mason-50-container">
-            <img src="photography/AVVABrand/AVVA-57.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 13"/>
-            <img src="photography/AVVABrand/AVVA-60.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 18"/>
+            <img src="photography/AVVABrand/AVVA-57.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 57"/>
+            <img src="photography/AVVABrand/AVVA-60.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 60"/>
             </div>
           </div>
-          <img src="photography/AVVABrand/AVVA-67.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 24"/>
+          <img src="photography/AVVABrand/AVVA-67.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 67"/>
           <div className="mason-inner-container">
             <div className="mason-50-container">
-              <img src="photography/AVVABrand/AVVA-81.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 11"/>
-              <img src="photography/AVVABrand/AVVA-98.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
-              <img src="photography/AVVABrand/AVVA-109.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
+              <img src="photography/AVVABrand/AVVA-81.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 81"/>
+              <img src="photography/AVVABrand/AVVA-98.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 98"/>
+              <img src="photography/AVVABrand/AVVA-109.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 109"/>
             </div>
             <div className="mason-50-container">
-            <img src="photography/AVVABrand/AVVA-101.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 13"/>
-            <img src="photography/AVVABrand/AVVA-105.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 18"/>
-            <img src="photography/AVVABrand/AVVA-126.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 18"/>
+            <img src="photography/AVVABrand/AVVA-101.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 101"/>
+            <img src="photography/AVVABrand/AVVA-105.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 105"/>
+            <img src="photography/AVVABrand/AVVA-126.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 126"/>
             </div>
           </div>
-          <img src="photography/AVVABrand/AVVAfilm-129.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 18"/>
-        
-        
-
-        
+          <img src="photography/AVVABrand/AVVAfilm-129.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 129"/>
       </div>
     },
     {
@@ -425,36 +421,34 @@ export interface ProjectData {
       title: "NFTEA",
       subtitle: 'Foundation Collection',
       description: 
-      <div>
-        <a href="https://foundation.app/collection/tea" target="_blank" className="modern-font">Shop the Foundation NFT Collection</a>
-      </div>,
-      mainImage: "photography/NFTEA/NFTEA-1.JPG",
+      <>
+        <a href="https://foundation.app/collection/tea" target="_blank" className="modern-font black-text">Shop the Foundation NFT Collection</a>
+      </>,
+      mainImage: "photography/NFTEA/NFTEA-2.JPG",
       className: "tall-card",
       columnLayout: 
       <div className="mason-grid">
-        <img src="photography/NFTEA/NFTEA-6.jpg" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
-        <img src="photography/NFTEA/NFTEA-1.JPG" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
+        <img src="photography/NFTEA/NFTEA-6.jpg" className="mason-1 mason-item" alt="NFTEA Photo 6"/>
+        <img src="photography/NFTEA/NFTEA-1.JPG" className="mason-1 mason-item" alt="NFTEA Photo 1"/>
         <div className="mason-inner-container">
             <div className="mason-50-container">
-              <img src="photography/NFTEA/NFTEA-2.JPG" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
-              <img src="photography/NFTEA/NFTEA-3.JPG" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
+              <img src="photography/NFTEA/NFTEA-2.JPG" className="mason-1 mason-item" alt="NFTEA Photo 2"/>
+              <img src="photography/NFTEA/NFTEA-3.JPG" className="mason-1 mason-item" alt="NFTEA Photo 3"/>
             </div>
             <div className="mason-50-container">
-              <img src="photography/NFTEA/NFTEA-7.png" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
-              <img src="photography/NFTEA/NFTEA-5.JPG" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
+              <img src="photography/NFTEA/NFTEA-7.png" className="mason-1 mason-item" alt="NFTEA Photo 7"/>
+              <img src="photography/NFTEA/NFTEA-5.JPG" className="mason-1 mason-item" alt="NFTEA Photo 5"/>
             </div>
           </div>
-          <img src="photography/NFTEA/NFTEA-4.JPG" className="mason-1 mason-item" alt="AVVA Brand Photo 12"/>
-          
-
+          <img src="photography/NFTEA/NFTEA-4.JPG" className="mason-1 mason-item" alt="NFTEA Photo 4"/>
       </div>
     },
     {
       id: "card15",
       title: "BLKCORAL",
-      subtitle: 'American Savings Bank Install',
+      subtitle: 'American Savings Bank',
       description: 
-      <div>
+      <>
         <h3>American Savings Bank Headquarters Honolulu, HI</h3>
         <div className="credits-section">
         <h3>Credits:</h3>
@@ -464,65 +458,93 @@ export interface ProjectData {
         <p><strong>Art Assist/Photography:</strong> Reanna Chambers</p>
         </div>
         <br></br>
-      </div>,
-      mainImage: "photography/BLKCORAL/BLKCORAL-9.JPG",
+      </>,
+      mainImage: "photography/BLKCORAL/BLKCORAL-2.JPG",
       className: "wide-card",
       columnLayout: 
       <div className="mason-grid">
-        <img src="photography/BLKCORAL/BLKCORAL-20.jpeg" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-        <img src="photography/BLKCORAL/BLKCORAL-21.jpeg" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-        <img src="photography/BLKCORAL/BLKCORAL-6.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-        <img src="photography/BLKCORAL/BLKCORAL-15.jpg" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
+        <img src="photography/BLKCORAL/BLKCORAL-4.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
         <div className="mason-inner-container">
           <div className="mason-50-container">
+              <img src="photography/BLKCORAL/BLKCORAL-15.jpg" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
               <img src="photography/BLKCORAL/BLKCORAL-7.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
               <img src="photography/BLKCORAL/BLKCORAL-1.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
               <img src="photography/BLKCORAL/BLKCORAL-8.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
               <img src="photography/BLKCORAL/BLKCORAL-16.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-              
+              <img src="photography/BLKCORAL/BLKCORAL-14.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
+              <img src="photography/BLKCORAL/BLKCORAL-10.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
+              <img src="photography/BLKCORAL/BLKCORAL-19.jpeg" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
           </div>
           <div className="mason-50-container">
-          <img src="photography/BLKCORAL/BLKCORAL-4.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-          <img src="photography/BLKCORAL/BLKCORAL-13.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-          <img src="photography/BLKCORAL/BLKCORAL-5.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-          <img src="photography/BLKCORAL/BLKCORAL-12.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-          <img src="photography/BLKCORAL/BLKCORAL-2.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
+            <img src="photography/BLKCORAL/BLKCORAL-6.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo 6"/>
+            <img src="photography/BLKCORAL/BLKCORAL-13.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo 13"/>
+            <img src="photography/BLKCORAL/BLKCORAL-5.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo 5"/>
+            <img src="photography/BLKCORAL/BLKCORAL-12.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo 12"/>
+            <img src="photography/BLKCORAL/BLKCORAL-2.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo 2"/>
+            <img src="photography/BLKCORAL/BLKCORAL-9.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo 9"/>
+            <img src="photography/BLKCORAL/BLKCORAL-11.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo 11"/>
+            <img src="photography/BLKCORAL/BLKCORAL-3.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo 3"/> 
+            <img src="photography/BLKCORAL/BLKCORAL-17.jpeg" className="mason-1 mason-item" alt="BLKCORAL Photo 17"/>
           </div>
         </div>
-        
-        <img src="photography/BLKCORAL/BLKCORAL-9.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
+        <img src="photography/BLKCORAL/BLKCORAL-20.jpeg" className="mason-1 mason-item" alt="BLKCORAL Photo 20"/>
+        <img src="photography/BLKCORAL/BLKCORAL-21.jpeg" className="mason-1 mason-item" alt="BLKCORAL Photo 21"/>
+        <img src="photography/BLKCORAL/BLKCORAL-18.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo 18"/>
+      </div>
+    },
+    {
+      id: "card16",
+      title: "murals",
+      subtitle: "Installation BTS",
+      description: 
+      <>
+        <div className="credits">
+          <p><strong>Muralists:</strong></p>
+          <p><span className="custom-symbol-font black-flower">*</span> <strong>Kamea Hadar:</strong> “Eve” Ala Moana, HI</p>
+          <p><span className="custom-symbol-font black-flower">*</span> <strong>Cory Kamehanaokala, Kamea Hadar:</strong> Hyatt Hotel Waikiki, HI</p>
+          <p><span className="custom-symbol-font black-flower">*</span> <strong>Chanel Tanaka:</strong> Kaka'ako, HI</p>
+          <p><span className="custom-symbol-font black-flower">*</span> <strong>Kamea Hadar:</strong> Kaka'ako, HI</p>
+          <p><span className="custom-symbol-font black-flower">*</span> <strong>Kamea Hadar, Denim McNeil:</strong> "Hina" Aiea, HI</p>
+        </div>
+      </>
+        ,
+      mainImage: "photography/Murals/Murals-1.jpg",
+      className: "tall-card",
+      columnLayout: 
+      <div className="mason-grid">
         <div className="mason-inner-container">
           <div className="mason-50-container">
-            <img src="photography/BLKCORAL/BLKCORAL-3.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/> 
+            <img src="photography/Murals/Murals-1.jpg" className="mason-1 mason-item" alt="Murals Photo 1"/>
+            <img src="photography/Murals/Murals-4.jpg" className="mason-1 mason-item" alt="Murals Photo 4"/>
+            <img src="photography/Murals/Murals-7.jpg" className="mason-1 mason-item" alt="Murals Photo 7"/>
+            <img src="photography/Murals/Murals-9.jpg" className="mason-1 mason-item" alt="Murals Photo 9"/>
+            <img src="photography/Murals/Murals-16.jpg" className="mason-1 mason-item" alt="Murals Photo 16"/>
+            <img src="photography/Murals/Murals-17.jpg" className="mason-1 mason-item" alt="Murals Photo 17"/>
+            <img src="photography/Murals/Murals-18.jpg" className="mason-1 mason-item" alt="Murals Photo 18"/>
+            <img src="photography/Murals/Murals-19.jpg" className="mason-1 mason-item" alt="Murals Photo 19"/>
+            <img src="photography/Murals/Murals-20.jpg" className="mason-1 mason-item" alt="Murals Photo 20"/>
+            <img src="photography/Murals/Murals-21.jpg" className="mason-1 mason-item" alt="Murals Photo 21"/>
+            <img src="photography/Murals/Murals-22.jpg" className="mason-1 mason-item" alt="Murals Photo 22"/>
+            <img src="photography/Murals/Murals-23.jpg" className="mason-1 mason-item" alt="Murals Photo 23"/>
           </div>
           <div className="mason-50-container">
-            <img src="photography/BLKCORAL/BLKCORAL-10.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
+          <img src="photography/Murals/Murals-2.jpg" className="mason-1 mason-item" alt="Murals Photo 2"/>
+          <img src="photography/Murals/Murals-3.jpg" className="mason-1 mason-item" alt="Murals Photo 3"/>
+          <img src="photography/Murals/Murals-5.jpg" className="mason-1 mason-item" alt="Murals Photo 5"/>
+          <img src="photography/Murals/Murals-6.jpg" className="mason-1 mason-item" alt="Murals Photo 6"/>
+          <img src="photography/Murals/Murals-8.jpg" className="mason-1 mason-item" alt="Murals Photo 8"/>
+          <img src="photography/Murals/Murals-10.jpg" className="mason-1 mason-item" alt="Murals Photo 10"/>
+          <img src="photography/Murals/Murals-11.jpg" className="mason-1 mason-item" alt="Murals Photo 11"/>
+          <img src="photography/Murals/Murals-12.jpg" className="mason-1 mason-item" alt="Murals Photo 12"/>
+          <img src="photography/Murals/Murals-13.jpg" className="mason-1 mason-item" alt="Murals Photo 13"/>
+          <img src="photography/Murals/Murals-14.jpg" className="mason-1 mason-item" alt="Murals Photo 14"/>
+          <img src="photography/Murals/Murals-15.jpg" className="mason-1 mason-item" alt="Murals Photo 15"/>
+          <img src="photography/Murals/Murals-27.jpg" className="mason-1 mason-item" alt="Murals Photo 27"/>
+          <img src="photography/Murals/Murals-26.jpg" className="mason-1 mason-item" alt="Murals Photo 26"/>
+          <img src="photography/Murals/Murals-25.jpg" className="mason-1 mason-item" alt="Murals Photo 25"/>
+          <img src="photography/Murals/Murals-24.jpg" className="mason-1 mason-item" alt="Murals Photo 24"/>
           </div>
         </div>
-        
-        
-        <img src="photography/BLKCORAL/BLKCORAL-11.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-        <div className="mason-inner-container">
-          <div className="mason-50-container">
-          <img src="photography/BLKCORAL/BLKCORAL-14.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-          <img src="photography/BLKCORAL/BLKCORAL-18.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-          </div>
-          <div className="mason-50-container">
-          <img src="photography/BLKCORAL/BLKCORAL-17.jpeg" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-          <img src="photography/BLKCORAL/BLKCORAL-19.jpeg" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
-          </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-
-        
-        
       </div>
     },
   ];

@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useRef, useState } from 'react';
-import Navigation from '../components/Navigation';
 import gsap from 'gsap';
 import ProjectCard from './ProjectCard';
 import { projectCards } from './photoData'; 
@@ -107,7 +106,6 @@ export default function PhotoPage() {
 
   return (
     <section>
-      <Navigation />
       <main id="cardContainer" className="flex-start-start" ref={containerRef}>
         <div className='tall-column flex-center-center flex-wrap' id="column1">
           <ProjectCard projectData={projectCards[0]} onClick={changeTeam} />
@@ -134,6 +132,7 @@ export default function PhotoPage() {
             <ProjectCard projectData={projectCards[7]} onClick={changeTeam} />
             <ProjectCard projectData={projectCards[8]} onClick={changeTeam} />
             <ProjectCard projectData={projectCards[12]} onClick={changeTeam} />
+            <ProjectCard projectData={projectCards[15]} onClick={changeTeam} />
           </div>
         </div>
         
