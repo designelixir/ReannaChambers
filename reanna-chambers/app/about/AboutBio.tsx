@@ -23,19 +23,19 @@ export default function AboutBio(){
             <div className="left-40 flex-center-center" id="socialIcons">
                 <div className="flex-start-start flex-column no-flex-grow" >
                     <Link href="https://instagram.com/reannasea" target="_blank" className="flex-center-start no-flex-grow margin-bottom no-link-styling" >
-                        <Image src="./icons/instagram.svg" width={25} height={25} alt="Instagram Icon" className="margin-right"></Image>
+                        <span className="icon-instagram social-icon white-text-glow"></span>
                         <p className="white-text modern-font s-text white-text-glow">@reannasea</p>
                     </Link>
                     <Link href="https://instagram.com/reannasea" target="_blank" className="flex-center-start no-flex-grow margin-bottom no-link-styling">
-                        <Image src="./icons/email.svg" width={25} height={25} alt="Email Icon" className="margin-right"></Image>
+                        <span className="icon-email social-icon white-text-glow"></span>
                         <p className="white-text modern-font s-text white-text-glow">reannachambers@gmail.com</p>
                     </Link>
                     <Link href="https://www.youtube.com/@reannasea" target="_blank" className="flex-center-start no-flex-grow no-link-styling">
-                        <Image src="./icons/youtube.svg" width={25} height={25} alt="YouTube Icon" className="margin-right"></Image>
+                        <span className="icon-youtube social-icon white-text-glow"></span>
                         <p className="white-text modern-font s-text white-text-glow">@reannasea</p>
                     </Link>
                     <Link href="https://foundation.app/@reanna" target="_blank" className="flex-center-start no-flex-grow no-link-styling margin-top">
-                        <Image src="./icons/foundation-outlines.svg" width={35} height={25} alt="YouTube Icon" className="margin-right"></Image>
+                    <span className="icon-foundations social-icon white-text-glow" style={{fontSize: '26px'}}></span>
                         <p className="white-text modern-font s-text white-text-glow">@reanna</p>
                     </Link>
                 </div>

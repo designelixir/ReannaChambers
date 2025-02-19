@@ -71,12 +71,12 @@ export default function HomePageContent() {
        
         <div className="logo-wrapper flex-center-center no-flex-grow flex-column">
           <Logo homepageLogo={true}></Logo>
-          <span className=" custom-symbol-font black-text-glow" style={{fontSize: '20px', marginTop: '25px'}}>*</span>
+          <span className=" custom-symbol-font icon-flower black-text-glow" style={{fontSize: '20px', marginTop: '25px'}}></span>
         </div>
         <h2 className="homepage-description-text black-text-glow"><i>art</i></h2>
         <h2 className="black-text-glow">PRODUCTION</h2>
         <h2 className="black-text-glow"><i>photog<span className="aalt">r</span>aphy</i></h2>
-        <h2 className="black-text-glow" style={{ marginTop: "10px" }}><i>&#xF00E; MORE</i></h2>
+        <h2 className="black-text-glow" style={{ marginTop: "10px" }}><i>&amp; MORE</i></h2>
       </div>
 
       <div className="animation-desktop">
@@ -85,7 +85,7 @@ export default function HomePageContent() {
       
       <div className="flex-start-center positioner-wrapper full-width" id="mainCardsWrapper">
         <div id="AboutCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("AboutCard", '/about')}>
-          <div id="AboutCardStar" className="positioner-star black-text-glow custom-symbol-font">*</div>
+          <div id="AboutCardStar" className="positioner-star black-text-glow icon-flower custom-symbol-font"></div>
           <div className="card flex-start-center" id="AboutCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center about-card-front">
@@ -98,7 +98,7 @@ export default function HomePageContent() {
           </div>
         </div>
         <div id="PhotoCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("PhotoCard", '/photo')}>
-          <div id="PhotoCardStar" className="positioner-star black-text-glow custom-symbol-font">*</div>
+          <div id="PhotoCardStar" className="positioner-star black-text-glow custom-symbol-font icon-flower"></div>
           <div className="card flex-start-center" id="PhotoCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center photo-card-front">
@@ -111,7 +111,7 @@ export default function HomePageContent() {
           </div>
         </div>
         <div id="ProductionCardPositionerPost" className="positioner-post flex-center-start flex-column" onClick={() => expandCard("ProductionCard", '/production')} style={{opacity: '0'}}>
-          <div id="ProductionCardStar" className="positioner-star black-text-glow custom-symbol-font">*</div> 
+          <div id="ProductionCardStar" className="positioner-star black-text-glow custom-symbol-font icon-flower"></div> 
           <div className="card flex-start-center" id="ProductionCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center production-card-front">
@@ -124,7 +124,7 @@ export default function HomePageContent() {
           </div>
         </div>
         <div id="VideoCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}}>
-          <div id="VideoCardStar" className="positioner-star black-text-glow custom-symbol-font">*</div>
+          <div id="VideoCardStar" className="positioner-star black-text-glow custom-symbol-font icon-flower"></div>
             <div className="card flex-start-center" id="VideoCardPost">
                 <div className="card-inner">
                     <div className="card-front flex-center-center video-card-front">

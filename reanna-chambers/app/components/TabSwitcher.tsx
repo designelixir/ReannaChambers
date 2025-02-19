@@ -17,7 +17,7 @@ export default function TabSwitcher({ tabs, defaultTab }: TabSwitcherProps) {
   return (
     <>
       {/* Tab Headers */}
-      <div className="flex-start-start modern-font" style={{ padding: '0 2.5vw' }}>
+      <div className="flex-start-start modern-font black-text-glow" style={{ padding: '0 2.5vw' }}>
         {tabs.map((tab, index) => (
           <span key={tab.name} style={{ display: 'flex', alignItems: 'center' }}>
             <p
