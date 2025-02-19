@@ -18,7 +18,7 @@ export default function VideoPage() {
       <div className='flex-center-center' style={{ height: '60vh', width: '100%'}}>
         <div className='flex-center-center flex-column'>
           <h1>Coming Soon</h1>
-          <Link href="https://www.youtube.com/@reannasea/videos" target='_blank'>
+          <Link  href="https://www.youtube.com/@reannasea/videos" target='_blank'>
           View Videos
           </Link>
         </div>

@@ -3,6 +3,7 @@
 @font-face {font-family: "PalaceItalic"; src: url("/fonts/palace-italic.ttf") format("truetype"); font-weight: 100; font-style: italic;}
 @font-face {font-family: 'CustomSymbols'; src: url("/fonts/Glyphter4.ttf") format("truetype"); }
 @font-face {font-family: 'Rewind'; src: url("/fonts/RewindBold.otf") format("opentype"); }
+@font-face {font-family: 'AndaleMono'; src: url("/fonts/andalemono.ttf") format("truetype");}
 
 :root {
   --palace-regular: "PalaceRegular", sans-serif;
@@ -10,19 +11,19 @@
   --off-black: #1e1e1e;
   --off-black-transparent: "rgba(30,30,30,0.75)";
   --deep-red: #840015;
-  --palace-regular: 'Palace', serif; /* Fallback font */
-  --modern-font: "Consolas", sans-serif;
+  --palace-regular: 'Palace', serif; 
+  --modern-font: "AndaleMono", monospace;
 }
 
 html {max-width: 100vw; overflow-x: hidden; background-image: url('/tile1.jpg'); background-size: 400px; background-position: fixed; }
 body {width: 100%; margin: 0px}
 
 .custom-symbol-font {font-family: "CustomSymbols"!important;}
-.modern-font {font-family: "consolas", sans-serif!important; text-transform: uppercase!important; letter-spacing: 1px;}
+.modern-font {font-family:var(--modern-font)!important; text-transform: uppercase!important; letter-spacing: 1px;}
 .s-text {font-size: 18px;}
 .xs-text {font-size: 12px!important;}
 
-.bio-test-font i {font-family: "consolas", sans-serif!important; font-size: 16px; line-height: 14px!important; font-style: normal!important; text-transform: uppercase; }
+.bio-font i {font-family:var(--modern-font)!important; font-size: 16px; line-height: 14px!important; font-style: normal!important; text-transform: uppercase; }
 
 .flex-center-center {display: flex; align-items: center; justify-content: center; flex:1}
 .flex-center-end {display: flex; align-items: center; justify-content: flex-end; flex:1}
@@ -112,16 +113,16 @@ nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 .logo-text {font-size: clamp(24px, 2.5rem, 42px)!important; line-height: clamp(20px, 3rem, 30px)!important; text-align: center; margin-bottom: 25px;
 }
 
-.logo-line {font-size: 20px; letter-spacing: -1px;}
+.logo-line { letter-spacing: -1px; font-size: 120%; transform: translateY(-18px)}
 .logo-break {display: none;}
-.logo-flower {display: none;}
+
 @media screen and (max-width: 750px) {
   .large-logo .logo-first-letter {font-feature-settings: 'aalt' on;}
   .logo-break {display: block; height: 0; margin-top: -25px;}
   .logo-chambers {margin-left: 25px;}
-  .logo-line {display: none;}
   .logo-flower {display: block; margin-top: 15px}
   .large-logo {font-size: 56px;}
+.logo-line {font-size: 90%; transform: translateY(-20px)}
   .homepage-description-text {font-size: 36px; line-height: 40px;}
   .hero-wrapper {min-height: 400px;}
 }

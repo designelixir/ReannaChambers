@@ -339,19 +339,19 @@ export interface ProductionData {
             </div>
             <div className="flex-start-start flex-column full-width credits-section" style={{marginTop: '25px'}}>
                 <div className="flex-start-start">
-                    <Link href="https://hiff.org/events/lastlight/" className="hover flex-center-center flex-column no-link-styling black-text ">
+                    <Link target="_blank" href="https://hiff.org/events/lastlight/" className="hover flex-center-center flex-column no-link-styling black-text ">
                         <Image src="/production/HawaiiFilmFestivalSelection.png" height={80} width={100} alt="2024 Hawai'i Film Festival Official Selection"></Image>
                         <p className="modern-font xs-text">Nominee</p>
                     </Link>
-                    <Link href="https://www.sohofilmfest.com/2024-winners---nominees.html" style={{marginLeft: '10px'}} className="hover flex-center-center flex-column no-link-styling black-text ">
+                    <Link target="_blank" href="https://www.sohofilmfest.com/2024-winners---nominees.html" style={{marginLeft: '10px'}} className="hover flex-center-center flex-column no-link-styling black-text ">
                         <Image src="/production/sohoFilmFestivalSelection.png" height={70} width={100} alt="2024 SOHO International Film Festival Official Selection"></Image>
                         <p className="modern-font xs-text margin-top">Nominee</p>
                     </Link>
-                    <Link href="https://lvshortfilm.com/2024-edition" style={{marginLeft: '10px'}} className="hover flex-center-center flex-column no-link-styling black-text ">
+                    <Link target="_blank" href="https://lvshortfilm.com/2024-edition" style={{marginLeft: '10px'}} className="hover flex-center-center flex-column no-link-styling black-text ">
                         <Image src="/production/LasVegas.png" height={70} width={70} alt="Las Vegas Filipino Short Film Festival 2024"></Image>
                         <p className="modern-font xs-text margin-top">Best Director</p>
                     </Link>
-                    <Link href="https://piffnyc.org/2024" style={{marginLeft: '10px'}} className="hover flex-center-center flex-column no-link-styling black-text ">
+                    <Link target="_blank" href="https://piffnyc.org/2024" style={{marginLeft: '10px'}} className="hover flex-center-center flex-column no-link-styling black-text ">
                         <Image src="/production/PacificIslandFilm.png" height={70} width={100} alt="Pacific Island Film Festival NYC 2024"></Image>
                         <p className="modern-font xs-text margin-top">Nominee</p>
                     </Link>

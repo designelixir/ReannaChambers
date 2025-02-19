@@ -14,10 +14,7 @@ export default function Navigation() {
       {/* Left Side Links */}
       <div className="flex-center-spacebetween links-left">
         <Link href="/about" className={`italic nav-link black-text-glow flex-center-center ${pathname === '/about' ? 'active-link' : ''}`}>
-
-          <i>
-            A<span className="aalt">b</span>out
-          </i>
+          <i>about</i>
         </Link>
         <Link
           href="/photo"
@@ -25,7 +22,7 @@ export default function Navigation() {
             pathname === '/photo' ? 'active-link' : ''
           }`}
         >
-          <i>Pho<span className="aalt">t</span>o</i>
+          <i>photo</i>
         </Link>
       </div>
 
@@ -40,9 +37,7 @@ export default function Navigation() {
             pathname === '/production' ? 'active-link' : ''
           }`}
         >
-          <i>
-            P<span className="aalt">r</span>oduction
-          </i>
+          <i>production</i>
         </Link>
         <Link
           href="/video"
@@ -50,9 +45,7 @@ export default function Navigation() {
             pathname === '/video' ? 'active-link' : ''
           }`}
         >
-          <i>
-            Vi<span className="aalt">d</span>eo
-          </i>
+          <i>video</i>
         </Link>
       </div>
     </nav>

@@ -11,8 +11,8 @@ export default function ExhibitionList(){
         </h2>
         
         <div id="artExhibitionsList">
-            <p className="white-text-glow"><i>January 2025 | Fiberworkshop &quot;Your Paradise&quot; | Kaimana Beach Hotel, HI</i></p>
-            <p className="white-text-glow"><i>January 2024 | Fiberworkshop &quot;A Core Memory&quot; | Kaimana Beach Hotel, HI</i></p>
+            <p className="white-text-glow"><i>January 2025 | Fiberworkshop &quot;Your Paradise&quot; at Kaimana Beach Hotel | Waikiki, HI</i></p>
+            <p className="white-text-glow"><i>January 2024 | Fiberworkshop &quot;A Core Memory&quot; at Kaimana Beach Hotel | Waikiki, HI</i></p>
             <p className="white-text-glow"><i>June 2019 | Girl Group Show at Treehouse | Kaka&apos;ako, HI</i></p>
             <p className="white-text-glow"><i>May 2019 | Analog Sunshine Recorders at Single Double | Chinatown, HI</i></p>
             <p className="white-text-glow"><i>January 2019 | Untitled group show at Morning Glass | Manoa, HI</i></p>

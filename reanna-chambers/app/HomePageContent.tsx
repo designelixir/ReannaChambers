@@ -3,8 +3,8 @@ import React, { useEffect } from "react";
 import Logo from "./components/Logo";
 import WelcomeMarquee from "./components/WelcomeMarquee";
 import { gsap } from "gsap";
-import HomeCardAnimation2 from "./components/HomeCardAnimation2";
-import PlayingCardFormat from "./components/PlayingCardFormat";
+import HomeCardAnimation2 from "./components/Cards/HomeCardAnimation2";
+import PlayingCardFormat from "./components/Cards/PlayingCardFormat";
 import $ from 'jquery'
 
 
@@ -69,11 +69,12 @@ export default function HomePageContent() {
       </div>
       <div className="hero-wrapper flex-center-center flex-column">
        
-        <div className="logo-wrapper flex-center-center no-flex-grow">
+        <div className="logo-wrapper flex-center-center no-flex-grow flex-column">
           <Logo homepageLogo={true}></Logo>
+          <span className=" custom-symbol-font black-text-glow" style={{fontSize: '20px', marginTop: '25px'}}>*</span>
         </div>
         <h2 className="homepage-description-text black-text-glow"><i>art</i></h2>
-        <h2 className="black-text-glow"><span className="aalt">P</span>RODUCTION</h2>
+        <h2 className="black-text-glow">PRODUCTION</h2>
         <h2 className="black-text-glow"><i>photog<span className="aalt">r</span>aphy</i></h2>
         <h2 className="black-text-glow" style={{ marginTop: "10px" }}><i>&#xF00E; MORE</i></h2>
       </div>
@@ -88,7 +89,7 @@ export default function HomePageContent() {
           <div className="card flex-start-center" id="AboutCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center about-card-front">
-                      <PlayingCardFormat title="About" color="var(--off-black)"></PlayingCardFormat>
+                      <PlayingCardFormat title="about" color="var(--off-black)"></PlayingCardFormat>
                   </div>
                   <div className="card-back flex-center-center">
                       <div className="card-back-design"></div>
@@ -101,7 +102,7 @@ export default function HomePageContent() {
           <div className="card flex-start-center" id="PhotoCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center photo-card-front">
-                      <PlayingCardFormat title="Photo" color="var(--deep-red)"></PlayingCardFormat>
+                      <PlayingCardFormat title="photo" color="var(--deep-red)"></PlayingCardFormat>
                   </div>
                   <div className="card-back flex-center-center">
                       <div className="card-back-design"></div>
@@ -114,7 +115,7 @@ export default function HomePageContent() {
           <div className="card flex-start-center" id="ProductionCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center production-card-front">
-                      <PlayingCardFormat title="Production" color="var(--off-black)"></PlayingCardFormat>
+                      <PlayingCardFormat title="production" color="var(--off-black)"></PlayingCardFormat>
                   </div>
                   <div className="card-back flex-center-center">
                       <div className="card-back-design"></div>
@@ -127,7 +128,7 @@ export default function HomePageContent() {
             <div className="card flex-start-center" id="VideoCardPost">
                 <div className="card-inner">
                     <div className="card-front flex-center-center video-card-front">
-                        <PlayingCardFormat title="Video" color="var(--deep-red)"></PlayingCardFormat>
+                        <PlayingCardFormat title="video" color="var(--deep-red)"></PlayingCardFormat>
                     </div>
                     <div className="card-back flex-center-center">
                         <div className="card-back-design"></div>

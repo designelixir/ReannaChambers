@@ -1,7 +1,7 @@
 "use client"; // Ensures this runs only on the client
 
 import React, { useEffect } from "react";
-import "./component-styles/CardAnimation2.css";
+import "./cardAnimation.css";
 import gsap from "gsap";
 import HomeCards from "./HomeCards";
 import $ from 'jquery'
