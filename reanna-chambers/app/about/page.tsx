@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function AboutPage(){
   return (
-    <section>
+    <section style={{maxWidth: '100vw', overflowX: 'hidden'}}>
         <Navigation></Navigation>
         <AboutHero></AboutHero>
         <AboutPageLayout></AboutPageLayout>

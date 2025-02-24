@@ -12,6 +12,7 @@ interface CardState {
 }
 
 export default function ColoringCardGrid() {
+  
   const [cardStates, setCardStates] = useState<CardState[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -28,7 +29,7 @@ export default function ColoringCardGrid() {
     if (box && target && originalContainer && viewerWindow) {
         viewerWindow.classList.remove('blur-bg')
       const rect = box.getBoundingClientRect();
-      // const destination = moved ? originalContainer : target;
+      
 
       if (moved) {
         if (content) {
@@ -41,8 +42,11 @@ export default function ColoringCardGrid() {
           const updatedRect = target.getBoundingClientRect();
           animateMovement(box, originalContainer, updatedRect, updatedRect, viewerWindow, id, moved, content);
         }, 1000);
+        
       } else {
         animateMovement(box, target, rect, null, viewerWindow, id, moved, content);
+        
+        
       }
     }
   };
@@ -83,7 +87,13 @@ export default function ColoringCardGrid() {
           }
         } else {
             
-          box.classList.remove('flip');
+          const children = box.children;
+        Array.from(children).forEach((child, index) => {
+          setTimeout(() => {
+            child.classList.remove('flip');
+          }, index * 300); // 300ms delay between each removal
+        });
+
           
         }
 
@@ -105,22 +115,21 @@ export default function ColoringCardGrid() {
     });
   };
 
+
   return (
-    <section>
-      <main id="cardContainer" className="flex-start-start" ref={containerRef}>
+    <>
+      <main id="cardContainer1"  className="flex-start-start card-section" ref={containerRef}>
         <div className='tall-column flex-center-center flex-wrap' id="column1">
           <ProjectCard projectData={videoCards[0]} onClick={changeTeam} />
           
-        
         </div>
-        <div id="column2and3wrapper" className='flex-start-start'>
+        {/* <div id="column2and3wrapper" className='flex-start-start'>
           <div className='wide-column flex-center-center flex-wrap' id="column2">
-           
           </div>
-          <div className='wide-column flex-center-center flex-wrap' id="column2">
-           
+          <div className='tall-column flex-center-center flex-wrap' id="column3">
+
           </div>
-        </div>
+        </div> */}
         
         
 
@@ -128,8 +137,7 @@ export default function ColoringCardGrid() {
       <div id="viewerWindow" className="flex-center-center inactive-viewer-window">
         <div id="goToMe"></div>
       </div>
-    </section>
-    
+    </>
   );
 }
 

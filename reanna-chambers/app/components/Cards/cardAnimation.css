@@ -53,9 +53,8 @@
 /* PlayingCardFormat.tsx component styling */
 .playing-card { width: 90%; height: 95%; aspect-ratio: 3/4!important;}
 .playing-card-top { height: 15%; }
-.playing-card-top p {line-height: 0!important; padding: 10% 0!important; margin: 0; font-weight: 100;}
-.playing-card-number {font-size: 1em!important; line-height: 1.25em;}
-.playing-card-symbol {font-size: 18px;}
+.playing-card-top p {font-family: var(--palace-regular)!important; line-height: 0!important; padding: 10% 0!important; margin: 0; font-weight: 100;}
+
 
 
 .playing-card-center {height: 70%;}

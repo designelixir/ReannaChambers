@@ -1,20 +1,20 @@
-* {box-sizing: border-box; font-weight: 100; font-family: var(--palace-regular); }
+* {box-sizing: border-box; font-weight: 100; }
 @font-face {
   font-family: 'PalaceRegular';
 
   src: 
-  url("/fonts/palace-regular.ttf") format("truetype");
-  /* url("/fonts/palace-regular.woff2") format("woff2"),
-       url("/fonts/palace-regular.woff") format("woff"); */
+  url("/fonts/palace-regular.ttf") format("truetype")
+  url("/fonts/palace-regular.woff2") format("woff2"),
+       url("/fonts/palace-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PalaceItalic';
-  src: url("/fonts/palace-italic.ttf") format("truetype");
-  /* url("/fonts/palace-italic.woff2") format("woff2"),
-       url("/fonts/palace-italic.woff") format("woff"); */
+  src: url("/fonts/palace-italic.ttf") format("truetype")
+  url("/fonts/palace-italic.woff2") format("woff2"),
+       url("/fonts/palace-italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
@@ -148,13 +148,14 @@ i * {font-family: var(--palace-italic)!important;}
 
 .navigation-spacer {height: 150px}
 .active-tab {font-weight: 700; text-decoration: underline;}
-nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: 100%;}
+nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: calc(100% - 20px);}
 .nav-link 
 {font-size: 22px;
   text-decoration: unset!important; 
   width: 100%;
   color: var(--off-black);
   text-align: center;
+  font-family: var(--palace-italic);
 }
 .nav-link:hover {text-shadow: unset!important; color: var(--deep-red); text-shadow: 0 0 1.25px var(--deep-red)!important;}
 
@@ -164,7 +165,7 @@ nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: 100%;}
 
 .photo-logo-container { aspect-ratio: 1/0.25;   background-image: url('/ReannaChambersLogo.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;} 
 .homepage-logo {width: 80vw; max-width: 700px!important;}
-.nav-logo {width: 35vw; max-width: 500px;  min-width: 300px; }
+.nav-logo {width: 100%; max-width: 500px; min-width: 300px; }
 
 @media screen and (max-width: 800px) {
   .homepage-logo {min-width: 90vw;}

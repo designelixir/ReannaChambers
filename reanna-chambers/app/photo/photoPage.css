@@ -49,7 +49,7 @@
 .back {background-color: white; background-size: cover; background-position: center center; background-repeat: no-repeat; transform: rotateY(180deg);}
 .card-inner {width: 100%; height: 100%; border-radius: 10px; transform-style: preserve-3d;}
 .card-inner.flip {transform: rotateY(180deg);}
-.card-header-title {text-shadow: unset; font-size: 48px; line-height: 50px; font-weight: 700;}
+.card-header-title {font-family: var(--palace-italic); text-shadow: unset; font-size: 48px; line-height: 50px; font-weight: 700;}
 .card-header-subtitle {font-size: 24px; line-height: 24px;}
 .credits p {font-size: 16px;}
 .card-header-wrapper {position: sticky; padding: 10px 0 0 5px; width: 100%; top: 0; background: white; z-index: 2;}
@@ -60,7 +60,7 @@
 .project-subtitle {background: #E8E0D2; font-size: clamp(18px, 3vw, 26px); font-family: var(--palace-regular)!important;  text-align: center; text-shadow: -0.5px 0 1px black, 0 0.5px 1px black, 0.5px 0 1px black, 0 -0.5px 1px black; background-position: center 90%; -webkit-background-clip: text; text-transform: uppercase; color: #E8E0D2; margin: 0;}
 
 
-.close-button {padding: 10px; margin-top: -5px; margin-right: 10px; height: 50px; width: 50px; background: white; z-index: 301; border: 3px solid black; border-radius: 5px;}
+.close-button {padding: 10px; margin-top: -5px; margin-right: 10px; font-family: var(--palace-regular); height: 50px; width: 50px; background: white; z-index: 301; border: 3px solid black; border-radius: 5px;}
 
 /* PhotoCardPhotoGrid.tsx */
 

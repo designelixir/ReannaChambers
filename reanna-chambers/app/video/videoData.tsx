@@ -12,7 +12,7 @@ export interface ImageData {
 export interface VideoData {
   id?: string;
   title: string;
-  subtitle?: string;
+  subtitle?: ReactNode;
   description?: ReactNode;
   mainImage: string;
   className?: string;
@@ -58,8 +58,8 @@ export interface VideoData {
     mainImage: "video/LoihiRecords/TJTario.jpg",
     description:
     <>
-    <div className="credits-section">
-      <p><i>Single from T.J. Keanu Tario&apos;s album Standing Above the Clouds Lo&apos;ihi Records</i></p><br></br>
+    <div className="credits-section" style={{marginBottom: '25px'}}>
+      <p><i>Single from T.J. Keanu Tario&apos;s album <strong>Standing Above the Clouds </strong>Lo&apos;ihi Records</i></p><br></br>
       <p>Vocals by Maka&apos;ala Perry</p>
       <p>Strings by Eric Silberger, Duane Padilla, and Joshua Nakazawa</p>
       <p>Piano by T.J. Keanu Tario</p>

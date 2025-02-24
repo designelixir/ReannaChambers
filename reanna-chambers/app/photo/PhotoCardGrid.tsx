@@ -86,12 +86,7 @@ export default function PhotoPage() {
           }
         } else {
             
-          const children = box.children;
-        Array.from(children).forEach((child, index) => {
-          setTimeout(() => {
-            child.classList.remove('flip');
-          }, index * 300); // 300ms delay between each removal
-        });
+          box.classList.remove('flip');
 
           
         }

@@ -1,20 +1,29 @@
+
 import React from 'react';
+import '../photo/photoPage.css';
+import TabSwitcher from '../components/TabSwitcher';
+import ColoringCardGrid from './ColoringCardGrid';
+import EditsCardGrid from './EditsCardGrid';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
-import VideoPageContent from './VideoPageContent';
-
 
 export const metadata = {
-  title: 'Video | Reanna Chambers'
-}
+  title: 'Video | Reanna Chambers',
+};
 
-export default function VideoPage() {
+export default function PhotoPage() {
+  // Define the tabs with dynamic content
+  const tabs = [
+    { name: 'Coloring', content: <ColoringCardGrid></ColoringCardGrid> },
+    { name: 'Edits', content: <EditsCardGrid></EditsCardGrid> },
+  ];
+
   return (
-    <section>
-      <Navigation></Navigation>
+    <section id="videoCardGrid">
+      <Navigation />
       <div className="navigation-spacer"></div>
-      <VideoPageContent></VideoPageContent>
-      <Footer dark={true}></Footer>
+      <TabSwitcher tabs={tabs} defaultTab="Coloring" />
+      <Footer dark={true} />
     </section>
   );
 }

@@ -17,7 +17,7 @@ export default function PlayingCardFormat({ title, color }: PlayingCardFormatPro
         
         <div className="playing-card-center flex-center-center"></div>
         <div className="playing-card-top flex-start-start" style={{transform: 'rotate(180deg)'}}>
-          <p className={`${color}-text-glow`}><i>{title}</i></p>
+          <p className={`palace-italic ${color}-text-glow`}>{title}</p>
         </div>
     </div>
   );

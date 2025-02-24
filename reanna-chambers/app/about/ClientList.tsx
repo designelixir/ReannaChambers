@@ -59,7 +59,7 @@ export default function ClientList() {
           CLIENTS
         </h2>
         <div className="tag-wrapper flex-center-end flex-wrap">
-  <span className="black-text-glow" style={{ textWrap: 'nowrap', marginTop: '5px' }}>
+  <span className="black-text-glow palace-regular" style={{ textWrap: 'nowrap', marginTop: '5px' }}>
     <i>filter by:</i>&nbsp;
   </span>
 

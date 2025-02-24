@@ -71,12 +71,12 @@ export default function HomePageContent() {
        
         <div className="logo-wrapper flex-center-center no-flex-grow flex-column">
           <Logo homepageLogo={true}></Logo>
-          <span className=" custom-symbol-font icon-flower black-text-glow" style={{fontSize: '20px', marginTop: '25px'}}></span>
+          <span className=" custom-symbol-font icon-flower black-text-glow" style={{fontSize: '20px', marginTop: '25px', marginBottom: '25px'}}></span>
         </div>
-        <h2 className="homepage-description-text black-text-glow"><i>art</i></h2>
-        <h2 className="black-text-glow">PRODUCTION</h2>
-        <h2 className="black-text-glow palace-italic">photog<span className="aalt palace-italic">r</span>aphy</h2>
-        <h2 className="black-text-glow" style={{ marginTop: "10px" }}><i>&amp; MORE</i></h2>
+        <h2 className="homepage-description-text black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px'}}><i>art</i></h2>
+        <h2 className="black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px'}}>PRODUCTION</h2>
+        <h2 className="black-text-glow palace-italic" style={{fontSize: '36px', lineHeight: '40px'}}>photog<span className="aalt palace-italic">r</span>aphy</h2>
+        <h2 className="black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px', marginTop: '10px'}}><i>&amp; MORE</i></h2>
       </div>
 
       <div className="animation-desktop">

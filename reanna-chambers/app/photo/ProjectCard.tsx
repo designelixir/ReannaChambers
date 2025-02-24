@@ -4,7 +4,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { flipCard } from './animationUtils';
 import { ProjectData } from './photoData';
 import ProjectCardPhotoGrid from './ProjectCardPhotoGrid';
-import gsap from 'gsap';
 
 interface ProjectCardProps {
   projectData: ProjectData; // Pass all project data as a single object
@@ -30,20 +29,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   
 
   useEffect(() => {
-    gsap.fromTo('.card-section', {left: '-100vw'}, {left: '0vw'})
-      // Delay flipCard by 500ms
       setTimeout(() => {
         if (cardRef.current) {
           flipCard(cardRef.current, true);
         }
         
       }, 1000);
-  
-      // Then update state 2000ms after flipCard
-      setTimeout(() => {
         setIsFlipped(true);
-      }, 2500); // 500ms + 2000ms delay total
-    
   }, []);
   
 
@@ -89,7 +81,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
 
   return (
     <div id={id} className={`card ${className} flex-center-center`} style={{margin: '0vw 2vw 2vw 0'}}>
-      <div id={`${id}-move`} className="card-inner box-shadow  " ref={cardRef}>
+      <div id={`${id}-move`} className="card-inner box-shadow " ref={cardRef}>
         <div className="front card-back-design">
           <div className="front-content" ref={frontContentRef} >
             <div className="front-content-wrapper"  >
