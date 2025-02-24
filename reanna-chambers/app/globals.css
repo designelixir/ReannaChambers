@@ -68,8 +68,8 @@ display: inline-block;
   --custom-symbols: "REANNAICONS", monospace;
 }
 
-html {max-width: 100vw; overflow-x: hidden; background-image: url('/tile1.jpg'); background-size: 400px; background-position: fixed; }
-body {width: 100%; margin: 0px}
+html {max-width: 100vw; overflow-x: hidden;  background-color: var(--off-black)}
+body {width: 100%; margin: 0px; background-image: url('/tile1.jpg'); background-size: 400px; background-position: fixed;}
 
 .custom-symbol-font * {font-family: var(--custom-symbols)}
 .modern-font {font-family:var(--modern-font)!important; text-transform: uppercase!important; }
@@ -148,7 +148,7 @@ i * {font-family: var(--palace-italic)!important;}
 
 .navigation-spacer {height: 150px}
 .active-tab {font-weight: 700; text-decoration: underline;}
-nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: calc(100% - 20px);}
+nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: 99vw; }
 .nav-link 
 {font-size: 22px;
   text-decoration: unset!important; 
@@ -165,7 +165,7 @@ nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: calc(100% - 20
 
 .photo-logo-container { aspect-ratio: 1/0.25;   background-image: url('/ReannaChambersLogo.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;} 
 .homepage-logo {width: 80vw; max-width: 700px!important;}
-.nav-logo {width: 100%; max-width: 500px; min-width: 300px; }
+.nav-logo {width: 100%; max-width: 500px; }
 
 @media screen and (max-width: 800px) {
   .homepage-logo {min-width: 90vw;}
@@ -175,7 +175,7 @@ nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: calc(100% - 20
   
   @media screen and (max-width: 800px) {
     nav { flex-wrap: wrap;}
-    .photo-logo-container {order: 1; width: 100vw; min-width: 100%;}
+    .photo-logo-container {order: 1; width: 100%; min-width: 99vw;}
     .nav-logo { max-height: 52px; margin: 1.5vw 0}
     .links-left {order: 2; width: 50%; }
     .links-right {order: 3; width: 50%; } 
