@@ -55,7 +55,7 @@ export default function ClientList() {
     <div id="clientList" className="flex-start-start flex-column full-width">
       {/* Header with filters */}
       <div className="client-list-header flex-center-spacebetween full-width">
-        <h2 className="black-text-glow">
+        <h2 className="black-text-glow palace-regular">
           CLIENTS
         </h2>
         <div className="tag-wrapper flex-center-end flex-wrap">
