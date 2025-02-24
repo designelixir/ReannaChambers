@@ -2,7 +2,7 @@ import React from "react";
 import HomePageContent from "./HomePageContent";
 
 export const metadata = {
-  title: "Production | Reanna Chambers",
+  title: "Home | Reanna Chambers",
 };
 
 export default function Home() {

@@ -75,7 +75,7 @@ export default function HomePageContent() {
         </div>
         <h2 className="homepage-description-text black-text-glow"><i>art</i></h2>
         <h2 className="black-text-glow">PRODUCTION</h2>
-        <h2 className="black-text-glow"><i>photog<span className="aalt">r</span>aphy</i></h2>
+        <h2 className="black-text-glow palace-italic"><i>photog<span className="aalt">r</span>aphy</i></h2>
         <h2 className="black-text-glow" style={{ marginTop: "10px" }}><i>&amp; MORE</i></h2>
       </div>
 
