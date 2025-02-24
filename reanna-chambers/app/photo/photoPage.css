@@ -39,7 +39,8 @@
 #card12-move .card-header-subtitle::after {content: ' Holiday Collection'; font-weight: bold; }
 #card18-move .card-header-subtitle::before {content: '"'; font-weight: bold;}
 #card18-move .card-header-subtitle::after {content: '"'; font-weight: bold;}
-
+#MarieClaireSubtitle {display: none;}
+#card10-move .card-header-subtitle::before {content: "UK Summer Edition '23"; font-weight: bold;}
 
 .wide-card {aspect-ratio: 4/3; min-width: 100%;}
 .tall-card {aspect-ratio: 3/4; min-width: 100%;}

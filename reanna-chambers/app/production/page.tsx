@@ -12,7 +12,7 @@ export default function ProductionPage() {
   
 
   return (
-    <section id="productionCardGrid" className='card-section'>
+    <section id="productionCardGrid">
       <Navigation />
       <div className="navigation-spacer"></div>
       <div style={{padding: '0 2.5vw 2.5vw'}}>

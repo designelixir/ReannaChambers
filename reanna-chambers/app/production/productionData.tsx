@@ -13,7 +13,7 @@ export interface ImageData {
 export interface ProductionData {
   id?: string;
   title: string;
-  subtitle?: string;
+  subtitle?: ReactNode;
   description?: ReactNode;
   mainImage: string;
   className?: string;
@@ -532,7 +532,7 @@ export interface ProductionData {
     {
         id: "card10",
         title: "Marie Claire",
-        subtitle: 'United Kingdom',
+        subtitle: <span id="MarieClaireSubtitle">United Kingdom</span>,
         mainImage: "production/MarieClaire/MarieClaire-4.jpg",
         description:
         <div>

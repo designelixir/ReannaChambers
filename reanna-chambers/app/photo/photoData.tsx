@@ -12,7 +12,7 @@ export interface ImageData {
 export interface ProjectData {
   id?: string;
   title: ReactNode;
-  subtitle?: string;
+  subtitle?: ReactNode;
   description?: ReactNode;
   mainImage: string;
   imagesAndCaptions?: ImageData[];
