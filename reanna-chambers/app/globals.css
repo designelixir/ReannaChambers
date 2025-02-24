@@ -141,6 +141,8 @@ i * {font-family: var(--palace-italic)!important;}
 
 .white-text-glow {text-shadow: 0 0 2px white; color: white;}
 .black-text-glow {text-shadow: 0 0 2px var(--off-black); color: var(--off-black)}
+.off-black-text-glow {text-shadow: 0 0 2px var(--off-black); color: var(--off-black)}
+.deep-red-text-glow {text-shadow: 0 0 2px var(--deep-red); color: var(--deep-red)}
 .white-flower {text-shadow: 0 0 2px lightgray; color: white; font-size: 14px; margin: 0 10px;}
 .black-flower {text-shadow: 0 0 2px var(--off-black); color: var(--off-black)}
 

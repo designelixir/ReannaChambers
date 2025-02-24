@@ -21,13 +21,13 @@
     border-radius: 10px;
     width: 100%;
     
-    aspect-ratio: 2.5/3.5;
+    aspect-ratio: 3/4;
     transform-style: preserve-3d; /* Enables 3D transform */
     transition: transform 0.6s; /* Smooth flipping animation */ }
 
 .card { transition: transform 0.2s ease;
    perspective: 1000px; 
-   aspect-ratio: 2.5 / 3.5;
+   aspect-ratio: 3/4;
    width: 24vw; 
     max-width: 240px;
 }
@@ -35,7 +35,7 @@
 
 .card-front { background: white; border-radius: 10px; box-shadow: 2px 2px 2px rgba(0,0,0,0.25); }
 .card-back{ transform: rotateY(180deg); }
-.card-back-design {height: 100%; width: 100%; border-radius: 10px; box-shadow: 2px 2px 2px rgba(0,0,0,0.25); background-color: white; background-image: url('/cards/card-bg.png'); background-size: contain; background-repeat: no-repeat; background-position: center center;}
+.card-back-design {height: 100%; width: 100%; border-radius: 10px; box-shadow: 2px 2px 2px rgba(0,0,0,0.25); background-color: white; background-image: url('/cards/card-textured-bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;}
 .card-front, 
 .card-back {
   position: absolute;
@@ -51,9 +51,9 @@
 
 
 /* PlayingCardFormat.tsx component styling */
-.playing-card { width: 90%; height: 95%; aspect-ratio: 2.5/3.5!important;}
+.playing-card { width: 90%; height: 95%; aspect-ratio: 3/4!important;}
 .playing-card-top { height: 15%; }
-.playing-card-top p {line-height: 0!important; padding: 10% 0!important; margin: 0;}
+.playing-card-top p {line-height: 0!important; padding: 10% 0!important; margin: 0; font-weight: 100;}
 .playing-card-number {font-size: 1em!important; line-height: 1.25em;}
 .playing-card-symbol {font-size: 18px;}
 

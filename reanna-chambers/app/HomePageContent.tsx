@@ -75,7 +75,7 @@ export default function HomePageContent() {
         </div>
         <h2 className="homepage-description-text black-text-glow"><i>art</i></h2>
         <h2 className="black-text-glow">PRODUCTION</h2>
-        <h2 className="black-text-glow palace-italic"><i>photog<span className="aalt">r</span>aphy</i></h2>
+        <h2 className="black-text-glow palace-italic">photog<span className="aalt palace-italic">r</span>aphy</h2>
         <h2 className="black-text-glow" style={{ marginTop: "10px" }}><i>&amp; MORE</i></h2>
       </div>
 
@@ -89,7 +89,7 @@ export default function HomePageContent() {
           <div className="card flex-start-center" id="AboutCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center about-card-front">
-                      <PlayingCardFormat title="about" color="var(--off-black)"></PlayingCardFormat>
+                      <PlayingCardFormat title="about" color="off-black"></PlayingCardFormat>
                   </div>
                   <div className="card-back flex-center-center">
                       <div className="card-back-design"></div>
@@ -102,7 +102,7 @@ export default function HomePageContent() {
           <div className="card flex-start-center" id="PhotoCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center photo-card-front">
-                      <PlayingCardFormat title="photo" color="var(--deep-red)"></PlayingCardFormat>
+                      <PlayingCardFormat title="photo" color="deep-red"></PlayingCardFormat>
                   </div>
                   <div className="card-back flex-center-center">
                       <div className="card-back-design"></div>
@@ -115,7 +115,7 @@ export default function HomePageContent() {
           <div className="card flex-start-center" id="ProductionCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center production-card-front">
-                      <PlayingCardFormat title="production" color="var(--off-black)"></PlayingCardFormat>
+                      <PlayingCardFormat title="production" color="off-black"></PlayingCardFormat>
                   </div>
                   <div className="card-back flex-center-center">
                       <div className="card-back-design"></div>
@@ -128,7 +128,7 @@ export default function HomePageContent() {
             <div className="card flex-start-center" id="VideoCardPost">
                 <div className="card-inner">
                     <div className="card-front flex-center-center video-card-front">
-                        <PlayingCardFormat title="video" color="var(--deep-red)"></PlayingCardFormat>
+                        <PlayingCardFormat title="video" color="deep-red"></PlayingCardFormat>
                     </div>
                     <div className="card-back flex-center-center">
                         <div className="card-back-design"></div>

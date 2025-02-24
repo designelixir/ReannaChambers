@@ -3,7 +3,7 @@ export default function ExhibitionList(){
     return (
         <>
          <h2 className="white-text italic white-text-glow" style={{marginBottom: '50px'}}>
-            <i><span className="aalt">A</span>rt Exhibitions</i>
+            <i>Exhibitions</i>
             {/* <span className="aalt">A</span>
             <span style={{textDecoration: 'underline'}}>RT</span>&nbsp; 
             <span className="aalt">E</span>
