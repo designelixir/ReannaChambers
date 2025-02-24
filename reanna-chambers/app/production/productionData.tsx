@@ -1064,7 +1064,7 @@ export interface ProductionData {
     {
         id: "card19",
         title: "Roxy OTB",
-        subtitle: `AUS / NZ`,
+        subtitle: <span id="roxyOTBAUSNZSubtitle">AUS/NZ</span>,
         mainImage: "production/RoxyOTBAusNZ/Roxy-OTB-NZAUS-40.jpg",
         description:
         <div className="flex-start-start flex-column">
