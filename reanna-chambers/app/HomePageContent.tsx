@@ -75,7 +75,7 @@ export default function HomePageContent() {
         </div>
         <h2 className="homepage-description-text black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px'}}><i>art</i></h2>
         <h2 className="black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px'}}>PRODUCTION</h2>
-        <h2 className="black-text-glow palace-italic" style={{fontSize: '36px', lineHeight: '40px'}}>photog<span className="aalt palace-italic">r</span>aphy</h2>
+        <h2 className="black-text-glow palace-italic" style={{fontSize: '36px', lineHeight: '40px'}}>photography</h2>
         <h2 className="black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px', marginTop: '10px'}}><i>&amp; MORE</i></h2>
       </div>
 
