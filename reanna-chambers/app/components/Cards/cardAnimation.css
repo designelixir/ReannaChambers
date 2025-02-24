@@ -60,9 +60,7 @@
 
 .playing-card-center {height: 70%;}
 .playing-card p {font-size: clamp(14px, 4vw, 36px); font-weight: 600; line-height: 2.5rem; padding: 0;}
-.card-number {height: 100%; width: 15%; max-width: 30px;  background-size: contain; background-repeat: no-repeat; background-position: 100% top;}
-.number-black {background-image: url('../../../public/cards/4-black.png');}
-.number-red {background-image: url('../../../public/cards/4-red.png');}
+
 
 @keyframes wobble {
     0% {

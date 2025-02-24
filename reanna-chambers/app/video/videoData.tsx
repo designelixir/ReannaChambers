@@ -59,7 +59,7 @@ export interface VideoData {
     description:
     <>
     <div className="credits-section">
-      <p><i>Single from T.J. Keanu Tario&apos;s album Standing Above the CloudsLo&apos;ihi Records</i></p><br></br>
+      <p><i>Single from T.J. Keanu Tario&apos;s album Standing Above the Clouds Lo&apos;ihi Records</i></p><br></br>
       <p>Vocals by Maka&apos;ala Perry</p>
       <p>Strings by Eric Silberger, Duane Padilla, and Joshua Nakazawa</p>
       <p>Piano by T.J. Keanu Tario</p>

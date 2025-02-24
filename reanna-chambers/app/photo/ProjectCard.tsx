@@ -67,11 +67,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
           if (cardRef.current && isInGoToMe) {
             setIsInGoToMe(false);
             setIsFlipped(true)
-            console.log(" here")
             flipCard(cardRef.current, !isFlipped);
-          } else {
-            console.log("false")
-          }
+          } 
         }, 1000);
       }
     }
@@ -81,12 +78,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
       if (cardRef.current?.parentElement?.id === "goToMe") {
         setIsInGoToMe(true);
         setReadyLoadImages(true);
-        console.log("true")
         
-      } else {
-        
-        console.log("false")
-      }
+      } 
     }, 500); // Slight delay to ensure the transition completes
 
     

@@ -11,8 +11,27 @@ interface CardState {
 }
 
 export default function PhotoPage() {
+  gsap.fromTo('.card-section', {left: '-100vw'}, {left: '0vw'})
   const [cardStates, setCardStates] = useState<CardState[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
+  let scrollPosition = { top: 0, left: 0 };
+  function disableScroll() {
+    // Save the current scroll position
+    scrollPosition = {
+      top: window.pageYOffset || document.documentElement.scrollTop,
+      left: window.pageXOffset || document.documentElement.scrollLeft,
+    };
+  
+    // Prevent further scrolling
+    window.onscroll = function() {
+      window.scrollTo(scrollPosition.left, scrollPosition.top);
+    };
+  }
+  
+  function enableScroll() {
+    // Remove the onscroll handler to allow scrolling again
+    window.onscroll = null;
+  }
 
   const changeTeam = (id: string) => {
     const box = document.querySelector(id) as HTMLElement;
@@ -41,11 +60,11 @@ export default function PhotoPage() {
           const updatedRect = target.getBoundingClientRect();
           animateMovement(box, originalContainer, updatedRect, updatedRect, viewerWindow, id, moved, content);
         }, 1000);
-        container.classList.remove('no-scroll-window')
+        // container.classList.remove('no-scroll-window')
       } else {
         animateMovement(box, target, rect, null, viewerWindow, id, moved, content);
         
-        container.classList.add('no-scroll-window')
+        // container.classList.add('no-scroll-window')
       }
     }
   };
@@ -86,7 +105,13 @@ export default function PhotoPage() {
           }
         } else {
             
-          box.classList.remove('flip');
+          const children = box.children;
+        Array.from(children).forEach((child, index) => {
+          setTimeout(() => {
+            child.classList.remove('flip');
+          }, index * 300); // 300ms delay between each removal
+        });
+
           
         }
 
@@ -110,7 +135,7 @@ export default function PhotoPage() {
 
   return (
     <>
-      <main id="cardContainer"  className="flex-start-start" ref={containerRef}>
+      <main id="cardContainer"  className="flex-start-start card-section" ref={containerRef}>
         <div className='tall-column flex-center-center flex-wrap' id="column1">
           <ProjectCard projectData={projectCards[0]} onClick={changeTeam} />
           <ProjectCard projectData={projectCards[3]} onClick={changeTeam} />

@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Lightbox from "../components/Lightbox";
+import Link from "next/link";
 
 interface PrintData {
   imageUrl: string;
@@ -51,8 +52,11 @@ export default function Prints({ prints }: PrintsProps) {
             </div> */}
           </div>
         ))}
+       
       </div>
-
+      <div style={{padding: '2.5vw 0'}}>
+          <p className="modern-font centered-text black-text-glow">For purchase inquiries, contact <Link href="mailto:reannachambers@gmail.com" className="modern-font black-text">reannachambers@gmail.com</Link></p>
+        </div>
       {/* Lightbox Component */}
       {selectedImage && (
         <Lightbox isOpen={!!selectedImage} onClose={() => setSelectedImage(null)}>

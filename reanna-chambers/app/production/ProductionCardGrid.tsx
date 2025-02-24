@@ -39,10 +39,10 @@ export default function ProductionCardGrid() {
           const updatedRect = target.getBoundingClientRect();
           animateMovement(box, originalContainer, updatedRect, updatedRect, viewerWindow, id, moved, content);
         }, 1000);
-        container.classList.remove('no-scroll-window')
+        // container.classList.remove('no-scroll-window')
       } else {
         animateMovement(box, target, rect, null, viewerWindow, id, moved, content);
-        container.classList.add('no-scroll-window')
+        // container.classList.add('no-scroll-window')
       }
     }
   };

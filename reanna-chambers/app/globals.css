@@ -148,9 +148,9 @@ i * {font-family: var(--palace-italic)!important;}
 
 .navigation-spacer {height: 150px}
 .active-tab {font-weight: 700; text-decoration: underline;}
-nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
+nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: 100%;}
 .nav-link 
-{font-size: 18px;
+{font-size: 22px;
   text-decoration: unset!important; 
   width: 100%;
   color: var(--off-black);
@@ -161,41 +161,23 @@ nav {padding: 10px; position: absolute; top: 0; left: 0; width: 100vw;}
 .active-link {text-decoration: unset!important; color: var(--deep-red)}
 .black-text-glow  .active-link {text-shadow: 0 0 1.25px var(--deep-red)!important; color: var(--deep-red)}
 
-.logo-container {padding: 0px 2vw;}
-.logo-wrapper { width: 100%; max-width: 750px; padding: 25px;}
-.text-logo-wrapper {min-width: 300px; background-image: url('../public/logo-shelf.png'); background-size: contain; background-repeat: no-repeat; background-position: center 100%;}
-.logo {min-height: 100px; width: 45vw; height: 10vh; min-width: 300px; 
-  background-image: url('../public/reanna-chambers-logo.png'); background-size: contain; background-repeat: no-repeat; background-position: center 15px; background-origin: center center;}
 
-  .large-logo {font-size: clamp(56px, 5em, 96px)}
-  .small-logo {font-size: clamp(36px, 3em, 56px);}
+.photo-logo-container { aspect-ratio: 1/0.25;   background-image: url('/ReannaChambersLogo.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;} 
+.homepage-logo {width: 80vw; max-width: 700px!important;}
+.nav-logo {width: 35vw; max-width: 500px;  min-width: 300px; }
 
-  /* Logo.tsx */
-.logo-container {margin-top: 5px;}
-.logo-text {font-size: clamp(24px, 2.5rem, 42px)!important; line-height: clamp(20px, 3rem, 30px)!important; text-align: center; margin-bottom: 25px;
-}
-
-.large-logo-line{ letter-spacing: -2px; font-size: 140%; transform: translateY(-22px)}
-.small-logo-line{ letter-spacing: -2px; font-weight: 900; font-size: 90%; transform: translateY(-30px)}
-.logo-break {display: none;}
-
-@media screen and (max-width: 750px) {
-  .large-logo .logo-first-letter {font-feature-settings: 'aalt' on;}
-  .logo-break {display: block; height: 0; margin-top: -25px;}
-  .logo-chambers {margin-left: 25px;}
-  .logo-flower {display: block; margin-top: 15px}
-  .large-logo {font-size: 56px;}
-.logo-line {font-size: 95%; transform: translateY(-25px)}
+@media screen and (max-width: 800px) {
+  .homepage-logo {min-width: 90vw;}
   .homepage-description-text {font-size: 36px; line-height: 40px;}
   .hero-wrapper {min-height: 400px;}
 }
   
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 800px) {
     nav { flex-wrap: wrap;}
-    .logo-container {order: 1; width: 100vw; min-width: 100%;}
-    .links-left {order: 2; width: 45%; min-width: 45vw;}
-    .links-right {order: 3; width: 45%; min-width: 45vw;} 
-    
+    .photo-logo-container {order: 1; width: 100vw; min-width: 100%;}
+    .nav-logo { max-height: 52px; margin: 1.5vw 0}
+    .links-left {order: 2; width: 50%; }
+    .links-right {order: 3; width: 50%; } 
   }
 
 
@@ -277,4 +259,4 @@ media-theme-sutro {min-width: 100%; aspect-ratio: 1.5/1!important;  flex-grow: 1
   .break-950-children {width: 100%; margin: 25px 0 0 0;}
 }
 
-.no-scroll-window {max-height: 100vh; overflow-y: hidden;}
+.no-scroll-window { overflow-y: clip;}
