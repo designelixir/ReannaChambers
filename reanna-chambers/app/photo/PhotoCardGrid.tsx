@@ -18,6 +18,7 @@ export default function PhotoPage() {
     const box = document.querySelector(id) as HTMLElement;
     const viewerWindow = document.querySelector('#viewerWindow');
     const target = document.querySelector('#goToMe') as HTMLElement;
+    const container = document.querySelector('#photoCardGrid') as HTMLElement;
     const content = box?.querySelector('.front-content') as HTMLElement;
     const originalContainer = document.querySelector(`${id.split('-move')[0]}`) as HTMLElement;
 
@@ -40,8 +41,11 @@ export default function PhotoPage() {
           const updatedRect = target.getBoundingClientRect();
           animateMovement(box, originalContainer, updatedRect, updatedRect, viewerWindow, id, moved, content);
         }, 1000);
+        container.classList.remove('no-scroll-window')
       } else {
         animateMovement(box, target, rect, null, viewerWindow, id, moved, content);
+        
+        container.classList.add('no-scroll-window')
       }
     }
   };
@@ -105,8 +109,8 @@ export default function PhotoPage() {
   };
 
   return (
-    <section>
-      <main id="cardContainer" className="flex-start-start" ref={containerRef}>
+    <>
+      <main id="cardContainer"  className="flex-start-start" ref={containerRef}>
         <div className='tall-column flex-center-center flex-wrap' id="column1">
           <ProjectCard projectData={projectCards[0]} onClick={changeTeam} />
           <ProjectCard projectData={projectCards[3]} onClick={changeTeam} />
@@ -142,7 +146,7 @@ export default function PhotoPage() {
       <div id="viewerWindow" className="flex-center-center inactive-viewer-window">
         <div id="goToMe"></div>
       </div>
-    </section>
+    </>
     
   );
 }

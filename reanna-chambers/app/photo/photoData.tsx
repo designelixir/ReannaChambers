@@ -69,7 +69,7 @@ export interface ProjectData {
     {
       id: "card3",
       title: "Darling Rooftop NYC",
-      mainImage: "photography/DarlingRooftop/Darling-25.jpg",
+      mainImage: "photography/DarlingRooftop/Darling-34.jpg",
       className: "tall-card",
       columnLayout: 
       <div className="mason-grid">
@@ -264,6 +264,11 @@ export interface ProjectData {
       mainImage: "photography/PonoCollective/PonoCollective-19.jpg",
       className: "wide-card",
       columnLayout: 
+      <>
+      <div className="credits-section">
+        <p><strong>Producer: </strong>Stephanie Gonzalez</p>
+        <p><strong>Media Director:</strong> Corrina Duran</p>
+      </div>
       <div className="mason-grid">
         <img src="photography/PonoCollective/PonoCollective-6.jpg" className="mason-1 mason-item" alt="Pono Collective Photo 6"/>
         <img src="photography/PonoCollective/PonoCollective-1.jpg" className="mason-2 mason-item" alt="Pono Collective Photo 1"/>
@@ -290,6 +295,8 @@ export interface ProjectData {
         <img src="photography/PonoCollective/PonoCollective-17.jpg" className="mason-1 mason-item" alt="Pono Collective Photo 17"/>
         
       </div>
+      </>
+      
     },
     {
       id: "card11",
@@ -359,7 +366,7 @@ export interface ProjectData {
         <p><strong>Assist: </strong>Sheadon Shimabukuro</p>
         <p><strong>Athlete:</strong> Zeke Lau</p>
       </div>,
-      mainImage: "photography/AVVABrand/AVVA-6.jpg",
+      mainImage: "photography/AVVABrand/AVVA-114.jpg",
       className: "tall-card",
       columnLayout: 
       <div className="mason-grid">
@@ -451,7 +458,6 @@ export interface ProjectData {
       <>
         <h3>American Savings Bank Headquarters Honolulu, HI</h3>
         <div className="credits-section">
-        <h3>Credits:</h3>
         <p><strong>Art/Sculpture:</strong> Nikole Nelson</p>
         <p><strong>Design:</strong> Sig Zane</p>
         <p><strong>Production Assist:</strong> Amy Rivo</p>

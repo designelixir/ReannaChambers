@@ -21,17 +21,25 @@ export interface ProductionData {
 }
   
   export const productionCards: ProductionData[] = [
+    {id: "card0", 
+        title: "", 
+        mainImage: "",
+        className: 'tall-card',
+        columnLayout: ""
+
+    },
 {
     id: "card1",
     title: "Andie Swim",
     mainImage: "production/AndieSwim/AndieSwim-1.jpg",
     description:
     <div className="credits-section">
-    <h3>Credits</h3>
     <p><strong>Photographer: </strong>Cece Alana</p>
+    <p><strong>Production: </strong>Reanna Chambers</p>
     <p><strong>Stylist: </strong>Lindsey Higa</p>
     <p><strong>Hair and Makeup: </strong>Risa Hoshino</p>
     <p><strong>Assists: </strong>Kiana Weight, Faith Jones</p>
+    
     </div>,
     className: "tall-card",
     columnLayout:
@@ -59,12 +67,12 @@ export interface ProductionData {
     description:
     <div className="flex-start-start flex-column full-width">
         <div className="credits-section">
-            <h3>Credits</h3>
             <p><strong>Production Team: </strong>Oak St Productions</p>
             <p><strong>Production Managers: </strong>Arielle Scheres, Clay Southerland</p>
             <p><strong>Production Coordinator &amp; Permitting: </strong>Reanna Chambers</p>
             <p><strong>Photography: </strong>David Salafia</p>
             <p><strong>Cinematography: </strong>Matt Heirakuji</p>
+            <p><strong>Production: </strong>Reanna Chambers</p>
             <p><strong>Stylist: </strong>Lindsey Higa</p>
             <p><strong>Hair and Makeup: </strong>Risa Hoshino</p>
         </div>
@@ -130,7 +138,6 @@ export interface ProductionData {
         mainImage: "production/HonoluluPawn/HonoluluPawn.jpg",
         description:
         <div className="credits-section">
-            <h3>Credits</h3>
             <p><strong>Cinematographer: </strong>Matt Heirakuji</p>
             <p><strong>Photographer: </strong>Joe Termini</p>
             <p><strong>Producer: </strong>Reanna Chambers</p>
@@ -152,8 +159,9 @@ export interface ProductionData {
         title: "Jams World x Rowing Blazers",
         mainImage: "production/JamsWorld/JamsWorld-1.jpg",
         description:
-        <div>
-          <p>Photography and Cinematography by Roxy Facer</p>
+        <div className="credits-section">
+          <p><strong>Photography / Cinematography: </strong>Roxy Facer</p>
+          <p><strong>Production: </strong>Reanna Chambers</p>
         </div>,
         className: "tall-card",
         columnLayout:
@@ -184,7 +192,6 @@ export interface ProductionData {
         mainImage: "production/KateBosworth/KateBosworth-4.jpg",
         description:
         <div className="credits-section">
-        <h3>Credits</h3>
           <p><strong>Direction of Photography: </strong>Serena Lutton</p>
           <p><strong>Photographer: </strong>Tahnei Roy, Abby Oh, Alique Studio</p>
           <p><strong>Water Photographer: </strong> Beatriz Ryder</p>
@@ -255,13 +262,15 @@ export interface ProductionData {
     {
         id: "card6",
         title: "Kelia Moniz",
-        subtitle: `"Active Collections"`,
+        subtitle: `Active Collections`,
         mainImage: "production/KeliaMoniz/KeliaMoniz-40.jpg",
         description:
         <div className="credits-section">
-            <h3>Credits</h3>
             <p><strong>Cinematography: </strong>Matt Heirakuji</p>
             <p><strong>Photography: </strong>Joe Termini</p>
+            <p><strong>Production: </strong>Reanna Chambers</p>
+            <p><strong>Creative Direction: </strong>Kelia Moniz</p>
+            <p><strong>Lighting: </strong>Huey Tran, Mikel Sodini</p>
             <p><strong>Hair and Makeup: </strong>Jonah Face</p>
         </div>,
         className: "tall-card",
@@ -334,7 +343,7 @@ export interface ProductionData {
         description:
         <div className="flex-start-start flex-column">
             <div className="credits-section">
-                <h3>Credits</h3>
+                
                 <p><strong>Director: </strong>Koa Bayani</p>
                 <p><strong>Producers: </strong>Malia Mizuno, Reanna Chambers, Wainani Young Tomich</p>
                 <p><strong>Writer: </strong>Koa Bayani</p>
@@ -395,10 +404,11 @@ export interface ProductionData {
         mainImage: "production/LisaAndersen/LisaAndersen-new3.jpg",
         description:
         <div className="credits-section">
-            <h3>Credits</h3>
+            
             <p><strong>Photography: </strong>Abby Oh</p>
             <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
             <p><strong>Cinematography: </strong>Roxy Facer</p>
+            <p><strong>Production: </strong>Reanna Chambers</p>
             <p><strong>Assists: </strong>Kiana Weight, Simeon Ke-Paloma</p>
             <p><strong>Atheletes: </strong>Megan Godinez, Kelia Moniz, Lisa Andersen, Bettylou Sakura Johnson, Bruna Zuan, Monyca Eleogram, Kelis Kaleopa&apos;a, Coral Sallas </p>
             <p><strong>Models: </strong>Malia Kaleopa&apos;a, Tiara Hernandez, Bri Atisone</p>
@@ -437,8 +447,9 @@ export interface ProductionData {
         title: "Manachrome Wetplate Photography",
         mainImage: "production/Manachrome/BuffaloKeaulana.JPG",
         description:
-        <div>
+        <div className="credits-section">
             <p>Collodian Wet-Plate Photography by Kenyatta Kelechi</p>
+            <p><strong>Production &amp; Photo Assist: </strong>Reanna Chambers</p>
         </div>,
         className: "tall-card",
         columnLayout:
@@ -527,7 +538,7 @@ export interface ProductionData {
         <div>
             <div className="flex-start-spacebetween break-950" style={{marginBottom: '25px'}}>
                 <div className="credits-section">
-                    <h3>Credits</h3>
+                    
                     <p><strong>Director of Photography and Photographer: </strong>Serena Lutton</p>
                     <p><strong>Editor in Chief: </strong>Andrea Thompson</p>
                     <p><strong>Shoot and Film Director: </strong>Lisa Oxenham</p>
@@ -550,7 +561,7 @@ export interface ProductionData {
                 </div>
                 <div className="credits-section break-950-children">
                     <Link href="https://www.marieclaire.co.uk/digital-covers/kate-bosworth" target="_blank" className="hover no-link-styling black-text">
-                        <h3>Read the Article</h3>
+                        <h3>UK Summer Issue &apos;23</h3>
                         <Image src="/production/MarieClaire/MC_KB_Cover.jpg" width={330} height={400} alt="Marie Claire Cover"></Image>
                     </Link>
                 </div>
@@ -560,9 +571,7 @@ export interface ProductionData {
         className: "wide-card",
         columnLayout:
         <div className="flex-start-start flex-column modern-font" style={{marginTop: '25px'}}>
-            <h3>Behind the Scenes</h3>
             <div className="mason-grid">
-                <img src="production/MarieClaire/MarieClaire-BTS-1.jpg" className="mason-1 mason-item" alt="Marie Claire BTS Photo 1"/>
                 <div className="mason-inner-container">
                     <div className="mason-50-container">
                         <img src="production/MarieClaire/MarieClaire-1.jpg" className="mason-1 mason-item" alt="Marie Claire BTS Photo 2"/>
@@ -593,10 +602,11 @@ export interface ProductionData {
         mainImage: "production/RoxyHawaiianHeat/RoxyHawaiianHeat-13.jpg",
         description:
         <div className="credits-section">
-            <h3>Credits</h3>
+            
             <p><strong>Photography: </strong>Abby Oh</p>
             <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
             <p><strong>Cinematography: </strong>Roxy Facer</p>
+            <p><strong>Production: </strong>Reanna Chambers</p>
             <p><strong>Assists: </strong>Malia Mizuno</p>
             <p><strong>Athletes: </strong>Megan Godinez, Kelia Moniz, Monyca Eleogram, Kelis Kaleopa&apos;a</p>
             <p><strong>Models: </strong>Malia Kaleopa&apos;a, Tiara Hernandez, Bri Atisone</p>
@@ -661,9 +671,9 @@ export interface ProductionData {
         mainImage: "production/RoxyHoliday24/RoxyHoliday24-19.jpg",
         description:
         <div className="credits-section">
-            <h3>Credits</h3>
             <p><strong>Photography: </strong>Abby Oh</p>
             <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
+            <p><strong>Production: </strong>Reanna Chambers</p>
             <p><strong>Assists: </strong>Malia Mizuno, Xavier Jay</p>
             <p><strong>Athletes: </strong>Kelis Kaleopa&apos;a, Maluhia Kinimaka</p>
             <p><strong>Model: </strong>Tiara Hernandez</p>
@@ -723,12 +733,13 @@ export interface ProductionData {
         mainImage: "production/RoxyOTB24/RoxyOTB24-2.jpg",
         description:
         <div className="credits-section">
-            <h3>Credits</h3>
+            
             <p><strong>Photography: </strong>Abby Oh</p>
             <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
+            <p><strong>Production: </strong>Reanna Chambers</p>
             <p><strong>Assists: </strong>Grace Lacio</p>
-            <p><strong>Athletes: </strong>Kelis Kaleopa&apos;a, Maluhia Kinimaka</p>
-            <p><strong>Model: </strong>Tiara Hernandez</p>
+            <p><strong>Athletes: </strong>Megan Godinez, Monica Eleogram, Kelis Kaleopa&apos;a</p>
+            <p><strong>Models: </strong>Bri Atisone, Malia Kaleopa&apos;a</p>
         </div>,
         className: "tall-card",
         columnLayout:
@@ -777,10 +788,11 @@ export interface ProductionData {
         mainImage: "production/RoxyPeaceJoyAloha22/RoxyPeaceJoyAloha22-3.jpg",
         description:
         <div className="credits-section">
-            <h3>Credits</h3>
+            
             <p><strong>Photography: </strong>Abby Oh</p>
             <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
             <p><strong>Cinematography: </strong>Tahnei Roy</p>
+            <p><strong>Production: </strong>Reanna Chambers</p>
             <p><strong>Assists: </strong>Malia Mizuno</p>
             <p><strong>Athletes: </strong>Megan Godinez, Kelis Kaleopa&apos;a</p>
             <p><strong>Models: </strong>Malia Kaleopa&apos;a, Tiara Hernandez, Bri Atisone</p>
@@ -826,14 +838,15 @@ export interface ProductionData {
         id: "card15",
         title: "Roxy",
         subtitle: `Peace Joy Aloha x Wayfinder Hotel Waikiki`,
-        mainImage: "production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-7.jpg",
+        mainImage: "production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-5.jpg",
         description:
         <div className="flex-start-start flex-column">
             <div className="credits-section" style={{marginBottom: '25px'}}>
-                <h3>Credits</h3>
+                
                 <p><strong>Photography: </strong>Abby Oh</p>
                 <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
                 <p><strong>Cinematography: </strong>Roxy Facer</p>
+                <p><strong>Production: </strong>Reanna Chambers</p>
                 <p><strong>Assists: </strong>Kiana Weight, Simeon Ke-Paloma</p>
                 <p><strong>Athletes: </strong>Megan Godinez, Kelia Moniz, Lisa Andersen, Bruna Zuan, Monyca Eleogram, Kelis Kaleopa&apos;a</p>
                 <p><strong>Models: </strong>Malia Kaleopa&apos;a, Tiara Hernandez, Bri Atisone</p>
@@ -884,10 +897,13 @@ export interface ProductionData {
         mainImage: "production/UrbanOutfitters/UrbanOutfitters-16.jpg",
         description:
         <div className="credits-section">
-            <h3>Credits</h3>
+            <h3>Urban Outfitters UK x Roxy</h3>
             <p><strong>Photography: </strong>Abby Oh</p>
-            <p><strong>Hair and Makeup: </strong>Jonah Face</p>
+            <p><strong>Production: </strong>Reanna Chambers</p>
             <p><strong>Production Assistant: </strong>Kiana Weight</p>
+            <p><strong>Hair and Makeup: </strong>Jonah Face</p>
+            <p><strong>Talent:</strong>Kelis Kaleopa&apos;a, Maluhia Tinimaka, Tiara Hernandez</p>
+            
         </div>,
         className: "wide-card",
         columnLayout:
@@ -931,14 +947,15 @@ export interface ProductionData {
         id: "card17",
         title: "Roxy",
         subtitle: `Active By Nature`,
-        mainImage: "production/RoxyActiveByNature/Roxy-ActiveByNature-3.jpg",
+        mainImage: "production/RoxyActiveByNature/Roxy-ActiveByNature-1.jpg",
         description:
         <div className="flex-start-start flex-column">
         <div className="credits-section" style={{marginBottom: '25px'}}>
-            <h3>Credits</h3>
+            <p><strong>Photography:</strong> Tahnei Roy</p>
             <p><strong>Production/Cinematography: </strong>Ben Ono</p>
             <p><strong>Camera Assist: </strong>Xav Sho</p>
-            <p><strong>Styling/Production Assist/Film BTS: </strong>Reanna Chambers</p>
+            <p><strong>Styling/Production Assist: </strong>Reanna Chambers</p>
+            <p><strong>Atheletes: </strong>Mainei Kinimaka, Maluhia Kinimaka</p>
         </div>
         
         <VideoPlayer youtube={true} classes="full-video" src="https://www.youtube.com/watch?v=8dI9DpYQVNE"></VideoPlayer>
@@ -947,20 +964,52 @@ export interface ProductionData {
         className: "wide-card",
         columnLayout:
         <div className="mason-grid" style={{marginTop: '25px'}}>
-            
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-1.jpg" className="mason-2 mason-item" alt="Active By Nature Photo"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-3.jpg" className="mason-2 mason-item" alt="Active By Nature Photo"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-5.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-4.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-7.jpg" className="mason-2 mason-item" alt="Active By Nature Photo"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-8.jpg" className="mason-2 mason-item" alt="Active By Nature Photo"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-6.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
-            
-            
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-2.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-9.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-10.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
-            
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-1.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-9.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-6.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-7.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-2.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                </div>
+                <div className="mason-50-container">
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-5.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-4.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-10.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-8.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                </div>
+            </div>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-16.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 16"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-12.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 12"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-13.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 13"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-17.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 17"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-22.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 22"/>
+                </div>
+                <div className="mason-50-container">  
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-11.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 11"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-15.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 15"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-14.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 14"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-3.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                </div>
+            </div>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-18.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 18"/>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-19.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 19"/>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-20.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 20"/>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-24.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 24"/>
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-21.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 21"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-25.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 25"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-26.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 26"/>
+                </div>
+                <div className="mason-50-container">
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-23.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 23"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-22.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 22"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-27.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 27"/>  
+                </div>
+            </div>
         </div>
         
     },
@@ -972,7 +1021,7 @@ export interface ProductionData {
         description:
         <div className="flex-start-start flex-column">
         <div className="credits-section" style={{marginBottom: '25px'}}>
-            <h3>Credits</h3>
+            
             <p><strong>Director &amp; Producer: </strong>Danielle Black Lyons</p>
             <p><strong>Cinematography: </strong>Roxy Facer</p>
             <p><strong>Photography: </strong>Sara Lee</p>
@@ -1017,9 +1066,10 @@ export interface ProductionData {
         description:
         <div className="flex-start-start flex-column">
         <div className="credits-section">
-            <h3>Credits</h3>
+            
             <p><strong>Photography: </strong>Abby Oh</p>
             <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
+            <p><strong>Production: </strong>Reanna Chambers</p>
             <p><strong>Assists: </strong>Grace Lacio</p>
             <p><strong>Athletes: </strong>Kelis Kaleopa&apos;a, Maluhia Kinimaka</p>
             <p><strong>Model:</strong>Tiara Hernandez</p>

@@ -10,7 +10,7 @@ export default function AboutBio(){
         <div className=" split-section flex-start-start">
             <div className="left-60">
                 <p id="bioParagraph" className="white-text-glow bio-font" ><i>
-                Reanna Chambers is an artist, photographer, and producer from Los Angeles, California, based in Honolulu, Hawai&apos;i.  Over the past 5 years, she has gained experience across all facets of creative production, including marketing campaigns, art direction, short films, and, most recently, her favorite—event coordination. She has also had the privilege of producing and filming for brands globally, as well as assisting with fine art installations and large-scale murals. Reanna thrives on pushing the boundaries of her creativity and finds joy in collaborating with inspiring brands, companies, and individuals.
+                Reanna Chambers is a producer, photographer, and artist from Los Angeles, California, based in Honolulu, Hawai&apos;i. Over the past 5 years, she has gained experience across all facets of creative production, including marketing campaigns, art direction, film production, and event coordination. She has also had the privilege of documenting and assisting with fine art installations and large-scale murals. Reanna thrives on pushing the boundaries of her creativity and living in Hawai&apos;i has deepened her appreciation for storytelling and the honoring of rich cultural landscapes and the creative communities that inspire her work. 
                 </i></p>
                 <Image
                     width={75}

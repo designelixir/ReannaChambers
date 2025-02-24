@@ -48,7 +48,7 @@ export default function Cursor() {
           position: fixed;
           pointer-events: none;
           transform: translate(calc(-50% + 15px), -50%);
-          z-index: 9999999999999999;
+          z-index: 99999999999999999999999999999;
         }
 
         .cursor2 {

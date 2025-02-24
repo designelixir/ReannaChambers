@@ -20,7 +20,7 @@ export default function PhotoPage() {
   ];
 
   return (
-    <section>
+    <section id="photoCardGrid">
       <Navigation />
       <div className="navigation-spacer"></div>
       <TabSwitcher tabs={tabs} defaultTab="Projects" />

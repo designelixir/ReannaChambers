@@ -124,6 +124,8 @@ export default function ClientList() {
         @media screen and (max-width: 850px) {
         .client-list-header {flex-direction: column; align-items: flex-start;}
         .client-list-header h2 {margin-bottom: 35px}
+        .client-card {padding: 10px}
+        .client-card p {font-size: 16px;}
         }
       `}</style>
     </div>

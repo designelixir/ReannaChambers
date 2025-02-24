@@ -37,8 +37,8 @@ export default function Prints({ prints }: PrintsProps) {
   }, [prints]); // Runs when `prints` data updates
 
   return (
-    <section className="basic-padding">
-      <div ref={containerRef} className="flex-start-start flex-wrap" style={{gap: '1vw'}}>
+    <section style={{marginBottom: '2.5vw'}}>
+      <div ref={containerRef} className="flex-start-start flex-wrap" style={{gap: '10px'}}>
         {prints.map((print, index) => (
           <div
             key={index}
