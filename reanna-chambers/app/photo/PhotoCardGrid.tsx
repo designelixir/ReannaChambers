@@ -11,33 +11,14 @@ interface CardState {
 }
 
 export default function PhotoPage() {
-  gsap.fromTo('.card-section', {left: '-100vw'}, {left: '0vw'})
+  
   const [cardStates, setCardStates] = useState<CardState[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
-  let scrollPosition = { top: 0, left: 0 };
-  function disableScroll() {
-    // Save the current scroll position
-    scrollPosition = {
-      top: window.pageYOffset || document.documentElement.scrollTop,
-      left: window.pageXOffset || document.documentElement.scrollLeft,
-    };
-  
-    // Prevent further scrolling
-    window.onscroll = function() {
-      window.scrollTo(scrollPosition.left, scrollPosition.top);
-    };
-  }
-  
-  function enableScroll() {
-    // Remove the onscroll handler to allow scrolling again
-    window.onscroll = null;
-  }
 
   const changeTeam = (id: string) => {
     const box = document.querySelector(id) as HTMLElement;
     const viewerWindow = document.querySelector('#viewerWindow');
     const target = document.querySelector('#goToMe') as HTMLElement;
-    const container = document.querySelector('#photoCardGrid') as HTMLElement;
     const content = box?.querySelector('.front-content') as HTMLElement;
     const originalContainer = document.querySelector(`${id.split('-move')[0]}`) as HTMLElement;
 

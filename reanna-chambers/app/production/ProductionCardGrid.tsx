@@ -21,7 +21,6 @@ export default function ProductionCardGrid() {
     const target = document.querySelector('#goToMe') as HTMLElement;
     const content = box?.querySelector('.front-content') as HTMLElement;
     const originalContainer = document.querySelector(`${id.split('-move')[0]}`) as HTMLElement;
-    const container = document.querySelector('#productionCardGrid') as HTMLElement;
     const cardState = cardStates.find((card) => card.id === id);
     const moved = cardState?.moved || false;
 
@@ -46,6 +45,11 @@ export default function ProductionCardGrid() {
       }
     }
   };
+
+  const MarieClairesubtitleElement = document.querySelector('#card10-move .card-header-subtitle');
+  if (MarieClairesubtitleElement) {
+    MarieClairesubtitleElement.textContent = "UK Summer Issue '23";
+  }
 
   const animateMovement = (
     box: HTMLElement,

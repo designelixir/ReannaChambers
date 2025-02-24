@@ -189,7 +189,7 @@ export interface ProductionData {
     {
         id: "card5",
         title: "Kate Bosworth x Roxy",
-        mainImage: "production/KateBosworth/KateBosworth-4.jpg",
+        mainImage: "production/KateBosworth/KateBosworth-5.jpg",
         description:
         <div className="credits-section">
           <p><strong>Direction of Photography: </strong>Serena Lutton</p>
@@ -449,7 +449,7 @@ export interface ProductionData {
         description:
         <div className="credits-section">
             <p>Collodian Wet-Plate Photography by Kenyatta Kelechi</p>
-            <p><strong>Production &amp; Photo Assist: </strong>Reanna Chambers</p>
+            <p><strong>Photo Assist: </strong>Reanna Chambers</p>
         </div>,
         className: "tall-card",
         columnLayout:
@@ -561,7 +561,7 @@ export interface ProductionData {
                 </div>
                 <div className="credits-section break-950-children">
                     <Link href="https://www.marieclaire.co.uk/digital-covers/kate-bosworth" target="_blank" className="hover no-link-styling black-text">
-                        <h3>UK Summer Issue &apos;23</h3>
+                        <h3>Read the Article</h3>
                         <Image src="/production/MarieClaire/MC_KB_Cover.jpg" width={330} height={400} alt="Marie Claire Cover"></Image>
                     </Link>
                 </div>
@@ -667,7 +667,7 @@ export interface ProductionData {
     {
         id: "card12",
         title: "Roxy Holiday",
-        subtitle: `AUS / NZ`,
+        subtitle: `AUS/NZ`,
         mainImage: "production/RoxyHoliday24/RoxyHoliday24-19.jpg",
         description:
         <div className="credits-section">
@@ -737,7 +737,7 @@ export interface ProductionData {
             <p><strong>Photography: </strong>Abby Oh</p>
             <p><strong>Drone/Photography: </strong>Yoshi Tanaka</p>
             <p><strong>Production: </strong>Reanna Chambers</p>
-            <p><strong>Assists: </strong>Grace Lacio</p>
+            <p><strong>Assists: </strong>Grace Lacio, Kiana Weight</p>
             <p><strong>Athletes: </strong>Megan Godinez, Monica Eleogram, Kelis Kaleopa&apos;a</p>
             <p><strong>Models: </strong>Bri Atisone, Malia Kaleopa&apos;a</p>
         </div>,
@@ -970,34 +970,16 @@ export interface ProductionData {
                     <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-9.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
                     <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-6.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
                     <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-7.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
-                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-2.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                    
                 </div>
                 <div className="mason-50-container">
-                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-5.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                    
                     <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-4.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
                     <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-10.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
                     <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-8.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
                 </div>
             </div>
             <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-16.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 16"/>
-            <div className="mason-inner-container">
-                <div className="mason-50-container">
-                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-12.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 12"/>
-                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-13.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 13"/>
-                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-17.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 17"/>
-                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-22.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 22"/>
-                </div>
-                <div className="mason-50-container">  
-                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-11.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 11"/>
-                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-15.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 15"/>
-                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-14.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 14"/>
-                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-3.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
-                </div>
-            </div>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-18.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 18"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-19.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 19"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-20.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 20"/>
-            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-24.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 24"/>
             <div className="mason-inner-container">
                 <div className="mason-50-container">
                     <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-21.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 21"/>
@@ -1010,13 +992,34 @@ export interface ProductionData {
                     <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-27.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 27"/>  
                 </div>
             </div>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-3.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-18.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 18"/>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-19.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 19"/>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-20.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 20"/>
+            <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-24.jpg" className="mason-2 mason-item" alt="Active By Nature Photo 24"/>
+            
+            
+            <div className="mason-inner-container">
+                <div className="mason-50-container">
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-12.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 12"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-13.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 13"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-17.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 17"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-2.jpg" className="mason-1 mason-item" alt="Active By Nature Photo"/>
+                </div>
+                <div className="mason-50-container">  
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-11.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 11"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-15.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 15"/>
+                    <img src="production/RoxyActiveByNature/Roxy-ActiveByNature-14.jpg" className="mason-1 mason-item" alt="Active By Nature Photo 14"/>
+                    
+                </div>
+            </div>
         </div>
         
     },
     {
         id: "card18",
         title: "Roxy",
-        subtitle: `"Jamaica"`,
+        subtitle: `Jamaica`,
         mainImage: "production/RoxyJamaica/RoxyJamaica-2.jpeg",
         description:
         <div className="flex-start-start flex-column">

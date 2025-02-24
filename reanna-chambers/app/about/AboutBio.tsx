@@ -1,7 +1,6 @@
 'use client'
 import Link from "next/link"
 import Image from "next/image"
-import WelcomeMarquee from "../components/WelcomeMarquee"
 
 export default function AboutBio(){
     return(
