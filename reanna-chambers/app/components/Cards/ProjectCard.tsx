@@ -1,14 +1,45 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import { flipCard } from './animationUtils';
-import { ProjectData } from './photoData';
+import { ReactNode } from 'react';
 import ProjectCardPhotoGrid from './ProjectCardPhotoGrid';
+import gsap from 'gsap';
 
 interface ProjectCardProps {
   projectData: ProjectData; // Pass all project data as a single object
   onClick: (id: string) => void;
 }
+
+export interface ImageData {
+  path: string;
+  caption?: string;
+  wide: boolean;
+  ultraWide?: boolean;
+}
+
+export interface ProjectData {
+  id?: string;
+  title: ReactNode;
+  subtitle?: ReactNode;
+  description?: ReactNode;
+  mainImage: string;
+  imagesAndCaptions?: ImageData[];
+  className?: string;
+  columnLayout?: ReactNode;
+}
+const flipCard = (cardElement: HTMLElement, isFlipped: boolean) => {
+  const timeline = gsap.timeline();
+
+  timeline
+    .to(cardElement, {
+      duration: 0.6,
+      rotationY: isFlipped ? 180 : 0,
+      ease: 'power2.inOut',
+    })
+    .set(cardElement, {
+      zIndex: isFlipped ? 1 : 0,
+    }); 
+};
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   const {

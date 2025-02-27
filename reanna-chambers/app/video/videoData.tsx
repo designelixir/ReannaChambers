@@ -1,25 +1,9 @@
-import { ReactNode } from "react";
 import VideoPlayer from "../components/VideoPlayer";
 import Image from "next/image";
+import { ProjectData } from "../components/Cards/ProjectCard";
 
-export interface ImageData {
-  path: string;
-  caption?: string;
-  wide: boolean;
-  ultraWide?: boolean;
-}
-
-export interface VideoData {
-  id?: string;
-  title: string;
-  subtitle?: ReactNode;
-  description?: ReactNode;
-  mainImage: string;
-  className?: string;
-  columnLayout?: ReactNode;
-}
   
-  export const videoCards: VideoData[] = [
+  export const videoCards: ProjectData[] = [
 {
     id: "card1",
     title: "Tech Noir Color Grade",

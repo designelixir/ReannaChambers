@@ -1,48 +1,54 @@
 'use client';
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "./components/Logo";
 import WelcomeMarquee from "./components/WelcomeMarquee";
 import { gsap } from "gsap";
 import HomeCardAnimation2 from "./components/Cards/HomeCardAnimation2";
 import PlayingCardFormat from "./components/Cards/PlayingCardFormat";
-import $ from 'jquery'
-
-
-
-
-function expandCard(cardId: string, destination: string, rotate: boolean) {
-  if (typeof window !== "undefined") {
-    const cardTarget = document.getElementById(cardId + "Post");
-    if (!cardTarget) return;
-    $(cardTarget).toggleClass("flipped");
-    const viewerWidth = window.innerWidth / 2;
-    const viewerHeight = window.innerHeight / 2;
-    const cardRect = cardTarget.getBoundingClientRect();
-    setTimeout(() => {
-        $(cardTarget).css({
-            "transform": `translate(${-(viewerWidth / 2) + (cardRect.width / 2)}px, ${-(viewerHeight / 2) - (cardRect.height / 2) }px) `,
-            "transition": "transform 1s ease"
-        })
-    }, 900)
-
-    setTimeout(()=> {
-      $(cardTarget).css({
-        "transform": `scale(20)${rotate ? ' rotate(90deg)' : ''}`,
-        "zIndex": "9999999999999999"
-    });
-    
-    }, 1500)
-    // setTimeout(()=> {window.location.href = destination;}, 2000)
-
-  }
-}
-
+import $ from 'jquery';
+import BigCard from "./components/Cards/BigCard";
 
 export default function HomePageContent() {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [goToDestination, setGoToDestination] = useState('');
+
+  const expandCard = (cardId: string, destination: string, rotate: boolean) => {
+    if (typeof window !== "undefined") {
+      const cardTarget = document.getElementById(cardId + "Post");
+      if (!cardTarget) return;
   
+      $(cardTarget).toggleClass("flipped");
+  
+      const cardRect = cardTarget.getBoundingClientRect();
+      const viewportCenterX = window.innerWidth / 2;
+      const viewportCenterY = window.innerHeight / 2;
+  
+      const translateX = viewportCenterX - (cardRect.left + cardRect.width / 2);
+      const translateY = viewportCenterY - (cardRect.top + cardRect.height / 2);
+  
+      setTimeout(() => {
+        $(cardTarget).css({
+          "transform": `translate(${translateX}px, ${translateY}px)${rotate ? ' rotate(90deg)' : ''}`,
+          "transition": "transform 1s ease",
+        });
+      }, 1000);
+
+      setTimeout(() => {
+        $(cardTarget).css({
+          "opacity": `0`,
+          "transition": "opacity 1s ease",
+        });
+      }, 1900);
+
+      setTimeout(() => {
+        setIsExpanded(true); 
+        setGoToDestination(destination)
+      }, 1800);
+    }
+  };
+
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // GSAP Animation for marqueeWrapper
       gsap.fromTo(
         "#marqueeWrapper",
         { opacity: 0, y: "-10vh" },
@@ -54,8 +60,8 @@ export default function HomePageContent() {
         opacity: 1,
         y: 0,
         duration: 1,
-        stagger: 0.5, // Fade in elements one by one
-        delay: 6, // Start after 6 seconds
+        stagger: 0.5,
+        delay: 6,
         ease: "power1.out",
       });
     }
@@ -63,6 +69,8 @@ export default function HomePageContent() {
 
   return (
     <section id="Home">
+      {isExpanded && goToDestination && <BigCard destination={goToDestination} />}
+      
       <div id="marqueeWrapper">
         <WelcomeMarquee items={['Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome']} />
       </div>
@@ -87,7 +95,7 @@ export default function HomePageContent() {
       <div className="flex-start-center positioner-wrapper full-width" id="mainCardsWrapper">
         <div id="AboutCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => window.open('/about')}>
           <div id="AboutCardStar" className="positioner-star black-text-glow icon-flower custom-symbol-font"></div>
-          <div className="card flex-start-center" id="AboutCardPost" >
+          <div className="card flex-start-center no-flex-grow" id="AboutCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center about-card-front">
                       <PlayingCardFormat title="about" color="off-black"></PlayingCardFormat>
@@ -100,7 +108,7 @@ export default function HomePageContent() {
         </div>
         <div id="PhotoCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("PhotoCard", '/photo', false)}>
           <div id="PhotoCardStar" className="positioner-star black-text-glow custom-symbol-font icon-flower"></div>
-          <div className="card flex-start-center" id="PhotoCardPost" >
+          <div className="card flex-start-center no-flex-grow" id="PhotoCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center photo-card-front">
                       <PlayingCardFormat title="photo" color="deep-red"></PlayingCardFormat>
@@ -113,7 +121,7 @@ export default function HomePageContent() {
         </div>
         <div id="ProductionCardPositionerPost" className="positioner-post flex-center-start flex-column" onClick={() => expandCard("ProductionCard", '/production', false)} style={{opacity: '0'}}>
           <div id="ProductionCardStar" className="positioner-star black-text-glow custom-symbol-font icon-flower"></div> 
-          <div className="card flex-start-center" id="ProductionCardPost" >
+          <div className="card flex-start-center no-flex-grow" id="ProductionCardPost" >
               <div className="card-inner">
                   <div className="card-front flex-center-center production-card-front">
                       <PlayingCardFormat title="production" color="off-black"></PlayingCardFormat>
@@ -126,7 +134,7 @@ export default function HomePageContent() {
         </div>
         <div id="VideoCardPositionerPost" className="positioner-post flex-center-start flex-column" onClick={() => expandCard("VideoCard", '/video', true)} style={{opacity: '0'}}>
           <div id="VideoCardStar" className="positioner-star black-text-glow custom-symbol-font icon-flower"></div>
-            <div className="card flex-start-center" id="VideoCardPost">
+            <div className="card flex-start-center no-flex-grow" id="VideoCardPost">
                 <div className="card-inner">
                     <div className="card-front flex-center-center video-card-front">
                         <PlayingCardFormat title="video" color="deep-red"></PlayingCardFormat>

@@ -1,7 +1,9 @@
+
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import ProductionCardGrid from './ProductionCardGrid';
+import { productionCards } from './productionData';
+import ProjectCardGrid from '../components/Cards/ProjectCardGrid';
 
 
 export const metadata = {
@@ -10,13 +12,39 @@ export const metadata = {
 
 export default function ProductionPage() {
   
-
+  
+  
   return (
     <section id="productionCardGrid">
       <Navigation />
       <div className="navigation-spacer"></div>
       <div style={{padding: '0 2.5vw 2.5vw'}}>
-      <ProductionCardGrid></ProductionCardGrid>
+        
+      <ProjectCardGrid  
+        column1Cards={
+          [productionCards[0],
+          productionCards[10],
+          productionCards[3],
+          productionCards[7],
+          productionCards[13],
+          productionCards[17]]
+        } column2Cards={[
+          productionCards[11],
+          productionCards[1],
+          productionCards[4],
+          productionCards[6],
+          productionCards[9],
+          productionCards[15],
+          productionCards[16]
+        ]} column3Cards={[
+          productionCards[2],
+          productionCards[5],
+          productionCards[8],
+          productionCards[12],
+          productionCards[14],
+          productionCards[18]
+        ]} />
+
       </div>
       <Footer dark={true}></Footer>
     </section>

@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from "react";
 import YoutubeVideo from "youtube-video-element/react";
 import MediaThemeSutro from "player.style/sutro/react";

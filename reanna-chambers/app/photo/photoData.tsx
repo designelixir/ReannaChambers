@@ -1,26 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ReactNode } from "react";
+import { ProjectData } from "../components/Cards/ProjectCard";
 
-export interface ImageData {
-  path: string;
-  caption?: string;
-  wide: boolean;
-  ultraWide?: boolean;
-}
 
-export interface ProjectData {
-  id?: string;
-  title: ReactNode;
-  subtitle?: ReactNode;
-  description?: ReactNode;
-  mainImage: string;
-  imagesAndCaptions?: ImageData[];
-  className?: string;
-  columnLayout?: ReactNode;
-}
   
-  export const projectCards: ProjectData[] = [
+  export const photoCards: ProjectData[] = [
     {
       id: "card1",
       title: "Itzcalli Marie",

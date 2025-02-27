@@ -1,26 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ReactNode } from "react";
 import VideoPlayer from "../components/VideoPlayer";
+import { ProjectData } from "../components/Cards/ProjectCard";
 
-export interface ImageData {
-  path: string;
-  caption?: string;
-  wide: boolean;
-  ultraWide?: boolean;
-}
-
-export interface ProductionData {
-  id?: string;
-  title: string;
-  subtitle?: ReactNode;
-  description?: ReactNode;
-  mainImage: string;
-  className?: string;
-  columnLayout?: ReactNode;
-}
   
-  export const productionCards: ProductionData[] = [
+  export const productionCards: ProjectData[] = [
     
 {
     id: "card1",
@@ -404,7 +388,7 @@ export interface ProductionData {
             <p><strong>Cinematography: </strong>Roxy Facer</p>
             <p><strong>Production: </strong>Reanna Chambers</p>
             <p><strong>Assists: </strong>Kiana Weight, Simeon Ke-Paloma</p>
-            <p><strong>Atheletes: </strong>Megan Godinez, Kelia Moniz, Lisa Andersen, Bettylou Sakura Johnson, Bruna Zuan, Monyca Eleogram, Kelis Kaleopa&apos;a, Coral Sallas </p>
+            <p><strong>Athletes: </strong>Megan Godinez, Kelia Moniz, Lisa Andersen, Bettylou Sakura Johnson, Bruna Zuan, Monyca Eleogram, Kelis Kaleopa&apos;a, Coral Sallas </p>
             <p><strong>Models: </strong>Malia Kaleopa&apos;a, Tiara Hernandez, Bri Atisone</p>
         </div>,
         className: "tall-card",
@@ -949,7 +933,7 @@ export interface ProductionData {
             <p><strong>Production/Cinematography: </strong>Ben Ono</p>
             <p><strong>Camera Assist: </strong>Xav Sho</p>
             <p><strong>Styling/Production Assist: </strong>Reanna Chambers</p>
-            <p><strong>Atheletes: </strong>Mainei Kinimaka, Maluhia Kinimaka</p>
+            <p><strong>Athletes: </strong>Mainei Kinimaka, Maluhia Kinimaka</p>
         </div>
         
         <VideoPlayer youtube={true} classes="full-video" src="https://www.youtube.com/watch?v=8dI9DpYQVNE"></VideoPlayer>
