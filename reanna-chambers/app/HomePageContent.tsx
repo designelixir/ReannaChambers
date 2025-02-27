@@ -32,7 +32,7 @@ function expandCard(cardId: string, destination: string, rotate: boolean) {
     });
     
     }, 1500)
-    // setTimeout(()=> {window.location.href = destination;}, 2000)
+    setTimeout(()=> {window.location.href = destination;}, 2000)
 
   }
 }
