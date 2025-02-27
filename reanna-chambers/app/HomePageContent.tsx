@@ -9,7 +9,8 @@ import $ from 'jquery'
 
 
 
-function expandCard(cardId: string, destination: string) {
+
+function expandCard(cardId: string, destination: string, rotate: boolean) {
   if (typeof window !== "undefined") {
     const cardTarget = document.getElementById(cardId + "Post");
     if (!cardTarget) return;
@@ -25,13 +26,13 @@ function expandCard(cardId: string, destination: string) {
     }, 900)
 
     setTimeout(()=> {
-    $(cardTarget).css({
-        "transform": `scale(10) rotate(90deg)`,
+      $(cardTarget).css({
+        "transform": `scale(20)${rotate ? ' rotate(90deg)' : ''}`,
         "zIndex": "9999999999999999"
-    })
-        
+    });
+    
     }, 1500)
-    setTimeout(()=> {window.location.href = destination;}, 2000)
+    // setTimeout(()=> {window.location.href = destination;}, 2000)
 
   }
 }
@@ -59,11 +60,9 @@ export default function HomePageContent() {
       });
     }
   }, []);
-  
 
   return (
     <section id="Home">
-      
       <div id="marqueeWrapper">
         <WelcomeMarquee items={['Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome']} />
       </div>
@@ -73,10 +72,12 @@ export default function HomePageContent() {
           <Logo homepageLogo={true}></Logo>
           <span className=" custom-symbol-font icon-flower black-text-glow" style={{fontSize: '20px', marginTop: '25px', marginBottom: '25px'}}></span>
         </div>
-        <h2 className="homepage-description-text black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px'}}><i>art</i></h2>
-        <h2 className="black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px'}}>PRODUCTION</h2>
-        <h2 className="black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px'}}><i className="palace-italic">photog<span className="aalt"><i>r</i></span>aphy</i></h2>
-        <h2 className="black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px', marginTop: '10px'}}><i>&amp; MORE</i></h2>
+        <div className="flex-center-center flex-column homepage-text-list no-flex-grow">
+          <h2 className="homepage-description-text black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px'}}><i>art</i></h2>
+          <h2 className="black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px'}}>PRODUCTION</h2>
+          <h2 className="black-text-glow palace-regular" style={{fontSize: '36px', lineHeight: '40px'}}><i className="palace-italic">photog<span className="aalt"><i>r</i></span>aphy</i></h2>
+          <h2 className="black-text-glow palace-regular and-more" style={{fontSize: '36px', lineHeight: '40px', marginTop: '10px'}}><i>&amp; MORE</i></h2>
+        </div>
       </div>
 
       <div className="animation-desktop">
@@ -84,7 +85,7 @@ export default function HomePageContent() {
       </div>
       
       <div className="flex-start-center positioner-wrapper full-width" id="mainCardsWrapper">
-        <div id="AboutCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("AboutCard", '/about')}>
+        <div id="AboutCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => window.open('/about')}>
           <div id="AboutCardStar" className="positioner-star black-text-glow icon-flower custom-symbol-font"></div>
           <div className="card flex-start-center" id="AboutCardPost" >
               <div className="card-inner">
@@ -97,7 +98,7 @@ export default function HomePageContent() {
               </div>
           </div>
         </div>
-        <div id="PhotoCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("PhotoCard", '/photo')}>
+        <div id="PhotoCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("PhotoCard", '/photo', false)}>
           <div id="PhotoCardStar" className="positioner-star black-text-glow custom-symbol-font icon-flower"></div>
           <div className="card flex-start-center" id="PhotoCardPost" >
               <div className="card-inner">
@@ -110,7 +111,7 @@ export default function HomePageContent() {
               </div>
           </div>
         </div>
-        <div id="ProductionCardPositionerPost" className="positioner-post flex-center-start flex-column" onClick={() => expandCard("ProductionCard", '/production')} style={{opacity: '0'}}>
+        <div id="ProductionCardPositionerPost" className="positioner-post flex-center-start flex-column" onClick={() => expandCard("ProductionCard", '/production', false)} style={{opacity: '0'}}>
           <div id="ProductionCardStar" className="positioner-star black-text-glow custom-symbol-font icon-flower"></div> 
           <div className="card flex-start-center" id="ProductionCardPost" >
               <div className="card-inner">
@@ -123,7 +124,7 @@ export default function HomePageContent() {
               </div>
           </div>
         </div>
-        <div id="VideoCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}}>
+        <div id="VideoCardPositionerPost" className="positioner-post flex-center-start flex-column" onClick={() => expandCard("VideoCard", '/video', true)} style={{opacity: '0'}}>
           <div id="VideoCardStar" className="positioner-star black-text-glow custom-symbol-font icon-flower"></div>
             <div className="card flex-start-center" id="VideoCardPost">
                 <div className="card-inner">

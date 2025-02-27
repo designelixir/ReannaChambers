@@ -21,13 +21,7 @@ export interface ProductionData {
 }
   
   export const productionCards: ProductionData[] = [
-    {id: "card0", 
-        title: "", 
-        mainImage: "",
-        className: 'tall-card',
-        columnLayout: ""
-
-    },
+    
 {
     id: "card1",
     title: "Andie Swim",
@@ -39,6 +33,7 @@ export interface ProductionData {
     <p><strong>Stylist: </strong>Lindsey Higa</p>
     <p><strong>Hair and Makeup: </strong>Risa Hoshino</p>
     <p><strong>Assists: </strong>Kiana Weight, Faith Jones</p>
+    <p><strong>Models: </strong>Naya Gause, Sydney Malia Walker</p>
     
     </div>,
     className: "tall-card",
@@ -68,6 +63,7 @@ export interface ProductionData {
     <div className="flex-start-start flex-column full-width">
         <div className="credits-section">
             <p><strong>Production Team: </strong>Oak St Productions</p>
+            <p><strong>Line Producer: </strong>Michaela Eichenbaum</p>
             <p><strong>Production Managers: </strong>Arielle Scheres, Clay Southerland</p>
             <p><strong>Production Coordinator &amp; Permitting: </strong>Reanna Chambers</p>
             <p><strong>Photography: </strong>David Salafia</p>
@@ -91,44 +87,42 @@ export interface ProductionData {
     columnLayout:
     <div className="flex-start-start flex-column">
         <div className="mason-grid margin-top">
-            <img src="production/AsicsKayano/ASICSKayano-6.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 6"/>
-            <img src="production/AsicsKayano/ASICSKayano-1.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 1"/>
-            <img src="production/AsicsKayano/ASICSKayano-2.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 2"/>
-            <img src="production/AsicsKayano/ASICSKayano-3.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 3"/>
-            <img src="production/AsicsKayano/ASICSKayano-28.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 28"/>
-            
-            <img src="production/AsicsKayano/ASICSKayano-4.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 4"/>
-            <img src="production/AsicsKayano/ASICSKayano-5.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 5"/>
-            <img src="production/AsicsKayano/ASICSKayano-8.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 8"/>
-            <img src="production/AsicsKayano/ASICSKayano-7.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 7"/>
-            
-            <img src="production/AsicsKayano/ASICSKayano-9.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 9"/>
-            <img src="production/AsicsKayano/ASICSKayano-10.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 10"/>
-            <img src="production/AsicsKayano/ASICSKayano-19.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 19"/>
-            <div className="mason-inner-container">
-                <div className="mason-50-container">
-                    <img src="production/AsicsKayano/ASICSKayano-11.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 11"/>
-                    <img src="production/AsicsKayano/ASICSKayano-14.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 14"/>
-                    <img src="production/AsicsKayano/ASICSKayano-15.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 15"/>
-                    <img src="production/AsicsKayano/ASICSKayano-16.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 16"/>
-                    <img src="production/AsicsKayano/ASICSKayano-18.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 18"/>
-                    <img src="production/AsicsKayano/ASICSKayano-20.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 20"/>
-                    <img src="production/AsicsKayano/ASICSKayano-26.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 26"/>
-                    <img src="production/AsicsKayano/ASICSKayano-23.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 23"/>
-                </div>
-                <div className="mason-50-container">
-                    <img src="production/AsicsKayano/ASICSKayano-12.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 12"/>
-                    <img src="production/AsicsKayano/ASICSKayano-13.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 13"/>
-                    <img src="production/AsicsKayano/ASICSKayano-17.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 17"/>        
-                    <img src="production/AsicsKayano/ASICSKayano-27.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 27"/>
-                    <img src="production/AsicsKayano/ASICSKayano-29.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 29"/>
-                    <img src="production/AsicsKayano/ASICSKayano-30.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 30"/>
-                    <img src="production/AsicsKayano/ASICSKayano-21.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 21"/>
-                    <img src="production/AsicsKayano/ASICSKayano-22.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 22"/>
-                    <img src="production/AsicsKayano/ASICSKayano-24.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 24"/>
-                    <img src="production/AsicsKayano/ASICSKayano-25.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 25"/>
-                </div>
-            </div>
+        <div className="mason-inner-container">
+        <div className="mason-50-container">
+            <img src="production/AsicsKayano/ASICSKayano-25.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 25"/>
+            <img src="production/AsicsKayano/ASICSKayano-24.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 24"/>
+            <img src="production/AsicsKayano/ASICSKayano-22.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 22"/>
+            <img src="production/AsicsKayano/ASICSKayano-21.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 21"/>
+            <img src="production/AsicsKayano/ASICSKayano-30.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 30"/>
+            <img src="production/AsicsKayano/ASICSKayano-29.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 29"/>
+            <img src="production/AsicsKayano/ASICSKayano-27.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 27"/>
+            <img src="production/AsicsKayano/ASICSKayano-17.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 17"/>   
+            <img src="production/AsicsKayano/ASICSKayano-13.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 13"/>
+            <img src="production/AsicsKayano/ASICSKayano-12.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 12"/>
+        </div>
+        <div className="mason-50-container">
+        <img src="production/AsicsKayano/ASICSKayano-23.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 23"/>
+        <img src="production/AsicsKayano/ASICSKayano-26.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 26"/>
+        <img src="production/AsicsKayano/ASICSKayano-20.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 20"/>
+        <img src="production/AsicsKayano/ASICSKayano-18.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 18"/>
+        <img src="production/AsicsKayano/ASICSKayano-16.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 16"/>
+        <img src="production/AsicsKayano/ASICSKayano-15.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 15"/>
+        <img src="production/AsicsKayano/ASICSKayano-14.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 14"/>
+        <img src="production/AsicsKayano/ASICSKayano-11.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 11"/>
+        </div>
+        </div>
+        <img src="production/AsicsKayano/ASICSKayano-19.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 19"/>
+        <img src="production/AsicsKayano/ASICSKayano-10.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 10"/>
+        <img src="production/AsicsKayano/ASICSKayano-9.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 9"/>
+        <img src="production/AsicsKayano/ASICSKayano-7.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 7"/>
+        <img src="production/AsicsKayano/ASICSKayano-8.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 8"/>
+        <img src="production/AsicsKayano/ASICSKayano-5.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 5"/>
+        <img src="production/AsicsKayano/ASICSKayano-4.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 4"/>
+        <img src="production/AsicsKayano/ASICSKayano-28.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 28"/>
+        <img src="production/AsicsKayano/ASICSKayano-3.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 3"/>
+        <img src="production/AsicsKayano/ASICSKayano-2.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 2"/>
+        <img src="production/AsicsKayano/ASICSKayano-1.jpg" className="mason-2 mason-item" alt="ASICS Kayano Photo 1"/>
+        <img src="production/AsicsKayano/ASICSKayano-6.jpg" className="mason-1 mason-item" alt="ASICS Kayano Photo 6"/>
         </div>
     </div>
 },

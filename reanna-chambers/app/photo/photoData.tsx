@@ -126,11 +126,10 @@ export interface ProjectData {
     {
       id: "card5",
       title: "The Gemini Set",
-      subtitle: "Goodluckbuck & Anna Jean Kos",
+      subtitle: <span id="GeminiSetSubtitle">Brennan & Danielle</span>,
       description: <div>
         <h3>The Gemini Set, a collaboration between Goodluckbuck and Anna Jean Kos.</h3>
         <p><strong>Production:</strong> Anna Atkinson, Grace Lacio</p>
-        <p><strong>Models:</strong> Brennan Alexa, Danielle McCleave</p>
       </div>,
       mainImage: "photography/TheGeminiSet/GeminiSet-5(wide).jpg",
       className: "wide-card",
@@ -305,6 +304,11 @@ export interface ProjectData {
       mainImage: "photography/TowaClothing/Azure-16.jpg",
       className: "tall-card",
       columnLayout: 
+      <>
+       <div className="credits-section">
+        <p>In Body Glove, Towa, Anna Jean Kos &amp; Goodluckbuck</p>
+        <p><strong>Assist:</strong> Kiana Weight</p>
+      </div>
       <div className="mason-grid">
         <img src="photography/TowaClothing/Azure-16.jpg" className="mason-1 mason-item" alt="Towa Clothing Photo 16"/>
         <img src="photography/TowaClothing/Azure-19.jpg" className="mason-2 mason-item" alt="Towa Clothing Photo 19"/>
@@ -319,6 +323,7 @@ export interface ProjectData {
         <img src="photography/TowaClothing/Azure-33.jpg" className="mason-2 mason-item" alt="Towa Clothing Photo 33"/>
         <img src="photography/TowaClothing/Azure-69.jpg" className="mason-1 mason-item" alt="Towa Clothing Photo 69"/>
       </div>
+      </>
     },
     {
       id: "card12",
@@ -460,7 +465,6 @@ export interface ProjectData {
         <div className="credits-section">
         <p><strong>Art/Sculpture:</strong> Nikole Nelson</p>
         <p><strong>Design:</strong> Sig Zane</p>
-        <p><strong>Production Assist:</strong> Amy Rivo</p>
         <p><strong>Art Assist/Photography:</strong> Reanna Chambers</p>
         </div>
         <br></br>

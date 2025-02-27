@@ -37,7 +37,7 @@ export interface VideoData {
         <p>Effects by Bryce Pedersen</p>
         <p>Production Assist by Robi</p>
       </div>
-      <Image src="/video/TechNoir/TechNoir-2.jpg" width={330} height={400} alt="Marie Claire Cover"></Image>
+      <Image src="/video/TechNoir/Technoir-2.jpg" width={230} height={300} alt="Tech Noir Movie Poster"></Image>
     </div>
     <VideoPlayer src="https://www.youtube.com/watch?v=BrLG_rM67C8" youtube={true} classes="full-video"></VideoPlayer>
     </>,

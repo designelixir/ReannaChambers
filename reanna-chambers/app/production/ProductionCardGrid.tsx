@@ -107,32 +107,30 @@ export default function ProductionCardGrid() {
     <section>
       <main id="cardContainer" className="flex-start-start" ref={containerRef}>
         <div className='tall-column flex-center-center flex-wrap' id="column1">
-          <ProjectCard projectData={productionCards[1]} onClick={changeTeam} />
-          <ProjectCard projectData={productionCards[11]} onClick={changeTeam} />
-          <ProjectCard projectData={productionCards[4]} onClick={changeTeam} />
-          <ProjectCard projectData={productionCards[8]} onClick={changeTeam} />
-          <ProjectCard projectData={productionCards[14]} onClick={changeTeam} />
-          <ProjectCard projectData={productionCards[18]} onClick={changeTeam} />
-          
-        
+          <ProjectCard projectData={productionCards[0]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[10]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[3]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[7]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[13]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[17]} onClick={changeTeam} />
         </div>
         <div id="column2and3wrapper" className='flex-start-start'>
           <div className='wide-column flex-center-center flex-wrap' id="column2">
-            <ProjectCard projectData={productionCards[12]} onClick={changeTeam} />
-            <ProjectCard projectData={productionCards[2]} onClick={changeTeam} />
-            <ProjectCard projectData={productionCards[5]} onClick={changeTeam} />
-            <ProjectCard projectData={productionCards[7]} onClick={changeTeam} />
-            <ProjectCard projectData={productionCards[10]} onClick={changeTeam} />
+            <ProjectCard projectData={productionCards[11]} onClick={changeTeam} />
+            <ProjectCard projectData={productionCards[1]} onClick={changeTeam} />
+            <ProjectCard projectData={productionCards[4]} onClick={changeTeam} />
+            <ProjectCard projectData={productionCards[6]} onClick={changeTeam} />
+            <ProjectCard projectData={productionCards[9]} onClick={changeTeam} />
+            <ProjectCard projectData={productionCards[15]} onClick={changeTeam} />
             <ProjectCard projectData={productionCards[16]} onClick={changeTeam} />
-            <ProjectCard projectData={productionCards[17]} onClick={changeTeam} />
           </div>
           <div className='tall-column flex-center-center flex-wrap' id="column3">
-          <ProjectCard projectData={productionCards[3]} onClick={changeTeam} />
-          <ProjectCard projectData={productionCards[6]} onClick={changeTeam} />
-          <ProjectCard projectData={productionCards[9]} onClick={changeTeam} />
-          <ProjectCard projectData={productionCards[13]} onClick={changeTeam} />
-          <ProjectCard projectData={productionCards[15]} onClick={changeTeam} />
-          <ProjectCard projectData={productionCards[19]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[2]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[5]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[8]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[12]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[14]} onClick={changeTeam} />
+          <ProjectCard projectData={productionCards[18]} onClick={changeTeam} />
           
           
             

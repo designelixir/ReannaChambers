@@ -179,6 +179,8 @@ nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: 99vw; }
     .nav-logo { max-height: 52px; margin: 1.5vw 0}
     .links-left {order: 2; width: 50%; }
     .links-right {order: 3; width: 50%; } 
+    .homepage-text-list h2 { font-size: 28px!important; line-height: 36px!important;}
+    .homepage-text-list .and-more {margin-top: 0!important;}
   }
 
 
