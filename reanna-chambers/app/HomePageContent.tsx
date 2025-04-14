@@ -93,7 +93,7 @@ export default function HomePageContent() {
       </div>
       
       <div className="flex-start-center positioner-wrapper full-width" id="mainCardsWrapper">
-        <div id="AboutCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => window.open('/about')}>
+        <div id="AboutCardPositionerPost" className="positioner-post flex-center-start flex-column" style={{opacity: '0'}} onClick={() => expandCard("AboutCard", '/about', false)}>
           <div id="AboutCardStar" className="positioner-star black-text-glow icon-flower custom-symbol-font"></div>
           <div className="card flex-start-center no-flex-grow" id="AboutCardPost" >
               <div className="card-inner">
