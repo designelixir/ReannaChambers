@@ -17,6 +17,7 @@ export const clientsList = [
 
   { clientName: "Jams World", clientCategory: "fashion", clientLink: "https://www.jamsworld.com/" },
   { clientName: "Kaimana Beach Hotel", clientCategory: "hotel", clientLink: "https://www.kaimana.com/" },
+  { clientName: "Kapolei Commons", clientCategory: "food", clientLink: "https://kapoleicommons.com/" },
   // { clientName: "Kona Brewing", clientCategory: "food", clientLink: "https://konabrewingco.com/" },
   { clientName: "Live Nation", clientCategory: "art", clientLink: "https://www.livenation.com/" },
   { clientName: "Live Nation Comedy", clientCategory: "art", clientLink: "https://www.livenation.com/comedy/" },

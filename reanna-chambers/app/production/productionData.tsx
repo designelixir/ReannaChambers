@@ -24,19 +24,20 @@ import { ProjectData } from "../components/Cards/ProjectCard";
     columnLayout:
     <div className="mason-grid margin-top">
     <img src="production/AndieSwim/AndieSwim-1.jpg" className="mason-2 mason-item" alt="Andie Swim 1"/>
-    <img src="production/AndieSwim/AndieSwim-8.jpg" className="mason-2 mason-item" alt="Andie Swim 8"/>
-    <img src="production/AndieSwim/AndieSwim-14.jpg" className="mason-1 mason-item" alt="Andie Swim 14"/>
-    <img src="production/AndieSwim/AndieSwim-6.jpg" className="mason-2 mason-item" alt="Andie Swim 6"/>
-    <img src="production/AndieSwim/AndieSwim-3.jpg" className="mason-2 mason-item" alt="Andie Swim 3"/>
-    <img src="production/AndieSwim/AndieSwim-4.jpg" className="mason-2 mason-item" alt="Andie Swim 4"/>
+    <img src="production/AndieSwim/AndieSwim-8.JPG" className="mason-2 mason-item" alt="Andie Swim 8"/>
+    <img src="production/AndieSwim/AndieSwim-14.JPG" className="mason-1 mason-item" alt="Andie Swim 14"/>
+    <img src="production/AndieSwim/AndieSwim-6.JPG" className="mason-2 mason-item" alt="Andie Swim 6"/>
+    <img src="production/AndieSwim/AndieSwim-3.JPG" className="mason-2 mason-item" alt="Andie Swim 3"/>
+    <img src="production/AndieSwim/AndieSwim-4.JPG" className="mason-2 mason-item" alt="Andie Swim 4"/>
     <img src="production/AndieSwim/AndieSwim-5.jpg" className="mason-2 mason-item" alt="Andie Swim 5"/>
     <img src="production/AndieSwim/AndieSwim-2.jpg" className="mason-2 mason-item" alt="Andie Swim 2"/>
-    <img src="production/AndieSwim/AndieSwim-7.jpg" className="mason-2 mason-item" alt="Andie Swim 7"/>
+    <img src="production/AndieSwim/AndieSwim-7.JPG" className="mason-2 mason-item" alt="Andie Swim 7"/>
     <img src="production/AndieSwim/AndieSwim-9.jpg" className="mason-2 mason-item" alt="Andie Swim 9"/>
-    <img src="production/AndieSwim/AndieSwim-10.jpg" className="mason-2 mason-item" alt="Andie Swim 10"/>
-    <img src="production/AndieSwim/AndieSwim-11.jpg" className="mason-2 mason-item" alt="Andie Swim 11"/>
-    <img src="production/AndieSwim/AndieSwim-12.jpg" className="mason-2 mason-item" alt="Andie Swim 12"/>
+    <img src="production/AndieSwim/AndieSwim-10.JPG" className="mason-2 mason-item" alt="Andie Swim 10"/>
+    <img src="production/AndieSwim/AndieSwim-11.JPG" className="mason-2 mason-item" alt="Andie Swim 11"/>
+    <img src="production/AndieSwim/AndieSwim-12.JPG" className="mason-2 mason-item" alt="Andie Swim 12"/>
     <img src="production/AndieSwim/AndieSwim-13.jpg" className="mason-1 mason-item" alt="Andie Swim 13"/>
+    <img src="production/AndieSwim/AndieSwim-15.JPG" className="mason-1 mason-item" alt="Andie Swim 15"/>
     </div>
 },
 {
@@ -708,7 +709,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
         id: "card13",
         title: "Roxy",
         subtitle: 'On the Beach',
-        mainImage: "production/RoxyOTB24/RoxyOTB24-2.jpg",
+        mainImage: "production/RoxyOTB24/RoxyOTB24-6.jpg",
         description:
         <div className="credits-section">
             
@@ -763,7 +764,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
         id: "card14",
         title: "Roxy",
         subtitle: `Peace Joy Aloha`,
-        mainImage: "production/RoxyPeaceJoyAloha22/RoxyPeaceJoyAloha22-3.jpg",
+        mainImage: "production/RoxyPeaceJoyAloha22/RoxyPeaceJoyAloha22-19.jpg",
         description:
         <div className="credits-section">
             

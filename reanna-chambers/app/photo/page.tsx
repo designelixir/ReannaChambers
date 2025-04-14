@@ -17,22 +17,22 @@ export default function PhotoPage() {
   const tabs = [
     { name: 'Projects', content: <ProjectCardGrid  
             column1Cards={
-              [photoCards[0],
-              photoCards[3],
+              [photoCards[14],
               photoCards[6],
-              photoCards[10],
+              photoCards[11],
+              photoCards[7],
               photoCards[13],
               ]
             } column2Cards={[
-              photoCards[1],
+              photoCards[3],
               photoCards[4],
               photoCards[5],
               photoCards[9],
-              photoCards[11],
-              photoCards[14]
+              photoCards[1],
+              photoCards[0]
             ]} column3Cards={[
               photoCards[2],
-              photoCards[7],
+              photoCards[10],
               photoCards[8],
               photoCards[12],
               photoCards[15],

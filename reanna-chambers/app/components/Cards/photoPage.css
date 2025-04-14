@@ -46,8 +46,10 @@
 .card-header-subtitle #roxyOTBAUSNZSubtitle {display: none;}
 #card19-move .card-header-subtitle::after {content: "AUS / NZ Collection"; font-weight: bold;}
 
+.card-header-title #GeminiSetTitle {display: none;}
 .card-header-subtitle #GeminiSetSubtitle {display: none;}
-#card5-move .ard-header-subtitle::after {content: "Brennan Alexa and Danielle McCleave"; font-weight: bold;}
+#card5-move .card-header-subtitle::after {content: "Brennan Alexa and Danielle McCleave"; font-weight: bold;}
+#card5-move .card-header-title::after {content: "The Gemini Set"; font-weight: 100;}
 
 .wide-card {aspect-ratio: 4/3; min-width: 100%;}
 .tall-card {aspect-ratio: 3/4; min-width: 100%;}

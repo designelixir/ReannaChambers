@@ -9,7 +9,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
       id: "card1",
       title: "Itzcalli Marie",
       mainImage: "photography/ItzcalliMarie/ItzcalliMarie-3.jpg",
-      className: "tall-card",
+      className: "wide-card",
       columnLayout:
       <div className="mason-grid">
           <img src="photography/ItzcalliMarie/ItzcalliMarie-3.jpg" className="mason-1 mason-item" alt="Itzcalli Marie Photo 3"></img>
@@ -78,7 +78,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
       title: "Estelle Ines",
       subtitle: "Towa & Janessa Leone",
       mainImage: "photography/EstelleInes/Towa-43.jpg",
-      className: "tall-card",
+      className: "wide-card",
       columnLayout: 
       <div className="mason-grid">
         <img src="photography/EstelleInes/Towa-19.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 19"></img>
@@ -109,9 +109,10 @@ import { ProjectData } from "../components/Cards/ProjectCard";
     },
     {
       id: "card5",
-      title: "The Gemini Set",
-      subtitle: <span id="GeminiSetSubtitle">Brennan & Danielle</span>,
+      title: <span id="GeminiSetTitle">Brennan &amp; Danielle</span>,
+      subtitle: <span id="GeminiSetSubtitle">The Gemini Set</span>,
       description: <div>
+
         <h3>The Gemini Set, a collaboration between Goodluckbuck and Anna Jean Kos.</h3>
         <p><strong>Production:</strong> Anna Atkinson, Grace Lacio</p>
       </div>,
@@ -314,7 +315,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
       title: "The Wayfinder Hotel",
       subtitle: 'Waikiki',
       mainImage: "photography/WayfinderHotel/Wayfinder-5.jpg",
-      className: "wide-card",
+      className: "tall-card",
       columnLayout: 
       <div className="mason-grid">
         <div className="mason-inner-container">
@@ -454,7 +455,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
         <br></br>
       </>,
       mainImage: "photography/BLKCORAL/BLKCORAL-2.JPG",
-      className: "wide-card",
+      className: "tall-card",
       columnLayout: 
       <div className="mason-grid">
         <img src="photography/BLKCORAL/BLKCORAL-4.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo"/>
@@ -483,7 +484,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
         </div>
         <img src="photography/BLKCORAL/BLKCORAL-20.jpeg" className="mason-1 mason-item" alt="BLKCORAL Photo 20"/>
         <img src="photography/BLKCORAL/BLKCORAL-21.jpeg" className="mason-1 mason-item" alt="BLKCORAL Photo 21"/>
-        <img src="photography/BLKCORAL/BLKCORAL-18.JPG" className="mason-1 mason-item" alt="BLKCORAL Photo 18"/>
+        <img src="photography/BLKCORAL/BLKCORAL-18.jpg" className="mason-1 mason-item" alt="BLKCORAL Photo 18"/>
       </div>
     },
     {
