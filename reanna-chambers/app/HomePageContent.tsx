@@ -72,7 +72,7 @@ export default function HomePageContent() {
       {isExpanded && goToDestination && <BigCard destination={goToDestination} />}
       
       <div id="marqueeWrapper">
-        <WelcomeMarquee items={['Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome', 'Welcome']} />
+        <WelcomeMarquee items={['Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!', 'Welcome!']} />
       </div>
       <div className="hero-wrapper flex-center-center flex-column">
        

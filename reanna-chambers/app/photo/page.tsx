@@ -10,6 +10,7 @@ import { photoCards } from './photoData';
 
 export const metadata = {
   title: 'Photo | Reanna Chambers',
+  description: 'A vibrant portfolio of photography projects by Reanna Chambers, featuring editorial, fashion, lifestyle, brand campaigns, and behind-the-scenes moments with artists, musicians, athletes, and entrepreneurs — from rooftop shoots in NYC to mural installations in Hawaii.'
 };
 
 export default function PhotoPage() {

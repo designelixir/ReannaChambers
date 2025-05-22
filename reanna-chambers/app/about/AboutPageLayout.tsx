@@ -13,8 +13,34 @@ export default function AboutPageLayout() {
         </div>
       </FadeInSection>
       <div className="dark-section" style={{overflow: 'hidden', maxWidth: '100vw'}}>
-            <WelcomeMarquee items={['Creative Direction', 'Photography', 'Brand Consulting', 'Casting', 'Prop Styling', 'Art Direction', 'Content Creation', 'Filming',
-                 'Coloring', 'Producing', 'Styling', 'Painting', 'Art Installing', 'Editing', 'Social Media', 'Set Design', "Locations", "Permitting", 'Making Coffee ♥',]}></WelcomeMarquee>
+            <WelcomeMarquee items={[
+              'Creative Direction',
+              'Photography',
+              'Producing',
+              'Brand Consulting',
+              'Filming',
+              'Assistant Camera',
+              'Coloring',
+              'Editing',
+              'Painting',
+              'Art Installation',
+              'Art Assist',
+              'Event Coordination',
+              'Campaign Development',
+              'Set Design',
+              'Prop Styling',
+              'BTS/Content Capture',
+              'Casting Support',
+              'Styling',
+              'Talent Management',
+              'Budgeting',
+              'Scheduling',
+              'Crew Hire',
+              'Locations',
+              'Permitting',
+              'Social Media',
+              'Coffee ♥'
+            ]} />
         </div>
 
       <FadeInSection>

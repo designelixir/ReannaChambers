@@ -6,7 +6,8 @@ import AboutPageLayout from "./AboutPageLayout";
 
 
 export const metadata = {
-    title: 'About | Reanna Chambers'
+    title: 'About | Reanna Chambers',
+    description: 'Reanna Chambers is a Hawaii-based photographer, producer, and artist specializing in production, photography, and visual storytelling. Based in Honolulu, she brings a decade of experience in campaigns, art direction, and fine art installations.'
     }
 
 export default function AboutPage(){

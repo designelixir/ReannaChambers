@@ -7,7 +7,8 @@ import ProjectCardGrid from '../components/Cards/ProjectCardGrid';
 
 
 export const metadata = {
-  title: 'Production | Reanna Chambers'
+  title: 'Production | Reanna Chambers',
+  description: 'Hawaii-based producer and photographer Reanna Chambers has contributed to campaigns for brands including Andie Swim, ASICS, Urban Outfitters, Marie Claire, Roxy, Jams World, and more—bringing creative direction, production, and visual storytelling to life through photography and film.'
 }
 
 export default function ProductionPage() {
