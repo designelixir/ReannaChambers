@@ -111,7 +111,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
   };
 
   return (
-    <div id={id} className={`card ${className} flex-center-center `} style={{margin: '0vw 2vw 2vw 0'}}>
+    <div id={id} className={`card ${className} flex-center-center hover`} style={{margin: '0vw 2vw 2vw 0'}}>
       <div id={`${id}-move`} className="card-inner box-shadow " ref={cardRef}>
         <div className="front card-back-design">
           <div className="front-content" ref={frontContentRef} >
@@ -140,7 +140,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, onClick }) => {
           </div>
         </div>
         <div
-          className="back flex-end-center"
+          className="back flex-end-center "
           style={{ backgroundImage: `url('${mainImage}')` }}
           onClick={handleClick}
         >

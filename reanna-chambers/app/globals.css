@@ -189,7 +189,7 @@ nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: 99vw; }
 
 
 .hover:hover {cursor: none; transform: scale(1.05);}
-.hover {cursor: pointer;}
+
 .box-shadow {box-shadow: 2px 2px 2px rgba(0,0,0,0.25);}
 .text-shadow {text-shadow: 0 0 2px rgba(0,0,0,0.5);}
 
@@ -219,7 +219,7 @@ nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: 99vw; }
 
 .fade-in-2{-webkit-animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both; }
 
-.card:hover {transform: scale(1.01); cursor: pointer; transition: transform 0.5s ease}
+.card:hover {transform: scale(1.01); transition: transform 0.5s ease}
 
 .dark-section {background: var(--off-black)}
 

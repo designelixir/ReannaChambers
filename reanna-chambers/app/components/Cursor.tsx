@@ -6,69 +6,65 @@ export default function Cursor() {
   const cursorInnerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (typeof window === "undefined") return; // Ensure this runs only in the browser
+    if (typeof window === "undefined") return;
 
     const moveCursor = (e: MouseEvent) => {
-      cursorRef.current!.style.left = `${e.clientX + 40}px`;
-      cursorRef.current!.style.top = `${e.clientY + 60}px`;
-      cursorInnerRef.current!.style.left = `${e.clientX}px`;
-      cursorInnerRef.current!.style.top = `${e.clientY}px`;
+      if (!cursorRef.current || !cursorInnerRef.current) return;
+      cursorRef.current.style.left = `${e.clientX + 40}px`;
+      cursorRef.current.style.top = `${e.clientY + 60}px`;
+      cursorInnerRef.current.style.left = `${e.clientX}px`;
+      cursorInnerRef.current.style.top = `${e.clientY}px`;
     };
+
+    const cursor = document.querySelector(".cursor2");
+    const hoverElements = document.querySelectorAll("a, .hover");
+
+
+    if (cursor) {
+      hoverElements.forEach(el => {
+        el.addEventListener("mouseenter", () => {
+          cursor.classList.add("cursor-animate");
+        });
+        el.addEventListener("mouseleave", () => {
+          cursor.classList.remove("cursor-animate");
+        });
+      });
+    }
 
     document.addEventListener("mousemove", moveCursor);
 
     return () => {
       document.removeEventListener("mousemove", moveCursor);
+      hoverElements.forEach(el => {
+        el.removeEventListener("mouseenter", () => {});
+        el.removeEventListener("mouseleave", () => {});
+      });
     };
   }, []);
-
-  const cursor = document.querySelector(".cursor2");
-const hoverElements = document.querySelectorAll(".hover");
-if (cursor){
-hoverElements.forEach(el => {
-  el.addEventListener("mouseenter", () => {
-    cursor.classList.add("cursor-animate");
-  });
-  el.addEventListener("mouseleave", () => {
-    cursor.classList.remove("cursor-animate");
-  });
-});
-}
-
 
   return (
     <>
       <div ref={cursorRef} className="cursor"></div>
       <div ref={cursorInnerRef} className="cursor2"></div>
- 
-
 
       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
         * {
           cursor: none;
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
         }
 
         .cursor {
           width: 50px;
           height: 50px;
-          background-size: contain;
-          background-repeat: no-repeat;
-          transition: all 200ms ease-out;
           position: fixed;
           pointer-events: none;
-          transform: translate(calc(-50% + 15px), -50%);
-          z-index: 99999999999999999999999999999;
+          transform: translate(-50%, -50%);
+          z-index: 999999;
         }
 
         .cursor2 {
           width: 20px;
           height: 20px;
-          background-image: url('/star.svg'); 
+          background-image: url('/star.svg');
           background-size: contain;
           background-repeat: no-repeat;
           position: fixed;
@@ -77,20 +73,8 @@ hoverElements.forEach(el => {
           z-index: 9999;
         }
 
-
-.cursor-animate {
-  animation: rotateExpand 1s forwards;
-  
-}
-
-@keyframes rotateExpand {
-  0% { transform: scale(1) rotate(0deg); }
-  100% { transform: scale(1.2) rotate(360deg); }
-}
-
-        .hover:hover .cursor2 {
+        .cursor-animate {
           animation: rotateExpand 1s forwards;
-          border: 1px solid lime;
         }
 
         @keyframes rotateExpand {
@@ -99,15 +83,6 @@ hoverElements.forEach(el => {
           }
           100% {
             transform: rotate(180deg) scale(1.25);
-          }
-        }
-
-        @keyframes rotateShrink {
-          from {
-            transform: rotate(180deg) scale(1.25);
-          }
-          to {
-            transform: rotate(0deg) scale(1);
           }
         }
       `}</style>

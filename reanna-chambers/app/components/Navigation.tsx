@@ -13,12 +13,12 @@ export default function Navigation() {
     <nav className="flex-center-spaceevenly" style={{zIndex: '99'}}>
       {/* Left Side Links */}
       <div className="flex-center-spacebetween links-left">
-        <Link href="/about" className={`italic nav-link black-text-glow flex-center-center ${pathname === '/about' ? 'active-link' : ''}`}>
+        <Link href="/about" className={`italic nav-link hover black-text-glow flex-center-center ${pathname === '/about' ? 'active-link' : ''}`}>
           <i>about</i>
         </Link>
         <Link
           href="/photo"
-          className={`nav-link black-text-glow flex-center-center ${
+          className={`nav-link black-text-glow hover flex-center-center ${
             pathname === '/photo' ? 'active-link' : ''
           }`}
         >
@@ -33,7 +33,7 @@ export default function Navigation() {
       <div className="flex-center-spacebetween links-right">
         <Link
           href="/production"
-          className={`nav-link black-text-glow flex-center-center ${
+          className={`nav-link black-text-glow hover flex-center-center ${
             pathname === '/production' ? 'active-link' : ''
           }`}
         >
@@ -41,7 +41,7 @@ export default function Navigation() {
         </Link>
         <Link
           href="/video"
-          className={`nav-link black-text-glow flex-center-center ${
+          className={`nav-link black-text-glow hover flex-center-center ${
             pathname === '/video' ? 'active-link' : ''
           }`}
         >

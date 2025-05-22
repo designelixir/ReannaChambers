@@ -455,7 +455,6 @@ import { ProjectData } from "../components/Cards/ProjectCard";
       subtitle: 'American Savings Bank',
       description: 
       <>
-        <h3>American Savings Bank Headquarters Honolulu, HI</h3>
         <div className="credits-section">
         <p><strong>Art/Sculpture:</strong> Nikole Nelson</p>
         <p><strong>Design:</strong> Sig Zane</p>

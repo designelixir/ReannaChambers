@@ -37,6 +37,7 @@
 
 
 #card12-move .card-header-subtitle {content: ' Holiday Collection'; font-weight: bold; display: none;}
+#card15-move .card-header-subtitle::after {content: ' Headquarters Honolulu, HI'; font-weight: bold;}
 #card18-move .card-header-subtitle::before {content: '"'; font-weight: bold;}
 #card18-move .card-header-subtitle::after {content: '"'; font-weight: bold;}
 

@@ -5,7 +5,7 @@ export default function Logo({ homepageLogo = false }: { homepageLogo?: boolean 
   return (
     <>
     
-      <Link href="/" className="no-link-styling">
+      <Link href="/" className="no-link-styling hover">
       <div className={`photo-logo-container flex-center-center no-flex-grow ${homepageLogo ? "homepage-logo" : "nav-logo"}`}>
         <div className={`photo-logo `}>
 

@@ -58,7 +58,7 @@ export default function ClientList() {
         <h2 className="black-text-glow palace-regular">
           CLIENTS
         </h2>
-        <div className="tag-wrapper flex-center-end flex-wrap">
+        <div className="tag-wrapper flex-center-end flex-wrap ">
   <span className="black-text-glow palace-regular" style={{ textWrap: 'nowrap', marginTop: '5px' }}>
     <i>filter by:</i>&nbsp;
   </span>
@@ -66,7 +66,7 @@ export default function ClientList() {
   {/* Only show "SHOW ALL" when another category is selected */}
   {selectedCategory !== "all" && (
     <div
-      className="client-tag black-text-glow modern-font"
+      className="client-tag  hover black-text-glow modern-font"
       onClick={() => setSelectedCategory("all")}
     >
       SHOW ALL
@@ -79,7 +79,7 @@ export default function ClientList() {
     .map(category => (
       <div
         key={category.categoryName}
-        className={`client-tag black-text-glow modern-font ${
+        className={`client-tag hover black-text-glow modern-font ${
           selectedCategory === category.categoryName ? "active-tag white-text-glow" : ""
         }`}
         onClick={() => setSelectedCategory(category.categoryName)}
@@ -100,9 +100,9 @@ export default function ClientList() {
           filteredClients.map((client, index) => (
             <div
               key={index}
-              className={`client-card engraved-box flex-center-center no-flex-grow ${client.clientCategory}`}
+              className={`client-card engraved-box flex-center-center no-flex-grow ${client.clientCategory} ${client.clientLink ? "hover" : ""}`}
               onClick={() => client.clientLink && window.open(client.clientLink, "_blank")}
-              style={{ cursor: client.clientLink ? "pointer" : "default" }}
+              
             >
               <p className="all-caps black-text-glow">{client.clientName}</p>
             </div>
@@ -116,10 +116,10 @@ export default function ClientList() {
         .client-tag {padding: 7px 5px 0; font-size: 14px; margin: 2px;}
         .client-tag:not(:last-child)::after {content: ", ";}
 
-        .client-tag:hover {text-decoration: underline; cursor: pointer;}
+        .client-tag:hover {text-decoration: underline;}
         .engraved-box { border: 1px solid rgba(176, 148, 109, 0.15);}
         .engraved-box:hover {border: 1px solid rgba(176, 148, 109, 0.75);}
-        .active-tag {background: var(--off-black); color: white; cursor: pointer;}
+        .active-tag {background: var(--off-black); color: white;}
 
         @media screen and (max-width: 850px) {
         .client-list-header {flex-direction: column; align-items: flex-start;}
