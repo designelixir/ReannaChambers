@@ -36,7 +36,8 @@ export default function ProductionPage() {
           productionCards[6],
           productionCards[9],
           productionCards[15],
-          productionCards[16]
+          productionCards[16],
+          
         ]} column3Cards={[
           productionCards[2],
           productionCards[5],

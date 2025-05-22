@@ -38,10 +38,15 @@ import { ProjectData } from "../components/Cards/ProjectCard";
       <div className="mason-grid">
         <img src="photography/AnnaJeanKos/AJKcaves-18.jpg" className="mason-2 mason-item" alt="Anna Jean Kos Photo 18"></img>
         <img src="photography/AnnaJeanKos/AJKcaves-32.jpg" className="mason-2 mason-item" alt="Anna Jean Kos Photo 32"></img>
+        <img src="photography/AnnaJeanKos/AJKcaves-43.jpg" className="mason-2 mason-item" alt="Anna Jean Kos Photo 43"></img>
+        <img src="photography/AnnaJeanKos/AJKcaves-42.jpg" className="mason-2 mason-item" alt="Anna Jean Kos Photo 42"></img>
         <div className="mason-inner-container">
+          
           <img src="photography/AnnaJeanKos/AJKcaves-5.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 5"></img>
           <img src="photography/AnnaJeanKos/AJKcaves-31.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 31"></img>
+          
         </div>
+        <img src="photography/AnnaJeanKos/AJKcaves-41.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 41"></img>
         <img src="photography/AnnaJeanKos/AJKcaves-27.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 27"></img>
         <div className="mason-inner-container">
           <img src="photography/AnnaJeanKos/AJKcaves-33.jpg" className="mason-1 mason-item" alt="Anna Jean Kos Photo 33"></img>
@@ -88,13 +93,17 @@ import { ProjectData } from "../components/Cards/ProjectCard";
             <img src="photography/EstelleInes/Towa-43.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 33"></img>
             <img src="photography/EstelleInes/Towa-74.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 74"></img>
             <img src="photography/EstelleInes/Towa-14.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 14"></img>
+            <img src="photography/EstelleInes/Towa-41.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 41"></img>
+            <img src="photography/EstelleInes/Towa-49.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 49"></img>
           </div>
           <div className="mason-50-container">
             <img src="photography/EstelleInes/Towa-16.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 16"></img>
             <img src="photography/EstelleInes/Towa-28.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 28"></img>
             <img src="photography/EstelleInes/Towa-79.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 79"></img>
+            
             <img src="photography/EstelleInes/Towa-48.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 48"></img>
             <img src="photography/EstelleInes/Towa-66.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 66"></img>
+            <img src="photography/EstelleInes/Towa-10.jpg" className="mason-1 mason-item" alt="Estelle Ines Photo 10"></img>
           </div>
           
         </div>
@@ -244,7 +253,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
     {
       id: "card10",
       title: "Pono Collective Coffee",
-      subtitle: 'El Salvador / Guatemala',
+      subtitle: 'El Salvador / Guatemala Event',
       mainImage: "photography/PonoCollective/PonoCollective-19.jpg",
       className: "wide-card",
       columnLayout: 

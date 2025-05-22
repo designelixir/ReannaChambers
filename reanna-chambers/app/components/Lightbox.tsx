@@ -41,7 +41,7 @@ export default function Lightbox({ children, isOpen, onClose }: LightboxProps) {
     <div className="lightbox-overlay" ref={lightboxRef} onClick={onClose}>
       <div className="lightbox-content" ref={contentRef} onClick={(e) => e.stopPropagation()}>
         <div className="flex-center-end" style={{marginBottom: '-40px'}}>
-            <button className="close-button hover" onClick={onClose}>✕</button>
+            <button className="close-button hovercursor hover" onClick={onClose}>✕</button>
         </div>
         
         {children}

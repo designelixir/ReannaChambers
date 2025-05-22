@@ -328,6 +328,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
                 <p><strong>Writer: </strong>Koa Bayani</p>
                 <p><strong>Starring: </strong>Kalama Epstein, Kennedy King, Diego Ferri, Koa San Luis</p>
                 <p><strong>Cinematographer: </strong>Abraham Williams</p>
+                
             </div>
             <div className="flex-start-start flex-column full-width credits-section" style={{marginTop: '25px'}}>
                 <div className="flex-start-start">
@@ -349,7 +350,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
                     </Link>
                     
                 </div>
-                
+                <Link href="https://vimeo.com/952250629/9fd3e69072" className="hover" style={{marginTop: '25px'}} target="_blank"><button>Watch the Film</button></Link>
             </div>
         </div>,
         className: "wide-card",
@@ -364,6 +365,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
                         <img src="production/LastLight/LastLight-1.jpg" className="mason-1 mason-item" alt="Last Light BTS Photo 1"/>
                         <img src="production/LastLight/LastLight-2.jpg" className="mason-1 mason-item" alt="Last Light BTS Photo 2"/>
                         <img src="production/LastLight/LastLight-3.jpg" className="mason-1 mason-item" alt="Last Light BTS Photo 3"/>
+                        <img src="production/LastLight/LastLight-11.jpg" className="mason-1 mason-item" alt="Last Light BTS Photo 11"/>
                         
                     </div>
                     <div className="mason-50-container">
@@ -371,6 +373,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
                         <img src="production/LastLight/LastLight-6.jpg" className="mason-1 mason-item" alt="Last Light BTS Photo 6"/>
                         <img src="production/LastLight/LastLight-9.jpg" className="mason-1 mason-item" alt="Last Light BTS Photo 9"/>
                         <img src="production/LastLight/LastLight-4.jpg" className="mason-1 mason-item" alt="Last Light BTS Photo 4"/>
+                        <img src="production/LastLight/LastLight-10.jpg" className="mason-1 mason-item" alt="Last Light BTS Photo 10"/>
                     </div>
                 </div>
             </div>
@@ -830,7 +833,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
                 <p><strong>Athletes: </strong>Megan Godinez, Kelia Moniz, Lisa Andersen, Bruna Zuan, Monyca Eleogram, Kelis Kaleopa&apos;a</p>
                 <p><strong>Models: </strong>Malia Kaleopa&apos;a, Tiara Hernandez, Bri Atisone</p>
             </div>
-            <VideoPlayer youtube={true} classes="full-video" src="https://youtu.be/ozZGuxCWFY4?si=Xh9rrdNmwYSST7hS"></VideoPlayer>
+            
         </div>,
         className: "tall-card",
         columnLayout:
@@ -866,6 +869,7 @@ import { ProjectData } from "../components/Cards/ProjectCard";
                     <img src="production/RoxyPeaceJoyAloha23/RoxyPeaceJoyAloha23-20.jpg" className="mason-1 mason-item" alt="Roxy Peace Joy Aloha 23 Photo 20"/>
                 </div>
             </div>
+            <VideoPlayer youtube={true} classes="full-video" src="https://youtu.be/ozZGuxCWFY4?si=Xh9rrdNmwYSST7hS"></VideoPlayer>
         </div>
         
     },
@@ -998,8 +1002,8 @@ import { ProjectData } from "../components/Cards/ProjectCard";
     {
         id: "card18",
         title: "Roxy",
-        subtitle: `Jamaica`,
-        mainImage: "production/RoxyJamaica/RoxyJamaica-2.jpeg",
+        subtitle: `Jamaica Series`,
+        mainImage: "production/RoxyJamaica/JamaicaTitle.jpg",
         description:
         <div className="flex-start-start flex-column">
         <div className="credits-section" style={{marginBottom: '25px'}}>
@@ -1133,7 +1137,6 @@ import { ProjectData } from "../components/Cards/ProjectCard";
 
         </div>
         
-    },
-    
+    },  
   ];
   
