@@ -39,9 +39,9 @@ export default function WelcomeMarquee({ items }: WelcomeMarqueeProps) {
         {items.map((text, index) => (
           <React.Fragment key={index}>
             {text.includes("<span") ? (
-              <p className="all-caps white-text-glow palace-italic" style={{ textWrap: "nowrap" }} dangerouslySetInnerHTML={{ __html: text }} />
+              <p className="all-caps white-text-glow palace-italic" style={{ textWrap: "nowrap", fontFamily: 'var(--palace-italic)' }} dangerouslySetInnerHTML={{ __html: text }} />
             ) : (
-              <p className="all-caps white-text-glow palace-italic" style={{ textWrap: "nowrap" }}>{text}</p>
+              <p className="all-caps white-text-glow palace-italic" style={{ textWrap: "nowrap" }}><i>{text}</i></p>
             )}
             <p className="white-text-glow icon-flower white-flower"></p>
           </React.Fragment>

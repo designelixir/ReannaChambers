@@ -12,7 +12,7 @@ export default function AboutPageLayout() {
           <AboutBio />
         </div>
       </FadeInSection>
-      <div className="dark-section" style={{overflow: 'hidden', maxWidth: '100vw'}}>
+      <div className="dark-section palace-italic" style={{overflow: 'hidden', maxWidth: '100vw'}}>
             <WelcomeMarquee items={[
               'Creative Direction',
               'Photography',

@@ -202,7 +202,7 @@ nav {padding: 0 10px; position: absolute; top: 0; left: 0; width: 99vw; }
 /* Marquee */
 
 #marqueeWrapper {background: var(--off-black); width: 100vw; max-width: 100vw; overflow-x: hidden; opacity: 0; transition: opacity 0.8s ease;}
-.marquee-container { color: white; font-family: var(--palace-regular); font-size: 24px;  padding: 10px 0; line-height: 0;}
+.marquee-container { color: white; font-family: var(--palace-italic)!important; font-size: 24px;  padding: 10px 0; line-height: 0;}
 .marquee-image {margin: 0 15px;}
 
 /* Homepage */
